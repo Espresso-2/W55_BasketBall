@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ffc5de742049ebd0bb4c9110094d16, type: 3}
+  m_Name: ArenaSkin_56_Halloween
+  m_EditorClassIdentifier:
+  ID: 0
+  Filename: Skin Name
+  Description: Halloween
+  Floor:
+    SpriteImage: {fileID: 21300000, guid: af8144fbe76f7f34e96e13df612bae33, type: 2}
+    SpriteColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+  FloorDetailUnder:
+    SpriteImage: {fileID: 21300000, guid: 5f160e8ab340e41479958ab4f42257a8, type: 2}
+    SpriteColor: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 0.34117648}
+  FloorDetailOver:
+    SpriteImage: {fileID: 21300000, guid: 732051f523ae8744596f04152653f255, type: 2}
+    SpriteColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 0.35686275}
+  ThreePointArc_Player:
+    SpriteImage: {fileID: 21300000, guid: 8761b6053a867c54dba835198120245a, type: 2}
+    SpriteColor: {r: 0.7725491, g: 0, b: 0.7725491, a: 0.5019608}
+  ThreePointArc_Enemy:
+    SpriteImage: {fileID: 21300000, guid: bf6712708808c5743850a38b761a547d, type: 2}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+  SideCourt:
+    SpriteImage: {fileID: 21300000, guid: af8144fbe76f7f34e96e13df612bae33, type: 2}
+    SpriteColor: {r: 0.32941177, g: 0.32941177, b: 0.32941177, a: 1}
+  ThreePointArcFill_Player:
+    SpriteImage: {fileID: 21300000, guid: dc6b393786f32a14891d3acb0a5eb0d3, type: 2}
+    SpriteColor: {r: 0.9764706, g: 0.8980392, b: 0.34117648, a: 0}
+  ThreePointArcFill_Enemy:
+    SpriteImage: {fileID: 21300000, guid: dc6b393786f32a14891d3acb0a5eb0d3, type: 2}
+    SpriteColor: {r: 0.9764706, g: 0.8980392, b: 0.5, a: 0}
+  CenterCircleFill_Left:
+    SpriteImage: {fileID: 21300000, guid: 42c202f2d48230d44a80e79d31c87c8b, type: 2}
+    SpriteColor: {r: 0.7725491, g: 0, b: 0.7725491, a: 0}
+  CenterCircleFill_Right:
+    SpriteImage: {fileID: 21300000, guid: 42c202f2d48230d44a80e79d31c87c8b, type: 2}
+    SpriteColor: {r: 0.7725491, g: 0, b: 0.7725491, a: 0}
+  FloorLogo:
+    SpriteImage: {fileID: 21300000, guid: 43fe9da94ee75694596bd70a9276f72a, type: 2}
+    SpriteColor: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0}
+  FloorBaseline:
+    SpriteImage: {fileID: 21300000, guid: 83a38bd5d09b8f54a88822b034a5302f, type: 2}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+  FloorHalfCourtLine:
+    SpriteImage: {fileID: 21300000, guid: fdfae30e254d3ce47bc817800cdb1fd7, type: 2}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  FloorSideline:
+    SpriteImage: {fileID: 21300000, guid: e33bd19b3e62a3344ab1efbbd851052c, type: 2}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 0.5019608}
+  BackboardStand:
+    SpriteImage: {fileID: 21300000, guid: 2b4c0ccffdc45af4b98972f03643d020, type: 2}
+    SpriteColor: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
+  Backboard:
+    SpriteImage: {fileID: 21300000, guid: 42b5f0d4b6a883e4bb323ad1eccf2ff8, type: 2}
+    SpriteColor: {r: 0.72156864, g: 0.72156864, b: 0.72156864, a: 1}
+  BackboardOutline:
+    SpriteImage: {fileID: 21300000, guid: 8e973f218fa08344fa3784afe84fd80e, type: 2}
+    SpriteColor: {r: 0.00045169902, g: 0.00045169902, b: 0.00045169902, a: 1}
+  Rectangle:
+    SpriteImage: {fileID: 21300000, guid: c8539bc9f79f1ad49a194b506c96355f, type: 2}
+    SpriteColor: {r: 0.9716981, g: 0.9716981, b: 0.9716981, a: 1}
+  BackboardGraphic_Player:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardGraphicOutline_Player:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardGraphic_Enemy:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardGraphicOutline_Enemy:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  RimFront:
+    SpriteImage: {fileID: 21300000, guid: 8f5727757ff860745b53389cf66e2659, type: 2}
+    SpriteColor: {r: 0.7735849, g: 0, b: 0.7735679, a: 1}
+  RimBehind:
+    SpriteImage: {fileID: 21300000, guid: 456c1a792b807e0469ffacfad59e77df, type: 2}
+    SpriteColor: {r: 0.7725491, g: 0, b: 0.7725491, a: 1}
+  RimOutline:
+    SpriteImage: {fileID: 21300000, guid: 2315b109895cd1945b3950df34866f19, type: 2}
+    SpriteColor: {r: 0.08627451, g: 0.08627451, b: 0.08627451, a: 1}
+  RimConnector:
+    SpriteImage: {fileID: 21300000, guid: bd990bc8cfdce284da64ebb72dc14e81, type: 2}
+    SpriteColor: {r: 0.7725491, g: 0, b: 0.7725491, a: 1}
+  NetBase:
+    SpriteImage: {fileID: 21300000, guid: fc47113af2f9d8943b951f4dfac00f62, type: 2}
+    SpriteColor: {r: 0.72156864, g: 0.72156864, b: 0.72156864, a: 1}
+  Scoreboard:
+    SpriteImage: {fileID: 21300000, guid: b8262cdaa300f924ba0143345e47caab, type: 2}
+    SpriteColor: {r: 0.16037738, g: 0.12892872, b: 0.08699717, a: 1}
+  BkgPrefab: {fileID: 1979398223698916, guid: 788fc84e1d768b747a0099572b1d752d, type: 2}

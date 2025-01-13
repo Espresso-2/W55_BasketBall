@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ffc5de742049ebd0bb4c9110094d16, type: 3}
+  m_Name: ArenaSkin Default
+  m_EditorClassIdentifier:
+  ID: 0
+  Filename: Skin Name
+  Description: Default
+  Floor:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  FloorDetailUnder:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  FloorDetailOver:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  ThreePointArc_Player:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  ThreePointArc_Enemy:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  SideCourt:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  ThreePointArcFill_Player:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  ThreePointArcFill_Enemy:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  CenterCircleFill_Left:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  CenterCircleFill_Right:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  FloorLogo:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  FloorBaseline:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  FloorHalfCourtLine:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  FloorSideline:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardStand:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  Backboard:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardOutline:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  Rectangle:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardGraphic_Player:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardGraphicOutline_Player:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardGraphic_Enemy:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BackboardGraphicOutline_Enemy:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  RimFront:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  RimBehind:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  RimOutline:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  RimConnector:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  NetBase:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  Scoreboard:
+    SpriteImage: {fileID: 0}
+    SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+  BkgPrefab: {fileID: 0}

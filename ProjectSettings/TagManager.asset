@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ball
+  - AboveRim
+  - BonusArea
+  - BasketTrigger
+  - GoalTendingArea
+  - UnderHoop
+  - Ground
+  - AgainstPole
+  - SessionVars
+  - Rim
+  - GameSounds
+  - GetGoldBox
+  - NotificationQueue
+  - DealPack
+  - ResourceLoader
+  - ConfirmationBox
+  - BallShadow
+  - AnimatedBall
+  - PlayerShadow
+  - PlayerMiddle
+  - CustomItems
+  - CharacterSprites
+  - DunkTrigger
+  - NumBagsIcon
+  - BehindBackBoard
+  - PrizeSlot
+  - LoadingBox
+  - PrizeSlotUI
+  - DirectlyAboveCylinder
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Ball
+  - Background
+  - Pole
+  - Net
+  - AboveRim
+  - BonusArea
+  - ScoredBall
+  - AboveRimBall
+  - Ground
+  - ReadyToRebound
+  - PlayerDuplicate
+  - Shadow
+  - ReplayUI
+  - Particles
+  - BallWalls
+  - ScoreBoard
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackgroundBehind
+    uniqueID: 638781077
+    locked: 0
+  - name: Floor
+    uniqueID: 2767630043
+    locked: 0
+  - name: Background
+    uniqueID: 631842187
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Shadow
+    uniqueID: 233867853
+    locked: 0
+  - name: Pole
+    uniqueID: 741625109
+    locked: 0
+  - name: Player2
+    uniqueID: 87182943
+    locked: 0
+  - name: Player
+    uniqueID: 3785282833
+    locked: 0
+  - name: Net
+    uniqueID: 1635267639
+    locked: 0
+  - name: Controls
+    uniqueID: 2287679325
+    locked: 0
+  - name: Dialog
+    uniqueID: 1847812185
+    locked: 0
+  - name: ParticleOverlay
+    uniqueID: 2160554969
+    locked: 0

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0acfaf4d46da4bb855a05716057abf8, type: 3}
+  m_Name: cs
+  m_EditorClassIdentifier:
+  Name: czech
+  Description:
+  Icon: {fileID: 21300000, guid: 2417c5f293d6bc847b4e6c8899aa4553, type: 2}
+  URL:
+  Resource: {fileID: 4900000, guid: d100747f1693b8441b7872ec47f65d9f, type: 3}

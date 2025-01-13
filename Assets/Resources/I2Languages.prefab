@@ -1,0 +1,7825 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1608894848389480
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - component: {fileID: 4879202586246569}
+  - component: {fileID: 114618162382133950}
+  m_Layer: 0
+  m_Name: I2Languages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4879202586246569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1608894848389480}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114618162382133950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1608894848389480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422a665d9a7cb041437ed18110d5d6d1, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Google_WebServiceURL: https://script.google.com/macros/s/AKfycbz8eGlqMZ5a6vjByXk3QaokCG8OE78WIxGN8x64kUM1AHP1GjCy/exec
+  Google_SpreadsheetKey:
+  Google_SpreadsheetName:
+  Google_LastUpdatedVersion:
+  GoogleUpdateFrequency: 3
+  GoogleUpdateDelay: 5
+  mTerms:
+  - Term: BIG OPPORTUNITY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BIG OPPORTUNITY!
+    - ¡GRAN OPORTUNIDAD!
+    - RIESENGELEGENHEIT!
+    - UNE VRAIE OCCASION !
+    - GRANDE OCCASIONE!
+    - BÜYÜK FIRSAT!
+    - GRANDE OPORTUNIDADE!
+    - ОТЛИЧНЫЙ ШАНС!
+    - 巨大机遇！
+    Flags: 000000000000000000
+  - Term: UPGRADE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - UPGRADE
+    - MEJORAR
+    - VERBESSERUNG
+    - NIVEAU SUPÉRIEUR
+    - UPGRADE
+    - YÜKSELT
+    - UPGRADE
+    - УЛУЧШЕНИЕ
+    - 升级
+    Flags: 000200000000000002
+  - Term: PLAY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PLAY
+    - JUGAR
+    - SPIELEN
+    - JOUER
+    - GIOCA
+    - OYNA
+    - JOGAR
+    - ИГРАТЬ
+    - 开始游戏
+    Flags: 000000000000000000
+  - Term: DEVELOPMENT TEAM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - DEVELOPMENT TEAM
+    - EQUIPO DE DESARROLLO
+    - ENTWICKLUNGSTEAM
+    - L'ÉQUIPE DES DÉVELOPPEURS
+    - TEAM DI SVILUPPO
+    - GELİŞTİRME EKİBİ
+    - EQUIPA DE DESENVOLVIMENTO
+    - КОМАНДА РАЗРАБОТЧИКОВ
+    - 开发团队
+    Flags: 000200000000000002
+  - Term: RATE THIS APP
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RATE THIS APP
+    - CALIFICA ESTA APLICACIÓN
+    - DIESE APP BEWERTEN
+    - ÉVALUER L'APPLI
+    - VALUTA QUESTA APP
+    - BU UYGULAMAYI DERECELENDİR
+    - CLASSIFICAR ESTA APP
+    - ОЦЕНИТЬ ПРИЛОЖЕНИЕ
+    - 为应用评分
+    Flags: 000200000000000000
+  - Term: AND LET US
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - AND LET US KNOW HOW TO IMPROVE THE GAME!
+    - ¡Y HAZNOS SABER CÓMO MEJORAR EL JUEGO!
+    - LASS UNS WISSEN, WIE MAN DAS SPIEL VERBESSERN KANN!
+    - FAITES-NOUS SAVOIR COMMENT AMÉLIORER LE JEU !
+    - DACCI DEI CONSIGLI PER MIGLIORARE IL GIOCO!
+    - VE OYUNU NASIL GELİŞTİREBİLECEĞİMİZİ BİZE BİLDİR!
+    - E FAÇA-NOS SABER COMO MELHORAR O JOGO!
+    - ВАШИ СОВЕТЫ ПО СОВЕРШЕНСТВОВАНИЮ ИГРЫ
+    - 告诉我们该如何改善这款游戏！
+    Flags: 000000000000000000
+  - Term: LIMITED TIME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LIMITED TIME
+    - TIEMPO LIMITADO
+    - BEGRENZTE ZEIT
+    - TEMPS LIMITÉ
+    - TEMPO LIMITATO
+    - LIMITED TIME
+    - LIMITED TIME
+    - LIMITED TIME
+    - 有限的时间
+    Flags: 000200000000000000
+  - Term: HEY IM COACH JIM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - "Hey I'm coach Jim,\nIf you get a team together I will coach us to winning from NEW YORK to LA!"
+    - "¡HOLA! ¡soy el entrenador Jim,\nSi formáis un equipo, os entrenaré para ganar desde NEW YORK hasta LA!"
+    - "Hey, ich bin coach Jim. \nWenn du ein team zusammen hast, werde ich es zu siegen von NEW YORK bis LA coachen."
+    - "Hey ! Je suis Jim l'entraîneur. \nSi tu formes une équipe, je t'aiderai à gagner tous les matchs !"
+    - "Ciao, sono l'allenatore Jim, \nSe metti insieme una squadra vi porterò alla vittoria da NEW YORK a LA!"
+    - Selam, ben koç ji̇m, bi̇r takim kurarsan NEW YORK 'tan LA ya kadar kazanmamiz İçİn bi̇ze koçluk yapacağim
+    - "Olá! Sou o treinador Jim! \nSe conseguir montar uma equipa, vou treinar-nos para ganhar desde NEW YORK até LA!"
+    - "Привет! Я тренер джим. \nСобери команду, а я помогу ей добиться успеха!"
+    - "大家好我是JIM教练，\n如果你能集齐一个队伍，\n我会辅导大家，\n一路从纽约赢到洛杉矶去"
+    Flags: 000000000000000000
+  - Term: SUGGESTED WAY TO HOLD DEVICE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SUGGESTED WAY TO HOLD DEVICE
+    - Manera de sostener DISPOSITIVO SUGERIDO
+    - VORGESCHLAGENE ART, DAS GERÄT ZU HALTEN
+    - FAÇON RECOMMANDÉE DE TENIR L'APPAREIL
+    - MODO CORRETTO DI TENERE IL DISPOSITIVO
+    - ÖNERİLEN CİHAZI TUTMA ŞEKLİ
+    - MANEIRA SUGERIDA DE AGARRAR NO DISPOSITIVO
+    - РЕКОМЕНДУЕМЫЙ СПОСОБ ДЕРЖАТЬ УСТРОЙСТВО
+    - 持握设备的推荐方式
+    Flags: 000000000000000000
+  - Term: TIMEOUT TAKEN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TIMEOUT TAKEN
+    - TIEMPO MUERTO SOLICITADO
+    - AUSZEIT GENOMMEN
+    - TEMPS-MORTS DÉJÀ PRIS
+    - TIMEOUT EFFETTUATO
+    - VERİLEN MOLA
+    - TEMPO TÉCNICO USADO
+    - ТАЙМ-АУТ ДЕЙСТВУЕТ
+    - 使用赛间暂停
+    Flags: 000000000000000000
+  - Term: IN GAME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - IN GAME
+    - EN JUEGO
+    - IM SPIEL
+    - DANS LE JEU
+    - IN GARA
+    - OYUN İÇİ
+    - EM JOGO
+    - В ИГРЕ
+    - 在比赛中
+    Flags: 000000000000000000
+  - Term: PUT IN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PUT IN
+    - PONER
+    - REINLEGEN
+    - AJOUTER
+    - FAI ENTRARE
+    - SEÇ
+    - POR EM
+    - На замене
+    - 加入比赛
+    Flags: 000000000000000000
+  - Term: RESUME GAME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RESUME GAME
+    - RETOMAR JUEGO
+    - SPIEL FORTSETZEN
+    - REPRENDRE LE JEU
+    - RIPRENDI IL GIOCO
+    - OYUNA DEVAM ET
+    - RETOMAR JOGO
+    - ВОЗОБНОВИТЬ ИГРУ
+    - 恢复比赛
+    Flags: 000000000000000000
+  - Term: HYDRATION
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - HYDRATION
+    - HIDRATACIÓN
+    - HYDRIERUNG
+    - HYDRATATION
+    - IDRATAZIONE
+    - SIVI ALIMI
+    - HIDRATAÇÃO
+    - ВОДА
+    - 含水量水平
+    Flags: 000200000000000000
+  - Term: EARLY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - EARLY
+    - PRONTO
+    - FRÜH
+    - TÔT
+    - IN ANTICIPO
+    - ERKEN
+    - CEDO
+    - РАНО
+    - 太早
+    Flags: 000000000000000000
+  - Term: RELEASED SLIGHTLY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RELEASED
+    - HAS SOLTADO UN POCO
+    - LEICHT LOSGELASSEN
+    - RELÂCHÉ LÉGÈREMENT
+    - HAI LASCIATO LEGGERMENTE
+    - HAFİFÇE BIRAKILDI
+    - SOLTO LIGEIRAMENTE
+    - НЕМНОГО ВЫСВОБОЖДЕН
+    - 略早
+    Flags: 000000000000000000
+  - Term: LATE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LATE
+    - TARDE
+    - SPÄT
+    - TARD
+    - IN RITARDO
+    - GEÇ KALDIN
+    - TARDE
+    - ПОЗДНО
+    - 太晚
+    Flags: 000200000000000000
+  - Term: YOU WON
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOU WON!
+    - ¡GANASTE!
+    - DU HAST GEWONNEN!
+    - VOUS AVEZ GAGNÉ !
+    - HAI VINTO!
+    - SEN KAZANDIN!
+    - GANHOU!
+    - ТЫ ПОБЕДИЛ!
+    - 你赢了！
+    Flags: 000200000000000000
+  - Term: READY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - READY
+    - LISTO
+    - BEREIT
+    - PRÊT
+    - PRONTO
+    - HAZIR
+    - PRONTO
+    - ГОТОВ
+    - 准备好
+    Flags: 000200000000000000
+  - Term: RESUME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RESUME
+    - CONTINUAR
+    - FORTSETZEN
+    - REPRENDRE
+    - RIPRENDI
+    - DEVAM ET
+    - RETOMAR
+    - ВОЗОБНОВИТЬ
+    - 恢复
+    Flags: 000000000000000000
+  - Term: TIMEOUT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TAKE TIMEOUT
+    - TIEMPO MUERTO
+    - AUSZEIT
+    - TEMPS-MORT
+    - TIMEOUT
+    - MOLA
+    - TEMPO TÉCNICO
+    - ТАЙМ-АУТ
+    - 赛间暂停
+    Flags: 000000000000000000
+  - Term: FORFEIT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - FORFEIT
+    - PERDISTE
+    - AUFGEBEN
+    - DÉCLARER FORFAIT
+    - RINUNCIA
+    - CEZA
+    - PERDER
+    - ПОТЕРЯ
+    - 放弃
+    Flags: 000000000000000000
+  - Term: QUIT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - QUIT
+    - ABANDONAR
+    - BEENDEN
+    - QUITTER
+    - CHIUDI
+    - ÇIK
+    - DESISTIR
+    - ВЫХОД
+    - 退出
+    Flags: 000000000000000000
+  - Term: TOTAL REWARDS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TOTAL REWARDS
+    - RECOMPENSAS TOTALES
+    - GESAMTE BELOHNUNGEN
+    - TOTAL DE RÉCOMPENSES
+    - RICOMPENSE TOTALI
+    - TOPLAM ÖDÜL
+    - RECOMPENSAS TOTAIS
+    - ОБЩЕЕ КОЛИЧЕСТВО НАГРАД
+    - 全部奖励
+    Flags: 000200000000000000
+  - Term: CLAIM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CLAIM
+    - RECOGER
+    - NEHMEN
+    - CHOISIR
+    - Riscuoti
+    - İSTE
+    - RECEBER
+    - ЗАЯВИТЬ
+    - 领取
+    Flags: 000000000000000000
+  - Term: DOUBLE REWARD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - DOUBLE REWARDS
+    - DOBLE RECOMPENSA
+    - DOPPELTE BELOHNUNG
+    - DOUBLE RÉCOMPENSE
+    - DOPPIA RICOMPENSA
+    - ÇİFTE ÖDÜL
+    - RECOMPENSA DUPLA
+    - ДВОЙНАЯ НАГРАДА
+    - 双倍奖励
+    Flags: 000200000000000000
+  - Term: RATE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RATE
+    - CLASIFICAR
+    - BEWERTEN
+    - ÉVALUER
+    - VALUTA
+    - DERECELENDİR
+    - CLASSIFICAR
+    - ОЦЕНКА
+    - 评价
+    Flags: 000000000000000000
+  - Term: TOUR
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TOUR
+    - GIRA
+    - TOUR
+    - TOURNOI
+    - TOUR
+    - TUR
+    - DIGRESSÃO
+    - ТУР
+    - 地图
+    Flags: 000200000000000000
+  - Term: TWO PLAYER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 2 PLAYER
+    - 2 JUGADORES
+    - 2 SPIELER
+    - 2 JOUEURS
+    - 2 GIOCATORI
+    - 2 OYUNCULU
+    - 2 JOGADORES
+    - 2 ИГРОКА
+    - 2名玩家
+    Flags: 000200000000000000
+  - Term: DEALS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - DEALS
+    - OFERTAS
+    - DEALS
+    - OFFRES
+    - AFFARI
+    - SATIŞLAR
+    - ACORDOS
+    - СДЕЛКИ
+    - 特价
+    Flags: 000200000000000000
+  - Term: STORE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - STORE
+    - TIENDA
+    - STORE
+    - BOUTIQUE
+    - NEGOZIO
+    - MAĞAZA
+    - LOJA
+    - МАГАЗИН
+    - 商店
+    Flags: 000000000000000000
+  - Term: PLAYERS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PLAYERS
+    - JUGADORES
+    - SPIELER
+    - JOUEURS
+    - GIOCATORI
+    - OYUNCULAR
+    - JOGADORES
+    - ИГРОКИ
+    - 玩家
+    Flags: 000200000000000000
+  - Term: LEVEL UP
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LEVEL UP
+    - SUBES DE NIVEL
+    - HOCHLEVELN
+    - MONTÉE DE NIVEAU
+    - SALI DI LIVELLO
+    - SEVİYE ATLADIN
+    - SUBIU DE NÍVEL
+    - НОВЫЙ УРОВЕНЬ
+    - 等级提升
+    Flags: 000000000000000000
+  - Term: REWARDS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - REWARDS
+    - RECOMPENSAS
+    - BELOHNUNGEN
+    - RÉCOMPENSES
+    - RICOMPENSE
+    - ÖDÜLLER
+    - RECOMPENSAS
+    - НАГРАДЫ
+    - 奖励
+    Flags: 000200000000000000
+  - Term: CONTINUE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CONTINUE
+    - CONTINUAR
+    - WEITER
+    - CONTINUER
+    - CONTINUA
+    - DEVAM ET
+    - CONTINUAR
+    - ПРОДОЛЖИТЬ
+    - 继续
+    Flags: 000200000000000000
+  - Term: LOADING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LOADING
+    - CARGANDO
+    - LADEN
+    - CHARGEMENT
+    - STO CARICANDO
+    - YÜKLENİYOR
+    - A CARREGAR
+    - ЗАГРУЗКА
+    - 加载中
+    Flags: 000200000000000000
+  - Term: SELECT POWERUPS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SELECT POWERUPS
+    - SELECCIONE POTENCIADORES
+    - POWERUPS AUSWÄHLEN
+    - CHOISISSEZ VOS BONUS
+    - SELEZIONA POWERUP
+    - GÜÇLENDİRMELERİ SEÇ
+    - SELECIONE POWERUPS
+    - ВЫБРАТЬ БОНУСЫ
+    - 选择能力提升道具
+    Flags: 000200000000000000
+  - Term: OVERALL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OVERALL
+    - GENERAL
+    - INSGESAMT
+    - TOTAL
+    - TOTALE
+    - GENEL
+    - GLOBAL
+    - ОБЩЕЕ
+    - 整体
+    Flags: 000000000000000000
+  - Term: SHOOTING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SHOOTING
+    - TIRO
+    - WERFEN
+    - TIR
+    - TIRO
+    - ŞUT
+    - LANÇAMENTO
+    - ВЫПОЛНЯЕТСЯ БРОСОК
+    - 投球
+    Flags: 000000000000000000
+  - Term: CONTESTING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CONTESTING
+    - DISPUTA
+    - STÖREN
+    - CONTESTO
+    - CONTESTARE
+    - ÇEKİŞME
+    - DISPUTAR
+    - СОПЕРНИКИ
+    - 拦截
+    Flags: 000000000000000000
+  - Term: DEFENSE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - DEFENSE
+    - DEFENSA
+    - VERTEIDIGUNG
+    - DÉFENSE
+    - DIFESA
+    - DEFANS
+    - DEFESA
+    - ЗАЩИТА
+    - 防守
+    Flags: 000200000000000000
+  - Term: SPEED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SPEED
+    - VELOCIDAD
+    - GESCHWINDIGKEIT
+    - VITESSE
+    - VELOCITÀ
+    - HIZ
+    - VELOCIDADE
+    - СКОРОСТЬ
+    - 速度
+    Flags: 000200000000000000
+  - Term: GRIP SPRAY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GRIP SPRAY
+    - SPRAY DE AGARRE
+    - GRIP SPRAY
+    - PRODUIT ANTIDÉRAPANT
+    - SPRAY ANTISCIVOLO
+    - KAVRAMA SPREYİ
+    - SPRAY DE ADERÊNCIA
+    - СПРЕЙ ПРОТИВ СКОЛЬЖЕНИЯ
+    - 紧握喷雾
+    Flags: 000000000000000000
+  - Term: INCREASE SPEED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - INCREASE SPEED
+    - AUMENTAR VELOCIDAD
+    - GESCHWINDIGKEIT ERHÖHEN
+    - AUGMENTER LA VITESSE
+    - AUMENTA LA VELOCITÀ
+    - HIZI ARTTIR
+    - AUMENTAR VELOCIDADE
+    - УВЕЛИЧИТЬ СКОРОСТЬ
+    - 增加速度
+    Flags: 000000000000000000
+  - Term: SHOOTING CHALK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SHOOTING CHALK
+    - PRÁTICA DE TIRO
+    - WURFKREIDE
+    - PRODUITS DE TIR
+    - GESSO DA TIRO
+    - ŞUT FAVORİSİ
+    - PRÁTICA DE LANÇAMENTO
+    - МЕЛ ДЛЯ РУК
+    - 投球粉笔
+    Flags: 000000000000000000
+  - Term: IMPROVE SHOOTING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - IMPROVE SHOOTING
+    - MEJORAR EL TIRO
+    - WERFEN VERBESSERN
+    - AMÉLIORER LE TIR
+    - MIGLIORA IL TIRO
+    - ŞUT GELİŞTİR
+    - MELHORAR LANÇAMENTO
+    - УЛУЧШИТЬ ТОЧНОСТЬ БРОСКА
+    - 提升投球能力
+    Flags: 000200000000000000
+  - Term: PROTEIN BAR
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ENERGY BAR
+    - BARRA DE PROTEINAS
+    - PROTEINRIEGEL
+    - BARRE PROTÉINÉE
+    - BARRETTA DI PROTEINE
+    - PROTEİN BARI
+    - BARRA DE PROTEÍNA
+    - ПРОТЕИНОВЫЙ БАТОНЧИК
+    - 蛋白棒
+    Flags: 000000000000000000
+  - Term: FASTER ENERGY RECOVERY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - FASTER ENERGY RECOVERY
+    - RECUPERACIÓN DE ENERGÍA MÁS RÁPIDA
+    - SCHNELLERE ENERGIE-ERHOLUNG
+    - RÉCUPÉRATION D'ÉNERGIE PLUS RAPIDE
+    - RECUPERO DI ENERGIA PIÙ VELOCE
+    - DAHA HIZLI ENERJİ DOLUMU
+    - RECUPERAÇÃO DE ENERGIA MAIS RÁPIDA
+    - БЫСТРОЕ ВОССТАНОВЛЕНИЕ ЭНЕРГИИ
+    - 更快的能量恢复
+    Flags: 000000000000000000
+  - Term: GET MORE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GET MORE
+    - CONSEGUIR MÁS
+    - HOL DIR MEHR
+    - OBTENEZ PLUS DE
+    - OTTIENI DI PIÙ
+    - DAHA FAZLA AL
+    - CONSIGA MAIS
+    - ПОЛУЧИТЬ БОЛЬШЕ
+    - 获取更多
+    Flags: 000000000000000000
+  - Term: TEAM NAME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TEAM NAME
+    - NOMBRE DEL EQUIPO
+    - TEAMNAME
+    - NOM DE L'ÉQUIPE
+    - NOME DELLA SQUADRA
+    - TAKIM ADI
+    - NOME DA EQUIPA
+    - НАЗВАНИЕ КОМАНДЫ
+    - 队伍名称
+    Flags: 000200000000000000
+  - Term: CLAIM TEAM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CLAIM TEAM
+    - SOLICITAR EQUIPO
+    - TEAM NEHMEN
+    - CHOISIR
+    - RICHIEDI SQUADRA
+    - TAKIM İSTE
+    - RECLAMAR EQUIPA
+    - ЗАВИТЬ КОМАНДУ
+    - 认领队伍
+    Flags: 000000000000000000
+  - Term: ACTIVE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ACTIVE
+    - ACTIVO
+    - AKTIV
+    - ACTIF
+    - ATTIVATO
+    - ETKİN
+    - ACTIVO
+    - АКТИВНЫЙ
+    - 活跃的
+    Flags: 000200000000000000
+  - Term: ACTIVATE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ACTIVATE
+    - ACTIVAR
+    - AKTIVIEREN
+    - ACTIVER
+    - ATTIVA
+    - ETKİNLEŞTİR
+    - ACTIVAR
+    - АКТИВИРОВАТЬ
+    - 激活
+    Flags: 000200000000000000
+  - Term: HIGHER LEVEL REQUIRED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - HIGHER LEVEL REQUIRED
+    - DISPONIBLE PARA NIVELES SUPERIORES
+    - HÖHERES LEVEL WIRD BENÖTIGT
+    - NIVEAU PLUS ÉLEVÉ REQUIS
+    - LIVELLO PIÙ ALTO RICHIESTO
+    - DAHA YÜKSEK SEVİYE GEREKLİ
+    - NÍVEL MAIS ALTO OBRIGATÓRIO
+    - НЕОБХОДИМ БОЛЕЕ ВЫСОКИЙ УРОВЕНЬ
+    - 需要更高等级
+    Flags: 000000000000000000
+  - Term: SIZE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SIZE
+    - TAMAÑO
+    - GRÖSSE
+    - TAILLE
+    - DIMENSIONE
+    - BOY
+    - TAMANHO
+    - РАЗМЕР
+    - 大小
+    Flags: 000200000000000000
+  - Term: OWNED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OWNED
+    - EN POSESIÓN
+    - IM BESITZ
+    - POSSÉDÉS
+    - GUDAGNATO
+    - SAHİPSİN
+    - OWNED
+    - ДОЛГ
+    - 已拥有
+    Flags: 000000000000000000
+  - Term: INSTANT UPGRADE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - INSTANT UPGRADE
+    - MEJORA INSTANTÁNEA
+    - SOFORTIGE VERBESSERUNG
+    - MISE À JOUR INSTANTANÉE
+    - UPGRADE ISTANTANEO
+    - HIZLI YÜKSELT
+    - UPGRADE INSTANTÂNEO
+    - МГНОВЕННОЕ УЛУЧШЕНИЕ
+    - 即刻升级
+    Flags: 000000000000000000
+  - Term: WRITE A REVIEW
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WRITE A REVIEW
+    - ESCRIBE UNA RESEÑA
+    - SCHREIBE EIN REVIEW
+    - ÉCRIVEZ UNE CRITIQUE
+    - SCRIVI UNA RECENSIONE
+    - BİR DEĞERLENDİRME YAZ
+    - ESCREVA UMA CRÍTICA
+    - НАПИСАТЬ ОТЗЫВ
+    - 编写一则评论
+    Flags: 000200000000000000
+  - Term: EMAIL SUPPORT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - EMAIL SUPPORT
+    - SOPORTE ELECTRÓNICO
+    - E-MAIL-SUPPORT
+    - ASSISTANCE PAR E-MAIL
+    - ASSISTENZA EMAIL
+    - EPOSTA DESTEĞİ
+    - SUPORTE POR E-MAIL
+    - ПОДДЕРЖКА ПО EMAIL
+    - 邮件支持
+    Flags: 000000000000000000
+  - Term: REPLAY TUTORIAL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - REPLAY TUTORIAL
+    - REPETIR TUTORIAL
+    - TUTORIAL NOCHMAL SPIELEN
+    - REJOUER LE TUTORIEL
+    - RIPRODUCI IL TUTORIAL
+    - ÖĞRETİCİYİ TEKRAR OYNAT
+    - REPETIR TUTORIAL
+    - ПОВТОРИТЬ ОБУЧЕНИЕ
+    - 重播教程
+    Flags: 000000000000000000
+  - Term: RESTORE PURCHASES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RESTORE PURCHASES
+    - RESTAURAR COMPRAS
+    - KÄUFE WIEDERHERSTELLEN
+    - RESTAURER LES ACHATS
+    - RIPRISTINA ACQUISTI
+    - SATIN ALINANLARI GERİ YÜKLE
+    - RESTAURAR COMPRAS
+    - ВОССТАНОВИТЬ ПОКУПКИ
+    - 恢复购买
+    Flags: 000000000000000000
+  - Term: CREDITS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CREDITS
+    - CRÉDITOS
+    - CREDITS
+    - CRÉDITS
+    - CREDITI
+    - KREDİ
+    - CRÉDITOS
+    - ОЧКИ
+    - 创作人员名单
+    Flags: 000200000000000000
+  - Term: GAMES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GAMES
+    - PARTIDOS
+    - SPIELE
+    - MATCH
+    - PARTITE
+    - OYUNLAR
+    - JOGOS
+    - ИГРЫ
+    - 游戏次数
+    Flags: 000000000000000000
+  - Term: POINTS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - POINTS
+    - PUNTOS
+    - PUNKTE
+    - POINTS
+    - PUNTI
+    - PUANLAR
+    - PONTOS
+    - ОЧКИ
+    - 得分
+    Flags: 000200000000000000
+  - Term: REBOUNDS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - REBOUNDS
+    - REBOTES
+    - REBOUNDS
+    - REBONDS
+    - RIMBALZI
+    - RİBAUNTLAR
+    - RESSALTOS
+    - ПОДБОРЫ
+    - 篮板球次数
+    Flags: 000200000000000000
+  - Term: BLOCKS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BLOCKS
+    - TAPONES
+    - BLOCKS!
+    - BLOCAGES
+    - BLOCCHI
+    - BLOKLAR
+    - BLOQUEIOS
+    - БЛОКИ
+    - 封锁次数
+    Flags: 000000000000000000
+  - Term: AVG
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - AVG
+    - MED
+    - DURCHSCHNITT
+    - MOYENNE
+    - MEDIA
+    - ORT
+    - MÉD
+    - СРЕД.
+    - 平均
+    Flags: 000000000000000000
+  - Term: TOT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TOTAL
+    - TOT
+    - GESAMT
+    - TOTAL
+    - TOT
+    - TOPLAM
+    - TOT
+    - ОБЩЕЕ
+    - 总计
+    Flags: 000000000000000000
+  - Term: UPGRADES REQUIRED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - UPGRADES REQUIRED
+    - MEJORAS NECESARIAS
+    - VERBESSERUNGEN ERFORDERLICH
+    - MISES À NIVEAU REQUISES
+    - FAI UN UPGRADE DEI TUOI GIOCATORI
+    - GEREKLİ YÜKSELTMELER
+    - UPGRADES OBRIGATÓRIOS
+    - НЕОБХОДИМО УЛУЧШЕНИЕ
+    - 需要升级
+    Flags: 000000000000000000
+  - Term: SIGN STARTER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SIGN STARTER
+    - FICHAR TITULAR
+    - STARTSPIELER VERPFLICHTEN
+    - ENGAGEZ UN JOUEUR LIBRE
+    - INGAGGIA TITOLARE
+    - HAKEM AL
+    - CONTRATAR TITULAR
+    - НАЗНАЧИТЬ СТАРТОВЫЙ СОСТАВ
+    - 指定上场球员
+    Flags: 000000000000000000
+  - Term: WIN MORE GAMES TO UNLOCK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WIN MORE TOURNAMENTS
+    - GANE MÁS TORNEOS
+    - GEWINN MEHR TURNIERE
+    - GAGNEZ PLUS DE TOURNOIS
+    - VINCONI PIÙ TORNEI
+    - DAHA FAZLA TURNAMENTLERE KAZANIN
+    - GANHE MAIS TOURNAMENTOS
+    - ПОСЛЕДНИЕ ТУРНИРЫ
+    - 赢得更多的旅程
+    Flags: 000000000000000000
+  - Term: QUARTERFINALS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - QUARTERFINALS
+    - CUARTOS DE FINAL
+    - VIERTELFINALE
+    - QUARTS DE FINALE
+    - QUARTI DI FINALE
+    - ÇEYREK FİNALLER
+    - QUARTOS DE FINAL
+    - ЧЕТВЕРТЬФИНАЛ
+    - 四分之一决赛
+    Flags: 000200000000000000
+  - Term: SEMIFINALS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SEMIFINALS
+    - SEMIFINALES
+    - HALBFINALE
+    - DEMI-FINALES
+    - SEMIFINALI
+    - YARI FİNALLER
+    - SEMI FINAIS
+    - ПОЛУФИНАЛ
+    - 半决赛
+    Flags: 000200000000000000
+  - Term: CHAMPIONSHIP
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CHAMPIONSHIP
+    - CAMPEONATO
+    - MEISTERSCHAFT
+    - CHAMPIONNAT
+    - CAMPIONATO
+    - ŞAMPİYONLUK
+    - CAMPEONATO
+    - ЧЕМПИОНАТ
+    - 冠军赛
+    Flags: 000200000000000000
+  - Term: GRAND PRIZE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GRAND PRIZE
+    - GRAN PREMIO
+    - GROßER PREIS
+    - GRAND PRIX
+    - PRIMO PREMIO
+    - BÜYÜK ÖDÜL
+    - GRANDE PRÉMIO
+    - ГЛАВНЫЙ ПРИЗ
+    - 特等奖
+    Flags: 000200000000000000
+  - Term: BebasNeue Bold
+    TermType: 1
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BebasNeue Bold
+    - BebasNeue Bold
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Flags: 000000000000000000
+  - Term: BebasNeue Regular
+    TermType: 1
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Oswald-Light
+    - Oswald-Light
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Flags: 000000000000000000
+  - Term: ONE FREE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 1 FREE
+    - 1 GRATIS
+    - 1 KOSTENLOS
+    - 1 GRATUIT
+    - 1 GRATIS
+    - 1 ÜCRETSİZ
+    - 1 GRÁTIS
+    - 1 БЕСПЛАТНО
+    - 1项免费
+    Flags: 000200000000000000
+  - Term: SUPPLY DRINK DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - REFILL HYDRATION DURING GAMES
+    - RECARGAR HIDRATACÍON DE JUGADOR
+    - SPIELERHYDRIERUNG AUFFÜLLEN
+    - RÉHYDRATER LE JOUEUR
+    - REIDRATA IL GIOCATORE
+    - OYUNCU SIVI ALIMINI DOLDUR
+    - RE-ENCHER HIDRATAÇÃO DO JOGADOR
+    - ДАТЬ ИГРОКУ ВОДЫ
+    - 补充队员的含水量
+    Flags: 000000000000000000
+  - Term: SUPPLY GRIP DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - INCREASE SPEED FOR AN ENTIRE GAME!
+    - ¡AUMENTAR LA VELOCIDAD DURANTE UN JUEGO COMPLETO!
+    - ERHÖHT GESCHWINDIGKEIT FÜR EIN GANZES SPIEL!
+    - AUGMENTEZ LA VITESSE PENDANT TOUT UN MATCH !
+    - AUMENTA LA VELOCITÀ PER TUTTA LA PARTITA!
+    - BÜTÜ BİR OYUN İÇİN HIZI ARTTIR
+    - AUMENTE A VELOCIDADE POR UM JOGO INTEIRO!
+    - ПОВЫСИТЬ СКОРОСТЬ НА ВРЕМЯ ВСЕЙ ИГРЫ!
+    - 整场比赛中加速！
+    Flags: 000000000000000000
+  - Term: SUPPLY CHALK DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - IMPROVE SHOOTING FOR AN ENTIRE GAME!
+    - ¡MEJORAR LOS TIROS DURANTE UN JUEGO COMPLETO!
+    - VERBESSERT WERFEN FÜR EIN GANZES SPIEL
+    - AMÉLIOREZ LE TIR PENDANT TOUT UN MATCH !
+    - MIGLIORA I TIRI PER TUTTA LA PARTITA!
+    - BÜTÜN BİR OYUN İÇİN ŞUT GELİŞTİR
+    - MELHORE OS SEUS LANÇAMENTOS POR UM JOGO INTEIRO!
+    - УЛУЧШИТЬ ТОЧНОСТЬ БРОСКА НА ВРЕМЯ ВСЕЙ ИГРЫ!
+    - 整场比赛中提升投球能力
+    Flags: 000000000000000000
+  - Term: SUPPLY PROTEIN DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SPEED UP ENERGY RECOVERY FOR AN ENTIRE GAME!
+    - ¡ACELERAR LA RECUPERACIÓN DE ENERGÍA DURANTE UN JUEGO ENTERO!
+    - SCHNELLERE ENERGIE-ERHOLUNG FÜR EIN GANZES SPIEL!
+    - AUGMENTEZ LA VITESSE DE RÉCUPÉRATION D'ÉNERGIE PENDANT TOUT UN MATCH !
+    - VELOCIZZA IL RECUPERO DI ENERGIE PER TUTTA LA PARTITA!
+    - BÜTÜN BİR OYUN İÇİN ENERJİ DOLUMUNU ARTTIR
+    - ACELERE A RECUPERAÇÃO DE ENERGIA POR UM JOGO INTEIRO!
+    - УСКОРИТЬ ВОССТАНОВЛЕНИЕ ЭНЕРГИИ НА ВРЕМЯ ВСЕЙ ИГРЫ!
+    - 整场比赛中提升能量恢复速度！
+    Flags: 000000000000000000
+  - Term: BEST VALUE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BEST VALUE
+    - MEJOR OPCIÓN
+    - DER BESTE WERT
+    - MEILLEUR
+    - MIGLIOR RENDIMENTO
+    - EN İYİ DEĞER
+    - MELHOR OFERTA
+    - ЛУЧШЕЕ ЗНАЧЕНИЕ
+    - 最佳价值
+    Flags: 000000000000000000
+  - Term: STARTER PACK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - STARTER PACK
+    - PAQUETE DE INICIACIÓN
+    - STARTER PACK
+    - PACK DÉBUTANT
+    - PACCHETTO STARTER
+    - BAŞLANGIÇ PAKETİ
+    - PACK INICIANTE
+    - Стартовый набор
+    - 新人包
+    Flags: 000000000000000000
+  - Term: PRO PACK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PRO PACK
+    - PAQUETE PRO
+    - PRO PACK
+    - PACK PRO
+    - PACCHETTO PRO
+    - PRO PAKET
+    - PACOTE PRO
+    - Профессиональный набор
+    - 专业包
+    Flags: 000000000000000000
+  - Term: ELITE PACK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ELITE PACK
+    - PAQUETE ÉLITE
+    - ELITE PACK
+    - PACK ÉLITE
+    - PACCHETTO ELITE
+    - ELİT PAKET
+    - PACOTE DE ELITE
+    - Элитный набор
+    - 精英包
+    Flags: 000000000000000000
+  - Term: GRIP SPRAYS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GRIP SPRAYS
+    - ESPRAY DE AGARRE
+    - GRIP SPRAYS
+    - PRODUITS ANTIDÉRAPANTS
+    - SPRAY ANTISCIVOLO
+    - KAVRAMA SPREYLERİ
+    - SPRAYS DE ADERÊNCIA
+    - СПРЕИ ПРОТИВ СКОЛЬЖЕНИЯ
+    - 紧握喷雾
+    Flags: 000000000000000000
+  - Term: PROTEIN BARS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ENERGY BARS
+    - BARRAS DE PROTEINAS
+    - PROTEINRIEGEL
+    - BARRES PROTÉINÉES
+    - BARRETTE DI PROTEINE
+    - PROTEİN BARLARI
+    - BARRAS DE PROTEÍNA
+    - ПРОТЕИНОВЫЕ БАТОНЧИКИ
+    - 蛋白棒
+    Flags: 000000000000000000
+  - Term: SPORTS DRINKS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SPORTS DRINKS
+    - BEBIDAS DEPORTIVAS
+    - SPORTDRINKS
+    - BOISSONS ÉNERGÉTIQUES
+    - BEVANDE SPORTIVE
+    - SPORCU İÇECEKLERİ
+    - BEBIDAS DESPORTIVAS
+    - СПОРТИВНЫЕ НАПИТКИ
+    - 运动饮料
+    Flags: 000000000000000000
+  - Term: SHOOTING CHALKS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SHOOTING CHALK
+    - PRÁTICA DE TIRO
+    - WURFKREIDE
+    - PRODUITS DE TIR
+    - GESSO DA TIRO
+    - ŞUT FAVORİSİ
+    - PRÁTICAS DE LANÇAMENTOS
+    - МЕЛ ДЛЯ РУК
+    - 投球粉笔
+    Flags: 000000000000000000
+  - Term: ALL STAR PACKAGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ALL STAR PACK
+    - PAQUETE ALL STAR
+    - ALL-STAR PACK
+    - PACK ALL STAR
+    - PACCHETTO ALL STAR
+    - YILDIZLAR PAKETİ
+    - PACOTE ALL-STAR
+    - Набор все звёзды
+    - 全明星包
+    Flags: 000000000000000000
+  - Term: SUPER STAR PACKAGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SUPER STAR PACK
+    - PAQUETE SUPER STAR
+    - SUPERSTAR PACK
+    - PACK SUPER STAR
+    - PACCHETTO SUPER STAR
+    - SÜPER STAR PAKETİ
+    - PACOTE SUPER STAR
+    - Набор суперзвезды
+    - 超级明星包
+    Flags: 000000000000000000
+  - Term: HALFTIME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - HALFTIME
+    - DESCANSO
+    - HALBZEIT
+    - MI-TEMPS
+    - METÀ TEMPO
+    - DEVRE ARASI
+    - INTERVALO
+    - ПЕРЕРЫВ
+    - 中场休息
+    Flags: 000000000000000000
+  - Term: TIMEOUTS REMAINING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - '{num} REMAINING'
+    - '{num} RESTANTES'
+    - '{num} VERBLEIBEND'
+    - '{num} RESTANTS'
+    - '{num} RESTANTI'
+    - '{num} KALDI'
+    - '{num} RESTANTE'
+    - ОСТАЛОСЬ {num}
+    - '剩余{num} '
+    Flags: 000000000000000000
+  - Term: GREEN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GREEN
+    - VERDE
+    - GRÜN
+    - VERT
+    - VERDE
+    - YEŞİL
+    - VERDE
+    - ЗЕЛЕНЫЙ
+    - 绿色
+    Flags: 020200000000000000
+  - Term: PINK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PINK
+    - ROSADO
+    - PINK
+    - ROSE
+    - ROSA
+    - PEMBE
+    - ROSA
+    - РОЗОВЫЙ
+    - 粉色
+    Flags: 000200000000000000
+  - Term: SCRIMMAGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SCRIMMAGE
+    - DISPUTA
+    - TRAININGSSPIEL
+    - MATCH D'ENTRAÎNEMENT
+    - MISCHIA
+    - HAZIRLIK MAÇI
+    - SCRIMMAGE
+    - ТРЕНИРОВОЧНАЯ ИГРА
+    - 练习赛
+    Flags: 000000000000000000
+  - Term: YOU
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOU
+    - TÚ
+    - DU
+    - VOUS
+    - TU
+    - SEN
+    - VOCÊ
+    - ТЫ
+    - 你
+    Flags: 000200000000000000
+  - Term: OPPONENT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OPPONENT
+    - ADVERSARIO
+    - GEGNER
+    - ADVERSAIRE
+    - AVVERSARIO
+    - RAKİP
+    - ADVERSÁRIO
+    - ПРОТИВНИК
+    - 对手
+    Flags: 000200000000000000
+  - Term: LOADING NEW BRACKET
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LOADING NEW BRACKET
+    - CARGANDO NUEVO CALENDARIO
+    - LADE NEUES BRACKET
+    - CHARGEMENT DU PROGRAMME DE MATCH
+    - STO CARICANDO IL NUOVO TABELLONE
+    - YENİ ŞABLON YÜKLENİYOR
+    - A CARREGAR NOVA CHAVE
+    - ЗАГРУЗКА НОВОЙ ТУРНИРНОЙ ТАБЛИЦЫ
+    - 正在加载新的分组比赛图示
+    Flags: 000000000000000000
+  - Term: TRY AGAIN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TRY AGAIN
+    - INTÉNTALO DE NUEVO
+    - ERNEUT VERSUCHEN
+    - RÉESSAYEZ
+    - RITENTA
+    - TEKRAR DENE
+    - TENTE DE NOVO
+    - ПОПРОБОВАТЬ ЕЩЕ
+    - 再次尝试
+    Flags: 000200000000000000
+  - Term: PLAY AGAIN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PLAY AGAIN
+    - JUEGA DE NUEVO
+    - WIEDER SPIELEN
+    - REJOUER
+    - GIOCA DI NUOVO
+    - TEKRAR OYNA
+    - JOGAR NOVAMENTE
+    - ИГРАТЬ СНОВА
+    - 再玩一次
+    Flags: 000200000000000000
+  - Term: WIN MARGIN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WIN MARGIN
+    - MARGEN DE VICTORIA
+    - GEWINNDIFFERENZ
+    - MARGE DE VICTOIRE
+    - MARGINE DI VITTORIA
+    - KAZANÇ ELDE ET
+    - MARGEM DE VITÓRIA
+    - МАРЖА ПОБЕДЫ
+    - 获胜分数差距
+    Flags: 000200000000000000
+  - Term: GOOD GAME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GOOD GAME!
+    - ¡BUEN PARTIDO!
+    - GUTES SPIEL!
+    - BIEN JOUÉ !
+    - BELLA PARTITA!
+    - İYİ OYUN!
+    - BOM JOGO!
+    - ХОРОШАЯ ИГРА!
+    - 不错的比赛！
+    Flags: 000000000000000000
+  - Term: FORFEITED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - FORFEITED
+    - DERROTA
+    - AUFGEGEBEN
+    - A DÉCLARÉ FORFAIT
+    - HAI RINUNCIATO
+    - CEZALI
+    - PERDEU
+    - ПОТЕРЯН
+    - 放弃
+    Flags: 000000000000000000
+  - Term: YOUVE BEEN AWARDED YOUR OWN TEAM!
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOU'VE BEEN AWARDED YOUR OWN TEAM!
+    - ¡TE HAN REGALADO TU PROPIO EQUIPO!
+    - DU HAST DEIN EIGENES TEAM ERHALTEN!
+    - VOUS AVEZ REÇU VOTRE PROPRE ÉQUIPE !
+    - TI SEI AGGIUDICATO LA TUA SQUADRA!
+    - KENDİ TAKIMINLA ÖDÜLLENDİRİLDİN!
+    - GANHOU A SUA PRÓPRIA EQUIPA!
+    - ТЕПЕРЬ У ТЕБЯ ЕСТЬ СОБСТВЕННАЯ КОМАНДА!
+    - 你已经奖励了自己的队伍！
+    Flags: 000000000000000000
+  - Term: EXAMPLE TEAM NAME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 'EXAMPLE: "BIG DUNKERS"'
+    - 'EJEMPLO: "CABALLEROS"'
+    - 'BEISPIEL: „ KNIGHTS“'
+    - 'EXEMPLE : «  KNIGHTS »'
+    - 'ESEMPIO: " KNIGHTS"'
+    - 'ÖRNEK: " ŞÖVALYELERİ"'
+    - 'EXEMPLO: " KNIGHTS"'
+    - 'ПРИМЕР: « KNIGHTS»'
+    - 例子：“芝加哥骑士”
+    Flags: 000000000000000000
+  - Term: STARTERS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - STARTERS
+    - TITULARES
+    - STARTER
+    - JOUEURS LIBRES
+    - STARTER
+    - ASLAR
+    - TITULARES
+    - СТАРТОВЫЙ СОСТАВ
+    - 上场球员
+    Flags: 000000000000000000
+  - Term: BACKUPS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BACKUPS
+    - SUPLENTES
+    - ERSATZSPIELER
+    - SAUVEGARDES
+    - RISERVE
+    - YEDEKLER
+    - CÓPIAS DE SEGURANÇA
+    - ЗАПАС
+    - 后备球员
+    Flags: 000000000000000000
+  - Term: FREE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - FREE
+    - GRATIS
+    - KOSTENLOS
+    - GRATUIT
+    - GRATIS
+    - ÜCRETSİZ
+    - GRÁTIS
+    - БЕСПЛАТНО
+    - 免费
+    Flags: 000200000000000000
+  - Term: SPEED UPGRADE DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Increases player speed
+    - Increases player speed
+    - ERHÖHT GESCHWINDIGKEIT DES SPIELERS
+    - Augmente la vitesse du joueur
+    - Aumenta la velocità del giocatore
+    - Oyuncu hızını arttırır
+    - Aumenta a velocidade do jogador
+    - ПОВЫШЕНИЕ СКОРОСТИ ИГРОКА
+    - 增加队员速度
+    Flags: 000000000000000000
+  - Term: CONTESTING UPGRADE DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Reduces opponent shooting ability
+    - Reduce la capacidad de lanzamiento del oponente
+    - Reduziert die Wurffähigkeit des Gegners
+    - Réduit la capacité de tir de l'adversaire
+    - Riduce l'abilità dell'avversario nei tiri
+    - Rakibin şut yeteneğini azaltır
+    - Reduz a habilidade de lançamento do adversário
+    - СНИЖЕНИЕ ТОЧНОСТИ БРОСКА ПРОТИВНИКА
+    - 降低对手的投球能力
+    Flags: 000200000000000000
+  - Term: SHOOTING UPGRADE DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Increases player shooting ability
+    - Aumenta la capacidad del tiro del jugador
+    - ERHÖHT WURFFÄHIGKEIT DES SPIELERS
+    - Augmente la capacité de tir du joueur
+    - Aumenta l'abilità di tiro del giocatore
+    - Oyuncunun şut yeteneğini arttırır
+    - Aumenta a habilidade de lançamento do jogador
+    - УЛУЧШЕНИЕ ТОЧНОСТИ БРОСКА
+    - 增加球员的投球能力
+    Flags: 000000000000000000
+  - Term: DEFENSE UPGRADE DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Reduces opponent speed
+    - Reduce la velocidad del oponente
+    - Reduziert die Geschwindigkeit des Gegners
+    - Réduit la vitesse de l'adversaire
+    - Riduce la velocità dell'avversario
+    - Rakibin hızını azaltır
+    - Reduz a velocidade do adversário
+    - СНИЖЕНИЕ СКОРОСТИ ПРОТИВНИКА
+    - 减慢对手速度
+    Flags: 000000000000000000
+  - Term: UPGRADE COMPLETE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - UPGRADE COMPLETE!
+    - MEJORA COMPLETADA
+    - VERBESSERUNG ABGESCHLOSSEN
+    - MISE À NIVEAU COMPLÈTE
+    - FAI UN UPGRADE
+    - YÜKSELTME TAMAMLANDI
+    - UPGRADE COMPLETO
+    - УЛУЧШЕНИЕ ЗАВЕРШЕНО
+    - 升级完成
+    Flags: 000000000000000000
+  - Term: UPGRADE TIME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - UPGRADE TIME
+    - TIEMPO DE LA MEJORA
+    - ZEIT ZUR VERBESSERUNG
+    - MISE À NIVEAU DU TEMPS
+    - UPGRADE COMPLETO
+    - YÜKSELTME SÜRESİ
+    - TEMPO DE UPGRADE
+    - ДЛИТЕЛЬНОСТЬ УЛУЧШЕНИЯ
+    - 升级时间
+    Flags: 000000000000000000
+  - Term: REQUIRED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - REQUIRED
+    - NECESARIO
+    - BENÖTIGT
+    - REQUIS
+    - RICHIESTO
+    - GEREKLİ
+    - OBRIGATÓRIO
+    - НЕОБХОДИМО
+    - 必须
+    Flags: 000200000000000000
+  - Term: OUT OF SPORTS DRINKS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OUT OF SPORTS DRINKS
+    - SIN BEBIDAS DEPORTIVAS
+    - KEINE SPORTDRINKS MEHR
+    - IL N'Y A PLUS DE BOISSONS ÉNERGÉTIQUES
+    - BEVANDE SPORTIVE ESAURITE
+    - SPORCU İÇECEĞİ BİTTİ
+    - SEM BEBIDAS DESPORTIVAS
+    - ЗАКОНЧИЛИСЬ СПОРТИВНЫЕ НАПИТКИ
+    - 运动饮料喝完了
+    Flags: 000000000000000000
+  - Term: GET MORE GOLD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GET MORE GOLD
+    - CONSEGUIR MÁS ORO
+    - HOL DIR MEHR GOLD
+    - OBTENEZ PLUS D'OR
+    - OTTIENI PIÙ ORO
+    - DAHA FAZLA ALTIN AL
+    - CONSIGA MAIS OURO
+    - ПОЛУЧИТЬ БОЛЬШЕ ЗОЛОТА
+    - 获得更多金币
+    Flags: 000000000000000000
+  - Term: YOU HAVE PURCHASED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOU HAVE PURCHASED
+    - HAS ADQUIRIDO
+    - 'DU HAST GEKAUFT:'
+    - VOUS AVEZ ACHETÉ
+    - HAI ACQUISTATO
+    - 'ŞUNU SATIN ALDIN:'
+    - COMPROU
+    - ТЫ ПРИОБРЕЛ
+    - 您已购买
+    Flags: 000000000000000000
+  - Term: YOU EARNED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOU EARNED
+    - HAS GANADO
+    - 'DU HAST DIR VERDIENT:'
+    - VOUS AVEZ OBTENU
+    - HAI GUADAGNATO
+    - 'ŞUNU KAZANDIN:'
+    - GANHOU
+    - ТЫ ЗАРАБОТАЛ
+    - 您已挣得
+    Flags: 000000000000000000
+  - Term: SUCCESS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SUCCESS!
+    - ¡GENIAL!
+    - ERFOLG!
+    - SUCCÈS !
+    - SUCCESSO!
+    - BAŞARI!
+    - ÊXITO!
+    - УСПЕШНО!
+    - 成功
+    Flags: 000000000000000000
+  - Term: I'M IMPRESSED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - I'M IMPRESSED!
+    - ¡ESTOY IMPRESIONADO!
+    - ICH BIN BEEINDRUCKT!
+    - IMPRESSIONNANT !
+    - STRAORDINARIO!
+    - ETKİLENDİM!
+    - ESTOU IMPRESSIONADO!
+    - ВПЕЧАТЛЯЕТ!
+    - 我很佩服！
+    Flags: 000200000000000000
+  - Term: LETS SEE YOUR DEFENSE IN A SCRIMMAGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Let's see your defense in a scrimmage...
+    - Veamos tu defensa en una disputa...
+    - Schauen wir uns deine verteidigung in einem trainingsspiel an
+    - Voyons votre défense dans un match d'entraînement...
+    - Vediamo la tua difesa nella mischia…
+    - Bi̇r hazirlik maçindaki̇ saldirini göreli̇m...
+    - Vamos ver a sua defesa numa scrimmage...
+    - ТРЕНИРОВОЧНАЯ ИГРА ДЛЯ ПРОВЕРКИ НАВЫКА ЗАЩИТЫ
+    - 让我们看一看你在练习比赛中的防守
+    Flags: 000000000000000000
+  - Term: STAY IN FRONT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Stay in front of your opponent
+    - Colócate enfrente de tu oponente
+    - Bleibe vor deinem gegner
+    - Restez devant votre adversaire
+    - Stai di fronte all'avversario
+    - Raki̇bi̇ni̇n önünde kal
+    - Fique em frente ao seu adversário
+    - Оставайся напротив противника
+    - 保持在对手前方
+    Flags: 000000000000000000
+  - Term: JUMP TO BLOCK SHOTS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Jump to block shots
+    - Salta para bloquear los tiros
+    - Spring, um würfe zu blocken
+    - Sautez pour bloquer les tirs
+    - Salta per bloccare I tiri
+    - Şutlari engellemek İçİn siçra
+    - Salte para bloquear lançamentos
+    - Прыгай, чтобы блокировать броски
+    - 跳起来封锁对方投球
+    Flags: 000000000000000000
+  - Term: HOLD DOWN RIGHT THUMB TO JUMP
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Tap right thumb to jump
+    - Mantén el pulgar derecho presionado para saltar
+    - Halte mit dem rechten daumen gedrückt, um zu springen
+    - Maintenez le pouce droit appuyé pour sauter
+    - Tieni premuto il pollice destro per saltare
+    - Siçramak İçİn sağ baş parmağini basili tut
+    - Mantenha o polegar direito para baixo para saltar
+    - Удерживай большой палец правой руки для прыжка
+    - 长按右边拇指来跳跃
+    Flags: 000000000000000000
+  - Term: HOLD DOWN RIGHT THUMB TO SHOOT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Hold down right thumb to shoot
+    - Mantén el pulgar derecho presionado para disparar
+    - Halte mit dem rechten daumen gedrückt, um zu werfen
+    - Maintenez le pouce droit appuyé pour tirer
+    - Tieni premuto il pollice destro per tirare
+    - Şut çekmek İçİn sağ baş parmağini basili tut
+    - Mantenha o polegar direito para baixo para lançar
+    - Удерживай большой палец правой руки для броска
+    - 长按右边拇指来投球
+    Flags: 000000000000000000
+  - Term: 'TIP: GO UNDER HOOP TO SHOOT A LAYUP'
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Get a running start to dunk!
+    - 'Consejo: sitúate bajo el aro para una dejada'
+    - 'Tip: gehe unter den korb, um einen layup auszuführen'
+    - 'Astuce : placez-vous sous le cerceau pour tirer un lay-up'
+    - 'Trucco: vai sotto il canestro per tirare un layup'
+    - 'İpucu: turni̇ke yapmak İçİn potanin altina gi̇t'
+    - 'Dica: vá para debaixo do cesto para lançar um lay-up'
+    - 'Совет: встань под кольцом, чтобы выполнить двухочковый бросок'
+    - 到篮筐下来带球上篮
+    Flags: 000000000000000000
+  - Term: 'TIP: RELEASE AFTER PEAK OF JUMP'
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 'Tip: Release after peak of jump'
+    - 'Consejo: suelta cuando llegues a lo más alto del salto'
+    - 'Tip: lass nach dem sprunghöhepunkt los'
+    - 'Astuce : relâchez après le pic du saut'
+    - 'Consiglio: lascia dopo il picco del salto'
+    - 'İpucu: zi̇rveye siçradiktan sonra serbest birak'
+    - 'Dica: liberte depois do pico de salto'
+    - Отпусти мяч at peak
+    - 跳跃到最高处后松开
+    Flags: 000000000000000000
+  - Term: YOU WILL MOVE SLOW
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You will move slow and miss shots when your energy bar is low
+    - Te moverás lentamente y fallarás tiros cuando tu barra de energía esté en bajo
+    - Wenn deine energieleiste niedrig ist, wirst du dich langsam bewegen und würfe verpassen
+    - Vous avancez lentement et manquez vos tirs quand votre barre d'énergie est basse
+    - Quando la barra dell'energia è vuota diventi lento e sbagli I tiri
+    - Enerji̇ çubuğun düşük olduğunda yavaş hareket eder ve şutlari kaçirirsin
+    - Vai mover-se devagar e falhar lançamentos quando a sua energia estiver em baixo
+    - При низком уровне энергии ты будешь двигаться медленее и бросать мимо
+    - 当你的能量栏很低时，你将移动缓慢并错失投篮机会
+    Flags: 000000000000000000
+  - Term: YOU CAN ONLY CALL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You can only call timeouts when you have the ball
+    - Sólo puedes pedir tiempo muerto cuando tengas la pelota
+    - Du kannst nur eine auszeit nehmen, wenn du den ball hast
+    - Vous pouvez prendre des temps-morts uniquement si le ballon est en votre possession
+    - Puoi chiamare il timeout solo quando hai la palla
+    - Sadece top sende olduğunda mola verebi̇li̇rsi̇n
+    - Pode apenas pedir tempos técnicos quando tiver posse de bola
+    - Ты можешь запросить тайм-аут, если владеешь мячом
+    - 只有当球在你手中时才可以要求赛间暂停
+    Flags: 000000000000000000
+  - Term: YOU ARE OUT OF
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You are out of timeouts
+    - NO DISPONES DE
+    - DIR FEHLT ES AN
+    - VOUS N'AVEZ PLUS DE
+    - TU SEI FUORI DA
+    - 'ŞUNUN DIŞINDASIN:'
+    - ESTÁ SEM
+    - ТЫ ИЗ
+    - 你的赛间暂停机会已经用完
+    Flags: 000000000000000000
+  - Term: SWAP IN YOUR BACKUP
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SWAP IN YOUR BACKUP WHEN YOU GET DEHYDRATED
+    - REALIZA SUSTITUCIONES CUANDO TE QUEDES DESHIDRATADO
+    - WECHSLE DEINEN AUSWECHSELSPIELER EIN, WENN DU DEHYDRIERT WIRST
+    - EN CAS DE DÉSHYDRATATION, FAITES ENTRER VOTRE REMPLAÇANT
+    - SOSTITUISCI CON LE RISERVE QUANDO SEI DISIDRATATO
+    - SIVISIZ KALDIĞINDA YEDEĞİNİ GETİR
+    - SUBSTITUA POR UM SUPLENTE QUANDO FICAR DESIDRATADO
+    - ВОСПОЛЬЗУЙСЯ ЗАМЕНОЙ, КОГДА ИСПЫТЫВАЕШЬ ЖАЖДУ
+    - 当你脱水时，请替换后备球员上场
+    Flags: 000000000000000000
+  - Term: YOUR ENERGY WILL NOT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Your energy will not recharge if you are dehydrated
+    - Tu energía no se recargará si estás deshidratado
+    - Deine energie wird sich nicht wieder aufladen, wenn du dehydriert bist
+    - Votre énergie ne se recharge pas si vous êtes déshydraté
+    - Se sei disidratato non ti ricaricherai di energia
+    - Sivisiz kalirsan enerji̇n yeni̇den dolmaz
+    - A sua energia não vai recarregar se estiver desidratado
+    - Энергия не восстанавливается, если ты испытываешь жажду
+    - 如果你处于脱水状态，你的能量不会重新恢复
+    Flags: 000000000000000000
+  - Term: SCORE 3S BY SHOOTING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Score 3's by shooting from behind the arc
+    - Anotas triples cuando tiras detrás del arco
+    - Erziele 3 punkte, indem du von hinter der roten linie wirfst
+    - Marquez un trois points en tirant derrière la ligne
+    - Segna 3 punti tirando da dietro l'arco
+    - Kirmizi yayin arkasindan şut çekerek üç sayi yap
+    - Marque 3 pontos ao lançar atrás do arco vermelho
+    - Заработай 3 очка за бросок из-за красной линии
+    - 在红色弧线之后投球，有机会投入3’S球
+    Flags: 000000000000000000
+  - Term: RECHARGE YOUR ENERGY BY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Recharge your energy by standing still without the ball
+    - Recargas tu energía quedándote quieto sin el balón
+    - Lade deine energie auf, indem du ohne ball stillstehst
+    - Rechargez votre énergie en restant immobiles sans le ballon
+    - Ricaricati di energia restando immobile senza la palla
+    - Top olmadan hareketsi̇z durarak enerji̇ni̇ doldur
+    - Recarregue a sua energia ao ficar parado sem a bola
+    - Для восстановления энергии стой неподвижно без мяча
+    - 站稳不动并且手上没有球时，可以重新恢复能量
+    Flags: 000000000000000000
+  - Term: HIT LAYUPS BY SHOOTING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Hit layups by shooting from under the hoop
+    - Realiza dejadas tirando debajo del aro
+    - Führe layups aus, indem du unter dem korb stehst und wirfst
+    - Faites des lay-up en tirant sous le cerceau
+    - Fai un layup tirando da sotto il canestro
+    - Potanin altindan şut çekerek turni̇ke yap
+    - Consiga lay-ups ao atirar por debaixo do cesto
+    - Бросай двухочковые из-под кольца
+    - 在球篮下方投球，带球上篮
+    Flags: 000000000000000000
+  - Term: PUMP FAKE BY QUICKLY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Pump fake by quickly tapping shoot
+    - Realizas amagos pulsando disparar brevemente
+    - Führe durch schnelles antippen von wurf einen pump fake durch
+    - Faire une feinte de tir en appuyant rapidement sur tirer
+    - Fai un tiro con finta toccando rapidamente
+    - Şuta hizlica dokunarak feyk at
+    - Faça um falso lançamento ao tocar em lançar rapidamente
+    - Выполни быстрый бросок после обманного маневра
+    - 快速点击投球可以做投篮假动作
+    Flags: 000000000000000000
+  - Term: YOU CAN STEAL THE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Run into your opponent to steal the ball when it is blinking
+    - Puedes robarle el balón a un rival cansado si tienes tu energía completa
+    - Du kannst den ball von einem müden gegner stehlen, wenn du volle energie hast
+    - Vous pouvez voler le ballon à un adversaire fatigué si vous avez plein d'énergie
+    - Se hai il pieno di energie puoi rubare la palla a un avversario stanco
+    - Enerji̇n tam doluysa yorgun bi̇r raki̇pten top çalabi̇li̇rsi̇n
+    - Pode roubar a bola a um adversário cansado se tiver energia completa
+    - Ты можешь отнять мяч у уставшего противника, если у тебя полный заряд энергии
+    - 如果对手很累但是你不累，你可以撞向对手来夺球
+    Flags: 000000000000000000
+  - Term: YOU CANT MOVE BECAUSE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You can't move because you already used your dribble
+    - No te puedes mover porque ya has usado tu drible
+    - Du kannst dich nicht bewegen, weil du bereits dribble verwendet hast
+    - Vous ne pouvez plus bouger parce que vous avez déjà fait votre dribble
+    - Non puoi muoverti perché hai già usato il tuo dribbling
+    - Hareket edemezsi̇n, çünkü zaten dri̇pli̇ngi̇ni̇ kullandin
+    - Não pode mover-se mais porque já usou o seu drible
+    - Ты не можешь двигаться, потому что уже использовал свое право на дриблинг
+    - 你无法移动，因为你已经使用了运球
+    Flags: 000000000000000000
+  - Term: YOUR REWARD HAS BEEN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOUR REWARD HAS BEEN DOUBLED!
+    - ¡TU RECOMPENSA SE HA DUPLICADO!
+    - DEINE BELOHNUNG WURDE VERDOPPELT!
+    - VOUS AVEZ REÇU UNE DOUBLE RÉCOMPENSE !
+    - LA TUA RICOMPENSA È STATA RADDOPPIATA
+    - ÖDÜLÜN İKİYE KATLANDI!
+    - A SUA RECOMPENSA FOI DUPLICADA!
+    - НАГРАДА УВЕЛИЧЕНА В 2 РАЗА!
+    - 你的奖励已经加倍！
+    Flags: 000000000000000000
+  - Term: OK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OK
+    - OK
+    - OKAY
+    - VALIDER
+    - OK
+    - TAMAM
+    - OK
+    - ОК
+    - 好
+    Flags: 000000000000000000
+  - Term: WATCH VIDEO
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WATCH VIDEO
+    - VER VÍDEO
+    - VIDEO ANSEHEN
+    - VISIONNEZ LA VIDÉO
+    - GUARDA VIDEO
+    - VİDEO İZLE
+    - ASSISTA AO VÍDEO
+    - ПОСМОТРЕТЬ ВИДЕО
+    - 观看视频
+    Flags: 000000000000000000
+  - Term: 20 MORE FREE
+    TermType: 0
+    Description:
+    Languages:
+    - 20% MORE
+    - 20% MÁS
+    - '20% MEHR '
+    - 'BONUS DE 20 % '
+    - 20% IN PIÙ
+    - 
+    - 'MAIS 20% '
+    - + 25%
+    - 
+    Languages_Touch:
+    - 20% BONUS
+    - 20% MÁS
+    - '20% MEHR '
+    - BONUS DE 20 %
+    - 20% IN PIÙ
+    - '%20 DAHA UCUZ'
+    - 'MAIS 20% '
+    - + 20%
+    - 20%更多免费
+    Flags: 000000000000000000
+  - Term: 25 MORE FREE
+    TermType: 0
+    Description:
+    Languages:
+    - 25% MORE
+    - 25% MÁS
+    - '25% MEHR '
+    - 'BONUS DE 25 % '
+    - 25% IN PIÙ
+    - 
+    - 'MAIS 25% '
+    - + 25%
+    - 
+    Languages_Touch:
+    - 25% BONUS
+    - 25% MÁS
+    - '25% MEHR '
+    - 'BONUS DE 25 % '
+    - 25% IN PIÙ
+    - '%25 DAHA UCUZ'
+    - MAIS 25%
+    - + 20%
+    - 25%更多免费
+    Flags: 000000000000000000
+  - Term: 33 MORE FREE
+    TermType: 0
+    Description:
+    Languages:
+    - 33% MORE
+    - 33% MÁS
+    - '33% MEHR '
+    - 'BONUS DE 33 % '
+    - 33% IN PIÙ
+    - 
+    - 'MAIS 33% '
+    - + 33%
+    - 
+    Languages_Touch:
+    - 33% BONUS
+    - 33% MÁS
+    - '33% MEHR '
+    - BONUS DE 33 %
+    - 33% IN PIÙ
+    - '%33 DAHA UCUZ'
+    - MAIS 33%
+    - + 33%
+    - 33%更多免费
+    Flags: 000000000000000000
+  - Term: 60 MORE FREE
+    TermType: 0
+    Description:
+    Languages:
+    - 60% MORE
+    - 60% MÁS
+    - '60% MEHR '
+    - BONUS DE 60%
+    - 60% IN PIÙ
+    - 
+    - 'MAIS 60% '
+    - + 60%
+    - 
+    Languages_Touch:
+    - 60% BONUS
+    - 60% MÁS
+    - '60% MEHR '
+    - BONUS DE 60 %
+    - 60% IN PIÙ
+    - '%60 DAHA UCUZ'
+    - MAIS 60%
+    - + 60%
+    - 60%更多免费
+    Flags: 000000000000000000
+  - Term: NEW
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - NEW
+    - NUEVO
+    - NEU
+    - NOUVEAU
+    - NUOVO
+    - YENİ
+    - NOVO
+    - НОВЫЙ
+    - 新的
+    Flags: 000200000000000000
+  - Term: YOUR {PLAYER} UPGRADE IS FINISHED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Your {PLAYER} upgrade is finished.
+    - Lo mejora de {PLAYER} se completó
+    - Deine {PLAYER}-verbesserung ist fertig
+    - Mise à niveau de {PLAYER} terminée
+    - L'upgrade del tuo giocatore è terminato - {PLAYER}
+    - '{PLAYER} oyuncunun güncellenmesi̇ tamamlandi'
+    - O upgrade do seu {PLAYER} terminou
+    - Улучшение игрока {PLAYER} завершено
+    - 你的{PLAYER} 升级已完成
+    Flags: 000000000000000000
+  - Term: YOU GOT A TEAM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOU GOT A TEAM!
+    - ¡TIENES UN EQUIPO!
+    - DU HAST EIN TEAM ERHALTEN!
+    - L'ÉQUIPE EST FORMÉE !
+    - HAI OTTENUTO UNA SQUADRA!
+    - BİR TAKIM ALDIN!
+    - CONSEGUIU UMA EQUIPA!
+    - ТЕПЕРЬ У ТЕБЯ ЕСТЬ КОМАНДА!
+    - 你组成了团队！
+    Flags: 000000000000000000
+  - Term: SIGN NEW PLAYER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SIGN NEW PLAYER
+    - FICHAR NUEVO JUGADOR
+    - NEUEN SPIELER VERPFLICHTEN
+    - ENGAGEZ UN NOUVEAU JOUEUR
+    - INGAGGIA UN NUOVO GIOCATORE
+    - YENİ OYUNCU AL
+    - CONTRATAR NOVO JOGADOR
+    - НАЗНАЧИТЬ НОВОГО ИГРОКА
+    - 指定新球员
+    Flags: 000000000000000000
+  - Term: SIGN A STARTER TO TEAM UP WITH JOE HOPKINS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Sign a STARTER to team up with JOE HOPKINS.
+    - Ficha un titular para formar equipo con JOE HOPKINS.
+    - Verpflichte einen spieler, der sich mit JOE HOPKINS zusammentun soll
+    - Engagez un joueur libre pour faire équipe avec JOE HOPKINS.
+    - Ingaggia un titolare per fare squadra con JOE HOPKINS.
+    - JOE HOPKINS  İle bi̇rli̇kte çalişmasi İçİn bi̇r hakem al
+    - Contrate um titular para fazer equipa com JOE HOPKINS.
+    - Назначить игрока стартового состава, чтобы играть с джо хопкинсом.
+    - 指定一名上场球员来和乔·霍普金斯搭档。
+    Flags: 000000000000000000
+  - Term: THE COMPETITION WILL GET TOUGHER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - "The competition will get tougher as you enter more prestigious tournaments.\n\nSometimes you must upgrade your players to meet tournament standards."
+    - "Los partidos serán más dificiles a medida que entres en torneos más prestigiosos.\n\nA veces es necesario mejorar tus jugadores para cumplir con las normas del torneo."
+    - "Der wettbewerb wird härter, wenn du an angeseheneren turnieren teilnimmst. \n\nManchmal musst du spieler aufwerten, um den ansprüchen des turniers gerecht zu werden"
+    - "La compétition devient plus rude au fur et à mesure que vous participez à des tournois plus prestigieux. \n\nVous devez parfois mettre à niveau vos joueurs pour répondre aux normes du tournoi."
+    - "La competizione si fa più difficile man mano che partecipi a tornei più prestigiosi. \n\nA volte devi fare un upgrade dei tuoi giocatori per raggiungere gli standard del torneo."
+    - "Daha presti̇jli̇ turnuvalara gi̇rdi̇kçe rekabet daha da çeti̇n olacak. \n\nTurnuva standartlarini karşilamak İçİn bazen oyuncularini yükseltmen gereki̇r."
+    - "A competição vai ficar mais dura à medida em que entrar em torneios com mais prestígio. \n\nPor vezes, vai necessitar de melhorar os seus jogadores para corresponder aos padrões do torneio."
+    - Более престижные турниры требуют больших усилий. Иногда для соответствия требованиям турнира необходимо улучшать игроков
+    - "\"当你参加更多著名锦标赛后，竞争会越来越激烈。\n有时你必须升级你的球员以达到锦标赛标准。\""
+    Flags: 000000000000000000
+  - Term: YOUR TEAM STATS DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - "<i>CONTESTING:</i> Reduces your opponent’s shooting ability\n\n<i>SPEED:</i> Your ability to dribble past the defender\n\n<i>DEFENSE:</i> Reduces your opponent’s speed"
+    - "<i>DISPUTANDO</i>: Reduce la precisión de tiro de su rival\n\n<i>VELOCIDAD</i>: Su capacidad para pasar por la defensa\n\n<i>DEFENSA</i>: Reduce la capacidad del oponente Para superarlo"
+    - "<i>STÖREN</i>: Reduziert die wurfgenauigkeit deines gegners\n\n<i>GESCHWINDIGKEIT</i>: Deine fähigkeit an gegnern vorbeizuziehen\n\n<i>VERTEIDIGUNG</i>: Reduziert die fähigkeit deiner gegner, an dir vorbeizuziehen"
+    - "<i>NIVEAU DE COMPÉTITION</i> : Réduit le précision de tir de l'adversaire\n\n<i>VITESSE</i> : Votre capacité à passer un défenseur\n\n<i>DÉFENSE</i> : Réduit la capacité de pénétration de votre adversaire"
+    - "<i>CONTESTARE</i>: Riduce la precisione dei tiri del tuo avversario\n\n<i>VELOCITÀ</i>: La tua abilità nel  passare davanti all'avversario\n\n<i>DIFESA</i>: Riduce l'abilità del tuo avversario nel passarti davanti"
+    - "ÇEKİŞME: RAKİBİN ŞUT DOĞRULUĞUNU AZALTIR\n\nHIZ: DEFANS OYUNCUSUNU GEÇME YETENEĞİ\n\nDEFANS: RAKİBİNİN SENİ GEÇME YETENEĞİNİ AZALTIR"
+    - "DISPUTAR: Reduz a precisão de lançamento do seu adversário\n\nVELOCIDADE: A sua habilidade de passar pelos defesas\n\nDEFESA: Reduz a habilidade dos seus adversários \nDe passar por si"
+    - "СОРЕВНОВАНИЕ: СОКРАЩАЕТ ТОЧНОСТЬ БРОСКА ПРОТИВНИКА\n\nСКОРОСТЬ: ТВОЯ СПОСОБНОСТЬ ОБОЙТИ ЗАЩИТУ\n\nЗАЩИТА: СОКРАЩАЕТ СПОСОБНОСТЬ \nПРОТИВНИКА ОБОЙТИ ТВОЮ ЗАЩИТУ"
+    - "拦截：降低对手投球精准度\n\n速度：你突破防守员的能力　\n\n防守：降低对手突破你防守的能力"
+    Flags: 000000000000000000
+  - Term: STARTING SOON
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - STARTING SOON
+    - COMIENZA EN BREVE
+    - BEGINNT BALD
+    - COMMENCE BIENTÔT
+    - INIZIERÀ TRA POCO
+    - YAKINDA BAŞLIYOR
+    - COMEÇA EM BREVE
+    - СКОРО НАЧНЕТСЯ
+    - 即将开始
+    Flags: 000000000000000000
+  - Term: THIS TOURNAMENT WILL START
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - "This tournament will start soon.\n\nLet's enter another tournament while we wait."
+    - "Este torneo empezará pronto.\n\nVamos a entrar en otro torneo mientras esperamos."
+    - "Dieses turnier wird bald beginnen.\n\nNehmen wir an einem weiteren turnier teil, wärend wir warten"
+    - "Ce tournoi va commencer prochainement.\n\nParticipons à un autre tournoi en attendant."
+    - "Questo torneo inizierà tra poco.\n\nNel frattempo partecipiamo a un altro torneo."
+    - "Bu turnuva yakinda başlayacak\n\nHaydi̇ beklerken başka turnuvaya gi̇reli̇m."
+    - "Este torneio começará em breve.\n\nEntremos noutro torneio enquanto esperamos."
+    - "Этот турнир скоро начнется\n\nПока мы ждем, давай поучаствуем в другом турнире."
+    - "\"这场锦标赛即将开始。\n在我们等待时，先参加另一场锦标赛吧。\""
+    Flags: 000000000000000000
+  - Term: YOU GOT A TEAM DESC
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - "I can't wait to help you get team {TEAM_NAME} to a championship!\n\nI entered us into the biggest tournament in MINNESOTA!"
+    - "¡no puedo esperar para ayudarle a llevar el equipo {TEAM_NAME} a un campeonato!\n\n¡nosotros vamos a 'MINNESOTA STARS', el torneo más grande en el estado!"
+    - "Ich kann es kaum abwarten, deinem team {TEAM_NAME} zu helfen, eine meisterschaft zu gewinnen!\n\nWir nehmen am 'MINNESOTA STARS' teil, dem wichtigsten turnier im bundesstaat! "
+    - "J'ai hâte d'aider l'équipe {TEAM_NAME} à gagner le championnat !\n\nNous participons à 'MINNESOTA stars', le plus grand tournois de tout l'état !"
+    - "Non vedo l'ora di avere una squadra {TEAM_NAME} per un campionato!\n\nCi siamo iscritti al 'MINNESOTA stars', il più grande torneo dello stato!"
+    - "{TEAM_NAME} takimini şampi̇yonluğa ulaştirmanda sana yardim etmek İçİn sabirsizlaniyorum!\n\nÜlkedeki̇ en büyük turnuva olan 'MINNESOTA stars' turnuvasina gi̇rdi̇k!"
+    - "Mal consigo esperar para ganhar um campeonado com a equipa {TEAM_NAME}!\n\nEntrámos no 'MINNESOTA stars', o maior torneio do estado!"
+    - "НЕ ТЕРПИТСЯ НАЧАТЬ ТРЕНИРОВКИ, ЧТОБЫ ТВОЯ КОМАНДА {TEAM_NAME} СТАЛА ЧЕМПИОНОМ!\n\nМЫ УЧАСТВУЕМ В КРУПНЕЙШЕМ ТУРНИРЕ ШТАТА — MINNESOTA STARS!"
+    - "\"我等不及要帮助你让 {TEAM_NAME}队伍参加冠军赛了！\n我们已进入“明尼苏达明星”，这个州最重大的锦标赛！\""
+    Flags: 000000000000000000
+  - Term: TUFF LOSS!
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LET'S TRY AGAIN!
+    - ¡BUEN INTENTO!
+    - GUTER VERSUCH!
+    - ESSAYONS ENCORE!
+    - PROVIAMO DI NUOVO!
+    - TEKRAR DENEYELİM!
+    - VAMOS TENTAR DE NOVO!
+    - ХОРОШАЯ ПОПЫТКА!
+    - 让我们再试一次！
+    Flags: 000000000000000000
+  - Term: NICE JOB
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - NICE JOB
+    - BUEN TRABAJO
+    - GUT GEMACHT
+    - BEAU TRAVAIL
+    - BEL LAVORO
+    - İYİ İŞ ÇIKARDIN
+    - BOM TRABALHO
+    - ОТЛИЧНО
+    - 做得很棒
+    Flags: 000200000000000000
+  - Term: THANKS FOR WATCHING!
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - THANKS FOR WATCHING!
+    - ¡GRACIAS POR VER!
+    - DANKE FÜRS ZUSCHAUEN!
+    - MERCI POUR LE VISIONNAGE !
+    - GRAZIE PER L'ATTENZIONE!
+    - İZLEDİĞİN İÇİN TEŞEKKÜRLER!
+    - OBRIGADO POR ASSISTIR!
+    - БЛАГОДАРИМ ЗА ПРОСМОТР!
+    - 感谢收看
+    Flags: 000200000000000000
+  - Term: REWARD RECEIVED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Reward received!
+    - Recompensa recibida
+    - Belohnung erhalten
+    - Récompense reçue
+    - Ricompense ricevute
+    - Alinan ödül
+    - Recompensa recebida
+    - Награда получена
+    - 已收到奖励
+    Flags: 000200000000000000
+  - Term: GREAT GAME!
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GREAT GAME!
+    - ¡BUEN PARTIDO!
+    - TOLLES SPIEL!
+    - TRÈS BIEN JOUÉ !
+    - PARTITA FANTASTICA!
+    - HARİKA OYUN!
+    - GRANDE JOGO!
+    - ОТЛИЧНАЯ ИГРА!
+    - 了不起的比赛！
+    Flags: 000000000000000000
+  - Term: HERE IS A REWARD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 'Here is a reward to help with our next game...        '
+    - Aquí tienes una recompensa para ayudarte en tu próximo partido.
+    - Hier ist eine belohnung, um dir im nächsten spiel zu helfen
+    - Voici une récompense pour vous aider à remporter le prochain match.
+    - Ecco un premio per aiutarti nella prossima partita.
+    - İşte sonraki̇ oyununda sana yardimci olacak bi̇r ödül.
+    - Aqui está uma recompensa para o ajudar com o próximo jogo.
+    - А вот и награда — используй ее для следующей игры.
+    - 这是一个奖励，帮你进行下一场比赛。
+    Flags: 000000000000000000
+  - Term: GET IT BY WATCHING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - '  '
+    - '  '
+    - '  '
+    - '  '
+    - '  '
+    - ' '
+    - '   '
+    - '  '
+    - '  '
+    Flags: 000000000000000000
+  - Term: WATCH A VIDEO
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WATCH A VIDEO
+    - VER UN VÍDEO
+    - SCHAUE EIN VIDEO
+    - VISIONNEZ UNE VIDÉO
+    - GUARDA UN VIDEO
+    - BİR VİDEO İZLE
+    - ASSISTA A UM VÍDEO
+    - ПОСМОТРЕТЬ ВИДЕО
+    - 观看视频
+    Flags: 000000000000000000
+  - Term: NOT ENOUGH CASH
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - NOT ENOUGH CASH
+    - NO TIENES SUFICIENTE DINERO
+    - NICHT GENUG GELD
+    - PAS ASSEZ D'ARGENT
+    - SOLDI INSUFFICIENTI
+    - YETERLİ NAKİT YOK
+    - NÃO TEM DINHEIRO SUFICIENTE
+    - НЕДОСТАТОЧНО НАЛИЧНЫХ
+    - 现金不足
+    Flags: 000000000000000000
+  - Term: EXCHANGE GOLD FOR LACKING CASH
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - EXCHANGE GOLD FOR LACKING CASH
+    - INTERCAMBIAR ORO POR EL DINERO QUE FALTA
+    - GOLD FÜR MANGELNDES GELD EINTAUSCHEN
+    - ÉCHANGER DE L'OR CONTRE DE L'ARGENT
+    - SCAMBIA L'ORO CON I SOLDI MANCANTI
+    - EKSİK NAKİT İÇİN ALTIN BOZDUR
+    - TROCAR OURO POR DINHEIRO EM FALTA
+    - ОБМЕНЯТЬ ЗОЛОТО НА НАЛИЧНЫЕ
+    - 用金币换取缺少的现金
+    Flags: 000000000000000000
+  - Term: USE LEFT THUMB TO MOVE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Use left thumb to move
+    - Usa el pulgar izquierdo para moverte
+    - Benutze den linken daumen, um dich zu bewegen
+    - Utilisez le pouce gauche pour bouger
+    - Usa il pollice sinistro per muoverti
+    - Hareket etti̇rmek İçİn sol baş parmağini kullan
+    - Use o polegar esquerdo para mover
+    - Используй большой палец левой руки для передвижения
+    - 使用左边拇指来移动
+    Flags: 000000000000000000
+  - Term: FIRST TO 12 POINTS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - FIRST TO 11 PTS
+    - FIRST TO 11 PTS
+    - ZUERST BEI 11 PUNKTEN
+    - FIRST TO 11 PTS
+    - PRIMO A 11 PUNTI
+    - ÖNCE 11 PUANA
+    - PRIMEIRO A MARCAR 11
+    - До 11 очков
+    - FIRST TO 11 PTS
+    Flags: 000000000000000000
+  - Term: RECEIVED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RECEIVED
+    - RECIBIDO
+    - ERHALTEN
+    - REÇUS
+    - RICEVUTI
+    - ALINDI
+    - RECEBIDO
+    - ПОЛУЧЕНО
+    - 已获得
+    Flags: 000200000000000000
+  - Term: SALE!
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SALE!
+    - ¡OFERTA!
+    - VERKAUF!
+    - VENTE !
+    - VENDITA!
+    - SATIŞ!
+    - SALDOS!
+    - РАСПРОДАЖА!
+    - 折扣！
+    Flags: 000000000000000000
+  - Term: PLAY 2ND HALF
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PLAY 2ND HALF
+    - JUGAR SEGUNDA MITAD
+    - 2TE HÄLFTE SPIELEN
+    - JOUER LA 2E MI-TEMPS
+    - GIOCA LA SECONDA METÀ
+    - 2. DEVREYİ OYNA
+    - JOGAR 2ª PARTE
+    - ИГРАТЬ 2-Й ТАЙМ
+    - 玩下半场
+    Flags: 000200000000000000
+  - Term: UPGRADE YOUR PLAYERS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - UPGRADE YOUR PLAYERS
+    - MEJORAR TUS JUGADORES
+    - VERBESSERE DEINE SPIELER
+    - MISES À NIVEAU DE VOS JOUEURS
+    - TEMPO DI UPGRADE
+    - OYUNCULARINI YÜKSELT
+    - MELHORES OS SEUS JOGADORES
+    - УЛУЧШИ СВОИХ ИГРОКОВ
+    - 升级你的球员
+    Flags: 000000000000000000
+  - Term: SUCCESSFULLY PURCHASED ALL STAR PACKAGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SUCCESSFULLY PURCHASED ALL STAR PACKAGE
+    - COMPRADO CON ÉXITO TODO EL PAQUETE ESTRELLAS
+    - ERFOLGREICH ALL STAR PACKET GEKAUFT
+    - PACK ALL STAR ACHETÉ AVEC SUCCÈS
+    - HAI ACQUISTATO CON SUCCESSO IL PACCHETTO ALL STAR
+    - YILDIZLAR PAKETİ BAŞARIYLA SATIN ALINDI
+    - ÊXITO AO COMPRAR O PACOTE ALL STAR
+    - ТЫ УСПЕШНО ПРИОБРЕЛ ПАКЕТ ВСЕ ЗВЕЗДЫ
+    - 成功购买全民星包
+    Flags: 000200000000000000
+  - Term: SUCCESSFULLY PURCHASED SUPER STAR PACKAGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SUCCESSFULLY PURCHASED SUPER STAR PACKAGE
+    - COMPRADO CON ÉXITO EL PAQUETE SÚPER ESTRELLA
+    - ERFOLGREICH SUPERSTAR PAKET GEKAUT
+    - PACK SUPER STAR ACHETÉ AVEC SUCCÈS
+    - HAI ACQUISTATO CON SUCCESSO IL PACCHETTO SUPER STAR
+    - SÜPER STAR PAKETİ BAŞARIYLA SATIN ALINDI
+    - ÊXITO AO COMPRAR O PACOTE SUPER STAR
+    - ТЫ УСПЕШНО ПРИОБРЕЛ ПАКЕТ СУПЕРЗВЕЗДЫ
+    - 成功购买超级明星包
+    Flags: 000200000000000000
+  - Term: DEAL CLOSED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - DEAL CLOSED
+    - TRATO SE CERRÓ
+    - DEAL BEENDET
+    - OFFRE PÉRIMÉE
+    - AFFARE CONCLUSO
+    - SATIŞ KAPANDI
+    - ACORDO FECHADO
+    - СДЕЛКА ЗАКРЫТА
+    - 交易关闭
+    Flags: 000200000000000000
+  - Term: WIN CHAMPIONSHIPS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WIN CHAMPIONSHIPS
+    - CAMPEONATOS DE GANAR
+    - GEWINNE MEISTERSCHAFTEN
+    - GAGNEZ DES CHAMPIONNATS
+    - VINCERE I CAMPIONATI
+    - ŞAMPİYONLUKLARI KAZAN
+    - GANHE CAMPEONATOS
+    - ПОБЕДЫ В ЧЕМПИОНАТАХ
+    - 赢得冠军赛
+    Flags: 000200000000000000
+  - Term: PRESS TO JUMP
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PRESS TO JUMP
+    - PULSE PARA SALTAR
+    - ZUM SPRUNG DRÜCKEN
+    - APPUYEZ POUR SAUTER
+    - PREMI PER SALTARE
+    - SIÇRAMAK İÇİN BAS
+    - PRESSIONE PARA SALTAR
+    - НАЖМИ ДЛЯ ПРЫЖКА
+    - 点击跳跃
+    Flags: 020200000000000000
+  - Term: COMPETE NATIONWIDE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - COMPETE NATIONWIDE
+    - COMPETIR EN TODO EL PAÍS
+    - LANDESWEIT WETTSTREITEN
+    - PARTICIPER À UNE COMPÉTITION NATIONALE
+    - GAREGGIA IN TUTTO IL PAESE
+    - ÜLKE ÇAPINDA YARIŞ
+    - COMPETIR A NÍVEL NACIONAL
+    - НАЦИОНАЛЬНОЕ СОРЕВНОВАНИЕ
+    - 全国范围内竟竞赛
+    Flags: 000200000000000000
+  - Term: VS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - VS
+    - VS
+    - VS
+    - VS
+    - VS
+    - VS
+    - VS
+    - VS
+    - 对战
+    Flags: 000200000000000000
+  - Term: GOLD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GOLD
+    - ORO
+    - GOLD
+    - OR
+    - ORO
+    - ALTıN
+    - OURO
+    - ЗОЛОТО
+    - 金币
+    Flags: 020202020202020200
+  - Term: YOUR TEAM STATS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOUR TEAM STATS
+    - TUS ESTADÍSTICAS DE EQUIPO
+    - DEINE TEAMSTATS
+    - VOS STATISTIQUES D'ÉQUIPE
+    - STATISTICHE DELLA TUA SQUADRA
+    - TAKIM İSTATİSTİKLERİN
+    - ESTATÍSTICAS DA SUA EQUIPA
+    - СТАТИСТИКА ТВОЕЙ КОМАНДЫ
+    - 你的队伍统计数据
+    Flags: 000000000000000000
+  - Term: BAGS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BAGS
+    - PANTALÓN
+    - TASCHEN
+    - DES SACS
+    - BORSE
+    - ÇANTA
+    - BOLSAS
+    - МЕШКИ
+    - 包
+    Flags: 020202020202020200
+  - Term: WOMEN'S TOURNAMENT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WOMEN'S TOURNAMENT
+    - TORNEO FEMENINO
+    - DAMEN-TURNIER
+    - LE TOURNOI FÉMININ
+    - TORNEO FEMMINILE
+    - KADıNLARıN TURNUVA
+    - TORNEIO FEMININO
+    - ЖЕНСКИЙ ТУРНИР
+    - 女子锦标赛
+    Flags: 020202020202020200
+  - Term: SIGN A STARTER TO TEAM UP WITH TINA CLARK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Sign a STARTER to team up with TINA CLARK.
+    - Firmar un iniciado para formar un equipo con TINA CLARK.
+    - Verpflichte einen spieler, der sich mit TINA CLARK zusammentun soll
+    - Engagez un joueur libre pour faire équipe avec TINA CLARK.
+    - Ingaggia un titolare per fare squadra con TINA CLARK.
+    - TINA CLARK İle bi̇rli̇kte çalişmasi İçİn bi̇r hakem al
+    - Contrate um titular para fazer equipa com TINA CLARK.
+    - ПОДПИСАТЬ СТАРТЕР, ЧТОБЫ ОБЪЕДИНИТЬСЯ С ДЖО ХОПКИНСОМ.
+    - 指定一名上场球员来和蒂娜克拉克组队。
+    Flags: 000000000000000000
+  - Term: MEN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - MEN
+    - HOMBRES
+    - MÄNNER
+    - HOMMES
+    - UOMINI
+    - ERKEKLER
+    - HOMENS
+    - мужчины
+    - 男子
+    Flags: 020202020202020200
+  - Term: WOMEN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WOMEN
+    - MUJER
+    - FRAUEN
+    - FEMMES
+    - DONNE
+    - KADıNLAR
+    - MULHERES
+    - ЖЕНЩИНЫ
+    - 女子
+    Flags: 020200020202020200
+  - Term: STANDARD BAG
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - STANDARD BAG
+    - BOLSA ESTÁNDAR
+    - STANDARDBEUTEL
+    - SAC NORME
+    - BAG DI SERIE
+    - STANDART ÇANTA
+    - SACO DE PADRÃO
+    - МЕШОК
+    - 标准包
+    Flags: 020202020202020000
+  - Term: PREMIUM BAG
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PREMIUM BAG
+    - BOLSA DE PRIMA
+    - PREMIUM TASCHE
+    - SAC PREMIUM
+    - BORSA PREMIUM
+    - PRIM ÇANTA
+    - SACO DE PRÉMIO
+    - СУМКА ПРЕМИУМ
+    - 高级包
+    Flags: 020202020202020200
+  - Term: OPEN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OPEN
+    - ABIERTO
+    - ÖFFNEN
+    - OUVRIR
+    - APERTO
+    - AÇıK
+    - ABERTO
+    - ОТКРЫТЫЙ
+    - 开启
+    Flags: 020202020202020200
+  - Term: OPEN YOUR BAG
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OPEN YOUR BAG
+    - ABRIR SU BOLSA
+    - ÖFFNEN SIE IHRE TASCHE
+    - OUVRIR VOTRE SAC
+    - APRIRE LA BORSA
+    - ÇANTANı AÇMAK
+    - ABRIR SEU SACO
+    - ОТКРЫТЬ СУМКУ
+    - 开启你的包
+    Flags: 020202020202020200
+  - Term: COLLECT YOUR ITEMS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - COLLECT YOUR ITEMS!
+    - RECOGER SUS ARTÍCULOS!
+    - SAMMELN SIE IHRE EINZELTEILE!
+    - RECUEILLIR VOS ARTICLES!
+    - RACCOGLIERE I VOSTRI ARTICOLI!
+    - SENIN ÖĞELERI TOPLAMAK!
+    - RECOLHER SEUS ARTIGOS!
+    - СОБИРАТЬ СВОИ ВЕЩИ!
+    - 收集你的项目！
+    Flags: 020202020202020200
+  - Term: ONE MORE BAG
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ONE MORE BAG?
+    - UNA BOLSA MÁS?
+    - EINE WEITERE TASCHE
+    - UN SAC PLUS?
+    - ANCORA UNA BORSA?
+    - BIR DAHA ÇANTA?
+    - MAIS UM SACO?
+    - ЕЩЕ ОДИН МЕШОК?
+    - 还要一个包？
+    Flags: 000200020202020200
+  - Term: 20  DISCOUNT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 20% DISCOUNT
+    - 20% DE DESCUENTO
+    - 20% RABATT
+    - 20% DE RÉDUCTION
+    - 20% DI SCONTO
+    - '% 20 INDIRIM'
+    - 20% DE DESCONTO
+    - 20% СКИДКА
+    - 20%折扣
+    Flags: 020202020202020200
+  - Term: BONUS REWARD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - reward from our sponsor!
+    - PRIMA
+    - BELOHNUNGS
+    - RÉCOMPENSE EN PRIME
+    - PREMIO BONUS
+    - BONUS ÖDÜL
+    - RECOMPENSA BÔNUS
+    - БОНУС
+    - 额外奖励
+    Flags: 020002020202020000
+  - Term: ONLINE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ONLINE
+    - EN LÍNEA
+    - ONLINE
+    - EN LIGNE
+    - ON-LINE
+    - INTERNET ÜZERINDEN
+    - CONECTADOS
+    - ОНЛАЙН
+    - 在线
+    Flags: 020202020202020200
+  - Term: SPLIT SCREEN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SPLIT SCREEN
+    - PANTALLA DIVIDIDA
+    - GETEILTER BILDSCHIRM
+    - ÉCRAN DIVISÉ
+    - SCHERMO DIVISO
+    - BÖLÜNMÜŞ EKRAN
+    - TELA DIVIDIDA
+    - РАЗДЕЛЕННЫЙ ЭКРАН
+    - 分屏
+    Flags: 020202020202020200
+  - Term: COMING SOON
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - COMING SOON
+    - PRÓXIMAMENTE
+    - DEMNÄCHST
+    - ARRIVE BIENTÔT
+    - PROSSIMAMENTE
+    - PEK YAKıNDA
+    - EM BREVE
+    - СКОРО
+    - 即将推出
+    Flags: 020202020202020200
+  - Term: LOCAL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LOCAL SPLIT-SCREEN
+    - LOCAL SPLIT-SCREEN
+    - LOKAL
+    - LOCALE
+    - DEL POSTO
+    - YEREL
+    - LOCAL
+    - МЕСТНЫЙ
+    - 本地
+    Flags: 020202020202020200
+  - Term: PREMIUM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PREMIUM
+    - PRIMA
+    - PRÄMIE
+    - PRIME
+    - PREMIO
+    - ÖDÜL
+    - PRÊMIO
+    - ПРЕМИЯ
+    - 高级
+    Flags: 020202020202020200
+  - Term: RARE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RARE
+    - RARO
+    - SELTEN
+    - PEU FRÉQUENT
+    - RARO
+    - NADIR
+    - RARO
+    - РЕДКИЙ
+    - 稀有
+    Flags: 020202020202020200
+  - Term: 3 COOL ITEMS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 3 COOL ITEMS!
+    - 3 ARTÍCULOS FRESCOS
+    - 3 COOLE GEGENSTÄNDE
+    - 3 ARTICLES FRAIS
+    - 3 FANTASTICI OGGETTI
+    - 3 SERIN ÖĞE
+    - 3 ARTIGOS FRESCOS
+    - 3 ХОЛОДНЫЕ ДЕТАЛИ
+    - 3个超酷物品！
+    Flags: 000202020202020200
+  - Term: BLANK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ' '
+    - ' '
+    - ' '
+    - ' '
+    - ' '
+    - ' '
+    - ' '
+    - ' '
+    - 
+    Flags: 000000000000000000
+  - Term: WIN GOLD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WIN GOLD!
+    - GANAR EL ORO
+    - WIN GOLD
+    - GAGNANT L'OR
+    - ORO WIN
+    - KAZAN ALTıN
+    - GANHAR O OURO
+    - ВЫИГРАТЬ ЗОЛОТО
+    - 赢取金币！
+    Flags: 000202020202020200
+  - Term: EXIT GAME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - EXIT GAME
+    - SALIR DEL JUEGO
+    - SPIEL VERLASSEN
+    - QUITTER LE JEU
+    - GIOCO USCITA
+    - ÇıKıŞ OYUNU
+    - JOGO DE SAÍDA
+    - ВЫХОДА ИГРЫ
+    - 退出游戏
+    Flags: 020202020202020200
+  - Term: WOULD YOU LIKE TO EXIT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WOULD YOU LIKE TO EXIT?
+    - LE GUSTARÍA SALIR?
+    - MÖCHTEN SIE BEENDEN MÖCHTEN?
+    - SOUHAITEZ-VOUS QUITTER?
+    - VORRESTI USCIRE?
+    - ÇıKMAK ISTIYORUM?
+    - QUE GOSTARIA DE SAIR?
+    - ВЫ ХОТЕЛИ БЫ ВЫЙТИ?
+    - 你想要退出吗？
+    Flags: 000202020202020200
+  - Term: CANCEL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CANCEL
+    - CANCELAR
+    - ZURÜCK
+    - ANNULER
+    - ANNULLA
+    - IPTAL ETMEK
+    - CANCELAR
+    - ОТМЕНА
+    - 取消
+    Flags: 020200020202020200
+  - Term: EXIT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - EXIT
+    - SALIDA
+    - BEENDEN
+    - SORTIE
+    - USCITA
+    - ÇıKıŞ
+    - SAÍDA
+    - ВЫХОД
+    - 退出
+    Flags: 020200020202020200
+  - Term: STEALS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - STEALS
+    - ROBOS
+    - STEALS
+    - VOLE
+    - RUBA
+    - TOP ÇALMA
+    - ROUBOS DE BOLA
+    - ПЕРЕХВАТОВ
+    - 夺球次数
+    Flags: 020202020202020200
+  - Term: GET A RUNNING START TO DUNK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Get a running start to dunk
+    - Coger carrerilla para mojar
+    - Erhalten eine laufende start dunk
+    - Obtenir un bon départ de dunk
+    - Tirare in corsa per schiacciare
+    - Dunk çalışan bir başlangıç ​​olsun
+    - Saia correndo para enterrar
+    - Получить разбега замочить
+    - 获得快速启动来扣篮
+    Flags: 020202020002020200
+  - Term: YOU NEED FULL ENERGY TO STEEL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You need full energy to steal
+    - Se necesita energía total de acero
+    - Sie benötigen volle energie auf stahl
+    - Vous avez besoin plein d'énergie pour l'acier
+    - È il pieno di energie per rubare la palla
+    - Eğer çeliğe tam enerjiye ihtiyacı
+    - Você precisa de energia total para aço
+    - Вам нужна полная энергия для стали
+    - 你需要完整的能量来夺球
+    Flags: 000202020002020200
+  - Term: OPPONENT MUST BE IN RED TO STEEL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Opponent must be tired for you to steal the ball
+    - Oponente debe estar cansado PARA QUE robar el balón
+    - Gegner müssen müde für sie, den ball steal
+    - Adversaire doit être fatigué pour vous de la balle volons
+    - Avversario deve essere stanco PER FARVI rubare la palla
+    - Topu ÇALMAK İÇİN İÇİN DÜŞMANI YORGUN OLMALI
+    - ADVERSÁRIO deve estar cansado para você roubar A BOLA
+    - Противник должен быть устал для вас steal мяч
+    - 对手一定是累了给你偷球
+    Flags: 000202020002020200
+  - Term: CONSERVE YOUR ENERGY WHEN POSSIBLE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Conserve your energy when possible
+    - Conservar su energía cuando sea posible
+    - Sparen sie ihre energie, wenn möglich,
+    - Conserver votre énergie lorsque cela est possible
+    - Conservare la vostra energia quando possibile
+    - Mümkün olduğunda enerji tasarrufu
+    - Conservar a sua energia quando possível
+    - Сохранить свою энергию, когда это возможно
+    - 尽可能保存能量
+    Flags: 020202020202020200
+  - Term: JUMPING USES A LOT OF ENERGY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Jumping uses a lot of energy.
+    - Salto utiliza una gran cantidad de energía
+    - Springen verbraucht viel energie
+    - Saut utilise beaucoup d'énergie
+    - Saltare consuma un sacco di energia
+    - Atlama çok fazla enerji kullanır
+    - Salto utiliza uma grande quantidade de energia
+    - Прыжки использует много энергии
+    - 跳跃需要消耗很多能量
+    Flags: 020202020002020200
+  - Term: GETTING PAST THE DEFENDER USES A LOT OF ENERGY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Getting past the defender uses a lot of energy
+    - Conseguir más allá de la defensa utiliza una gran cantidad de energía
+    - Vorbei an der verteidiger immer verbraucht viel energie
+    - Obtenir passé le défenseur utilise beaucoup d'énergie
+    - Dribblare il difensore consuma molta energia
+    - Defans geçmiş alma çok fazla enerji kullanır
+    - Obter passado o defensor usa uma grande quantidade de energia
+    - Обходя защитника использует много энергии
+    - 突破防守员需要消耗很多能量
+    Flags: 020202020002020200
+  - Term: TIRED DEFENDERS ARE EASIER TO GET PAST
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Tired defenders are easier to get past
+    - Defensores cansados ​​son más fáciles de conseguir más allá
+    - Müde verteidiger sind leichter zu bekommen vergangenheit
+    - Défenseurs fatigués sont plus faciles à franchir
+    - I difensori stanchi sono più facili da superare
+    - Yorgun savunucuları geçmiş olsun kolay
+    - Defensores cansados ​​são mais fáceis de obter passado
+    - Уставших защитников легче пройти
+    - 疲劳的防守员更容易突破
+    Flags: 020202020002020200
+  - Term: THE BAR ABOVE YOUR HEAD IS YOUR ENERGY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - The bar above your head is your energy
+    - La barra por encima de su cabeza es su energía
+    - Die bar über dem kopf ist ihre energie
+    - La barre au-dessus de votre tête est votre énergie
+    - La barra sopra la testa è la tua energia
+    - Başınızın üstünde çubuk enerji
+    - A barra acima de sua cabeça é a sua energia
+    - Бар над головой ваша энергия
+    - 你头上的酒吧是你的能量
+    Flags: 020202020202020202
+  - Term: YOU NEED TO HOLD DOWN SHOOT LONGER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You need to hold down shoot longer!
+    - Que necesita para mantener bajos rodaje más largo
+    - Müssen sie schießen länger gedrückt halten
+    - Vous devez maintenir shoot plus
+    - È necessario tenere premuto il tiro più lungo
+    - Daha uzun sürgün basılı gerekir
+    - Você precisa segurar shoot mais
+    - Вам нужно удерживать стрелять дольше
+    - 你需要按住下拍摄时间更长
+    Flags: 000202020202020202
+  - Term: HEY THERE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - HEY!
+    - ¡OYE!
+    - HALLO!
+    - HEY!
+    - HEY!
+    - HEY!
+    - EI!
+    - ПРИВЕТ!
+    - 嘿！
+    Flags: 000202020202020202
+  - Term: YES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YES
+    - sí
+    - ja
+    - OUI
+    - sí
+    - Evet
+    - sim
+    - да
+    - 是
+    Flags: 000000000000000000
+  - Term: NO
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - NO
+    - NO
+    - Nein
+    - non
+    - no
+    - yok hayır
+    - não
+    - нет
+    - 没有
+    Flags: 000000000000000000
+  - Term: DO YOU LOVE THIS GAME
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Do you love this game?
+    - ¿te ama este juego?
+    - Lieben sie dieses spiel?
+    - Aimez-vous ce jeu?
+    - SI innamorerete di questo gioco?
+    - Do you love this game?
+    - Você ama este jogo?
+    - Вы любите эту игру?
+    - 你喜欢这个游戏吗？
+    Flags: 000000000000000000
+  - Term: COLLECT REWARDS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - COLLECT REWARDS
+    - RECIBIR RECOMPENSAS
+    - BELOHNUNGEN SAMMELN
+    - COLLECTEZ DES RÉCOMPENSES
+    - Raccogli i premi
+    - TAHVİLATI TOPLAYINIZ
+    - RECEBER RECOMPENSAS
+    - СОБИРАТЬ НАГРАДЫ
+    - 收集奖励
+    Flags: 000000000000000000
+  - Term: PRACTICE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PRACTICE
+    - PRÁCTICA
+    - PRAXIS
+    - PRATIQUE
+    - PRATICA
+    - UYGULAMA
+    - PRÁTICA
+    - ПРАКТИКА
+    - 实践
+    Flags: 000000000000000000
+  - Term: TIP
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TIP
+    - CONSEJO
+    - TIP
+    - ASTUCE
+    - TRUCCO
+    - İPUCU
+    - DICA
+    - СОВЕТ
+    - TIP
+    Flags: 000000000000000000
+  - Term: STEAL THE BALL WHEN IT IS BLINKING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    - Steal the ball when it is blinking
+    Flags: 000000000000000000
+  - Term: YOU CAN’T STEAL WHEN PLAYER IS SHOOTING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    - You can’t steal when opponent is shooting
+    Flags: 000000000000000000
+  - Term: POPULAR
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - POPULAR
+    - POPULAR
+    - BELIEBT
+    - POPULAIRE
+    - POPOLARE
+    - POPÜLER
+    - POPULAR
+    - ПОПУЛЯРНЫЙ
+    - 流行
+    Flags: 000000000000000000
+  - Term: REMOVE ADS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Remove Ads
+    - Quitar Anuncios
+    - Anzeigen Entfernen
+    - Supprimez La Pub
+    - Rimuovere Gli Annunci
+    - Reklamları Kaldırmak
+    - Remover Propagandas
+    - Убрать Рекламу
+    - 移除广告
+    Flags: 000000000000000000
+  - Term: SPECIAL OFFER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SPECIAL OFFER!
+    - ¡OFERTA ESPECIAL!
+    - SONDERANGEBOT!
+    - OFFRE SPÉCIALE!
+    - OFFERTA SPECIALE!
+    - ÖZEL TEKLİF!
+    - OFERTA ESPECIAL!
+    - СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ!
+    - 特价！
+    Flags: 000000000000000000
+  - Term: PURCHASE COMPLETE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PURCHASE COMPLETE!
+    - ¡COMPRA COMPLETADA!
+    - KAUF COMPLETE!
+    - COMPLET D'ACHAT!
+    - ACQUISTO COMPLETO!
+    - ALIM TAMAMLANDI!
+    - COMPRA COMPLETA!
+    - ПОКУПКА ПОЛНЫЙ!
+    - 购买完成！
+    Flags: 000000000000000000
+  - Term: YOU WILL NO LONGER GET ADVERTISEMENTS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOU Received 100 GOLD AND WILL NO LONGER GET POPUP ADS!
+    - USTED YA NO OBTENER ANUNCIOS
+    - Sie werden nicht mehr ADVERTISEMENTS GET
+    - VOUS PLUS GET PUBLICITÉS
+    - Non sarà più GET ANNUNCI
+    - SİZ ARTIK REKLAM KAZANACAK
+    - VOCÊ não terão mais ANÚNCIOS
+    - ВЫ НЕ БОЛЬШЕ НЕ ПОЛУЧИТЬ РЕКЛАМУ
+    - 你将不再获得ADVERTISEMENTS
+    Flags: 000000000000000000
+  - Term: BONUS OFFER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BONUS OFFER!
+    - Oferta de bono!
+    - Bonus-Angebot!
+    - OFFRE BONUS!
+    - BONUS OFFERTA!
+    - BONUS TEKLİF!
+    - Oferta de bônus!
+    - BONUS ПРЕДЛОЖЕНИЕ!
+    - 奖金提议！
+    Flags: 000000000000000000
+  - Term: PRICE DISCOUNT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - PRICE DISCOUNT
+    - precio de descuento
+    - Preisnachlass
+    - PRIX DISCOUNT
+    - PREZZO SCONTO
+    - FİYAT İNDİRİM
+    - desconto no preço
+    - скидка с цены
+    - 价格折扣
+    Flags: 000000000000000000
+  - Term: BIG WALLET
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BIG WALLET
+    - CARTERA GRANDE
+    - BIG WALLET
+    - BIG WALLET
+    - PORTAFOGLIO GRANDE
+    - BÜYÜK CÜZDAN
+    - GRANDE CARTEIRA
+    - BIG КОШЕЛЬКА
+    - BIG钱包
+    Flags: 000000000000000000
+  - Term: NO THANKS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - NO THANKS
+    - NO, GRACIAS
+    - NEIN DANKE
+    - NON MERCI
+    - NO GRAZIE
+    - HAYIR TEŞEKKÜRLER
+    - NÃO, OBRIGADO
+    - НЕТ, СПАСИБО
+    - 不用了，谢谢
+    Flags: 000000000000000000
+  - Term: BUY
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - BUY
+    - COMPRAR
+    - KAUFEN
+    - ACHETER
+    - ACQUISTARE
+    - AL
+    - COMPRAR
+    - КУПИТЬ
+    - 购买
+    Flags: 000000000000000000
+  - Term: 5X BONUS OFFER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 5X BONUS OFFER
+    - 5X oferta de bono
+    - 5X Bonus-Angebot
+    - 5X OFFRE DE PRIME
+    - 5X BONUS OFFERTA
+    - 5X BONUS TEKLİF
+    - 5X oferta de bônus
+    - 5X BONUS ПРЕДЛОЖЕНИЕ
+    - 5X奖金提议
+    Flags: 000000000000000000
+  - Term: 4X BONUS OFFER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 4X BONUS OFFER
+    - 4X oferta de bono
+    - 4X Bonus-Angebot
+    - OFFRE DE PRIME 4X
+    - 4X BONUS OFFERTA
+    - 4X BONUS TEKLİF
+    - 4X oferta de bônus
+    - 4X BONUS ПРЕДЛОЖЕНИЕ
+    - 4X奖金提议
+    Flags: 000000000000000000
+  - Term: RESTORED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RESTORED!
+    - RESTAURADO
+    - RESTAURIERT
+    - RESTAURER
+    - RISTRUTTURATO
+    - rESTORE
+    - RESTAURADO
+    - ВОССТАНОВЛЕНА
+    - RESTORED
+    Flags: 000000000000000000
+  - Term: RESTORING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RESTORING...
+    - RESTABLECIMIENTO DEL ...
+    - RESTORING ...
+    - RESTAURER ...
+    - RIPRISTINO ...
+    - RESTORING ...
+    - RESTAURAR ...
+    - ВОССТАНОВЛЕНИЕ ...
+    - 还原...
+    Flags: 000000000000000000
+  - Term: DISCOUNT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - DISCOUNT
+    - DESCUENTO
+    - RABATT
+    - REMISE
+    - SCONTO
+    - İNDİRİM
+    - DESCONTO
+    - СКИДКА
+    - 折扣
+    Flags: 000000000000000000
+  - Term: GLAD TO HEAR
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GLAD TO HEAR
+    - CONTENTO DE ESCUCHAR
+    - FROH ZU HÖREN
+    - HEUREUX D'ENTENDRE
+    - FELICE DI SENTIRE
+    - DUYDUĞUMA SEVİNDİM
+    - Fico feliz em ouvir
+    - РАДЫ УСЛЫШАТЬ
+    - 很高兴听到
+    Flags: 000000000000000000
+  - Term: WIN MICHIGAN TO UNLOCK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WIN MINNESOTA
+    - WIN MINNESOTA
+    - WIN MINNESOTA
+    - WIN MINNESOTA
+    - 'WIN MINNESOTA '
+    - WIN MINNESOTA
+    - 'WIN MINNESOTA '
+    - WIN MINNESOTA
+    - WIN MINNESOTA
+    Flags: 000000000000000000
+  - Term: WINS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WINS
+    - WINS
+    - GEWINNT
+    - WINS
+    - WINS
+    - WINS
+    - WINS
+    - WINS
+    - WINS
+    Flags: 000000000000000000
+  - Term: LOSSES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LOSSES
+    - PÉRDIDAS
+    - VERLUSTE
+    - PERTES
+    - PERDITE
+    - KAYIPLAR
+    - PERDAS
+    - ПОТЕРИ
+    - 损失
+    Flags: 000000000000000000
+  - Term: TOTAL
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TOTAL
+    - TOTAL
+    - GESAMT
+    - TOTAL
+    - TOTALE
+    - GENEL TOPLAM
+    - TOTAL
+    - ВСЕГО
+    - 总
+    Flags: 000000000000000000
+  - Term: WIN STREAK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WIN STREAK
+    - RACHA
+    - WIN STREAK
+    - WIN TRACE
+    - striatura di vittoria
+    - WIN STREAK
+    - SEQUÊNCIA DE VITÓRIAS
+    - ЧЕРЕДА ПОБЕД
+    - 连胜
+    Flags: 000000000000000000
+  - Term: CURRENT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CURRENT
+    - CORRIENTE
+    - STROM
+    - ACTUEL
+    - ATTUALE
+    - MEVCUT
+    - ATUAL
+    - ТЕКУЩИЙ
+    - 当前
+    Flags: 000000000000000000
+  - Term: AVERAGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - AVERAGE
+    - PROMEDIO
+    - DURCHSCHNITTLICH
+    - MOYENNE
+    - MEDIA
+    - ORTALAMA
+    - MÉDIA
+    - В СРЕДНЕМ
+    - 平均
+    Flags: 000000000000000000
+  - Term: 3 POINTers
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 3 PT
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Flags: 000000000000000000
+  - Term: ENTER CHARLOTTE TOURNAMENT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ENTER CHARLOTTE TOURNAMENT
+    - ENTER CHARLOTTE
+    - ENTER CHARLOTTE
+    - ENTER CHARLOTTE
+    - ENTER CHARLOTTE
+    - ENTER CHARLOTTE
+    - ENTER CHARLOTTE
+    - ENTER CHARLOTTE
+    - ENTER CHARLOTTE
+    Flags: 000000000000000000
+  - Term: DAILY BAG
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - DAILY BAG
+    - bolsa diaria
+    - DAILY BAG
+    - TOUS LES JOURS SAC
+    - BORSA DAILY
+    - GÜNLÜK TORBA
+    - BOLSA DIÁRIO
+    - свободно
+    - 自由
+    Flags: 000000000000000000
+  - Term: NEW BAG AVAILABLE IN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - NEW BAG AVAILABLE IN
+    - NUEVA BOLSA EN
+    - NEW BAG VERFÜGBAR
+    - NOUVEAU SAC EN
+    - NUOVA BORSA IN
+    - YENİ TORBA MEVCUT
+    - NOVO BAG  EM
+    - NEW BAG ДОСТУПНО
+    - 新款包包
+    Flags: 000000000000000000
+  - Term: FIRST TO 7 POINTS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - FIRST TO 7 PTS
+    - FIRST TO 7 PTS
+    - ZUERST BEI 7 PUNKTEN
+    - FIRST TO 7 PTS
+    - PRIMO A 7 PUNTI
+    - ÖNCE 7 PUANA
+    - PRIMEIRO A MARCAR 7
+    - До 7 очков
+    - FIRST TO 7 PTS
+    Flags: 000000000000000000
+  - Term: KEEP UP THE GOOD WORK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Keep up the good work!
+    - ¡GRAN TRABAJO!
+    - GUT GEMACHT!
+    - BON TRAVAIL!
+    - OTTIMO LAVORO!
+    - İYİ İŞ!
+    - BOM TRABALHO!
+    - ОТЛИЧНАЯ РАБОТА!
+    - 做得好！
+    Flags: 000000000000000000
+  - Term: PLAY EVERYDAY TO OPEN YOUR DAILY BAGS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Play everyday to open your daily bags!
+    - Juega todos los días para abrir tus bolsas diarias
+    - Spielen sie jeden tag, um ihre täglichen taschen zu öffnen
+    - Jouez tous les jours pour ouvrir vos sacs quotidiens
+    - Gioca ogni giorno per aprire I tuoi sacchetti giornalieri
+    - Günlük torbalarinizi açmak İçİn her gün oyna
+    - Jogue todos os dias para abrir seus sacos diários
+    - Играйте ежедневно открыть ваше ежедневные сумки
+    - 每天打开你的日用包
+    Flags: 000000000000000000
+  - Term: GET A FREE BAG BY WINNING A TOURNAMENT 3X
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Get a FREE bag by winning a tournament 3X
+    - Obten una bolsa gratuita ganando un torneo 3X
+    - Erhalten sie eine kostenlose tasche, wenn sie ein turnier 3x gewinnen
+    - Obtenez un sac gratuit en gagnant un tournoi 3X
+    - Ottieni un sacchetto gratuito per vincere un torneo 3X
+    - Bi̇r turnuva 3x'İn kazanmasi İle ücretsi̇z çanta olsun
+    - Obtenha um saco livre, ganhando um torneio 3X
+    - Получите бесплатную мешку, выимая турнир 3X
+    - 通过赢得锦标赛3倍以获得一个免费的袋子
+    Flags: 000000000000000000
+  - Term: WIN TOURNAMENTS 3 TIMES TO COLLECT TROPHIES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Win tournaments 3 times to collect trophies!
+    - ¡gane torneos 3 veces para recoger trofeos!
+    - Gewinnen sie turniere 3 mal um trophäen zu sammeln!
+    - Gagnez des tournois 3 fois pour recueillir des trophées!
+    - Vinci tornei 3 volte per raccogliere trofei!
+    - Win turnuvalari 3 toplantilar trophies toplayin!
+    - Ganhe torneios 3 vezes para coletar troféus!
+    - Выиграйте турниры 3 раза, чтобы собрать трофики!
+    - 赢得比赛3次收集TROPHIES！
+    Flags: 000000000000000000
+  - Term: REPLAY TOURNAMENTS FOR AN INCREASING CHALLENGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Replay tournaments for an increasing challenge!
+    - ¡repetir torneos para un reto creciente!
+    - Replay tournaments für eine steigende herausforderung!
+    - Rejouer des tournois pour un défi croissant!
+    - Replay tornei per una crescita incrementante!
+    - Artirici bi̇r mücadele İçİn turnuvalar tamamlayin!
+    - Replay torneios para um desafio crescente!
+    - Отправить турниры для увеличения проблем!
+    - 重播锦标赛以应对日益严峻的挑战！
+    Flags: 000000000000000000
+  - Term: FREE IN
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - FREE IN
+    - GRATIS EN
+    - FREI IN
+    - GRATUIT
+    - GRATUITO
+    - ÜCRETSİZ
+    - LIVRE EM
+    - ВХОД
+    - 自由进入
+    Flags: 000000000000000000
+  - Term: OR
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - OR
+    - O
+    - ODER
+    - OU
+    - O
+    - VEYA
+    - OU
+    - ИЛИ
+    - 要么
+    Flags: 000000000000000000
+  - Term: WEAR
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WEAR
+    - VESTIR
+    - TRAGEN
+    - PORTER
+    - INDOSSARE
+    - GİYİNMEK
+    - VESTEM
+    - НОСИТЬ
+    - 穿
+    Flags: 000000000000000000
+  - Term: USE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - USE
+    - UTILIZAR
+    - BENUTZEN
+    - UTILISATION
+    - USO
+    - KULLANIM
+    - USAR
+    - ИСПОЛЬЗОВАНИЕ
+    - 使用
+    Flags: 000000000000000000
+  - Term: WEAR ARMBANDS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WEAR ARMBANDS
+    - VESTIR
+    - TRAGEN
+    - PORTER
+    - INDOSSARE
+    - GİYİNMEK
+    - VESTEM
+    - НОСИТЬ
+    - 穿
+    Flags: 000000000000000000
+  - Term: PRESS BACK THEN FORWARD TO DO A CROSSOVER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    - Press back then forward to do a crossover
+    Flags: 000000000000000000
+  - Term: GAME LENGTH
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GAME LENGTH
+    - DURACIÓN
+    - SPIELLÄNGE
+    - LONGUEUR
+    - LUNGHEZZA
+    - OYUN UZUNLUĞU
+    - COMPRIMENTO
+    - ДЛИНА ИГРЫ
+    - 游戏长度
+    Flags: 000000000000000000
+  - Term: WELCOME BACK!
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WELCOME BACK!
+    - ¡HOLA!
+    - HALLO!
+    - SALUT!
+    - BEN TORNATO!
+    - TEKRAR HOŞGELDİNİZ!
+    - BEM VINDO DE VOLTA!
+    - ЗДРАВСТВУЙТЕ!
+    - 欢迎回来！
+    Flags: 000000000000000000
+  - Term: SWITCH PLAYER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SWITCH PLAYER
+    - CAMBIAR DE JUGADOR
+    - SPIELER WECHSELN
+    - CHANGER DE JOUEUR
+    - CAMBIA GIOCATORE
+    - OYUNCU DEĞİŞTİR
+    - MUDAR DE JOGADOR
+    - СМЕНИТЬ ИГРОКА
+    - 开关机
+    Flags: 000000000000000000
+  - Term: POINT STREAK CHALLENGE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    - POINT STREAK CHALLENGE
+    Flags: 000000000000000000
+  - Term: ENTERING LIVE EVENT!
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ENTERING LIVE EVENT!
+    - ¡INGRESO AL EVENTO EN VIVO!
+    - LIVE EVENT EINGEBEN!
+    - ENTRER EN LIVE EVENT!
+    - ENTRANDO EVENTI LIVE!
+    - CANLI OLAY GELİYOR!
+    - ENTERING LIVE EVENT!
+    - ВСТУПИТЕЛЬНОЕ СОБЫТИЕ!
+    - 进入现场活动！
+    Flags: 000000000000000000
+  - Term: LIVE EVENT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LIVE EVENT
+    - LIVE EVENT
+    - LIVE EVENT
+    - LIVE EVENT
+    - LIVE EVENT
+    - LIVE EVENT
+    - LIVE EVENT
+    - LIVE EVENT
+    - LIVE EVENT
+    Flags: 000000000000000000
+  - Term: ENTER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - ENTER
+    - ENTRAR
+    - EINGEBEN
+    - ENTRER
+    - ACCEDERE
+    - GİRMEK
+    - ENTRAR
+    - 
+    - 输入
+    Flags: 000000000000000000
+  - Term: 1 entries remaining
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 1 entry remaining
+    - 1 entrada restante
+    - 1 Eintrag übrig
+    - 1 entrée restante
+    - 1 entrata rimanente
+    - 1 giriş kaldı
+    - 1 entrada restante
+    - Осталось 1 запись
+    - 剩余1项
+    Flags: 000000000000000000
+  - Term: 2 entries remaining
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 2 entries remaining
+    - 2 entradas restantes
+    - 2 Einträge übrig
+    - 2 entrées restantes
+    - 2 voci rimanenti
+    - 2 kayıt kaldı
+    - 2 entradas restantes
+    - 'Осталось: 2 записей'
+    - 剩余2项
+    Flags: 000000000000000000
+  - Term: 3 entries remaining
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 3 entries remaining
+    - 3 entradas restantes
+    - Noch 3 Einträge
+    - 3 entrées restantes
+    - 3 voci rimanenti
+    - 3 kayıt kaldı
+    - 3 entradas restantes
+    - 'Осталось: 3 записей'
+    - 剩余3项
+    Flags: 000000000000000000
+  - Term: 0 entries remaining
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - 0 entries remaining
+    - 0 entradas restantes
+    - 0 Einträge übrig
+    - 0 entrées restantes
+    - 0 voci rimanenti
+    - 0 kayıt kaldı
+    - 0 entradas restantes
+    - 0 записей осталось
+    - 剩余0个条目
+    Flags: 000000000000000000
+  - Term: confirm forfeit
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - confirm forfeit?
+    - confirmar la pérdida
+    - bestätige den Verlust
+    - confirmer le forfait
+    - confermare la perdita
+    - onaylama onayı
+    - confirmar confisco
+    - подтвердить неустойку
+    - 确认没收
+    Flags: 000000000000000000
+  - Term: YOUR PRIZES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOUR PRIZES
+    - TUS PREMIOS
+    - IHRE PREISE
+    - VOS PRIX
+    - I TUOI PREMI
+    - ÖDÜLLERİNİZ
+    - SEUS PRÊMIOS
+    - ВАШИ ПРИЗЫ
+    - 你的奖品
+    Flags: 000000000000000000
+  - Term: YOUR RESULTS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - YOUR RESULTS
+    - TUS RESULTADOS
+    - DEINE ERGEBNISSE
+    - VOS RÉSULTATS
+    - I TUOI RISULTATI
+    - SONUÇLARINIZ
+    - SEUS RESULTADOS
+    - ВАШИ РЕЗУЛЬТАТЫ
+    - 你的结果
+    Flags: 000000000000000000
+  - Term: GLOBAL RANK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RANK
+    - POSICIÓN MUNDIAL
+    - GLOBALER RANG
+    - RANG GLOBAL
+    - RANK GLOBALE
+    - KÜRESEL SIRALAMA
+    - RANK GLOBAL
+    - ГЛОБАЛЬНЫЙ РАК
+    - 全球排名
+    Flags: 000000000000000000
+  - Term: CLAIM PRIZES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CLAIM PRIZES
+    - PREMIOS DE RECLAMACIÓN
+    - Anspruch erheben
+    - PRIX DE RÉCLAMATION
+    - PREMI DI RECLAMO
+    - CLAIM ÖDÜLLERİ
+    - PRÊMIOS DE RECLAMAÇÃO
+    - ПРИВЕТНЫЕ ПРИЗЫ
+    - 索赔奖品
+    Flags: 000000000000000000
+  - Term: YOU NEED FULL ENERGY TO DUNK
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - You need full energy to dunk
+    - Necesitas energía completa para dunk
+    - Sie brauchen volle energie zu dunk
+    - You need full energy to dunk
+    - Hai bisogno di full energy per dunk
+    - Dunk İçİn tam enerji̇ İhti̇yaciniz
+    - You need full energy to dunk
+    - You need full energy to dunk
+    - 你需要充足的能量给DUNK
+    Flags: 000000000000000000
+  - Term: DONT SWIPE OR FLICK TO SHOOT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Don’t swipe or flick
+    - No deslizar
+    - Wischen Sie nicht
+    - Ne balayez pas
+    - Non strisciare
+    - Kaydırmayın
+    - Não passar
+    - Не использовать
+    - 不要滑动
+    Flags: 000000000000000000
+  - Term: ALWAYS PRESS AND RELEASE IN SAME SPOT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Don't move thumb when shooting
+    - no muevas tu pulgar
+    - beweg deinen Daumen nicht
+    - Ne déplacez pas votre pouce
+    - non muoverti il ​​pollice
+    - parmağını hareket ettirme
+    - não mova o polegar
+    - не двигай большим пальцем
+    - 不要移动你的拇指
+    Flags: 000000000000000000
+  - Term: DO NOT SWIPE WHEN SHOOTING OR JUMPING
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Don't swipe when shooting or jumping
+    - No inmovilizar cuando tirar o saltar
+    - Wischen Sie nicht beim Schießen oder Springen
+    - Ne pas passer lors du tir ou du saut
+    - Non scattare quando si spegneggia o salta
+    - Çeki̇m veya atlama süresi̇nde kaymayin
+    - Não escape quando disparar ou saltar
+    - Не обращайтесь, когда съемки или перемещение
+    - 拍摄或跳跃时请勿SW。
+    Flags: 000000000000000000
+  - Term: CUSTOMIZE YOUR NEW PLAYER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CUSTOMIZE YOUR PLAYER!
+    - ¡PERSONALIZAR!
+    - ANPASSEN!
+    - PERSONNALISER!
+    - PERSONALIZZARE!
+    - ÖZELLEŞTİRMEK!
+    - CUSTOMIZAR!
+    - CUSTOMIZE!
+    - 定制！
+    Flags: 000000000000000000
+  - Term: CUSTOMIZE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CUSTOMIZE
+    - PERSONALIZAR
+    - ANPASSEN
+    - PERSONNALISER
+    - PERSONALIZZARE
+    - ÖZELLEŞTİRMEK
+    - CUSTOMIZAR
+    - CUSTOMIZE
+    - 定制
+    Flags: 000000000000000000
+  - Term: SAVE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - SAVE CHANGES
+    - BUENO
+    - IN ORDNUNG
+    - D'ACCORD
+    - VA BENE
+    - TAMAM
+    - OK
+    - ХОРОШО
+    - 好的
+    Flags: 000000000000000000
+  - Term: RANDOMIZE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RANDOMIZE
+    - ALEATORIZAR
+    - RANDOMIZE
+    - RANDOMISER
+    - RENDI CASUALE
+    - RANDOMIZE
+    - ALEATÓRIA
+    - RANDOMIZE
+    - RANDOMIZE
+    Flags: 000000000000000000
+  - Term: RESET
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - RESET
+    - REINICIAR
+    - Zurücksetzen
+    - RÉINITIALISER
+    - RESET
+    - RESET
+    - RESTABELECER
+    - СБРОС
+    - 重启
+    Flags: 000000000000000000
+  - Term: UNIFORM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - UNIFORM
+    - UNIFORME
+    - UNIFORM
+    - UNIFORME
+    - UNIFORME
+    - ÜNİFORM
+    - UNIFORME
+    - ЕДИНАЯ
+    - 制服
+    Flags: 000000000000000000
+  - Term: WIN 2 GAMES
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WIN 2 GAMES
+    - GANA 2 JUEGOS
+    - Gewinne 2 SPIELE
+    - GAGNEZ 2 JEUX
+    - Vinci 2 giochi
+    - WIN 2 OYUNLARI
+    - GANHAR 2 JOGOS
+    - WIN 2 ИГРЫ
+    - 赢得2场比赛
+    Flags: 000000000000000000
+  - Term: TEAM UNIFORM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TEAM LOOK
+    - EQUIPO UNIFORME
+    - TEAM UNIFORM
+    - UNIFORME D'ÉQUIPE
+    - SQUADRA UNIFORME
+    - TAKIM TEKLİFİ
+    - UNIFORME DA EQUIPE
+    - ЕДИНАЯ КОМАНДА
+    - 团队统一
+    Flags: 000000000000000000
+  - Term: LEVEL UP FASTER
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LEVEL UP FASTER!
+    - LEVEL UP RÁPIDO
+    - LEVEL UP FASTER
+    - LEVEL UP FASTER
+    - LEVEL UP VELOCE
+    - DÜZEYİ AZALTIN
+    - LEVEL UP  RÁPIDO
+    - УРОВЕНЬ УДАРА
+    - 提高速度
+    Flags: 000000000000000000
+  - Term: TIME LEFT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - TIME LEFT
+    - TIME LEFT
+    - ÜBRIGE ZEIT
+    - .
+    - .
+    - .
+    - .
+    - .
+    - .
+    Flags: 000000000000000000
+  - Term: GET MORE FREE GOLD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GET MORE FREE
+    - MÁS GRATIS
+    - FREIES
+    - PLUS GRATUIT
+    - PIÙ GRATUITO
+    - FAZLA BEDAVA
+    - OBTENHA MAIS LIVRE
+    - GET MORE FREE
+    - GET MORE FREE
+    Flags: 000000000000000000
+  - Term: CLAIM NOT BOLD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CLAIM
+    - RECOGER
+    - NEHMEN
+    - CHOISIR
+    - Riscuoti
+    - İSTE
+    - RECEBER
+    - ЗАЯВИТЬ
+    - 领取
+    Flags: 000000000000000000
+  - Term: LVL LVL REQUIRED
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - '<i>LVL {LVL} </i> REQUIRED'
+    - LVL {LVL} <i>NECESARIO</i>
+    - LVL {LVL} <i>REQ</i>
+    - LVL {LVL} <i>REQ</i>
+    - LVL {LVL} <i>NECESSARIO</i>
+    - LVL {LVL} <i>GEREKLİDİR</i>
+    - LVL {LVL} <i>REQUERIDOS</i>
+    - LVL {LVL} <i>REQ</i>
+    - LVL {LVL} 需要
+    Flags: 000000000000000000
+  - Term: DROP BALL
+    TermType: 0
+    Description:
+    Languages:
+    - DROP BALL
+    - DROP BALL
+    - TROPFEN BALL
+    - BAISSE DE BALLE
+    - DROP BALL
+    - DAMLA TOPU
+    - DROP BALL
+    - УДАРНЫЙ ШАР
+    - DROP BALL
+    Languages_Touch:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Flags: 000000000000000000
+  - Term: BUY MORE
+    TermType: 0
+    Description:
+    Languages:
+    - BUY MORE
+    - COMPRAR MÁS
+    - KAUF MEHR
+    - ACHETER PLUS
+    - COMPRA DI PIÙ
+    - DAHA FAZLA SATIN AL
+    - COMPRE MAIS
+    - КУПИТЬ БОЛЬШЕ
+    - 买多点
+    Languages_Touch:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Flags: 000000000000000000
+  - Term: JABSTEP by quickly tapping forward
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    - JABSTEP by quickly tapping forward when you’re NOT dribbling
+    Flags: 000000000000000000
+  - Term: Upgrade your DEFENSE
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    - Upgrade your DEFENSE so people cannot drive by you for easy layups
+    Flags: 000000000000000000
+  - Term: Meet people at the rim to block their dunks
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    - Meet people at the rim to block their dunks!
+    Flags: 000000000000000000
+  - Term: Use PUMPFAKES and JABSTEPS to confuse people
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Use PUMPFAKES and JABSTEPS to confuse people!
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    - Use PUMPFAKES and JABSTEPS to confuse people
+    Flags: 000000000000000000
+  - Term: WATCH AD TO CLAIM
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WATCH AD TO CLAIM
+    - VER ANUNCIO
+    - ANZEIGE ANZEIGEN
+    - Regarder l'annonce
+    - vedi pubblicità
+    - CLAIM İÇİN İZLEYİN
+    - "ASSISTA \nAD"
+    - ПРОСМОТРЕТЬ СЧЕТ
+    - 观看索赔
+    Flags: 000000000000000000
+  - Term: WATCH AD TO
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - WATCH AD TO
+    - Ver anuncio a
+    - UHR ANZEIGEN
+    - Regarder l'annonce
+    - GUARDA AD
+    - AD İZLE
+    - ASSISTA AD
+    - ПРОСМОТРЕТЬ
+    - 观看广告
+    Flags: 000000000000000000
+  - Term: chat
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Discord chat
+    - Discord charla
+    - Discord Plaudern
+    - Discord bavarder
+    - Chiacchierare
+    - Discord sohbet
+    - Discord bate-papo
+    - Discord чат
+    - Discord 聊
+    Flags: 000000000000000000
+  - Term: LOGOUT OF
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LOGOUT OF
+    - LOGOUT DE
+    - LOGOUT VON
+    - Déconnexion de
+    - LOGO DI
+    - LOGOUT OF
+    - LOGOUT OF
+    - ВЫСТУПЛЕНИЕ
+    - 退出
+    Flags: 000000000000000000
+  - Term: LOG INTO
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LOG INTO
+    - INICIAR SESIÓN EN
+    - EINLOGGEN IN
+    - SE CONNECTER À
+    - ACCEDERE
+    - GİRİŞ
+    - LOGAR EM
+    - ВОЙТИ В
+    - 登录到
+    Flags: 000000000000000000
+  - Term: load existing account
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - load account
+    - cargar cuenta existente
+    - Bestehendes Konto laden
+    - charger le compte existant
+    - carica l'account esistente
+    - mevcut hesabı yükle
+    - carregar conta existente
+    - загрузить существующую учетную запись
+    - 加载现有帐户
+    Flags: 000000000000000000
+  - Term: create new
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - create new
+    - crear nuevo
+    - Erstelle neu
+    - créer un nouveau
+    - creare nuovo
+    - Yeni oluşturmak
+    - Crie um novo
+    - создать новый
+    - 创建新的
+    Flags: 000000000000000000
+  - Term: existing account found
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - existing account found!
+    - cuenta existente encontrada!
+    - Bestehendes Konto gefunden!
+    - compte existant trouvé!
+    - trovato un account esistente!
+    - mevcut hesap bulundu!
+    - conta existente encontrada!
+    - существующая учетная запись найдена!
+    - 找到现有帐户！
+    Flags: 000000000000000000
+  - Term: An account may already exist for your device
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - An account may already exist for your device.
+    - Puede que ya exista una cuenta para su dispositivo.
+    - Für Ihr Gerät ist möglicherweise bereits ein Konto vorhanden.
+    - Un compte peut déjà exister pour votre appareil.
+    - Un account potrebbe già esistere per il tuo dispositivo.
+    - Cihazınız için bir hesap zaten mevcut olabilir.
+    - Uma conta pode já existir para o seu dispositivo.
+    - Возможно, учетная запись уже существует для вашего устройства.
+    - 您的设备可能已存在帐户。
+    Flags: 000000000000000000
+  - Term: ACHIEVEMENTS
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - Achievements
+    - Logros
+    - Erfolge
+    - Réalisations
+    - Realizzazioni
+    - Başarılar
+    - Conquistas
+    - Достижения
+    - q
+    Flags: 000000000000000000
+  - Term: LEADERBOARD
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - LEADERBOARD
+    - Cuadro de liderazgo
+    - BESTENLISTE
+    - CLASSEMENT
+    - CLASSIFICA
+    - LİDERLER SIRALAMASI
+    - ENTRE OS MELHORES
+    - LEADERBOARD
+    - LEADERBOARD
+    Flags: 000000000000000000
+  - Term: CHAT
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - CHAT
+    - CHARLA
+    - PLAUDERN
+    - BAVARDER
+    - CHAT
+    - SOHBET
+    - CHAT
+    - ЧАТ
+    - CHAT
+    Flags: 000000000000000000
+  - Term: get bonus
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - GO TO bonus
+    - obtener bonificación
+    - Bonus bekommen
+    - obtenir des bonus
+    - ricevi un bonus
+    - bonus al
+    - obter bônus
+    - получить бонус
+    - 获得奖金
+    Flags: 000000000000000000
+  - Term: leaderboard prizes
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - leaderboard prizes
+    - premios de la tabla de líderes
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Flags: 000000000000000000
+  - Term: event prizes
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - event prizes
+    - premios del evento
+    - Eventpreise
+    - prix de l'événement
+    - premi per eventi
+    - etkinlik ödülleri
+    - prêmios de evento
+    - призы событий
+    - 活动奖品
+    Flags: 000000000000000000
+  - Term: prizes
+    TermType: 0
+    Description:
+    Languages:
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    Languages_Touch:
+    - prizes
+    - premios
+    - Preise
+    - prix
+    - premi
+    - ödülleri
+    - prêmios
+    - призы
+    - 奖品
+    Flags: 000000000000000000
+  mLanguages:
+  - Name: English
+    Code: en
+    Flags: 0
+  - Name: Spanish
+    Code: es
+    Flags: 0
+  - Name: German
+    Code: de
+    Flags: 0
+  - Name: French
+    Code: fr
+    Flags: 0
+  - Name: Italian
+    Code: it
+    Flags: 0
+  - Name: Turkish
+    Code: tr
+    Flags: 0
+  - Name: Portuguese
+    Code: pt
+    Flags: 0
+  - Name: Russian
+    Code: ru
+    Flags: 0
+  - Name: Chinese
+    Code: zh
+    Flags: 0
+  CaseInsensitiveTerms: 0
+  Assets:
+  - {fileID: 12800000, guid: 865e551dd01bd6d4b9517c87669abe2a, type: 3}
+  - {fileID: 12800000, guid: 5b57be8ab6cc4fb41a2d37ae4cfb6640, type: 3}
+  NeverDestroy: 1
+  UserAgreesToHaveItOnTheScene: 0
+  UserAgreesToHaveItInsideThePluginsFolder: 0
+  OnMissingTranslation: 1
+  mTerm_AppName:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1608894848389480}
+  m_IsPrefabAsset: 1
