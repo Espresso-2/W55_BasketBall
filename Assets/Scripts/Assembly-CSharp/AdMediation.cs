@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using GoogleMobileAds.Api;
 using TapjoyUnity;
 using UnityEngine;
 
@@ -26,23 +25,24 @@ public class AdMediation : MonoBehaviour
 
 	private float _currentAudioVolume;
 
-	private static UnifiedNativeAd nativeAd;
+	/*private static UnifiedNativeAd nativeAd;*/
 
 	public static bool nativeAdIsLoaded;
 
-	private static UnifiedNativeAd nativeAdSmall;
+	/*private static UnifiedNativeAd nativeAdSmall;*/
 
 	public static bool nativeAdSmallIsLoaded;
 
-	private static InterstitialAd adMobInt;
+	/*private static InterstitialAd adMobInt;
+	*/
 
 	private static bool vidRewardEarned;
 
-	private static BannerView adMobTopBannerView;
+	/*private static BannerView adMobTopBannerView;*/
 
 	public static bool adMobTopBannerIsLoaded;
 
-	private static BannerView adMobCenterBannerView;
+	/*private static BannerView adMobCenterBannerView;*/
 
 	public static bool adMobCenterBannerIsLoaded;
 
@@ -108,7 +108,7 @@ public class AdMediation : MonoBehaviour
 	{
 		_currentAudioVolume = AudioListener.volume;
 		SetupAdMob();
-		ReqVid();
+		/*ReqVid();*/
 		if (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1)
 		{
 			RequestNativeAdSmall();
@@ -124,7 +124,7 @@ public class AdMediation : MonoBehaviour
 	private void SetupAdMob()
 	{
 		string appId = "ca-app-pub-6792208077970765~5963944035";
-		MobileAds.Initialize(appId);
+		//MobileAds.Initialize(appId);
 		SetAdMobRewListener();
 	}
 
@@ -159,54 +159,54 @@ public class AdMediation : MonoBehaviour
 	{
 		MonoBehaviour.print("AdMediation.RequestNativeAd()");
 		string text = "ca-app-pub-6792208077970765/2580760333";
-		if (nativeAd != null)
+		/*if (nativeAd != null)
 		{
 			nativeAd.Destroy();
-		}
+		}*/
 		nativeAdIsLoaded = false;
-		AdLoader adLoader = new AdLoader.Builder(text).ForUnifiedNativeAd().Build();
+		/*AdLoader adLoader = new AdLoader.Builder(text).ForUnifiedNativeAd().Build();
 		adLoader.OnUnifiedNativeAdLoaded += instance.HandleUnifiedNativeAdLoaded;
 		adLoader.OnAdFailedToLoad += instance.HandleNativeAdFailedToLoad;
-		adLoader.LoadAd(new AdRequest.Builder().Build());
+		adLoader.LoadAd(new AdRequest.Builder().Build());*/
 	}
 
-	private void HandleUnifiedNativeAdLoaded(object sender, UnifiedNativeAdEventArgs args)
+	/*private void HandleUnifiedNativeAdLoaded(object sender, UnifiedNativeAdEventArgs args)
 	{
-		MonoBehaviour.print("AdMediation.HandleUnifiedNativeAdLoaded() Unified Native ad loaded.");
-		nativeAd = args.nativeAd;
+		/*MonoBehaviour.print("AdMediation.HandleUnifiedNativeAdLoaded() Unified Native ad loaded.");
+		nativeAd = args.nativeAd;#1#
 		nativeAdIsLoaded = true;
 	}
 
 	private void HandleNativeAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
 	{
 		MonoBehaviour.print("AdMediation.HandleNativeAdFailedToLoad() Native ad failed to load: " + args.Message);
-	}
+	}*/
 
-	public static UnifiedNativeAd GetNativeAd()
+	/*public static UnifiedNativeAd GetNativeAd()
 	{
 		if (nativeAd != null && nativeAdIsLoaded)
 		{
 			return nativeAd;
 		}
 		return null;
-	}
+	}*/
 
 	public static void RequestNativeAdSmall()
 	{
 		MonoBehaviour.print("AdMediation.RequestNativeAdSmall()");
 		string text = "ca-app-pub-6792208077970765/9567306639";
-		if (nativeAdSmall != null)
+		/*if (nativeAdSmall != null)
 		{
 			nativeAdSmall.Destroy();
-		}
+		}*/
 		nativeAdSmallIsLoaded = false;
-		AdLoader adLoader = new AdLoader.Builder(text).ForUnifiedNativeAd().Build();
+		/*AdLoader adLoader = new AdLoader.Builder(text).ForUnifiedNativeAd().Build();
 		adLoader.OnUnifiedNativeAdLoaded += instance.HandleUnifiedNativeAdSmallLoaded;
 		adLoader.OnAdFailedToLoad += instance.HandleNativeAdSmallFailedToLoad;
-		adLoader.LoadAd(new AdRequest.Builder().Build());
+		adLoader.LoadAd(new AdRequest.Builder().Build());*/
 	}
 
-	private void HandleUnifiedNativeAdSmallLoaded(object sender, UnifiedNativeAdEventArgs args)
+	/*private void HandleUnifiedNativeAdSmallLoaded(object sender, UnifiedNativeAdEventArgs args)
 	{
 		MonoBehaviour.print("AdMediation.HandleUnifiedNativeAdSmallLoaded() Unified Native ad loaded.");
 		nativeAdSmall = args.nativeAd;
@@ -216,18 +216,18 @@ public class AdMediation : MonoBehaviour
 	private void HandleNativeAdSmallFailedToLoad(object sender, AdFailedToLoadEventArgs args)
 	{
 		MonoBehaviour.print("AdMediation.HandleNativeAdSmallFailedToLoad() Native ad failed to load: " + args.Message);
-	}
+	}*/
 
-	public static UnifiedNativeAd GetNativeAdSmall()
+	/*public static UnifiedNativeAd GetNativeAdSmall()
 	{
 		if (nativeAdSmall != null && nativeAdSmallIsLoaded)
 		{
 			return nativeAdSmall;
 		}
 		return null;
-	}
+	}*/
 
-	public static void RequestCenterBanner()
+	/*public static void RequestCenterBanner()
 	{
 		string text = ((PlayerPrefs.GetInt("NATIVE_HALFTIME_ADS_ENABLED") != 1) ? "ca-app-pub-6792208077970765/6872612143" : "ca-app-pub-6792208077970765/4054877113");
 		string text2 = "ca-app-pub-6792208077970765/1746236607";
@@ -250,17 +250,17 @@ public class AdMediation : MonoBehaviour
 		adMobCenterBannerView.OnAdLoaded += instance.HandleOnCenterBannerAdLoaded;
 		AdRequest request = new AdRequest.Builder().Build();
 		adMobCenterBannerView.LoadAd(request);
-	}
+	}*/
 
-	public static void ShowTopBanner()
+	/*public static void ShowTopBanner()
 	{
 		if (adMobTopBannerView != null)
 		{
 			adMobTopBannerView.Show();
 		}
-	}
+	}*/
 
-	public static void ShowCenterBanner()
+	/*public static void ShowCenterBanner()
 	{
 		if (adMobCenterBannerView != null)
 		{
@@ -313,8 +313,9 @@ public class AdMediation : MonoBehaviour
 		adMobCenterBannerIsLoaded = true;
 		adMobCenterBannerView.Hide();
 	}
+	*/
 
-	public void HandleOnBannerAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+	/*public void HandleOnBannerAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
 	{
 		MonoBehaviour.print("HandleFailedToReceiveAd event received with message: " + args.Message);
 	}
@@ -340,6 +341,7 @@ public class AdMediation : MonoBehaviour
 		AdRequest request = new AdRequest.Builder().Build();
 		RewardBasedVideoAd.Instance.LoadAd(request, adUnitId);
 	}
+	*/
 
 	public static void PlayVid()
 	{
@@ -365,16 +367,16 @@ public class AdMediation : MonoBehaviour
 		{
 			ShowTjpRewVid();
 		}
-		else if (RewardBasedVideoAd.Instance.IsLoaded())
+		/*else if (RewardBasedVideoAd.Instance.IsLoaded())
 		{
 			RewardBasedVideoAd.Instance.Show();
-		}
+		}*/
 		else if (IsTjpRewVidAvail())
 		{
 			ShowTjpRewVid();
 		}
 		PlayerPrefsHelper.SetInt("GAMES_SINCE_WATCHING_AD", 0, true);
-		ReqVid();
+		//ReqVid();
 	}
 
 	private static IEnumerator TestCompletedVid()
@@ -390,27 +392,27 @@ public class AdMediation : MonoBehaviour
 			return true;
 		}
 		bool result = false;
-		if (RewardBasedVideoAd.Instance.IsLoaded())
+		/*if (RewardBasedVideoAd.Instance.IsLoaded())
 		{
 			result = true;
 		}
 		else
 		{
 			ReqVid();
-		}
+		}*/
 		return result;
 	}
 
 	private void SetAdMobRewListener()
 	{
-		RewardBasedVideoAd rewardBasedVideoAd = RewardBasedVideoAd.Instance;
-		rewardBasedVideoAd.OnAdLoaded += HandleRewardBasedVideoLoaded;
+		//RewardBasedVideoAd rewardBasedVideoAd = RewardBasedVideoAd.Instance;
+		/*rewardBasedVideoAd.OnAdLoaded += HandleRewardBasedVideoLoaded;
 		rewardBasedVideoAd.OnAdFailedToLoad += HandleRewardBasedVideoFailedToLoad;
 		rewardBasedVideoAd.OnAdOpening += HandleRewardBasedVideoOpened;
 		rewardBasedVideoAd.OnAdStarted += HandleRewardBasedVideoStarted;
 		rewardBasedVideoAd.OnAdRewarded += HandleRewardBasedVideoRewarded;
 		rewardBasedVideoAd.OnAdClosed += HandleRewardBasedVideoClosed;
-		rewardBasedVideoAd.OnAdLeavingApplication += HandleRewardBasedVideoLeftApplication;
+		rewardBasedVideoAd.OnAdLeavingApplication += HandleRewardBasedVideoLeftApplication;*/
 	}
 
 	public void HandleRewardBasedVideoLoaded(object sender, EventArgs args)
@@ -418,7 +420,7 @@ public class AdMediation : MonoBehaviour
 		MonoBehaviour.print("HandleRewardBasedVideoLoaded event received");
 	}
 
-	public void HandleRewardBasedVideoFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+	/*public void HandleRewardBasedVideoFailedToLoad(object sender, AdFailedToLoadEventArgs args)
 	{
 		MonoBehaviour.print("HandleRewardBasedVideoFailedToLoad event received");
 		if (args != null)
@@ -426,6 +428,7 @@ public class AdMediation : MonoBehaviour
 			MonoBehaviour.print("with message: " + args.Message);
 		}
 	}
+	*/
 
 	public void HandleRewardBasedVideoOpened(object sender, EventArgs args)
 	{
@@ -457,7 +460,7 @@ public class AdMediation : MonoBehaviour
 		}
 	}
 
-	public void HandleRewardBasedVideoRewarded(object sender, Reward args)
+	/*public void HandleRewardBasedVideoRewarded(object sender, Reward args)
 	{
 		vidRewardEarned = true;
 		if (sender != null && args != null)
@@ -465,7 +468,7 @@ public class AdMediation : MonoBehaviour
 			string type = args.Type;
 			MonoBehaviour.print("HandleRewardBasedVideoRewarded event received for " + args.Amount + " " + type);
 		}
-	}
+	}*/
 
 	public void HandleRewardBasedVideoLeftApplication(object sender, EventArgs args)
 	{
@@ -526,25 +529,25 @@ public class AdMediation : MonoBehaviour
 
 	public static void ReqInt()
 	{
-		string text = "ca-app-pub-6792208077970765/7781517131";
+		/*string text = "ca-app-pub-6792208077970765/7781517131";
 		if (adMobInt != null)
 		{
 			adMobInt.Destroy();
 		}
-		adMobInt = new InterstitialAd(text);
-		instance.SetAdMobIntListener();
-		AdRequest request = new AdRequest.Builder().Build();
-		adMobInt.LoadAd(request);
+		adMobInt = new InterstitialAd(text);*/
+		/*instance.SetAdMobIntListener();*/
+		/*AdRequest request = new AdRequest.Builder().Build();
+		adMobInt.LoadAd(request);*/
 	}
 
-	public static void ShowInt()
+	/*public static void ShowInt()
 	{
 		if (adMobInt != null && adMobInt.IsLoaded())
 		{
 			adMobInt.Show();
 			LogInt();
 		}
-	}
+	}*/
 
 	private static void LogInt()
 	{
@@ -557,10 +560,10 @@ public class AdMediation : MonoBehaviour
 		}, false);*/
 	}
 
-	public static bool IsIntAvail()
+	/*public static bool IsIntAvail()
 	{
 		return adMobInt != null && adMobInt.IsLoaded();
-	}
+	}*/
 
 	public float GetSecondsSinceIntAd()
 	{
@@ -589,28 +592,28 @@ public class AdMediation : MonoBehaviour
 		}
 	}
 
-	private void SetAdMobIntListener()
+	/*private void SetAdMobIntListener()
 	{
 		adMobInt.OnAdLoaded += HandleOnAdLoaded;
 		adMobInt.OnAdFailedToLoad += HandleOnAdFailedToLoad;
 		adMobInt.OnAdOpening += HandleOnAdOpened;
 		adMobInt.OnAdClosed += HandleOnAdClosed;
 		adMobInt.OnAdLeavingApplication += HandleOnAdLeavingApplication;
-	}
+	}*/
 
 	public void HandleOnAdLoaded(object sender, EventArgs args)
 	{
 		MonoBehaviour.print("HandleAdLoaded event received");
 	}
 
-	public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+	/*public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
 	{
 		MonoBehaviour.print("HandleFailedToReceiveAd event received");
 		if (args != null)
 		{
 			MonoBehaviour.print("with message: " + args.Message);
 		}
-	}
+	}*/
 
 	public void HandleOnAdOpened(object sender, EventArgs args)
 	{

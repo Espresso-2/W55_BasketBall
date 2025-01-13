@@ -50,8 +50,8 @@ public class PauseButton : MonoBehaviour
 			pauseDialog.SetActive(false);
 			gameSounds.Play_select();
 			gameControls.gameObject.SetActive(true);
-			AdMediation.HideTopBanner();
-			AdMediation.HideCenterBanner();
+			/*AdMediation.HideTopBanner();
+			AdMediation.HideCenterBanner();*/
 		}
 		else
 		{

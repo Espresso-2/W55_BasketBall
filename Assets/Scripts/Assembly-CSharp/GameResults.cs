@@ -123,7 +123,7 @@ public class GameResults : MonoBehaviour
 
 	private bool giveCashBonusReward;
 
-	private bool showIntAd;
+	/*private bool showIntAd;*/
 
 	private GameSounds gameSounds;
 
@@ -131,7 +131,7 @@ public class GameResults : MonoBehaviour
 
 	private Music music;
 
-	private bool intCompleted;
+	/*private bool intCompleted;*/
 
 	private bool isLiveEvent;
 
@@ -431,7 +431,7 @@ public class GameResults : MonoBehaviour
 		PlayFabManager.Instance().SetUserDataCall1();
 		PlayFabManager.Instance().SetUserDataCall2();
 		PlayFabManager.Instance().UpdateStat("NUM_TROPHIES", Tournaments.numTrophies);
-		AdMediation.HideTopBanner();
+		//AdMediation.HideTopBanner();
 	}
 
 	private void CalculateBonusRewardAndIntAd(Tournament tournament)
@@ -453,10 +453,10 @@ public class GameResults : MonoBehaviour
 				flag = true;
 			}
 		}
-		if ((flag || Stats.forfeited) && PlayerPrefs.GetInt("ADS_OFF") != 1 && (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1))
+		/*if ((flag || Stats.forfeited) && PlayerPrefs.GetInt("ADS_OFF") != 1 && (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1))
 		{
 			showIntAd = UnityEngine.Random.Range(0, 100) >= 50 || Stats.forfeited;
-		}
+		}*/
 		if (sessionVars.goToTutorial && Stats.GetNumWins() < 2)
 		{
 			giveCashBonusReward = true;
@@ -548,7 +548,7 @@ public class GameResults : MonoBehaviour
 	{
 		sessionVars.goToTutorial = false;
 		yield return new WaitForSeconds(0.15f);
-		if (showIntAd && AdMediation.IsIntAvail())
+		/*if (showIntAd && AdMediation.IsIntAvail())
 		{
 			/*FlurryAnalytics.Instance().LogEvent("SHOW_AD", new string[4]
 			{
@@ -556,7 +556,7 @@ public class GameResults : MonoBehaviour
 				"num_losses:" + Stats.GetNumLosses() + string.Empty,
 				"current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
 				"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
-			}, false);*/
+			}, false);#1#
 			intCompleted = false;
 			yield return new WaitForSeconds(0.95f);
 			AdMediation.ShowInt();
@@ -568,7 +568,7 @@ public class GameResults : MonoBehaviour
 				yield return new WaitForSeconds(1.5f);
 				intCompleted = true;
 			}
-		}
+		}*/
 		if (leveledUp)
 		{
 			yield return new WaitForSeconds(0.25f);
@@ -578,10 +578,10 @@ public class GameResults : MonoBehaviour
 		{
 			Application.LoadLevel("PrizeBall");
 		}
-		else if (intCompleted && (UnityEngine.Random.Range(0, 100) >= 75 || PlayerPrefs.GetInt("NUM_INT_ADS") == 1))
+		/*else if (intCompleted && (UnityEngine.Random.Range(0, 100) >= 75 || PlayerPrefs.GetInt("NUM_INT_ADS") == 1))
 		{
 			removeAdsMsgBox.gameObject.SetActive(true);
-		}
+		}*/
 		else if (PlayerPrefs.GetString("TEAM_NAME") == string.Empty)
 		{
 			Application.LoadLevel("NameTeam");
@@ -596,7 +596,7 @@ public class GameResults : MonoBehaviour
 	{
 		Time.timeScale = 1f;
 		gameSounds.Play_select();
-		showIntAd = false;
+		/*showIntAd = false;*/
 		/*FlurryAnalytics.Instance().LogEvent("PLAY_VIDEO_AD", new string[2]
 		{
 			"type:DOUBLEREWARDS",
@@ -629,7 +629,7 @@ public class GameResults : MonoBehaviour
 
 	public virtual void ContinueButton()
 	{
-		intCompleted = true;
+		/*intCompleted = true;*/
 		continueButton.SetActive(false);
 		Time.timeScale = 1f;
 		gameSounds.Play_one_dribble();

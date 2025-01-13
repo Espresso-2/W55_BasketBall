@@ -20,7 +20,7 @@ public class TestAdsButton : MonoBehaviour
 		AdMediation.ReqInt();
 	}
 
-	public void ShowInt()
+	/*public void ShowInt()
 	{
 		AdMediation.ShowInt();
 	}
@@ -28,7 +28,7 @@ public class TestAdsButton : MonoBehaviour
 	public void ReqVid()
 	{
 		AdMediation.ReqVid();
-	}
+	}*/
 
 	public void PlayVid()
 	{

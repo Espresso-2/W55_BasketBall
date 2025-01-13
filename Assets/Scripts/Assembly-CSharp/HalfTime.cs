@@ -79,7 +79,8 @@ public class HalfTime : MonoBehaviour
 		{
 			UnityEngine.Object.Destroy(nativeAdHolder.gameObject);
 			yield return new WaitForSeconds(0.85f);
-			AdMediation.ShowCenterBanner();
+			/*AdMediation.ShowCenterBanner();*/
+			//TODO:ShoAd
 		}
 		LogAd();
 	}
@@ -113,7 +114,7 @@ public class HalfTime : MonoBehaviour
 
 	private IEnumerator ShowPlayers()
 	{
-		AdMediation.HideCenterBanner();
+		/*AdMediation.HideCenterBanner();*/
 		halfTimeBox.SetActive(false);
 		cheerleader.SetActive(false);
 		coach.SetActive(false);

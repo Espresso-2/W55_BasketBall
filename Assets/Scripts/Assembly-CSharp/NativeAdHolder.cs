@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using GoogleMobileAds.Api;
+/*using GoogleMobileAds.Api;*/
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -55,8 +55,8 @@ public class NativeAdHolder : MonoBehaviour
 		{
 			callToActionButton.SetActive(false);
 		}
-		UnifiedNativeAd unifiedNativeAd = ((!isSmall) ? AdMediation.GetNativeAd() : AdMediation.GetNativeAdSmall());
-		if (unifiedNativeAd != null)
+		/*UnifiedNativeAd unifiedNativeAd = ((!isSmall) ? AdMediation.GetNativeAd() : AdMediation.GetNativeAdSmall());*/
+		/*if (unifiedNativeAd != null)
 		{
 			Debug.Log("NativeAdHolder.ShowAd() nativeAd is not null, setup the Native Ad");
 			if (coachHeadingText != null)
@@ -156,7 +156,7 @@ public class NativeAdHolder : MonoBehaviour
 			StartCoroutine(ShowCallToActionButton());
 			Debug.Log("NativeAdHolder.ShowAd() Finished setting up the native ad");
 			return;
-		}
+		}*/
 		Debug.Log("NativeAdHolder.ShowAd(): nativeAd is null, do not try and show");
 		if (false)
 		{
@@ -206,7 +206,7 @@ public class NativeAdHolder : MonoBehaviour
 		}
 	}
 
-	private void RegisterTheAdObjects(UnifiedNativeAd nativeAd)
+	/*private void RegisterTheAdObjects(UnifiedNativeAd nativeAd)
 	{
 		Debug.Log("NativeAdHolder.ShowAd() Register all of the objects...");
 		if (icon != null && !nativeAd.RegisterIconImageGameObject(icon.gameObject))
@@ -240,7 +240,7 @@ public class NativeAdHolder : MonoBehaviour
 		Debug.Log("NativeAdHolder.ShowAd() Register all of the images...");
 		List<GameObject> gameObjects = new List<GameObject>(imageTexturesGameObjects);
 		nativeAd.RegisterImageGameObjects(gameObjects);
-	}
+	}*/
 
 	private IEnumerator ShowCallToActionButton()
 	{

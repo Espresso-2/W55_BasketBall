@@ -110,7 +110,7 @@ public class TopNavBar : MonoBehaviour
 			teamName.text = TeamDetails.GetTeamName();
 		}
 		UpdateCurrencyDisplay();
-		AdMediation.HideTopBanner();
+		/*AdMediation.HideTopBanner();*/
 	}
 
 	public virtual void UpdateCurrencyDisplay()

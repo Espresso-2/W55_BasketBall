@@ -803,8 +803,9 @@ public class GameController : MonoBehaviour
 		{
 			enemyPlayerController.OnTipOff(ballToP1, ballToP2, extraHighBall, hardForUserToGet);
 		}
-		AdMediation.HideTopBanner();
-		AdMediation.HideCenterBanner();
+		//TODO: ShowAd
+		/*AdMediation.HideTopBanner();
+		AdMediation.HideCenterBanner();*/
 		settingUpNewPlay = false;
 	}
 
@@ -880,10 +881,10 @@ public class GameController : MonoBehaviour
 	public virtual void ForfeitGame()
 	{
 		Time.timeScale = 1f;
-		if (!AdMediation.IsIntAvail() && PlayerPrefs.GetInt("ADS_OFF") != 1 && (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1))
+		/*if (!AdMediation.IsIntAvail() && PlayerPrefs.GetInt("ADS_OFF") != 1 && (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1))
 		{
 			AdMediation.ReqInt();
-		}
+		}*/
 		EndGame(true);
 	}
 
@@ -1039,7 +1040,7 @@ public class GameController : MonoBehaviour
 		yield return new WaitForSeconds(0.65f);
 		yield return new WaitForSeconds(0.5f);
 		Time.timeScale = 0f;
-		AdMediation.DestroyCenterBanner();
+		//AdMediation.DestroyCenterBanner();
 		if (twoPlayerMode)
 		{
 			Application.LoadLevel("MainUI");
@@ -1315,7 +1316,7 @@ public class GameController : MonoBehaviour
 			ShowHint(true);
 			hintMessageTopOfScreen.NeedBallForTimeout();
 		}
-		AdMediation.HideTopBanner();
+		//AdMediation.HideTopBanner();
 	}
 
 	private IEnumerator ShowTimeoutScreen()

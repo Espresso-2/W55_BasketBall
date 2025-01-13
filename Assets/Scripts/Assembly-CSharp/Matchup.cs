@@ -95,7 +95,7 @@ public class Matchup : MonoBehaviour
 		AdMediation.IsVidAvail();
 		int num = PlayerPrefs.GetInt("GAMES_SINCE_WATCHING_AD") + 1;
 		PlayerPrefsHelper.SetInt("GAMES_SINCE_WATCHING_AD", num, true);
-		if (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1)
+		/*if (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1)
 		{
 			if (PlayerPrefs.GetInt("NATIVE_HALFTIME_ADS_ENABLED") == 1)
 			{
@@ -109,7 +109,7 @@ public class Matchup : MonoBehaviour
 			{
 				AdMediation.ReqInt();
 			}
-		}
+		}*/
 		PlayFabManager.Instance().SetUserDataForKey("GAMES_SINCE_WATCHING_AD", num);
 		AdMediation.ShowTjpMatchupScreen();
 	}

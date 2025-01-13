@@ -40,7 +40,7 @@ public class PrizeBallGameResults : MonoBehaviour
 			newBestBox.SetActive(false);
 			bestScoreText.text = "BEST: " + PlayerPrefs.GetInt("PRIZEBALL_BEST").ToString("n0");
 		}
-		if (AdMediation.instance != null && AdMediation.instance.GetSecondsSinceIntAd() > (float)PlayerPrefs.GetInt("MIN_SEC_BETWEEN_AD") && AdMediation.IsIntAvail())
+		/*if (AdMediation.instance != null && AdMediation.instance.GetSecondsSinceIntAd() > (float)PlayerPrefs.GetInt("MIN_SEC_BETWEEN_AD") && AdMediation.IsIntAvail())
 		{
 			flag = false;
 			/*FlurryAnalytics.Instance().LogEvent("SHOW_INT_AD", new string[3]
@@ -48,9 +48,9 @@ public class PrizeBallGameResults : MonoBehaviour
 				"num_wins:" + num + string.Empty,
 				"MIN_SEC_BETWEEN_AD:" + PlayerPrefs.GetInt("MIN_SEC_BETWEEN_AD"),
 				"num_wins_milestone:" + LoadAppPrizeBall.GetNumWinsMilestone() + string.Empty
-			}, false);*/
-			AdMediation.ShowInt();
-		}
+			}, false);#1#
+			/*AdMediation.ShowInt();#1#
+		}*/
 		if (flag)
 		{
 			coachRatePrompt.SetActive(true);
