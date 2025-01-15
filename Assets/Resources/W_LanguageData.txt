@@ -1,0 +1,323 @@
+{"Eng":"BIG OPPORTUNITY!","Sim":"巨大机遇！"}
+{"Eng":"UPGRADE","Sim":"升级"}
+{"Eng":"PLAY","Sim":"开始游戏"}
+{"Eng":"DEVELOPMENT TEAM","Sim":"开发团队"}
+{"Eng":"RATE THIS APP","Sim":"为应用评分"}
+{"Eng":"AND LET US KNOW HOW TO IMPROVE THE GAME!","Sim":"告诉我们该如何改善这款游戏！"}
+{"Eng":"LIMITED TIME","Sim":"有限的时间"}
+{"Eng":"Hey I'm coach Jim,\nIf you get a team together I will coach us to winning from NEW YORK to LA!","Sim":"大家好我是JIM教练，\n如果你能集齐一个队伍，\n我会辅导大家，\n一路从纽约赢到洛杉矶去"}
+{"Eng":"SUGGESTED WAY TO HOLD DEVICE","Sim":"持握设备的推荐方式"}
+{"Eng":"TIMEOUT TAKEN","Sim":"使用赛间暂停"}
+{"Eng":"IN GAME","Sim":"在比赛中"}
+{"Eng":"PUT IN","Sim":"加入比赛"}
+{"Eng":"RESUME GAME","Sim":"恢复比赛"}
+{"Eng":"HYDRATION","Sim":"含水量水平"}
+{"Eng":"EARLY","Sim":"太早"}
+{"Eng":"RELEASED","Sim":"略早"}
+{"Eng":"LATE","Sim":"太晚"}
+{"Eng":"YOU WON!","Sim":"你赢了！"}
+{"Eng":"READY","Sim":"准备好"}
+{"Eng":"RESUME","Sim":"恢复"}
+{"Eng":"TAKE TIMEOUT","Sim":"赛间暂停"}
+{"Eng":"FORFEIT","Sim":"放弃"}
+{"Eng":"QUIT","Sim":"退出"}
+{"Eng":"TOTAL REWARDS","Sim":"全部奖励"}
+{"Eng":"CLAIM","Sim":"领取"}
+{"Eng":"DOUBLE REWARDS","Sim":"双倍奖励"}
+{"Eng":"RATE","Sim":"评价"}
+{"Eng":"TOUR","Sim":"地图"}
+{"Eng":"2 PLAYER","Sim":"2名玩家"}
+{"Eng":"DEALS","Sim":"特价"}
+{"Eng":"STORE","Sim":"商店"}
+{"Eng":"PLAYERS","Sim":"玩家"}
+{"Eng":"LEVEL UP","Sim":"等级提升"}
+{"Eng":"REWARDS","Sim":"奖励"}
+{"Eng":"CONTINUE","Sim":"继续"}
+{"Eng":"LOADING","Sim":"加载中"}
+{"Eng":"SELECT POWERUPS","Sim":"选择能力提升道具"}
+{"Eng":"OVERALL","Sim":"整体"}
+{"Eng":"SHOOTING","Sim":"投球"}
+{"Eng":"CONTESTING","Sim":"拦截"}
+{"Eng":"DEFENSE","Sim":"防守"}
+{"Eng":"SPEED","Sim":"速度"}
+{"Eng":"GRIP SPRAY","Sim":"紧握喷雾"}
+{"Eng":"INCREASE SPEED","Sim":"增加速度"}
+{"Eng":"SHOOTING CHALK","Sim":"投球粉笔"}
+{"Eng":"IMPROVE SHOOTING","Sim":"提升投球能力"}
+{"Eng":"ENERGY BAR","Sim":"蛋白棒"}
+{"Eng":"FASTER ENERGY RECOVERY","Sim":"更快的能量恢复"}
+{"Eng":"GET MORE","Sim":"获取更多"}
+{"Eng":"TEAM NAME","Sim":"队伍名称"}
+{"Eng":"CLAIM TEAM","Sim":"认领队伍"}
+{"Eng":"ACTIVE","Sim":"活跃的"}
+{"Eng":"ACTIVATE","Sim":"激活"}
+{"Eng":"HIGHER LEVEL REQUIRED","Sim":"需要更高等级"}
+{"Eng":"SIZE","Sim":"大小"}
+{"Eng":"OWNED","Sim":"已拥有"}
+{"Eng":"INSTANT UPGRADE","Sim":"即刻升级"}
+{"Eng":"WRITE A REVIEW","Sim":"编写一则评论"}
+{"Eng":"EMAIL SUPPORT","Sim":"邮件支持"}
+{"Eng":"REPLAY TUTORIAL","Sim":"重播教程"}
+{"Eng":"RESTORE PURCHASES","Sim":"恢复购买"}
+{"Eng":"CREDITS","Sim":"创作人员名单"}
+{"Eng":"GAMES","Sim":"游戏次数"}
+{"Eng":"POINTS","Sim":"得分"}
+{"Eng":"REBOUNDS","Sim":"篮板球次数"}
+{"Eng":"BLOCKS","Sim":"封锁次数"}
+{"Eng":"AVG","Sim":"平均"}
+{"Eng":"TOTAL","Sim":"总计"}
+{"Eng":"UPGRADES REQUIRED","Sim":"需要升级"}
+{"Eng":"SIGN STARTER","Sim":"指定上场球员"}
+{"Eng":"WIN MORE TOURNAMENTS","Sim":"赢得更多的旅程"}
+{"Eng":"QUARTERFINALS","Sim":"四分之一决赛"}
+{"Eng":"SEMIFINALS","Sim":"半决赛"}
+{"Eng":"CHAMPIONSHIP","Sim":"冠军赛"}
+{"Eng":"GRAND PRIZE","Sim":"特等奖"}
+{"Eng":"BebasNeue Bold","Sim":""}
+{"Eng":"Oswald-Light","Sim":""}
+{"Eng":"1 FREE","Sim":"1项免费"}
+{"Eng":"REFILL HYDRATION DURING GAMES","Sim":"补充队员的含水量"}
+{"Eng":"INCREASE SPEED FOR AN ENTIRE GAME!","Sim":"整场比赛中加速！"}
+{"Eng":"IMPROVE SHOOTING FOR AN ENTIRE GAME!","Sim":"整场比赛中提升投球能力"}
+{"Eng":"SPEED UP ENERGY RECOVERY FOR AN ENTIRE GAME!","Sim":"整场比赛中提升能量恢复速度！"}
+{"Eng":"BEST VALUE","Sim":"最佳价值"}
+{"Eng":"STARTER PACK","Sim":"新人包"}
+{"Eng":"PRO PACK","Sim":"专业包"}
+{"Eng":"ELITE PACK","Sim":"精英包"}
+{"Eng":"GRIP SPRAYS","Sim":"紧握喷雾"}
+{"Eng":"ENERGY BARS","Sim":"蛋白棒"}
+{"Eng":"SPORTS DRINKS","Sim":"运动饮料"}
+{"Eng":"SHOOTING CHALK","Sim":"投球粉笔"}
+{"Eng":"ALL STAR PACK","Sim":"全明星包"}
+{"Eng":"SUPER STAR PACK","Sim":"超级明星包"}
+{"Eng":"HALFTIME","Sim":"中场休息"}
+{"Eng":"{num} REMAINING","Sim":"剩余{num} "}
+{"Eng":"GREEN","Sim":"绿色"}
+{"Eng":"PINK","Sim":"粉色"}
+{"Eng":"SCRIMMAGE","Sim":"练习赛"}
+{"Eng":"YOU","Sim":"你"}
+{"Eng":"OPPONENT","Sim":"对手"}
+{"Eng":"LOADING NEW BRACKET","Sim":"正在加载新的分组比赛图示"}
+{"Eng":"TRY AGAIN","Sim":"再次尝试"}
+{"Eng":"PLAY AGAIN","Sim":"再玩一次"}
+{"Eng":"WIN MARGIN","Sim":"获胜分数差距"}
+{"Eng":"GOOD GAME!","Sim":"不错的比赛！"}
+{"Eng":"FORFEITED","Sim":"放弃"}
+{"Eng":"YOU'VE BEEN AWARDED YOUR OWN TEAM!","Sim":"你已经奖励了自己的队伍！"}
+{"Eng":"EXAMPLE: \"BIG DUNKERS\"","Sim":"例子：“芝加哥骑士”"}
+{"Eng":"STARTERS","Sim":"上场球员"}
+{"Eng":"BACKUPS","Sim":"后备球员"}
+{"Eng":"FREE","Sim":"免费"}
+{"Eng":"Increases player speed","Sim":"增加队员速度"}
+{"Eng":"Reduces opponent shooting ability","Sim":"降低对手的投球能力"}
+{"Eng":"Increases player shooting ability","Sim":"增加球员的投球能力"}
+{"Eng":"Reduces opponent speed","Sim":"减慢对手速度"}
+{"Eng":"UPGRADE COMPLETE!","Sim":"升级完成"}
+{"Eng":"UPGRADE TIME","Sim":"升级时间"}
+{"Eng":"REQUIRED","Sim":"必须"}
+{"Eng":"OUT OF SPORTS DRINKS","Sim":"运动饮料喝完了"}
+{"Eng":"GET MORE GOLD","Sim":"获得更多金币"}
+{"Eng":"YOU HAVE PURCHASED","Sim":"您已购买"}
+{"Eng":"YOU EARNED","Sim":"您已挣得"}
+{"Eng":"SUCCESS!","Sim":"成功"}
+{"Eng":"I'M IMPRESSED!","Sim":"我很佩服！"}
+{"Eng":"Let's see your defense in a scrimmage...","Sim":"让我们看一看你在练习比赛中的防守"}
+{"Eng":"Stay in front of your opponent","Sim":"保持在对手前方"}
+{"Eng":"Jump to block shots","Sim":"跳起来封锁对方投球"}
+{"Eng":"Tap right thumb to jump","Sim":"长按右边拇指来跳跃"}
+{"Eng":"Hold down right thumb to shoot","Sim":"长按右边拇指来投球"}
+{"Eng":"Get a running start to dunk!","Sim":"到篮筐下来带球上篮"}
+{"Eng":"Tip: Release after peak of jump","Sim":"跳跃到最高处后松开"}
+{"Eng":"You will move slow and miss shots when your energy bar is low","Sim":"当你的能量栏很低时，你将移动缓慢并错失投篮机会"}
+{"Eng":"You can only call timeouts when you have the ball","Sim":"只有当球在你手中时才可以要求赛间暂停"}
+{"Eng":"You are out of timeouts","Sim":"你的赛间暂停机会已经用完"}
+{"Eng":"SWAP IN YOUR BACKUP WHEN YOU GET DEHYDRATED","Sim":"当你脱水时，请替换后备球员上场"}
+{"Eng":"Your energy will not recharge if you are dehydrated","Sim":"如果你处于脱水状态，你的能量不会重新恢复"}
+{"Eng":"Score 3's by shooting from behind the arc","Sim":"在红色弧线之后投球，有机会投入3’S球"}
+{"Eng":"Recharge your energy by standing still without the ball","Sim":"站稳不动并且手上没有球时，可以重新恢复能量"}
+{"Eng":"Hit layups by shooting from under the hoop","Sim":"在球篮下方投球，带球上篮"}
+{"Eng":"Pump fake by quickly tapping shoot","Sim":"快速点击投球可以做投篮假动作"}
+{"Eng":"Run into your opponent to steal the ball when it is blinking","Sim":"如果对手很累但是你不累，你可以撞向对手来夺球"}
+{"Eng":"You can't move because you already used your dribble","Sim":"你无法移动，因为你已经使用了运球"}
+{"Eng":"YOUR REWARD HAS BEEN DOUBLED!","Sim":"你的奖励已经加倍！"}
+{"Eng":"OK","Sim":"好"}
+{"Eng":"WATCH VIDEO","Sim":"观看视频"}
+{"Eng":"20% BONUS","Sim":"20%更多免费"}
+{"Eng":"25% BONUS","Sim":"25%更多免费"}
+{"Eng":"33% BONUS","Sim":"33%更多免费"}
+{"Eng":"60% BONUS","Sim":"60%更多免费"}
+{"Eng":"NEW","Sim":"新的"}
+{"Eng":"Your {PLAYER} upgrade is finished.","Sim":"你的{PLAYER} 升级已完成"}
+{"Eng":"YOU GOT A TEAM!","Sim":"你组成了团队！"}
+{"Eng":"SIGN NEW PLAYER","Sim":"指定新球员"}
+{"Eng":"Sign a STARTER to team up with JOE HOPKINS.","Sim":"指定一名上场球员来和乔·霍普金斯搭档。"}
+{"Eng":"The competition will get tougher as you enter more prestigious tournaments.\n\nSometimes you must upgrade your players to meet tournament standards.","Sim":"\"当你参加更多著名锦标赛后，竞争会越来越激烈。\n有时你必须升级你的球员以达到锦标赛标准。\""}
+{"Eng":"<i>CONTESTING:</i> Reduces your opponent’s shooting ability\n\n<i>SPEED:</i> Your ability to dribble past the defender\n\n<i>DEFENSE:</i> Reduces your opponent’s speed","Sim":"拦截：降低对手投球精准度\n\n速度：你突破防守员的能力　\n\n防守：降低对手突破你防守的能力"}
+{"Eng":"STARTING SOON","Sim":"即将开始"}
+{"Eng":"This tournament will start soon.\n\nLet's enter another tournament while we wait.","Sim":"\"这场锦标赛即将开始。\n在我们等待时，先参加另一场锦标赛吧。\""}
+{"Eng":"I can't wait to help you get team {TEAM_NAME} to a championship!\n\nI entered us into the biggest tournament in MINNESOTA!","Sim":"\"我等不及要帮助你让 {TEAM_NAME}队伍参加冠军赛了！\n我们已进入“明尼苏达明星”，这个州最重大的锦标赛！\""}
+{"Eng":"LET'S TRY AGAIN!","Sim":"让我们再试一次！"}
+{"Eng":"NICE JOB","Sim":"做得很棒"}
+{"Eng":"THANKS FOR WATCHING!","Sim":"感谢收看"}
+{"Eng":"Reward received!","Sim":"已收到奖励"}
+{"Eng":"GREAT GAME!","Sim":"了不起的比赛！"}
+{"Eng":"Here is a reward to help with our next game...        ","Sim":"这是一个奖励，帮你进行下一场比赛。"}
+{"Eng":"  ","Sim":"  "}
+{"Eng":"WATCH A VIDEO","Sim":"观看视频"}
+{"Eng":"NOT ENOUGH CASH","Sim":"现金不足"}
+{"Eng":"EXCHANGE GOLD FOR LACKING CASH","Sim":"用金币换取缺少的现金"}
+{"Eng":"Use left thumb to move","Sim":"使用左边拇指来移动"}
+{"Eng":"FIRST TO 11 PTS","Sim":"FIRST TO 11 PTS"}
+{"Eng":"RECEIVED","Sim":"已获得"}
+{"Eng":"SALE!","Sim":"折扣！"}
+{"Eng":"PLAY 2ND HALF","Sim":"玩下半场"}
+{"Eng":"UPGRADE YOUR PLAYERS","Sim":"升级你的球员"}
+{"Eng":"SUCCESSFULLY PURCHASED ALL STAR PACKAGE","Sim":"成功购买全民星包"}
+{"Eng":"SUCCESSFULLY PURCHASED SUPER STAR PACKAGE","Sim":"成功购买超级明星包"}
+{"Eng":"DEAL CLOSED","Sim":"交易关闭"}
+{"Eng":"WIN CHAMPIONSHIPS","Sim":"赢得冠军赛"}
+{"Eng":"PRESS TO JUMP","Sim":"点击跳跃"}
+{"Eng":"COMPETE NATIONWIDE","Sim":"全国范围内竟竞赛"}
+{"Eng":"VS","Sim":"对战"}
+{"Eng":"GOLD","Sim":"金币"}
+{"Eng":"YOUR TEAM STATS","Sim":"你的队伍统计数据"}
+{"Eng":"BAGS","Sim":"包"}
+{"Eng":"WOMEN'S TOURNAMENT","Sim":"女子锦标赛"}
+{"Eng":"Sign a STARTER to team up with TINA CLARK.","Sim":"指定一名上场球员来和蒂娜克拉克组队。"}
+{"Eng":"MEN","Sim":"男子"}
+{"Eng":"WOMEN","Sim":"女子"}
+{"Eng":"STANDARD BAG","Sim":"标准包"}
+{"Eng":"PREMIUM BAG","Sim":"高级包"}
+{"Eng":"OPEN","Sim":"开启"}
+{"Eng":"OPEN YOUR BAG","Sim":"开启你的包"}
+{"Eng":"COLLECT YOUR ITEMS!","Sim":"收集你的项目！"}
+{"Eng":"ONE MORE BAG?","Sim":"还要一个包？"}
+{"Eng":"20% DISCOUNT","Sim":"20%折扣"}
+{"Eng":"reward from our sponsor!","Sim":"额外奖励"}
+{"Eng":"ONLINE","Sim":"在线"}
+{"Eng":"SPLIT SCREEN","Sim":"分屏"}
+{"Eng":"COMING SOON","Sim":"即将推出"}
+{"Eng":"LOCAL SPLIT-SCREEN","Sim":"本地"}
+{"Eng":"PREMIUM","Sim":"高级"}
+{"Eng":"RARE","Sim":"稀有"}
+{"Eng":"3 COOL ITEMS!","Sim":"3个超酷物品！"}
+{"Eng":" ","Sim":""}
+{"Eng":"WIN GOLD!","Sim":"赢取金币！"}
+{"Eng":"EXIT GAME","Sim":"退出游戏"}
+{"Eng":"WOULD YOU LIKE TO EXIT?","Sim":"你想要退出吗？"}
+{"Eng":"CANCEL","Sim":"取消"}
+{"Eng":"EXIT","Sim":"退出"}
+{"Eng":"STEALS","Sim":"夺球次数"}
+{"Eng":"Get a running start to dunk","Sim":"获得快速启动来扣篮"}
+{"Eng":"You need full energy to steal","Sim":"你需要完整的能量来夺球"}
+{"Eng":"Opponent must be tired for you to steal the ball","Sim":"对手一定是累了给你偷球"}
+{"Eng":"Conserve your energy when possible","Sim":"尽可能保存能量"}
+{"Eng":"Jumping uses a lot of energy.","Sim":"跳跃需要消耗很多能量"}
+{"Eng":"Getting past the defender uses a lot of energy","Sim":"突破防守员需要消耗很多能量"}
+{"Eng":"Tired defenders are easier to get past","Sim":"疲劳的防守员更容易突破"}
+{"Eng":"The bar above your head is your energy","Sim":"你头上的能量条是你的耐力"}
+{"Eng":"You need to hold down shoot longer!","Sim":"你需要在空中保持到到最高"}
+{"Eng":"HEY!","Sim":"嘿！"}
+{"Eng":"YES","Sim":"是"}
+{"Eng":"NO","Sim":"没有"}
+{"Eng":"Do you love this game?","Sim":"你喜欢这个游戏吗？"}
+{"Eng":"COLLECT REWARDS","Sim":"收集奖励"}
+{"Eng":"PRACTICE","Sim":"实践"}
+{"Eng":"TIP","Sim":"提示"}
+{"Eng":"Steal the ball when it is blinking","Sim":"在球闪烁时偷球"}
+{"Eng":"You can’t steal when opponent is shooting","Sim":"当对手投篮时，你不能抢球"}
+{"Eng":"POPULAR","Sim":"流行"}
+{"Eng":"Remove Ads","Sim":"移除广告"}
+{"Eng":"SPECIAL OFFER!","Sim":"特价！"}
+{"Eng":"PURCHASE COMPLETE!","Sim":"购买完成！"}
+{"Eng":"YOU Received 100 GOLD AND WILL NO LONGER GET POPUP ADS!","Sim":"无"}
+{"Eng":"BONUS OFFER!","Sim":"奖金提议！"}
+{"Eng":"PRICE DISCOUNT","Sim":"价格折扣"}
+{"Eng":"BIG WALLET","Sim":"BIG钱包"}
+{"Eng":"NO THANKS","Sim":"不用了，谢谢"}
+{"Eng":"BUY","Sim":"购买"}
+{"Eng":"5X BONUS OFFER","Sim":"5X奖金提议"}
+{"Eng":"4X BONUS OFFER","Sim":"4X奖金提议"}
+{"Eng":"RESTORED!","Sim":"重置商店"}
+{"Eng":"RESTORING...","Sim":"还原..."}
+{"Eng":"DISCOUNT","Sim":"折扣"}
+{"Eng":"GLAD TO HEAR","Sim":"很高兴听到"}
+{"Eng":"WIN MINNESOTA","Sim":"胜 明尼苏达"}
+{"Eng":"WINS","Sim":"胜利"}
+{"Eng":"LOSSES","Sim":"损失"}
+{"Eng":"TOTAL","Sim":"总"}
+{"Eng":"WIN STREAK","Sim":"连胜"}
+{"Eng":"CURRENT","Sim":"当前"}
+{"Eng":"AVERAGE","Sim":"平均"}
+{"Eng":"3 PT","Sim":"3 PT"}
+{"Eng":"ENTER CHARLOTTE TOURNAMENT","Sim":"进入夏洛特"}
+{"Eng":"DAILY BAG","Sim":"自由"}
+{"Eng":"NEW BAG AVAILABLE IN","Sim":"新款包包"}
+{"Eng":"FIRST TO 7 PTS","Sim":"1 至 7 分"}
+{"Eng":"Keep up the good work!","Sim":"做得好！"}
+{"Eng":"Play everyday to open your daily bags!","Sim":"每天打开你的日用包"}
+{"Eng":"Get a FREE bag by winning a tournament 3X","Sim":"通过赢得锦标赛3倍以获得一个免费的袋子"}
+{"Eng":"Win tournaments 3 times to collect trophies!","Sim":"赢得比赛3次收集奖杯！"}
+{"Eng":"Replay tournaments for an increasing challenge!","Sim":"重播锦标赛以应对日益严峻的挑战！"}
+{"Eng":"FREE IN","Sim":"自由进入"}
+{"Eng":"OR","Sim":"要么"}
+{"Eng":"WEAR","Sim":"穿"}
+{"Eng":"USE","Sim":"使用"}
+{"Eng":"WEAR ARMBANDS","Sim":"穿"}
+{"Eng":"Press back then forward to do a crossover","Sim":"向后再向前按以进行交叉"}
+{"Eng":"GAME LENGTH","Sim":"游戏长度"}
+{"Eng":"WELCOME BACK!","Sim":"欢迎回来！"}
+{"Eng":"SWITCH PLAYER","Sim":"开关机"}
+{"Eng":"POINT STREAK CHALLENGE","Sim":"连胜挑战"}
+{"Eng":"ENTERING LIVE EVENT!","Sim":"进入现场活动！"}
+{"Eng":"LIVE EVENT","Sim":"现场活动"}
+{"Eng":"ENTER","Sim":"输入"}
+{"Eng":"1 entry remaining","Sim":"剩余1项"}
+{"Eng":"2 entries remaining","Sim":"剩余2项"}
+{"Eng":"3 entries remaining","Sim":"剩余3项"}
+{"Eng":"0 entries remaining","Sim":"剩余0个条目"}
+{"Eng":"confirm forfeit?","Sim":"确认没收"}
+{"Eng":"YOUR PRIZES","Sim":"你的奖品"}
+{"Eng":"YOUR RESULTS","Sim":"你的结果"}
+{"Eng":"RANK","Sim":"全球排名"}
+{"Eng":"CLAIM PRIZES","Sim":"索赔奖品"}
+{"Eng":"You need full energy to dunk","Sim":"你需要充足的能量给饮料"}
+{"Eng":"Don’t swipe or flick","Sim":"不要滑动"}
+{"Eng":"Don't move thumb when shooting","Sim":"不要移动你的拇指"}
+{"Eng":"Don't swipe when shooting or jumping","Sim":"投篮或跳跃时不要滑动。"}
+{"Eng":"CUSTOMIZE YOUR PLAYER!","Sim":"定制！"}
+{"Eng":"CUSTOMIZE","Sim":"定制"}
+{"Eng":"SAVE CHANGES","Sim":"好的"}
+{"Eng":"RANDOMIZE","Sim":"随机"}
+{"Eng":"RESET","Sim":"重启"}
+{"Eng":"UNIFORM","Sim":"制服"}
+{"Eng":"WIN 2 GAMES","Sim":"赢得2场比赛"}
+{"Eng":"TEAM LOOK","Sim":"团队统一"}
+{"Eng":"LEVEL UP FASTER!","Sim":"提高速度"}
+{"Eng":"TIME LEFT","Sim":"."}
+{"Eng":"GET MORE FREE","Sim":"免费获取更多"}
+{"Eng":"CLAIM","Sim":"领取"}
+{"Eng":"<i>LVL {LVL} </i> REQUIRED","Sim":"LVL {LVL} 需要"}
+{"Eng":"","Sim":""}
+{"Eng":"","Sim":""}
+{"Eng":"JABSTEP by quickly tapping forward when you’re NOT dribbling","Sim":"在您不运球时快速向前点击"}
+{"Eng":"Upgrade your DEFENSE so people cannot drive by you for easy layups","Sim":"
+升级你的防守，防止对手轻松突破投篮"}
+{"Eng":"Meet people at the rim to block their dunks!","Sim":"在篮筐前迎接对手，封堵他们的扣篮！"}
+{"Eng":"Use PUMPFAKES and JABSTEPS to confuse people!","Sim":"使用假动作和急步来迷惑对手，让他们无法预判你的动作！"}
+{"Eng":"WATCH AD TO CLAIM","Sim":"观看索赔"}
+{"Eng":"WATCH AD TO","Sim":"观看广告"}
+{"Eng":"Discord chat","Sim":"Discord 聊"}
+{"Eng":"LOGOUT OF","Sim":"退出"}
+{"Eng":"LOG INTO","Sim":"登录到"}
+{"Eng":"load account","Sim":"加载现有帐户"}
+{"Eng":"create new","Sim":"创建新的"}
+{"Eng":"existing account found!","Sim":"找到现有帐户！"}
+{"Eng":"An account may already exist for your device.","Sim":"您的设备可能已存在帐户。"}
+{"Eng":"Achievements","Sim":"q"}
+{"Eng":"LEADERBOARD","Sim":"排行榜"}
+{"Eng":"CHAT","Sim":"聊天"}
+{"Eng":"GO TO bonus","Sim":"获得奖金"}
+{"Eng":"leaderboard prizes","Sim":""}
+{"Eng":"event prizes","Sim":"活动奖品"}
+{"Eng":"prizes","Sim":"奖品"}
