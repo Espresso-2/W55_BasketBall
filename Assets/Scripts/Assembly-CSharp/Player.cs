@@ -162,7 +162,7 @@ public class Player
 				"currentTournament:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
 				"currency:unknown"
 			}, false);*/
-			AdMediation.TrackEventInTj("BUY_UPGRADE", playerPrefNum);
+			/*AdMediation.TrackEventInTj("BUY_UPGRADE", playerPrefNum);*/
 		}
 	}
 

@@ -1,10 +1,10 @@
-using Unibill.Impl;
+/*
 using UnityEngine;
 
 [AddComponentMenu("")]
 public class SamsungAppsCallbackMonoBehaviour : MonoBehaviour
 {
-	private SamsungAppsBillingService samsung;
+	*//*private SamsungAppsBillingService samsung;*//*
 
 	public void Start()
 	{
@@ -47,3 +47,4 @@ public class SamsungAppsCallbackMonoBehaviour : MonoBehaviour
 		samsung.onInitFail();
 	}
 }
+*/

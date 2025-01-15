@@ -19,7 +19,7 @@ public class RestorePurchasesButton : MonoBehaviour
 	{
 		gameSounds.Play_select();
 		text.SetTerm("RESTORING", null);
-		Unibiller.restoreTransactions();
+		/*Unibiller.restoreTransactions();*/
 	}
 
 	public virtual void Restored()

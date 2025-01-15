@@ -98,7 +98,7 @@ public class UpgradeScreen : MonoBehaviour
 
 	public virtual void OnEnable()
 	{
-		AdMediation.ShowTjpUpgradeScreen();
+		/*AdMediation.ShowTjpUpgradeScreen();*/
 		if (priceMultiplier < 1)
 		{
 			priceMultiplier = 1;
@@ -145,7 +145,7 @@ public class UpgradeScreen : MonoBehaviour
 			"sessions:" + Stats.GetNumSessions() + string.Empty,
 			"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 		}, false);*/
-		AdMediation.TrackEventInTj("SCREEN_UPGRADE", Stats.GetNumWins());
+		/*AdMediation.TrackEventInTj("SCREEN_UPGRADE", Stats.GetNumWins());*/
 	}
 
 	public virtual void UpdateUpgradeDisplay(bool animate)
@@ -358,7 +358,7 @@ public class UpgradeScreen : MonoBehaviour
 			else
 			{
 				getGoldButton.ShowGetGoldBox();
-				AdMediation.ShowTjpInsufficientCurrency();
+				/*AdMediation.ShowTjpInsufficientCurrency();*/
 			}
 		}
 		if (!flag)
@@ -381,8 +381,8 @@ public class UpgradeScreen : MonoBehaviour
 				"num_losses:" + Stats.GetNumLosses() + string.Empty,
 				"sessions:" + Stats.GetNumSessions() + string.Empty
 			}, false);*/
-			AdMediation.TrackEventInTj("PURCHASED_FIRST_UPGRADE", Stats.GetNumSessions());
-			AdMediation.ActionCompleteInTj("e088412d-c699-4c62-b291-6cc71820a83c");
+		/*	AdMediation.TrackEventInTj("PURCHASED_FIRST_UPGRADE", Stats.GetNumSessions());
+			AdMediation.ActionCompleteInTj("e088412d-c699-4c62-b291-6cc71820a83c");*/
 		}
 		player.BuyStatUpgradeByNum(currentType, instant, instantComplete);
 		if (instant || instantComplete)
@@ -447,7 +447,7 @@ public class UpgradeScreen : MonoBehaviour
 		else
 		{
 			getGoldButton.ShowGetGoldBox();
-			AdMediation.ShowTjpInsufficientCurrency();
+			/*AdMediation.ShowTjpInsufficientCurrency();*/
 		}
 	}
 

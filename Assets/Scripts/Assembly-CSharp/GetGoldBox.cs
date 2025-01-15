@@ -60,7 +60,7 @@ public class GetGoldBox : MonoBehaviour
 
 	public virtual void CheckForEarnedCurrency()
 	{
-		AdMediation.CheckForEarnedCurrency();
+		//AdMediation.CheckForEarnedCurrency();
 		int[] intArray = PlayerPrefsX.GetIntArray(AdMediation.GOLD_OFFER_PREF);
 		int num = 0;
 		string text = string.Empty;

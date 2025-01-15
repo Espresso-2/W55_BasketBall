@@ -29,14 +29,14 @@ public class BuyIapButton : MonoBehaviour
 
 	public virtual void OnEnable()
 	{
-		try
+		/*try
 		{
 			iapItem = Unibiller.GetPurchasableItemById(iapId);
 		}
 		catch (Exception ex)
 		{
 			Debug.Log("ERROR GETTING IAP: " + ex.ToString());
-		}
+		}*/
 		if (iapItem != null)
 		{
 			int num = PurchaseGiver.prizeBallsPackAmounts[pkgNum];
@@ -55,7 +55,7 @@ public class BuyIapButton : MonoBehaviour
 	{
 		gameSounds.Play_select();
 		ShowLoadingBox();
-		Unibiller.initiatePurchase(iapItem, string.Empty);
+		/*Unibiller.initiatePurchase(iapItem, string.Empty);*/
 	}
 
 	private void ShowLoadingBox()

@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
-using Unibill;
+/*using Unibill;
 using Unibill.Impl;
-
+*/
 namespace Tests
 {
-	public class FakeBillingService : IBillingService, IAppleExtensions
+	public class FakeBillingService /*: IBillingService, IAppleExtensions*/
 	{
-		private IBillingServiceCallback biller;
+/*		private IBillingServiceCallback biller;*/
 
 		private List<string> purchasedItems = new List<string>();
 
-		private ProductIdRemapper remapper;
+/*		private ProductIdRemapper remapper;*/
 
 		public bool purchaseCalled;
 
@@ -21,12 +21,12 @@ namespace Tests
 
 		public event Action onAppReceiptRefreshFailed;
 
-		public FakeBillingService(ProductIdRemapper remapper)
+	/*	public FakeBillingService(ProductIdRemapper remapper)
 		{
 			this.remapper = remapper;
-		}
+		}*/
 
-		public void initialise(IBillingServiceCallback biller)
+	/*	public void initialise(IBillingServiceCallback biller)
 		{
 			this.biller = biller;
 			List<ProductDescription> list = new List<ProductDescription>();
@@ -36,9 +36,9 @@ namespace Tests
 				list.Add(new ProductDescription(id, "$123.45", "Fake title", "Fake description", "USD", 123.45m));
 			}
 			biller.onSetupComplete(list);
-		}
+		}*/
 
-		public void purchase(string item, string developerPayload)
+	/*	public void purchase(string item, string developerPayload)
 		{
 			purchaseCalled = true;
 			if (remapper.getPurchasableItemFromPlatformSpecificId(item).PurchaseType == PurchaseType.NonConsumable)
@@ -47,9 +47,9 @@ namespace Tests
 			}
 			biller.onPurchaseReceiptRetrieved(item, "fake receipt");
 			biller.onPurchaseSucceeded(item, "{ \"this\" : \"is a fake receipt\" }", Guid.NewGuid().ToString());
-		}
+		}*/
 
-		public void restoreTransactions()
+	/*	public void restoreTransactions()
 		{
 			restoreCalled = true;
 			foreach (string purchasedItem in purchasedItems)
@@ -58,7 +58,7 @@ namespace Tests
 			}
 			biller.onTransactionsRestoredSuccess();
 		}
-
+*/
 		public void finishTransaction(PurchasableItem item, string transactionId)
 		{
 		}

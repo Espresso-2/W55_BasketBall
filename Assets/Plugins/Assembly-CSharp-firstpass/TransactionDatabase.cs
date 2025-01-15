@@ -1,6 +1,6 @@
-using System;
+/*using System;
 using System.Collections.Generic;
-using Unibill.Impl;
+*//*using Unibill.Impl;*//*
 using Uniject;
 
 public class TransactionDatabase
@@ -72,3 +72,4 @@ public class TransactionDatabase
 		return string.Format("{0}.{1}", UserId, fragment);
 	}
 }
+*/

@@ -65,10 +65,10 @@ public class BonusReward : MonoBehaviour
 		cash.SetActive(!rewardIsBag);
 		starParticles.SetActive(true);
 		GameSounds.GetInstance().Play_coin_glow_2();
-		if (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1)
+		/*if (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1)
 		{
 			AdMediation.RequestNativeAdSmall();
-		}
+		}*/
 	}
 
 	private IEnumerator ShowContinueButton()

@@ -136,7 +136,7 @@ public class PurchaseGiver : MonoBehaviour
 					"screen: " + currentScreen,
 					"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 				}, false);*/
-				AdMediation.TrackEventInTj("FIRST_IAP_" + eventName, "IAP", pkgNum.ToString(), currentScreen, "pkgNum", pkgNum, "num_wins", Stats.GetNumWins(), "current_tour", Tournaments.GetCurrentTournamentNum());
+				/*AdMediation.TrackEventInTj("FIRST_IAP_" + eventName, "IAP", pkgNum.ToString(), currentScreen, "pkgNum", pkgNum, "num_wins", Stats.GetNumWins(), "current_tour", Tournaments.GetCurrentTournamentNum());*/
 			}
 			/*FlurryAnalytics.Instance().LogEvent("IAP_" + eventName, new string[6]
 			{
@@ -147,7 +147,7 @@ public class PurchaseGiver : MonoBehaviour
 				"sessions:" + Stats.GetNumSessions() + string.Empty,
 				"screen: " + currentScreen
 			}, false);*/
-			AdMediation.TrackEventInTj("IAP_" + eventName, "IAP", pkgNum.ToString(), currentScreen, "pkgNum", pkgNum, "num_wins", Stats.GetNumWins(), "current_tour", Tournaments.GetCurrentTournamentNum());
+			/*AdMediation.TrackEventInTj("IAP_" + eventName, "IAP", pkgNum.ToString(), currentScreen, "pkgNum", pkgNum, "num_wins", Stats.GetNumWins(), "current_tour", Tournaments.GetCurrentTournamentNum());*/
 		}
 		RecordSpendingInfoInUsd(usd);
 	}

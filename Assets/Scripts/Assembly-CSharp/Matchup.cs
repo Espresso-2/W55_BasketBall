@@ -87,10 +87,10 @@ public class Matchup : MonoBehaviour
 		player1Record.text = ((!isLiveEvent) ? (Stats.GetNumWins() + "-" + Stats.GetNumLosses() + string.Empty) : string.Empty);
 		player2Name.text = tournament.GetCurrentOpponentName();
 		player2Record.text = ((!isLiveEvent) ? tournament.GetCurrentOpponentRecord() : string.Empty);
-		if (!PlayFabManager.Instance().IsClientLoggedIn())
+		/*if (!PlayFabManager.Instance().IsClientLoggedIn())
 		{
 			PlayFabManager.Instance().LoginAsGuest(true);
-		}
+		}*/
 		Player.playerNamesMayHaveChanged = false;
 		AdMediation.IsVidAvail();
 		int num = PlayerPrefs.GetInt("GAMES_SINCE_WATCHING_AD") + 1;
@@ -111,7 +111,7 @@ public class Matchup : MonoBehaviour
 			}
 		}*/
 		PlayFabManager.Instance().SetUserDataForKey("GAMES_SINCE_WATCHING_AD", num);
-		AdMediation.ShowTjpMatchupScreen();
+		/*AdMediation.ShowTjpMatchupScreen();*/
 	}
 
 	public virtual void StartMatch()

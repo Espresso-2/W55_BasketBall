@@ -32,14 +32,14 @@ public class BuyGoldButton : MonoBehaviour
 
 	public virtual void OnEnable()
 	{
-		try
+		/*try
 		{
 			iapItem = Unibiller.GetPurchasableItemById(iapIds[this.num]);
 		}
 		catch (Exception ex)
 		{
 			Debug.Log("ERROR GETTING IAP: " + ex.ToString());
-		}
+		}*/
 		if (iapItem == null)
 		{
 			return;
@@ -90,7 +90,7 @@ public class BuyGoldButton : MonoBehaviour
 		PlayerPrefsHelper.SetInt("TAPJOY_BONUS", 0);
 		PlayerPrefsHelper.SetInt("IS_TAPJOY_PURCHASE_REQUEST", 0);
 		ShowLoadingBox();
-		Unibiller.initiatePurchase(iapItem, string.Empty);
+		//Unibiller.initiatePurchase(iapItem, string.Empty);
 	}
 
 	public virtual void Update()

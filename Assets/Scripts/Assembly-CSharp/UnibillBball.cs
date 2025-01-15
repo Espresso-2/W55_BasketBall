@@ -1,8 +1,6 @@
 using System;
 using System.Collections;
 using MiniJSON;
-using TapjoyUnity;
-using Unibill;
 using UnityEngine;
 
 [AddComponentMenu("Unibill/UnibillBball")]
@@ -16,12 +14,12 @@ public class UnibillBball : MonoBehaviour
             base.gameObject.SetActive(false);
             return;
         }
-        Unibiller.onBillerReady += onBillerReady;
+       /* Unibiller.onBillerReady += onBillerReady;
         Unibiller.onTransactionsRestored += onTransactionsRestored;
         Unibiller.onPurchaseFailed += onFailed;
         //Unibiller.onPurchaseCompleteEvent += onPurchased;
         Unibiller.onPurchaseDeferred += onDeferred;
-        Unibiller.Initialise();
+        Unibiller.Initialise();*/
     }
 
     private void onBillerReady(UnibillState state)
@@ -37,7 +35,7 @@ public class UnibillBball : MonoBehaviour
             GameObject.Find("RestoreButton").SendMessage("Restored");
         }
     }
-
+/*
     private void onPurchased(PurchaseEvent e)
     {
         string id = e.PurchasedItem.Id;
@@ -121,7 +119,7 @@ public class UnibillBball : MonoBehaviour
             AdMediation.MarkLastTjPurchaseRequestAsCompleted();
         }
         AdMediation.ShowTjpIapCompleted();
-    }
+    }*/
 
     private void giveGoldPackage(int num, bool includeCash)
     {
@@ -236,7 +234,7 @@ public class UnibillBball : MonoBehaviour
         return text;
     }
 
-    private void logPurchaseInTapjoy(PurchaseEvent e)
+   /* private void logPurchaseInTapjoy(PurchaseEvent e)
     {
         string receipt = e.Receipt;
         IDictionary dictionary = (IDictionary)Json.Deserialize(receipt);
@@ -278,18 +276,18 @@ public class UnibillBball : MonoBehaviour
         Debug.Log("dataSignature: " + text2);
         Tapjoy.TrackPurchaseInGooglePlayStore(text5, text6, dataSignature, campaignId);
     }
-
-    private void onCancelled(PurchasableItem item)
+*/
+   /* private void onCancelled(PurchasableItem item)
     {
         Debug.Log("Purchase cancelled: " + item.Id);
         updateLoadingBox("PURCHASE CANCELLED", "Contact SUPPORT@DOUBLETAPSOFTWARE.COM for help.");
-        /*FlurryAnalytics.Instance().LogEvent("IAP_CANCELLED", new string[1] { "item.Id:" + item.Id }, false);*/
+        *//*FlurryAnalytics.Instance().LogEvent("IAP_CANCELLED", new string[1] { "item.Id:" + item.Id }, false);*//*
         if (PlayerPrefs.GetInt("IS_TAPJOY_PURCHASE_REQUEST") == 1)
         {
             AdMediation.MarkLastTjPurchaseRequestAsCancelled();
         }
         AdMediation.ShowTjpIapCancelled();
-    }
+    }*/
 
     private void onDeferred(PurchasableItem item)
     {
@@ -297,19 +295,19 @@ public class UnibillBball : MonoBehaviour
         updateLoadingBox("PURCHASE DEFERRED", string.Empty);
     }
 
-    private void onFailed(PurchaseFailedEvent e)
+/*    private void onFailed(PurchaseFailedEvent e)
     {
         Debug.Log("onFailed e.Message: " + e.Message);
         Debug.Log("onFailed e.Reason: " + e.Reason);
         Debug.Log("onFailed e: " + e);
         updateLoadingBox("PURCHASE FAILED", "CONTACT SUPPORT@DOUBLETAPSOFTWARE.COM ERROR: " + e.Message + " " + e.Reason);
-        /*FlurryAnalytics.Instance().LogEvent("IAP_FAILED", new string[3]
+        *//*FlurryAnalytics.Instance().LogEvent("IAP_FAILED", new string[3]
         {
             "item.Id:" + e.PurchasedItem.Id,
             "e.Message:" + e.Message,
             "e.Reason:" + e.Reason
-        }, false);*/
-    }
+        }, false);*//*
+    }*/
 
     private void destroyLoadingBox()
     {

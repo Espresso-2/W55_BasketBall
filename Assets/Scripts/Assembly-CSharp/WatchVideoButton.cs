@@ -155,7 +155,7 @@ public class WatchVideoButton : MonoBehaviour
 				"reward:" + reward,
 				"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 			}, false);*/
-			AdMediation.TrackEventInTj("FIRST_VIDEO_AD", Stats.GetNumSessions());
+			/*AdMediation.TrackEventInTj("FIRST_VIDEO_AD", Stats.GetNumSessions());*/
 		}
 		/*FlurryAnalytics.Instance().LogEvent("VIDEO_AD", new string[6]
 		{
@@ -166,8 +166,8 @@ public class WatchVideoButton : MonoBehaviour
 			"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty,
 			"num_vid_milestone:" + numVidMilestone + string.Empty
 		}, false);*/
-		AdMediation.TrackEventInTj("VIDEO_AD", Stats.GetNumSessions());
-		AdMediation.TrackEventInTj("VIDEO_AD_COMPLETED", Stats.GetNumSessions());
+		/*AdMediation.TrackEventInTj("VIDEO_AD", Stats.GetNumSessions());
+		AdMediation.TrackEventInTj("VIDEO_AD_COMPLETED", Stats.GetNumSessions());*/
 	}
 
 	public static int GetNumGoldVids()

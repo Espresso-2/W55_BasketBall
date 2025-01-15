@@ -1,22 +1,22 @@
-using System;
+/*using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Threading;
-using Unibill;
-using Unibill.Impl;
+*//*using Unibill;
+using Unibill.Impl;*//*
 using Uniject.Impl;
 using UnityEngine;
 
 public class Unibiller
 {
-	private static Biller biller;
+	*//*private static Biller biller;*//*
 
 	[CompilerGenerated]
 	[DebuggerBrowsable(DebuggerBrowsableState.Never)]
 	private static Action<PurchasableItem> onPurchaseComplete;
 
-	public static BillingPlatform BillingPlatform
+*//*	public static BillingPlatform BillingPlatform
 	{
 		get
 		{
@@ -26,9 +26,9 @@ public class Unibiller
 			}
 			return BillingPlatform.UnityEditor;
 		}
-	}
+	}*/
 
-	public static bool Initialised
+	/*public static bool Initialised
 	{
 		get
 		{
@@ -38,7 +38,7 @@ public class Unibiller
 			}
 			return false;
 		}
-	}
+	}*//*
 
 	public static UnibillError[] Errors
 	{
@@ -122,25 +122,25 @@ public class Unibiller
 
 	//public static event Action<PurchasableItem> onPurchaseComplete;
 
-	public static event Action<PurchaseFailedEvent> onPurchaseFailed;
+*//*	public static event Action<PurchaseFailedEvent> onPurchaseFailed;*//*
 
 	public static event Action<PurchasableItem> onPurchaseDeferred;
 
 	public static event Action<PurchasableItem> onPurchaseRefunded;
 
 	public static event Action<bool> onTransactionsRestored;
-
+*//*
 	public static void Initialise(List<ProductDefinition> runtimeProducts = null)
 	{
 		if (biller == null)
 		{
-			RemoteConfigManager remoteConfigManager = new RemoteConfigManager(new UnityResourceLoader(), new UnityPlayerPrefsStorage(), new UnityLogger(), Application.platform, runtimeProducts);
+			*//*RemoteConfigManager remoteConfigManager = new RemoteConfigManager(new UnityResourceLoader(), new UnityPlayerPrefsStorage(), new UnityLogger(), Application.platform, runtimeProducts);
 			UnibillConfiguration config = remoteConfigManager.Config;
 			GameObject gameObject = new GameObject();
 			gameObject.name = "Unibill";
 			UnityEngine.Object.DontDestroyOnLoad(gameObject);
 			UnibillUnityUtil util = gameObject.AddComponent<UnibillUnityUtil>();
-			BillerFactory billerFactory = new BillerFactory(new UnityResourceLoader(), new UnityLogger(), new UnityPlayerPrefsStorage(), new RawBillingPlatformProvider(config, gameObject), config, util, new UnityAnalytics());
+			BillerFactory billerFactory = new BillerFactory(new UnityResourceLoader(), new UnityLogger(), new UnityPlayerPrefsStorage(), new RawBillingPlatformProvider(config, gameObject), config, util, new UnityAnalytics());*//*
 			biller = billerFactory.instantiate();
 			_internal_hook_events(biller, billerFactory);
 		}
@@ -158,7 +158,7 @@ public class Unibiller
 			}
 		}
 		biller.Initialise();
-	}
+	}*//*
 
 	public static PurchasableItem GetPurchasableItemById(string unibillPurchasableId)
 	{
@@ -317,3 +317,4 @@ public class Unibiller
 		}
 	}
 }
+*/

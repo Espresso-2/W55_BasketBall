@@ -67,6 +67,6 @@ public class PauseButton : MonoBehaviour
 		startMsg.SetActive(false);
 		gameControls.gameObject.SetActive(false);
 		gameNoise.PauseBgSqueaks();
-		AdMediation.ShowTjpGamePlayPause();
+		/*AdMediation.ShowTjpGamePlayPause();*/
 	}
 }

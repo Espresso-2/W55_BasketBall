@@ -13,7 +13,7 @@ public class InstallDetails : MonoBehaviour
 
 	public virtual void Start()
 	{
-		accountInfo = "UserId='" + SocialPlatform.Instance.GetUserId() + "' UserDisplayName:'" + SocialPlatform.Instance.GetUserDisplayName() + "'";
+		/*accountInfo = "UserId='" + SocialPlatform.Instance.GetUserId() + "' UserDisplayName:'" + SocialPlatform.Instance.GetUserDisplayName() + "'";*/
 		SetText();
 	}
 

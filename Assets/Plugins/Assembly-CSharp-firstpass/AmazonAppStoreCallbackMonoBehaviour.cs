@@ -1,4 +1,4 @@
-using Unibill.Impl;
+/*using Unibill.Impl;
 using UnityEngine;
 
 [AddComponentMenu("")]
@@ -47,3 +47,4 @@ public class AmazonAppStoreCallbackMonoBehaviour : MonoBehaviour
 		amazon.onPurchaseUpdateSuccess(data);
 	}
 }
+*/

@@ -414,7 +414,7 @@ public class GameResults : MonoBehaviour
 				"gold:" + Currency.GetCurrentGold() + string.Empty,
 				"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty
 			}, false);*/
-			AdMediation.TrackEventInTj(eventId, Stats.GetNumWins());
+			/*AdMediation.TrackEventInTj(eventId, Stats.GetNumWins());
 			switch (num2)
 			{
 			case 6:
@@ -426,7 +426,7 @@ public class GameResults : MonoBehaviour
 			case 18:
 				AdMediation.ActionCompleteInTj("af5ea749-f777-41c6-9785-fe9892aac7f1");
 				break;
-			}
+			}*/
 		}
 		PlayFabManager.Instance().SetUserDataCall1();
 		PlayFabManager.Instance().SetUserDataCall2();

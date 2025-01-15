@@ -1,3 +1,4 @@
+/*
 using GooglePlayGames;
 using UnityEngine;
 
@@ -31,7 +32,7 @@ public class SocialPlatform : MonoBehaviour
 			return;
 		}
 		standby = true;
-		Social.localUser.Authenticate(delegate(bool success)
+		Social.localUser.Authenticate(delegate (bool success)
 		{
 			standby = false;
 			if (success)
@@ -92,7 +93,7 @@ public class SocialPlatform : MonoBehaviour
 		{
 			return;
 		}
-		Social.ReportProgress(achievementID, 100.0, delegate(bool success)
+		Social.ReportProgress(achievementID, 100.0, delegate (bool success)
 		{
 			if (!success)
 			{
@@ -106,7 +107,7 @@ public class SocialPlatform : MonoBehaviour
 		{
 			return;
 		}
-		PlayGamesPlatform.Instance.IncrementAchievement(achievementID, value, delegate(bool success)
+		PlayGamesPlatform.Instance.IncrementAchievement(achievementID, value, delegate (bool success)
 		{
 			if (!success)
 			{
@@ -144,7 +145,7 @@ public class SocialPlatform : MonoBehaviour
 		{
 			return;
 		}
-		Social.ReportScore(highScore, leaderboardID, delegate(bool success)
+		Social.ReportScore(highScore, leaderboardID, delegate (bool success)
 		{
 			if (!success)
 			{
@@ -152,3 +153,4 @@ public class SocialPlatform : MonoBehaviour
 		});
 	}
 }
+*/

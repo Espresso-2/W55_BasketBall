@@ -32,7 +32,7 @@ public class BonusOfferMsgBox : MonoBehaviour
 
 	public virtual void OnEnable()
 	{
-		try
+	/*	try
 		{
 			iapItemForOldPrice = Unibiller.GetPurchasableItemById("com.doubletapsoftware.basketballbattle.goldpack1");
 			iapItem = Unibiller.GetPurchasableItemById("com.doubletapsoftware.basketballbattle.bigwallet");
@@ -40,7 +40,7 @@ public class BonusOfferMsgBox : MonoBehaviour
 		catch (Exception ex)
 		{
 			Debug.Log("ERROR GETTING IAP: " + ex.ToString());
-		}
+		}*/
 		if (iapItem != null && iapItemForOldPrice != null)
 		{
 			oldPriceText.text = iapItemForOldPrice.localizedPriceString;
@@ -62,7 +62,7 @@ public class BonusOfferMsgBox : MonoBehaviour
 	{
 		gameSounds.Play_select();
 		ShowLoadingBox();
-		Unibiller.initiatePurchase(iapItem, string.Empty);
+		/*Unibiller.initiatePurchase(iapItem, string.Empty);*/
 	}
 
 	public virtual void CompletedPurchase()

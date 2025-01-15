@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Unibill.Impl;
+/*using Unibill.Impl;*/
 
 public class PurchasableItem : IEquatable<PurchasableItem>
 {
@@ -48,9 +48,9 @@ public class PurchasableItem : IEquatable<PurchasableItem>
 		}
 	}
 
-	public Dictionary<BillingPlatform, Dictionary<string, object>> platformBundles;
+	/*public Dictionary<BillingPlatform, Dictionary<string, object>> platformBundles;
 
-	private BillingPlatform platform;
+	private BillingPlatform platform;*/
 
 	public bool AvailableToPurchase { get; internal set; }
 
@@ -73,7 +73,7 @@ public class PurchasableItem : IEquatable<PurchasableItem>
 	public string isoCurrencySymbol { get; internal set; }
 
 	public decimal priceInLocalCurrency { get; internal set; }
-
+/*
 	public string LocalId
 	{
 		get
@@ -84,13 +84,13 @@ public class PurchasableItem : IEquatable<PurchasableItem>
 			}
 			return LocalIds[platform];
 		}
-	}
+	}*/
 
 	public string receipt { get; internal set; }
 
-	public Dictionary<BillingPlatform, string> LocalIds { get; private set; }
+	/*public Dictionary<BillingPlatform, string> LocalIds { get; private set; }*/
 
-	public PurchasableItem()
+	/*public PurchasableItem()
 	{
 		Id = new Random().Next().ToString();
 		description = "Describe me!";
@@ -103,16 +103,16 @@ public class PurchasableItem : IEquatable<PurchasableItem>
 			platformBundles[value] = new Dictionary<string, object>();
 			LocalIds[value] = string.Empty;
 		}
-	}
+	}*/
 
-	public PurchasableItem(string id, Dictionary<string, object> hash, BillingPlatform platform)
+/*	public PurchasableItem(string id, Dictionary<string, object> hash, BillingPlatform platform)
 	{
 		Id = id;
 		this.platform = platform;
 		Deserialize(hash);
 	}
-
-	private void Deserialize(Dictionary<string, object> hash)
+*/
+/*	private void Deserialize(Dictionary<string, object> hash)
 	{
 		PurchaseType = hash.getEnum<PurchaseType>("@purchaseType");
 		name = hash.get<string>("name");
@@ -148,9 +148,9 @@ public class PurchasableItem : IEquatable<PurchasableItem>
 				platformBundles[value] = new Dictionary<string, object>();
 			}
 		}
-	}
+	}*/
 
-	public Dictionary<string, object> Serialize()
+/*	public Dictionary<string, object> Serialize()
 	{
 		Dictionary<string, object> dictionary = new Dictionary<string, object>();
 		dictionary.Add("@id", Id);
@@ -165,7 +165,7 @@ public class PurchasableItem : IEquatable<PurchasableItem>
 		dictionary.Add("platforms", dictionary2);
 		return dictionary;
 	}
-
+*/
 	public bool Equals(PurchasableItem other)
 	{
 		return other.Id == Id;

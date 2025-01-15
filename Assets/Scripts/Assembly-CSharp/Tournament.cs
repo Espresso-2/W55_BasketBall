@@ -523,7 +523,7 @@ public class Tournament
 				"gold:" + Currency.GetCurrentGold() + string.Empty,
 				"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty
 			}, false);*/
-			AdMediation.TrackEventInTj(text, Stats.GetNumWins());
+			/*AdMediation.TrackEventInTj(text, Stats.GetNumWins());*/
 		}
 		else
 		{

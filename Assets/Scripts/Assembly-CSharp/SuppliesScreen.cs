@@ -77,7 +77,7 @@ public class SuppliesScreen : MonoBehaviour
 		StartCoroutine(ShowPacksWithDelay());
 		if ((type != Supplies.DRINK || PlayerPrefs.GetInt(Supplies.COLLECTED_FREE_KEY + type) != 0) && Supplies.GetItemAmount(type) == 0)
 		{
-			AdMediation.ShowTjpOutOfStoreItem();
+			/*AdMediation.ShowTjpOutOfStoreItem();*/
 		}
 	}
 

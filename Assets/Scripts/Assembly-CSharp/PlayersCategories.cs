@@ -60,7 +60,7 @@ public class PlayersCategories : MonoBehaviour
 		TabChanger.currentBackAction = backAction.CurrentTab;
 		tabChanger.SetToScreen(screenEnum.Players);
 		topNavBar.SetTitleTerm("STARTERS");
-		AdMediation.ShowTjpStartersScreen();
+		/*AdMediation.ShowTjpStartersScreen();*/
 	}
 
 	public virtual void ShowBackups(bool female)
@@ -71,6 +71,6 @@ public class PlayersCategories : MonoBehaviour
 		TabChanger.currentBackAction = backAction.CurrentTab;
 		tabChanger.SetToScreen(screenEnum.Players);
 		topNavBar.SetTitleTerm("BACKUPS");
-		AdMediation.ShowTjpBackupsScreen();
+		/*AdMediation.ShowTjpBackupsScreen();*/
 	}
 }

@@ -181,7 +181,7 @@ public class DealBag : MonoBehaviour
 				"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
 				"num_wins:" + Stats.GetNumWins() + string.Empty
 			}, false);*/
-			AdMediation.TrackEventInTj("OPENED_FREE_STANDARD_BAG", Stats.GetNumSessions());
+			//AdMediation.TrackEventInTj("OPENED_FREE_STANDARD_BAG", Stats.GetNumSessions());
 			flag = true;
 			UseStandardBag();
 			SetItem(0);
@@ -195,7 +195,7 @@ public class DealBag : MonoBehaviour
 				"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
 				"num_wins:" + Stats.GetNumWins() + string.Empty
 			}, false);*/
-			AdMediation.TrackEventInTj("OPENED_PREMIUM_BAG", Stats.GetNumSessions());
+			//AdMediation.TrackEventInTj("OPENED_PREMIUM_BAG", Stats.GetNumSessions());
 			flag = true;
 			UsePremiumBag();
 			SetItem(1);
@@ -209,7 +209,7 @@ public class DealBag : MonoBehaviour
 				"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
 				"num_wins:" + Stats.GetNumWins() + string.Empty
 			}, false);*/
-			AdMediation.TrackEventInTj("OPENED_DAILY_BAG", Stats.GetNumSessions());
+			//AdMediation.TrackEventInTj("OPENED_DAILY_BAG", Stats.GetNumSessions());
 			flag = true;
 			UseDailyBag();
 			SetItem(2);
@@ -227,13 +227,13 @@ public class DealBag : MonoBehaviour
 					"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
 					"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 				}, false);*/
-				AdMediation.TrackEventInTj("PURCHASED_BAG", Stats.GetNumSessions());
+				//AdMediation.TrackEventInTj("PURCHASED_BAG", Stats.GetNumSessions());
 				RevenueTracker.PurchasedBag();
 			}
 			else
 			{
 				getGoldButton.ShowGetGoldBox();
-				AdMediation.ShowTjpInsufficientCurrency();
+				//AdMediation.ShowTjpInsufficientCurrency();
 			}
 		}
 		else
@@ -249,7 +249,7 @@ public class DealBag : MonoBehaviour
 					"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
 					"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 				}, false);*/
-				AdMediation.TrackEventInTj("PURCHASED_STANDARD_BAG", Stats.GetNumSessions());
+				//AdMediation.TrackEventInTj("PURCHASED_STANDARD_BAG", Stats.GetNumSessions());
 				RevenueTracker.PurchasedBag();
 			}
 			else
@@ -296,7 +296,7 @@ public class DealBag : MonoBehaviour
 		else
 		{
 			getGoldButton.ShowGetGoldBox();
-			AdMediation.ShowTjpInsufficientCurrency();
+			//AdMediation.ShowTjpInsufficientCurrency();
 		}
 	}
 

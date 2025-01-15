@@ -125,7 +125,7 @@ public class SuppliesPack : MonoBehaviour
 					"currentType:" + currentType,
 					"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 				}, false);*/
-				AdMediation.ShowTjpPurchasedStoreItem();
+				/*AdMediation.ShowTjpPurchasedStoreItem();*/
 			}
 		}
 		else
@@ -133,7 +133,7 @@ public class SuppliesPack : MonoBehaviour
 			if (getGoldButton != null)
 			{
 				getGoldButton.ShowGetGoldBox();
-				AdMediation.ShowTjpInsufficientCurrency();
+				/*AdMediation.ShowTjpInsufficientCurrency();*/
 			}
 			if (notEnoughGold != null)
 			{

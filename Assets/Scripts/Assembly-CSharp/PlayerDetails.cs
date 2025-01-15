@@ -460,7 +460,7 @@ public class PlayerDetails : MonoBehaviour
 			return true;
 		}
 		getGoldButton.ShowGetGoldBox();
-		AdMediation.ShowTjpInsufficientCurrency();
+		/*AdMediation.ShowTjpInsufficientCurrency();*/
 		return false;
 	}
 
@@ -478,7 +478,7 @@ public class PlayerDetails : MonoBehaviour
 		else
 		{
 			getGoldButton.ShowGetGoldBox();
-			AdMediation.ShowTjpInsufficientCurrency();
+			/*AdMediation.ShowTjpInsufficientCurrency();*/
 		}
 	}
 

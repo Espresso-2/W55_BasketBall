@@ -225,7 +225,7 @@ public class TournamentView : MonoBehaviour
 				gameObject2.SetActive(true);
 			}
 		}
-		AdMediation.SetTjLevel(tournamentNum);
+		/*AdMediation.SetTjLevel(tournamentNum);*/
 	}
 
 	private void SetupTournament(tournamentTypeEnum type)
@@ -259,11 +259,11 @@ public class TournamentView : MonoBehaviour
 	{
 		StartCoroutine(SetRibbonNumDisplay(0, false));
 		playButton.SetToEntriesRemaining(PlayerPrefs.GetInt("ENTRIES_REMAINING"));
-		if (!PlayFabManager.Instance().IsClientLoggedIn())
+		/*if (!PlayFabManager.Instance().IsClientLoggedIn())
 		{
 			PlayFabManager.Instance().LoginAsGuest(true);
 		}
-		else if (showLeaderboardPanel)
+		else*/ if (showLeaderboardPanel)
 		{
 			showLeaderboardPanel = false;
 			yield return new WaitForSeconds(0.15f);

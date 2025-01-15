@@ -107,7 +107,7 @@ public class TabChanger : MonoBehaviour
 		playButton.SetActive(num == tabEnum.Tour);
 		backgrounds[0].SetActive(num == tabEnum.Home || num == tabEnum.Players || num == tabEnum.Supplies);
 		backgrounds[1].SetActive(num == tabEnum.Deals || num == tabEnum.TwoPlayer);
-		switch (num)
+		/*switch (num)
 		{
 		case tabEnum.Home:
 			AdMediation.ShowTjpHomeScreen();
@@ -124,7 +124,7 @@ public class TabChanger : MonoBehaviour
 		case tabEnum.TwoPlayer:
 			AdMediation.ShowTjpTwoPlayerScreen();
 			break;
-		}
+		}*/
 		if (bottomNavSlideInDelay > 0f)
 		{
 			bottomNavBarContent.SetActive(false);

@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using UnityEngine;
 
 [Serializable]
@@ -23,3 +23,4 @@ public class EarnButton : MonoBehaviour
 		AdMediation.ShowTjpOfferWall();
 	}
 }
+*/

@@ -9,8 +9,8 @@ public class GetGoldButton : MonoBehaviour
 
 	public virtual IEnumerator Start()
 	{
-		yield return new WaitForSeconds(0.5f);
-		AdMediation.CheckForEarnedCurrency();
+		/*yield return new WaitForSeconds(0.5f);
+		AdMediation.CheckForEarnedCurrency();*/
 		yield return new WaitForSeconds(0.5f);
 		CheckForEarnedCurrency();
 	}
@@ -31,10 +31,10 @@ public class GetGoldButton : MonoBehaviour
 
 	public virtual void OnApplicationPause(bool pause)
 	{
-		if (!pause && !getGoldBox.gameObject.activeInHierarchy)
+		/*if (!pause && !getGoldBox.gameObject.activeInHierarchy)
 		{
 			AdMediation.ShowTjpAppResume();
-		}
+		}*/
 	}
 
 	public virtual void Update()

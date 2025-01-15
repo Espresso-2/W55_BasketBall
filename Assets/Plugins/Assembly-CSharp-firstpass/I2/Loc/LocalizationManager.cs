@@ -5,7 +5,6 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
-using ArabicSupport;
 using UnityEngine;
 
 namespace I2.Loc
@@ -390,7 +389,7 @@ namespace I2.Loc
 				line = line.Substring(0, tagStart) + text + line.Substring(num + 1);
 				num = tagStart + 5;
 			}
-			if (maxCharacters <= 0)
+			/*if (maxCharacters <= 0)
 			{
 				line = ArabicFixer.Fix(line, true, !ignoreNumbers);
 			}
@@ -408,7 +407,7 @@ namespace I2.Loc
 					array[i] = ArabicFixer.Fix(array[i], true, !ignoreNumbers);
 				}
 				line = string.Join("\n", array);
-			}
+			}*/
 			for (int j = 0; j < list.Count; j++)
 			{
 				int length = line.Length;
@@ -430,7 +429,7 @@ namespace I2.Loc
 			return line;
 		}
 
-		public static string ApplyRTLfix1(string line, int maxCharacters, bool ignoreNumbers)
+	/*	public static string ApplyRTLfix1(string line, int maxCharacters, bool ignoreNumbers)
 		{
 			string pattern = ((!ignoreNumbers) ? "(\\s|[^\\x00-\\/:-\\xff])+" : "(\\s|[^\\x00-\\xff])+");
 			Regex regex = new Regex(pattern);
@@ -454,7 +453,7 @@ namespace I2.Loc
 				line = string.Join("\n", array);
 			}
 			return line;
-		}
+		}*/
 
 		private static string ReverseText(string source)
 		{

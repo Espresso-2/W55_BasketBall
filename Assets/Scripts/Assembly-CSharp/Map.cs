@@ -47,7 +47,7 @@ public class Map : MonoBehaviour
 			if (sessionVars.wonLastGame)
 			{
 				int numWins = Stats.GetNumWins();
-				if (numWins == 1)
+				/*if (numWins == 1)
 				{
 					AdMediation.ShowTjpTourScreenAfterFirstWin();
 				}
@@ -58,11 +58,11 @@ public class Map : MonoBehaviour
 				else if (numWins >= 3)
 				{
 					AdMediation.ShowTjpTourScreenAfterWin();
-				}
+				}*/
 			}
 			else
 			{
-				int numLosses = Stats.GetNumLosses();
+				/*int numLosses = Stats.GetNumLosses();
 				if (numLosses == 1)
 				{
 					AdMediation.ShowTjpTourScreenAfterFirstLoss();
@@ -70,12 +70,12 @@ public class Map : MonoBehaviour
 				else
 				{
 					AdMediation.ShowTjpTourScreenAfterLoss();
-				}
+				}*/
 			}
 		}
 		else
 		{
-			AdMediation.ShowTjpTourScreen();
+			/*AdMediation.ShowTjpTourScreen();*/
 		}
 		Tournament t = tournaments.GetTournament(Tournaments.GetCurrentTournamentNum());
 		bool showTournament = t.currentRound > 1 || t.LostLastAttempt() || TournamentView.showLeaderboardPanel;

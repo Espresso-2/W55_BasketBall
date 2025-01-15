@@ -1,10 +1,10 @@
-using Unibill.Impl;
+/*using Unibill.Impl;*//*
 using UnityEngine;
 
 [AddComponentMenu("")]
 public class GooglePlayCallbackMonoBehaviour : MonoBehaviour
 {
-	private GooglePlayBillingService callback;
+*//*	private GooglePlayBillingService callback;*//*
 
 	public void Awake()
 	{
@@ -52,3 +52,4 @@ public class GooglePlayCallbackMonoBehaviour : MonoBehaviour
 		callback.onInvalidPublicKey(publicKey);
 	}
 }
+*/
