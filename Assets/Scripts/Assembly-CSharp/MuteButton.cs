@@ -8,7 +8,7 @@ public class MuteButton : MonoBehaviour
 
 	public bool isCommentator;
 
-	public bool isVibrate;
+	/*public bool isVibrate;*/
 
 	public GameObject muteIcon;
 
@@ -22,7 +22,8 @@ public class MuteButton : MonoBehaviour
 
 	public VoiceOvers voiceOvers;
 
-	public GameVibrations gameVibrations;
+	/*public GameVibrations gameVibrations;
+	*/
 
 	public static string SOUND_OFF_PREF_KEY;
 
@@ -59,7 +60,7 @@ public class MuteButton : MonoBehaviour
 		{
 			muteIcon.SetActive(true);
 			muteOffIcon.SetActive(false);
-			if (!isMusic && !isCommentator && !isVibrate)
+			if (!isMusic && !isCommentator )
 			{
 				commentatorButton.SetActive(false);
 				if (isSettingsScreen)
@@ -92,13 +93,13 @@ public class MuteButton : MonoBehaviour
 				result = true;
 			}
 		}
-		else if (isVibrate)
+		/*else if (isVibrate)
 		{
 			if (PlayerPrefs.GetInt(VIBRATE_OFF_PREF_KEY) == 1)
 			{
 				result = true;
 			}
-		}
+		}*/
 		else if (AudioListener.volume == 0f)
 		{
 			result = true;
@@ -131,15 +132,15 @@ public class MuteButton : MonoBehaviour
 				}
 				return;
 			}
-			if (isVibrate)
+			/*if (isVibrate)
 			{
 				PlayerPrefsHelper.SetInt(VIBRATE_OFF_PREF_KEY, 0);
-				if (gameVibrations != null)
+				/*if (gameVibrations != null)
 				{
 					gameVibrations.UnMute();
-				}
+				}#1#
 				return;
-			}
+			}*/
 			AudioListener.volume = AUDIO_VOLUME;
 			AudioListener.pause = false;
 			PlayerPrefsHelper.SetInt(SOUND_OFF_PREF_KEY, 0);
@@ -177,15 +178,15 @@ public class MuteButton : MonoBehaviour
 			}
 			return;
 		}
-		if (isVibrate)
+		/*if (isVibrate)
 		{
 			PlayerPrefsHelper.SetInt(VIBRATE_OFF_PREF_KEY, 1);
-			if (gameVibrations != null)
+			/*if (gameVibrations != null)
 			{
 				gameVibrations.Mute();
-			}
+			}#1#
 			return;
-		}
+		}*/
 		AudioListener.volume = 0f;
 		PlayerPrefsHelper.SetInt(SOUND_OFF_PREF_KEY, 1);
 		if (!isMusic && !isCommentator)

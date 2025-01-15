@@ -92,20 +92,30 @@ namespace I2.Loc
         }
 
         [Button("点击从文件中导入元数据")]
-        private void GetDataToInspector(TextAsset LanguageData)
+        private void GetDataToInspector()
         {
-            List<W_JsonData> datas = new();
-            string[] allLines = File.ReadAllLines(LanguageData.text);
+            List<W_JsonData> datas = new List<W_JsonData>();
+            string path = Application.dataPath;
+            string filePath = path + "/W_LanguageData.txt";
+            string[] allLines = File.ReadAllLines(filePath); // 使用正确的路径处理文件
             foreach (string line in allLines)
             {
-                W_JsonData data = JsonUtility.FromJson<W_JsonData>(line);
-                datas.Add(data);
+                try
+                {
+                    W_JsonData wJsonData = JsonUtility.FromJson<W_JsonData>(line);
+                    datas.Add(wJsonData);
+                }
+                catch (Exception e)
+                {
+                    Debug.Log($"{line}");
+                    throw;
+                }
             }
-            for (int i = 0; i < mTerms.Count; i++)
+
+            // 获取文件的文本内容
+            for (int i = 0; i < datas.Count; i++)
             {
-                var target = mTerms[i].Languages_Touch;
-                var JsondataOne = datas[i];
-                target[^1] = JsondataOne.Sim;
+                mTerms[i].Languages_Touch[^1] = datas[i].Sim;
             }
             AssetDatabase.Refresh();
         }

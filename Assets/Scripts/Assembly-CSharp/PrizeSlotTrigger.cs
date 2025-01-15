@@ -13,7 +13,7 @@ public class PrizeSlotTrigger : MonoBehaviour
 			PrizeBall component = coll.gameObject.GetComponent<PrizeBall>();
 			if (!component.DidReachPrizeSlot())
 			{
-				iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.Failure);
+				//iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.Failure);
 				prizeSlotHolder.BallReachedSlot(slotNum);
 			}
 			component.OnReachedPrizeSlot();

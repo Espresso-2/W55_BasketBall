@@ -86,7 +86,7 @@ public class BallCatcher : MonoBehaviour
 				gameSounds.Play_chime_2_beeps();
 				voiceOvers.PlayInterceptedShot(!pc.isComputer, sessionVars.currentTournament.isFemale);
 				((BallVisual)pc.gameController.ikBall.GetComponent(typeof(BallVisual))).ShortFlicker();
-				GameVibrations.Instance().PlayBlockCatch();
+				//GameVibrations.Instance().PlayBlockCatch();
 			}
 			else if (!pc.isComputer)
 			{
@@ -142,7 +142,7 @@ public class BallCatcher : MonoBehaviour
 			pc.anim.SetTrigger("PickupBall");
 			gameSounds.Play_chime_2_beeps();
 			voiceOvers.PlayStolen(!pc.isComputer, sessionVars.currentTournament.isFemale);
-			GameVibrations.Instance().PlayStolen();
+			//GameVibrations.Instance().PlayStolen();
 		}
 	}
 

@@ -75,22 +75,22 @@ public class PrizeBall : MonoBehaviour
 			{
 				float num = 1f - (float)numBouncesInSlot * 0.33f;
 				gameSounds.SendMessage("Play_ball_dribble", num);
-				iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.ImpactHeavy);
+				//iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.ImpactHeavy);
 			}
 			else if (Random.Range(0, 100) >= 90)
 			{
 				gameSounds.SendMessage("Play_ball_dribble");
-				iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.ImpactMedium);
+				//iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.ImpactMedium);
 			}
 			else if (Random.Range(0, 100) >= 65)
 			{
 				gameSounds.SendMessage("Play_rattling_hinge");
-				iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.ImpactMedium);
+				//iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.ImpactMedium);
 			}
 			else
 			{
 				gameSounds.SendMessage("Play_light_click_2");
-				iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.SelectionChange);
+				//iOSHapticFeedback.Instance.Trigger(iOSHapticFeedback.iOSFeedbackType.SelectionChange);
 			}
 			scaleBig = !scaleBig;
 			if (reachedPrizeSlot)

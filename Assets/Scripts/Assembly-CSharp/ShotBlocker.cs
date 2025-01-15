@@ -163,12 +163,12 @@ public class ShotBlocker : MonoBehaviour
 		if (flag4)
 		{
 			voiceOvers.PlayBlocked(!pc.isComputer);
-			GameVibrations.Instance().PlayBigBlock();
+			//GameVibrations.Instance().PlayBigBlock();
 		}
 		else
 		{
 			voiceOvers.PlayTipped(!pc.isComputer);
-			GameVibrations.Instance().PlayTipped();
+			//GameVibrations.Instance().PlayTipped();
 		}
 		if (pc.gameController.recorder != null)
 		{

@@ -183,7 +183,7 @@ public class TimeoutScreen : MonoBehaviour
 	public virtual void PutInPlayer(int player)
 	{
 		gameSounds.Play_select();
-		GameVibrations.Instance().PlayPutInPlayer();
+		//GameVibrations.Instance().PlayPutInPlayer();
 		gameRoster.SetPlayerInGame(player);
 		for (int i = 0; i < 2; i++)
 		{

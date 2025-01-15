@@ -1,3 +1,4 @@
+/*
 using System;
 using UnityEngine;
 
@@ -172,3 +173,4 @@ public class iOSHapticFeedback : MonoBehaviour
 		return false;
 	}
 }
+*/

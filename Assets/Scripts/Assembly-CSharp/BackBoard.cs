@@ -20,7 +20,7 @@ public class BackBoard : MonoBehaviour
 	public virtual void OnCollisionEnter2D(Collision2D coll)
 	{
 		gameSounds.Play_unselect();
-		GameVibrations.Instance().PlayHitBackBoard();
+		//GameVibrations.Instance().PlayHitBackBoard();
 		hoopVisual.Shake(1f, 0.045f);
 	}
 }

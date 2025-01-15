@@ -9,7 +9,7 @@ public class TeamDetails : MonoBehaviour
 
     public TopNavBar topNavBar;
 
-    private InputField inputField;
+    public Text inputField;
 
     public virtual void OnEnable()
     {
@@ -20,33 +20,29 @@ public class TeamDetails : MonoBehaviour
             {
                 ((Text)teamNameText.GetComponent(typeof(Text))).text = GetTeamName();
             }
-            if ((bool)(InputField)teamNameText.GetComponent(typeof(InputField)))
-            {
-                inputField = (InputField)teamNameText.GetComponent(typeof(InputField));
-                inputField.text = GetTeamName();
-            }
+            inputField.text = GetTeamName();
         }
         else
         {
-            string text = "???????????" /*SocialPlatform.Instance.GetUserDisplayName()*/;
+            string text = "你的队伍" /*SocialPlatform.Instance.GetUserDisplayName()*/;
             if (text != null && text.Length > 0)
             {
                 if (text.Length > 15)
                 {
                     text = text.Substring(0, 15);
                 }
-                inputField = (InputField)teamNameText.GetComponent(typeof(InputField));
+                /*inputField = (InputField)teamNameText.GetComponent(typeof(InputField));*/
                 inputField.text = text;
                 SetTeamName(text);
             }
         }
         /*FlurryAnalytics.Instance().LogEvent("SCREEN_DETAILS", new string[4]
-		{
-			"num_wins:" + Stats.GetNumWins() + string.Empty,
-			"num_losses:" + Stats.GetNumLosses() + string.Empty,
-			"current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
-			"sessions:" + Stats.GetNumSessions() + string.Empty
-		}, false);*/
+        {
+            "num_wins:" + Stats.GetNumWins() + string.Empty,
+            "num_losses:" + Stats.GetNumLosses() + string.Empty,
+            "current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
+            "sessions:" + Stats.GetNumSessions() + string.Empty
+        }, false);*/
     }
 
     public static string GetTeamName()
@@ -57,13 +53,13 @@ public class TeamDetails : MonoBehaviour
     public virtual void SetTeamName(string name)
     {
         /*FlurryAnalytics.Instance().LogEvent("SET_TEAM_NAME", new string[5]
-		{
-			"name:" + name + string.Empty,
-			"num_wins:" + Stats.GetNumWins() + string.Empty,
-			"num_losses:" + Stats.GetNumLosses() + string.Empty,
-			"current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
-			"sessions:" + Stats.GetNumSessions() + string.Empty
-		}, false);*/
+        {
+            "name:" + name + string.Empty,
+            "num_wins:" + Stats.GetNumWins() + string.Empty,
+            "num_losses:" + Stats.GetNumLosses() + string.Empty,
+            "current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
+            "sessions:" + Stats.GetNumSessions() + string.Empty
+        }, false);*/
         PlayerPrefsHelper.SetString("TEAM_NAME", name, true);
         PlayFabManager.Instance().UpdateDisplayName(name);
         if (topNavBar != null)

@@ -2411,7 +2411,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 33554231
 --- !u!114 &129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,8 +2966,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065c53368d7d079bbb85742605ba17ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNameText: {fileID: 16}
+  teamNameText: {fileID: 34}
   topNavBar: {fileID: 0}
+  inputField: {fileID: 163}
 --- !u!114 &149
 MonoBehaviour:
   m_ObjectHideFlags: 0

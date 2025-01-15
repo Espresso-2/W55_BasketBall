@@ -17,8 +17,6 @@ public class GameController : MonoBehaviour
 
 	public Localize tournamentName;
 
-	public Fps fps;
-
 	public Tournaments tournaments;
 
 	private Tournament tournament;
@@ -714,7 +712,7 @@ public class GameController : MonoBehaviour
 			enemyPlayerController.Reset();
 		}
 		TurnOnRecordingObjects();
-		CheckPerformance();
+		/*CheckPerformance();*/
 		if (!isShowingHint && !twoPlayerMode)
 		{
 			if (scoreTotal >= 2 && ballToP1 && PlayerPrefs.GetInt("SHOWED_THREES") == 0)
@@ -816,10 +814,7 @@ public class GameController : MonoBehaviour
 			return;
 		}
 		float num = 48f;
-		float fpsTotAverage = fps.GetFpsTotAverage();
-		num = 35f;
-		num = 10f;
-		if (fpsTotAverage >= num && PlayerPrefs.GetInt("DISABLE_REPLAYS") != 1)
+		if ( PlayerPrefs.GetInt("DISABLE_REPLAYS") != 1)
 		{
 			if (recorder.gameObject != null && recorder.enabled)
 			{
@@ -841,12 +836,12 @@ public class GameController : MonoBehaviour
 			}
 			else if (inScrimmage)
 			{
-				replayTopText.text = "GAME WINNER";
+				replayTopText.text = "游戏胜利";
 				tournamentName.gameObject.SetActive(false);
 			}
 			else
 			{
-				replayTopText.text = PlayerPrefs.GetString("TEAM_NAME").ToUpper() + ": GAME WINNER";
+				replayTopText.text = PlayerPrefs.GetString("TEAM_NAME").ToUpper() + ": 游戏胜利";
 				if (replayTopText.text.Length >= 25 && !DtUtils.IsWideScreenDevice())
 				{
 					replayTopText.fontSize = 70;
@@ -866,17 +861,17 @@ public class GameController : MonoBehaviour
 		}
 	}
 
-	private void CheckPerformance()
+	/*private void CheckPerformance()
 	{
 		float num = 48f;
 		num = 20f;
 		num = 10f;
-		float fpsTotAverage = fps.GetFpsTotAverage();
+		f
 		if (fpsTotAverage > 1f && fpsTotAverage < 999f && !float.IsNaN(fpsTotAverage) && fpsTotAverage < num)
 		{
 			ballTail.trailRenderer.enabled = false;
 		}
-	}
+	}*/
 
 	public virtual void ForfeitGame()
 	{
@@ -891,7 +886,7 @@ public class GameController : MonoBehaviour
 	public virtual void EndGame(bool forfeit)
 	{
 		gameSounds.Play_bball_buzzer();
-		GameVibrations.Instance().PlayEndGame();
+		//GameVibrations.Instance().PlayEndGame();
 		playingGame = false;
 		/*if (!forfeit)
 		{
@@ -979,9 +974,9 @@ public class GameController : MonoBehaviour
 				if (twoPlayerMode)
 				{
 					twoPlayerWinnerMsgs[0].SetActive(true);
-					((Text)twoPlayerWinnerMsgs[0].GetComponent(typeof(Text))).text = "YOU WON!";
+					((Text)twoPlayerWinnerMsgs[0].GetComponent(typeof(Text))).text = "你赢了!";
 					twoPlayerWinnerMsgs[1].SetActive(true);
-					((Text)twoPlayerWinnerMsgs[1].GetComponent(typeof(Text))).text = "YOU LOST";
+					((Text)twoPlayerWinnerMsgs[1].GetComponent(typeof(Text))).text = "你输了";
 				}
 				else
 				{
@@ -1000,9 +995,9 @@ public class GameController : MonoBehaviour
 			else if (twoPlayerMode)
 			{
 				twoPlayerWinnerMsgs[0].SetActive(true);
-				((Text)twoPlayerWinnerMsgs[0].GetComponent(typeof(Text))).text = "YOU LOST";
+				((Text)twoPlayerWinnerMsgs[0].GetComponent(typeof(Text))).text = "你输了";
 				twoPlayerWinnerMsgs[1].SetActive(true);
-				((Text)twoPlayerWinnerMsgs[1].GetComponent(typeof(Text))).text = "YOU WON!";
+				((Text)twoPlayerWinnerMsgs[1].GetComponent(typeof(Text))).text = "你赢了!";
 				gameSounds.Play_crowd_long_cheer_01();
 			}
 			else
@@ -1068,7 +1063,7 @@ public class GameController : MonoBehaviour
 		{
 			num = 3;
 			StartCoroutine(voiceOvers.PlayMadeThree(numRimHits));
-			GameVibrations.Instance().PlayMadeThree();
+			//GameVibrations.Instance().PlayMadeThree();
 		}
 		else
 		{
@@ -1076,17 +1071,17 @@ public class GameController : MonoBehaviour
 			if (dunkTriggered)
 			{
 				voiceOvers.PlayMadeDunk();
-				GameVibrations.Instance().PlayMadeDunk();
+				//GameVibrations.Instance().PlayMadeDunk();
 			}
 			else if (shootingLayup)
 			{
 				voiceOvers.PlayMadeLayup();
-				GameVibrations.Instance().PlayMadeLayup();
+				//GameVibrations.Instance().PlayMadeLayup();
 			}
 			else
 			{
 				StartCoroutine(voiceOvers.PlayMadeTwo(numRimHits, wasBlocked));
-				GameVibrations.Instance().PlayMadeTwo();
+				//GameVibrations.Instance().PlayMadeTwo();
 			}
 		}
 		StartCoroutine(BallInBasketComplete(isEnemyBasket, num));

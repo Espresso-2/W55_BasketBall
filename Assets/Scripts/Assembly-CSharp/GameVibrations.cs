@@ -1,3 +1,4 @@
+/*
 using System;
 using UnityEngine;
 
@@ -160,3 +161,4 @@ public class GameVibrations : MonoBehaviour
 		}
 	}
 }
+*/

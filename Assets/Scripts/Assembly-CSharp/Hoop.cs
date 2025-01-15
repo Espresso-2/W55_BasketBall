@@ -43,7 +43,7 @@ public class Hoop : MonoBehaviour
 				gameSounds.Play_break_tackle();
 			}
 			hoopVisual.Shake(2f, 0.065f);
-			GameVibrations.Instance().PlayHitHoop();
+			//GameVibrations.Instance().PlayHitHoop();
 		}
 	}
 }

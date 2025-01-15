@@ -154,7 +154,7 @@ public class Ball : MonoBehaviour
 				}
 				if (!didScore)
 				{
-					GameVibrations.Instance().PlayBounce(bounceNum);
+					//GameVibrations.Instance().PlayBounce(bounceNum);
 				}
 				gameSounds.Play_ball_dribble(num);
 				bounceNum++;

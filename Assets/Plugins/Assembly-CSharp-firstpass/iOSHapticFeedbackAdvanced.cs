@@ -1,3 +1,4 @@
+/*
 public class iOSHapticFeedbackAdvanced : iOSHapticFeedback
 {
 	protected override void Awake()
@@ -30,3 +31,4 @@ public class iOSHapticFeedbackAdvanced : iOSHapticFeedback
 		ReleaseFeedbackGenerator((int)feedbackType);
 	}
 }
+*/

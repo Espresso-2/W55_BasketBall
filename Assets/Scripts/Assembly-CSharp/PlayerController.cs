@@ -969,10 +969,10 @@ public class PlayerController : MonoBehaviour
 		}
 		if (!isComputer)
 		{
-			if (!gameController.twoPlayerMode)
+			/*if (!gameController.twoPlayerMode)
 			{
 				GameVibrations.Instance().PlayGotBall();
-			}
+			}*/
 			if (gameController.InTutorial || gameController.InScrimmage)
 			{
 				//FlurryAnalytics.Instance().LogEvent("GOTBALL_PLAYER");
