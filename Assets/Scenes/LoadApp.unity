@@ -559,7 +559,6 @@ GameObject:
   m_Component:
   - component: {fileID: 62}
   - component: {fileID: 113}
-  - component: {fileID: 152}
   - component: {fileID: 153}
   m_Layer: 0
   m_Name: EventSystem
@@ -4184,20 +4183,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d49b7c1bcd2e07499844da127be038d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_ForceModuleActive: 0
 --- !u!114 &153
 MonoBehaviour:
   m_ObjectHideFlags: 0

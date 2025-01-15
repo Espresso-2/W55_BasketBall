@@ -196,7 +196,7 @@ namespace I2.Loc
 		private static void SelectStartupLanguage()
 		{
 			string @string = PlayerPrefs.GetString("I2 Language", string.Empty);
-			string text = Application.systemLanguage.ToString();
+			string text = "ChineseSimplified"/*Application.systemLanguage.ToString()*/; // TODO: 在这里选择语言
 			if (text == "ChineseSimplified")
 			{
 				text = "Chinese (Simplified)";

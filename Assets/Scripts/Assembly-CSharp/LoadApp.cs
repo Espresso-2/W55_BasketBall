@@ -13,7 +13,7 @@ public class LoadApp : MonoBehaviour
 
     private SessionVars sessionVars;
 
-    private bool socialPlatformEnabled;
+    /*private bool socialPlatformEnabled;*/
 
     public static int BUILD_NUMBER = 2011201;
 
@@ -39,7 +39,7 @@ public class LoadApp : MonoBehaviour
         }
         else
         {
-            socialPlatformEnabled = PlayerPrefs.GetInt("SOCIAL_PLATFORM_ENABLED") == 1;
+            /*socialPlatformEnabled = PlayerPrefs.GetInt("SOCIAL_PLATFORM_ENABLED") == 1;*/
             string text = string.Empty;
             switch (numSessions)
             {

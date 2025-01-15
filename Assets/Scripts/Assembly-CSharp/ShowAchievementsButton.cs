@@ -7,14 +7,14 @@ public class ShowAchievementsButton : MonoBehaviour
 
     public void Start()
     {
-        if (PlayerPrefs.GetInt("SOCIAL_PLATFORM_ENABLED") == 0)
+        /*if (PlayerPrefs.GetInt("SOCIAL_PLATFORM_ENABLED") == 0)
         {
             base.gameObject.SetActive(false);
         }
         else
-        {
-            gameSounds = GameSounds.GetInstance();
-        }
+        {*/
+        gameSounds = GameSounds.GetInstance();
+        //  }
     }
 
     public void OnClick()
