@@ -44,7 +44,7 @@ namespace PlayFab.Internal
 
 		public static void InitializeHttp()
 		{
-			if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
+			/*if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
 			{
 				throw new PlayFabException(PlayFabExceptionCode.TitleNotSet, "You must set PlayFabSettings.TitleId before making API Calls.");
 			}
@@ -65,7 +65,7 @@ namespace PlayFab.Internal
 				}
 				_internalHttp.InitializeHttp();
 				SingletonMonoBehaviour<PlayFabHttp>.CreateInstance();
-			}
+			}*/
 		}
 
 		public static void InitializeLogger(IPlayFabLogger setLogger = null)

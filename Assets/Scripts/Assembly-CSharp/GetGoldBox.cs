@@ -33,7 +33,7 @@ public class GetGoldBox : MonoBehaviour
 
 	public virtual void Start()
 	{
-		InvokeRepeating("CheckForEarnedCurrency", 0f, 1.5f);
+		InvokeRepeating(nameof(CheckForEarnedCurrency), 0f, 1.5f);
 	}
 
 	public virtual void AddedGoldPackage(int pkgNum)

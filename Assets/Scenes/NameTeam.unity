@@ -2966,7 +2966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 065c53368d7d079bbb85742605ba17ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamNameText: {fileID: 34}
+  teamNameText: {fileID: 32}
   topNavBar: {fileID: 0}
   inputField: {fileID: 163}
 --- !u!114 &149
