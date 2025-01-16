@@ -175,7 +175,7 @@ public class Currency : MonoBehaviour
 		{
 			PlayerPrefsHelper.SetInt("IS_FRAUDULENT_USER", 1, true);
 			//FlurryAnalytics.Instance().LogEvent("IS_FRAUDULENT_USER", new string[1] { "detectedBy:" + detectedBy + string.Empty }, false);
-			PlayFabManager.Instance().UpdateDisplayName(PlayerPrefs.GetString("TEAM_NAME") + " FR1");
+			//PlayFabManager.Instance().UpdateDisplayName(PlayerPrefs.GetString("TEAM_NAME") + " FR1");
 		}
 	}
 }

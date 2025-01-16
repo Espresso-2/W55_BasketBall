@@ -29,7 +29,7 @@ namespace PlayFab.Internal
 					attributeInstallRequest.Idfa = PlayFabSettings.AdvertisingIdValue;
 					break;
 				}
-				PlayFabClientAPI.AttributeInstall(attributeInstallRequest, OnAttributeInstall, null);
+				//PlayFabClientAPI.AttributeInstall(attributeInstallRequest, OnAttributeInstall, null);
 			}
 		}
 
@@ -45,7 +45,7 @@ namespace PlayFab.Internal
 				DeviceInfoRequest deviceInfoRequest = new DeviceInfoRequest();
 				deviceInfoRequest.Info = new PlayFabDataGatherer();
 				DeviceInfoRequest request = deviceInfoRequest;
-				PlayFabHttp.MakeApiCall<EmptyResult>("/Client/ReportDeviceInfo", request, AuthType.LoginSession, OnGatherSuccess, OnGatherFail);
+				//PlayFabHttp.MakeApiCall<EmptyResult>("/Client/ReportDeviceInfo", request, AuthType.LoginSession, OnGatherSuccess, OnGatherFail);
 			}
 		}
 

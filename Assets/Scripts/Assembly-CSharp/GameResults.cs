@@ -428,9 +428,9 @@ public class GameResults : MonoBehaviour
 				break;
 			}*/
 		}
-		PlayFabManager.Instance().SetUserDataCall1();
-		PlayFabManager.Instance().SetUserDataCall2();
-		PlayFabManager.Instance().UpdateStat("NUM_TROPHIES", Tournaments.numTrophies);
+		/*PlayFabManager.Instance().SetUserDataCall1();*/
+		//PlayFabManager.Instance().SetUserDataCall2();
+		/*PlayFabManager.Instance().UpdateStat("NUM_TROPHIES", Tournaments.numTrophies);*/
 		//AdMediation.HideTopBanner();
 	}
 

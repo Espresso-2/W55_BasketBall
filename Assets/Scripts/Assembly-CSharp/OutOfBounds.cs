@@ -18,12 +18,12 @@ public class OutOfBounds : MonoBehaviour
 
 	public virtual void OnTriggerEnter2D(Collider2D theObject)
 	{
-		if (theObject.gameObject.tag == "Ball")
+		if (theObject.gameObject.CompareTag("Ball"))
 		{
-			Ball ball = (Ball)theObject.gameObject.GetComponent(typeof(Ball));
+			theObject.gameObject.TryGetComponent(out Ball ball);
 			if (!ball.wasBlocked && !ball.didScore && ball.numRimHits == 0)
 			{
-				voiceOvers.PlayNotEvenClose();
+				voiceOvers?.PlayNotEvenClose();
 			}
 		}
 	}

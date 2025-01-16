@@ -64,7 +64,8 @@ public class PlayFabLeaderboard : MonoBehaviour
 
 	private static void GetLeaderboard(bool friends, string statName, int startPos, int maxCount, bool prevVersion, LeaderboardEntries lbEntries)
 	{
-		if (!PlayFabClientAPI.IsClientLoggedIn())
+		
+		/*if (!PlayFabClientAPI.IsClientLoggedIn())
 		{
 			Debug.Log("ERROR calling GetLeaderboard(): PlayFabClientAPI.IsClientLoggedIn() = false");
 			return;
@@ -104,7 +105,7 @@ public class PlayFabLeaderboard : MonoBehaviour
 		{
 			Debug.Log("Error getting global leaderboard (Version = " + request.Version + " + MaxResultsCount = " + request.MaxResultsCount + "): ");
 			Debug.Log(error.ErrorMessage);
-		});
+		});*/
 	}
 
 	private static void LeaderBoardResultHandler(GetLeaderboardResult result, bool friends, LeaderboardEntries lbEntries, bool prevVersion)
@@ -145,7 +146,7 @@ public class PlayFabLeaderboard : MonoBehaviour
 
 	public static void GetCurrentUserLeaderBoardRank(string statName, bool prevVersion, LeaderboardEntries lbEntries)
 	{
-		if (PlayFabClientAPI.IsClientLoggedIn())
+		/*if (PlayFabClientAPI.IsClientLoggedIn())
 		{
 			GetLeaderboardAroundPlayerRequest getLeaderboardAroundPlayerRequest = new GetLeaderboardAroundPlayerRequest();
 			getLeaderboardAroundPlayerRequest.PlayFabId = PlayerPrefs.GetString("PLAYFAB_RESULT_ID");
@@ -164,7 +165,7 @@ public class PlayFabLeaderboard : MonoBehaviour
 				Debug.Log("Got error getting current user leaderboard rank for " + statName + ":");
 				Debug.Log(error.ErrorMessage);
 			});
-		}
+		}*/
 	}
 
 	private static void CurrentUserLeaderBoardRankResultHandler(GetLeaderboardAroundPlayerResult result, LeaderboardEntries lbEntries, bool prevVersion, string statName)
@@ -206,7 +207,7 @@ public class PlayFabLeaderboard : MonoBehaviour
 				PlayerPrefs.SetInt("ENTRIES_REMAINING", 2);
 				string statName2 = "EVENT_SCORE_" + PlayerPrefs.GetInt("LEAGUE_NUM");
 				GetCurrentUserLeaderBoardRank(statName2, true, null);
-				PlayFabManager.Instance().SetUserDataForKey("LB_VERSION", leaderBoardVersion.ToString());
+				//PlayFabManager.Instance().SetUserDataForKey("LB_VERSION", leaderBoardVersion.ToString());
 			}
 		}
 		if (result.NextReset.HasValue)

@@ -348,7 +348,7 @@ public class DealBag : MonoBehaviour
 		int num = 200;
 		int val = instance.currentTimestamp + 86400 - num;
 		PlayerPrefsHelper.SetInt("NEXT_DAILY_BAG_TS", val);
-		PlayFabManager.Instance().SetUserDataForKey("NEXT_DAILY_BAG_TS", val);
+		//PlayFabManager.Instance().SetUserDataForKey("NEXT_DAILY_BAG_TS", val);
 		RevenueTracker.OpenedDailyBag();
 	}
 

@@ -49,25 +49,25 @@ public class ResetButton : MonoBehaviour
 	public virtual void ClearRemoveAdsPurchase()
 	{
 		PlayerPrefsHelper.SetInt("IAP_ADS_REMOVED", 0);
-		PlayFabManager.Instance().SetUserDataForKey("IAP_ADS_REMOVED", 0);
+		//PlayFabManager.Instance().SetUserDataForKey("IAP_ADS_REMOVED", 0);
 	}
 
 	public virtual void ClearPurchases()
 	{
 		PlayerPrefsHelper.SetInt("NUM_PURCHASES", 0);
-		PlayFabManager.Instance().SetUserDataForKey("IAP_ADS_REMOVED", 0);
+		//PlayFabManager.Instance().SetUserDataForKey("IAP_ADS_REMOVED", 0);
 	}
 
 	public virtual void ResetLbVersion()
 	{
 		PlayerPrefsHelper.SetInt("LB_VERSION", 0);
-		PlayFabManager.Instance().SetUserDataForKey("LB_VERSION", 0);
+		//PlayFabManager.Instance().SetUserDataForKey("LB_VERSION", 0);
 	}
 
 	public virtual void IncrementLbVersion()
 	{
 		PlayerPrefsHelper.SetInt("LB_VERSION", PlayerPrefs.GetInt("LB_VERSION") + 1);
-		PlayFabManager.Instance().SetUserDataForKey("LB_VERSION", PlayerPrefs.GetInt("LB_VERSION"));
+		//PlayFabManager.Instance().SetUserDataForKey("LB_VERSION", PlayerPrefs.GetInt("LB_VERSION"));
 	}
 
 	public virtual void ResetLeaderboardEntriesRemaining()

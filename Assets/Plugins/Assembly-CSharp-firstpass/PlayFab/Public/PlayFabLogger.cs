@@ -1,3 +1,4 @@
+/*
 namespace PlayFab.Public
 {
 	public class PlayFabLogger : PlayFabLoggerBase
@@ -15,3 +16,4 @@ namespace PlayFab.Public
 		}
 	}
 }
+*/

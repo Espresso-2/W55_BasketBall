@@ -132,19 +132,19 @@ public class SeasonCompletePanel : MonoBehaviour
 		if (prizeType == prizeTypeEnum.standardBag)
 		{
 			PlayerPrefs.SetInt("NUM_STANDARD_BAGS", PlayerPrefs.GetInt("NUM_STANDARD_BAGS") + prizeAmt);
-			PlayFabManager.Instance().SetUserDataForKey("NUM_STANDARD_BAGS", PlayerPrefs.GetInt("NUM_STANDARD_BAGS"));
+		//	PlayFabManager.Instance().SetUserDataForKey("NUM_STANDARD_BAGS", PlayerPrefs.GetInt("NUM_STANDARD_BAGS"));
 		}
 		else if (prizeType == prizeTypeEnum.premiumBag)
 		{
 			PlayerPrefs.SetInt("NUM_PREMIUM_BAGS", PlayerPrefs.GetInt("NUM_PREMIUM_BAGS") + prizeAmt);
-			PlayFabManager.Instance().SetUserDataForKey("NUM_PREMIUM_BAGS", PlayerPrefs.GetInt("NUM_PREMIUM_BAGS"));
+		//	PlayFabManager.Instance().SetUserDataForKey("NUM_PREMIUM_BAGS", PlayerPrefs.GetInt("NUM_PREMIUM_BAGS"));
 		}
 		else
 		{
 			PlayerPrefs.SetInt("GOLD", PlayerPrefs.GetInt("GOLD") + prizeAmt);
 		}
 		PlayerPrefs.SetInt("GOLD", PlayerPrefs.GetInt("GOLD") + bonusPrizeAmt);
-		PlayFabManager.Instance().SetUserDataForKey("GOLD", PlayerPrefs.GetInt("GOLD"));
+	//	PlayFabManager.Instance().SetUserDataForKey("GOLD", PlayerPrefs.GetInt("GOLD"));
 		PlayerPrefs.SetInt("SHOW_USER_SEASON_RESULTS", 0);
 		gameSounds.SendMessage("Play_dunk");
 		topNavBar.SendMessage("UpdateGoldDisplay");

@@ -539,8 +539,8 @@ namespace PlayFab.Events
 			{
 				_instance = new PlayFabEvents();
 			}
-			PlayFabHttp.ApiProcessingEventHandler += _instance.OnProcessingEvent;
-			PlayFabHttp.ApiProcessingErrorEventHandler += _instance.OnProcessingErrorEvent;
+			/*PlayFabHttp.ApiProcessingEventHandler += _instance.OnProcessingEvent;
+			PlayFabHttp.ApiProcessingErrorEventHandler += _instance.OnProcessingErrorEvent;*/
 			return _instance;
 		}
 

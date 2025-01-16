@@ -61,7 +61,7 @@ public class TeamDetails : MonoBehaviour
             "sessions:" + Stats.GetNumSessions() + string.Empty
         }, false);*/
         PlayerPrefsHelper.SetString("TEAM_NAME", name, true);
-        PlayFabManager.Instance().UpdateDisplayName(name);
+        //  PlayFabManager.Instance().UpdateDisplayName(name);
         if (topNavBar != null)
         {
             topNavBar.teamName.text = name;

@@ -5,6 +5,7 @@ using Crosstales.BWF.Model;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayFabManager : MonoBehaviour
 {
@@ -42,10 +43,10 @@ public class PlayFabManager : MonoBehaviour
         return instance;
     }
 
-    public bool IsClientLoggedIn()
+    /*public bool IsClientLoggedIn()
     {
         return PlayFabClientAPI.IsClientLoggedIn();
-    }
+    }*/
 
     /*public void LoginAsGuest(bool createAccount)
     {
@@ -64,39 +65,39 @@ public class PlayFabManager : MonoBehaviour
         getPlayerCombinedInfoRequestParams.GetPlayerStatistics = true;
         GetPlayerCombinedInfoRequestParams infoRequestParameters = getPlayerCombinedInfoRequestParams;
         /*if (Application.platform == RuntimePlatform.Android)
-		{
-			LoginWithAndroidDeviceIDRequest loginWithAndroidDeviceIDRequest = new LoginWithAndroidDeviceIDRequest();
-			loginWithAndroidDeviceIDRequest.TitleId = titleId;
-			loginWithAndroidDeviceIDRequest.CreateAccount = createAccount;
-			loginWithAndroidDeviceIDRequest.AndroidDeviceId = playFabIdForLogin;
-			loginWithAndroidDeviceIDRequest.InfoRequestParameters = infoRequestParameters;
-			LoginWithAndroidDeviceIDRequest request = loginWithAndroidDeviceIDRequest;
-			PlayFabClientAPI.LoginWithAndroidDeviceID(request, delegate(LoginResult result)
-			{
-				LoginReqResult(result);
-			}, delegate(PlayFabError error)
-			{
-				LoginReqError(error);
-			});
-		}
-		else if (Application.platform == RuntimePlatform.IPhonePlayer)
-		{
-			LoginWithIOSDeviceIDRequest loginWithIOSDeviceIDRequest = new LoginWithIOSDeviceIDRequest();
-			loginWithIOSDeviceIDRequest.TitleId = titleId;
-			loginWithIOSDeviceIDRequest.CreateAccount = createAccount;
-			loginWithIOSDeviceIDRequest.DeviceId = playFabIdForLogin;
-			loginWithIOSDeviceIDRequest.InfoRequestParameters = infoRequestParameters;
-			LoginWithIOSDeviceIDRequest request2 = loginWithIOSDeviceIDRequest;
-			PlayFabClientAPI.LoginWithIOSDeviceID(request2, delegate(LoginResult result)
-			{
-				LoginReqResult(result);
-			}, delegate(PlayFabError error)
-			{
-				LoginReqError(error);
-			});
-		}
-		else
-		{#1#
+        {
+            LoginWithAndroidDeviceIDRequest loginWithAndroidDeviceIDRequest = new LoginWithAndroidDeviceIDRequest();
+            loginWithAndroidDeviceIDRequest.TitleId = titleId;
+            loginWithAndroidDeviceIDRequest.CreateAccount = createAccount;
+            loginWithAndroidDeviceIDRequest.AndroidDeviceId = playFabIdForLogin;
+            loginWithAndroidDeviceIDRequest.InfoRequestParameters = infoRequestParameters;
+            LoginWithAndroidDeviceIDRequest request = loginWithAndroidDeviceIDRequest;
+            PlayFabClientAPI.LoginWithAndroidDeviceID(request, delegate(LoginResult result)
+            {
+                LoginReqResult(result);
+            }, delegate(PlayFabError error)
+            {
+                LoginReqError(error);
+            });
+        }
+        else if (Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            LoginWithIOSDeviceIDRequest loginWithIOSDeviceIDRequest = new LoginWithIOSDeviceIDRequest();
+            loginWithIOSDeviceIDRequest.TitleId = titleId;
+            loginWithIOSDeviceIDRequest.CreateAccount = createAccount;
+            loginWithIOSDeviceIDRequest.DeviceId = playFabIdForLogin;
+            loginWithIOSDeviceIDRequest.InfoRequestParameters = infoRequestParameters;
+            LoginWithIOSDeviceIDRequest request2 = loginWithIOSDeviceIDRequest;
+            PlayFabClientAPI.LoginWithIOSDeviceID(request2, delegate(LoginResult result)
+            {
+                LoginReqResult(result);
+            }, delegate(PlayFabError error)
+            {
+                LoginReqError(error);
+            });
+        }
+        else
+        {#1#
         LoginWithCustomIDRequest loginWithCustomIDRequest = new LoginWithCustomIDRequest();
         loginWithCustomIDRequest.TitleId = titleId;
         loginWithCustomIDRequest.CreateAccount = createAccount;
@@ -113,6 +114,7 @@ public class PlayFabManager : MonoBehaviour
         //}
     }*/
 
+    /*
     private void LoginReqResult(LoginResult result)
     {
         Debug.Log("LoginWithCustomID: result.PlayFabId = " + result.PlayFabId);
@@ -149,9 +151,9 @@ public class PlayFabManager : MonoBehaviour
             return;
         }
         Debug.Log("ERROR LOGGING INTO SERVER AS GUEST:\n" + error.ErrorMessage + " (" + (int)error.Error + ")");
-    }
+    }*/
 
-    public void UpdateStat(string name, int val)
+    /*public void UpdateStat(string name, int val)
     {
         if (!PlayFabClientAPI.IsClientLoggedIn())
         {
@@ -176,15 +178,15 @@ public class PlayFabManager : MonoBehaviour
             Debug.Log("Got error updating " + name + " stat:");
             Debug.Log(error.ErrorMessage);
         });
-    }
+    }*/
 
-    public void SetUserDataCall1()
+    /*public void SetUserDataCall1()
     {
-        if (!PlayFabClientAPI.IsClientLoggedIn())
+        /*if (!PlayFabClientAPI.IsClientLoggedIn())
         {
             Debug.Log("ERROR calling SetUserDataCall1(): PlayFabClientAPI.IsClientLoggedIn() = false");
             return;
-        }
+        }#1#
         UpdateUserDataRequest updateUserDataRequest = new UpdateUserDataRequest();
         updateUserDataRequest.Data = new Dictionary<string, string>
         {
@@ -222,23 +224,24 @@ public class PlayFabManager : MonoBehaviour
             }
         };
         UpdateUserDataRequest request = updateUserDataRequest;
-        PlayFabClientAPI.UpdateUserData(request, delegate
+        /*PlayFabClientAPI.UpdateUserData(request, delegate
         {
             Debug.Log("Successfully executed SetUserDataCall1()");
         }, delegate (PlayFabError error)
         {
             Debug.Log("Error executing SetUserDataCall1()");
             Debug.Log(error.ErrorDetails);
-        });
+        });#1#
     }
+    */
 
-    public void SetUserDataCall2()
+    /*public void SetUserDataCall2()
     {
-        if (!PlayFabClientAPI.IsClientLoggedIn())
+        /*if (!PlayFabClientAPI.IsClientLoggedIn())
         {
             Debug.Log("ERROR calling SetUserDataCall2(): PlayFabClientAPI.IsClientLoggedIn() = false");
             return;
-        }
+        }#1#
         UpdateUserDataRequest updateUserDataRequest = new UpdateUserDataRequest();
         updateUserDataRequest.Data = new Dictionary<string, string>
         {
@@ -280,41 +283,41 @@ public class PlayFabManager : MonoBehaviour
             }
         };
         UpdateUserDataRequest request = updateUserDataRequest;
-        PlayFabClientAPI.UpdateUserData(request, delegate
+        /*PlayFabClientAPI.UpdateUserData(request, delegate
         {
             Debug.Log("Successfully executed SetUserDataCall2()");
         }, delegate (PlayFabError error)
         {
             Debug.Log("Error executing SetUserDataCall2()");
             Debug.Log(error.ErrorDetails);
-        });
-    }
+        });#1#
+    }*/
 
-    public void SetUserDataForKey(string key, int val)
+    /*public void SetUserDataForKey(string key, int val)
     {
         SetUserDataForKey(key, val.ToString());
-    }
+    }*/
 
-    public void SetUserDataForKey(string key, string val)
+    /*public void SetUserDataForKey(string key, string val)
     {
-        if (!PlayFabClientAPI.IsClientLoggedIn())
+        /*if (!PlayFabClientAPI.IsClientLoggedIn())
         {
             Debug.Log("ERROR calling SetUserDataForKey(): PlayFabClientAPI.IsClientLoggedIn() = false");
             return;
-        }
+        }#1#
         Debug.Log("SetUserDataForKey('" + key + "', '" + val + "')");
         UpdateUserDataRequest updateUserDataRequest = new UpdateUserDataRequest();
         updateUserDataRequest.Data = new Dictionary<string, string> { { key, val } };
         UpdateUserDataRequest request = updateUserDataRequest;
-        PlayFabClientAPI.UpdateUserData(request, delegate
+        /*PlayFabClientAPI.UpdateUserData(request, delegate
         {
             Debug.Log("Successfully executed SetUserDataForKey()");
         }, delegate (PlayFabError error)
         {
             Debug.Log("Error executing SetUserDataForKey()");
             Debug.Log(error.ErrorDetails);
-        });
-    }
+        });#1#
+    }*/
 
     public void SetPlayersLocalDataToLastResult(bool setUserDataToWhatsInPlayFab = false)
     {
@@ -322,7 +325,7 @@ public class PlayFabManager : MonoBehaviour
         if (lastInfoResultPayload != null)
         {
             SetPlayersLocalData(lastInfoResultPayload, setUserDataToWhatsInPlayFab);
-            GetTime();
+            /*GetTime();*/
         }
         else
         {
@@ -347,7 +350,8 @@ public class PlayFabManager : MonoBehaviour
         string @string = PlayerPrefs.GetString("PLAYFAB_LOGIN_ID");
         foreach (KeyValuePair<string, UserDataRecord> userDatum in infoResultPayload.UserData)
         {
-            if (userDatum.Key == "NUM_WINS" && @string != null && @string.Length >= 7 && DtUtils.IsAnIntLargerThanZero(userDatum.Value.Value) && PlayerPrefs.GetInt("NUM_WINS") == 0)
+            if (userDatum.Key == "NUM_WINS" && @string != null && @string.Length >= 7 && DtUtils.IsAnIntLargerThanZero(userDatum.Value.Value) &&
+                PlayerPrefs.GetInt("NUM_WINS") == 0)
             {
                 DtUtils.SaveToPrefIntOrString("NUM_WINS_BEFORE_REINSTALL", userDatum.Value.Value);
                 flag = true;
@@ -365,8 +369,9 @@ public class PlayFabManager : MonoBehaviour
             }
             PlayerPrefs.SetString("TEAM_NAME", infoResultPayload.AccountInfo.TitleInfo.DisplayName);
             PlayerPrefs.SetInt("USER_REINSTALLED_GAME", 0);
-            SetUserDataForKey("SET_USER_DATA_TO_WHATS_IN_PLAYFAB", "FALSE");
-            Application.LoadLevel("MainUI");
+            //SetUserDataForKey("SET_USER_DATA_TO_WHATS_IN_PLAYFAB", "FALSE");
+            /*Application.LoadLevel("MainUI");*/
+            SceneManager.LoadScene("MainUI");
         }
         else if (flag)
         {
@@ -374,12 +379,12 @@ public class PlayFabManager : MonoBehaviour
             PlayerPrefs.SetInt("USER_REINSTALLED_GAME", 1);
             PlayerPrefs.SetString("EXISTING_TEAM_NAME", infoResultPayload.AccountInfo.TitleInfo.DisplayName);
             /*FlurryAnalytics.Instance().LogEvent("USER_REINSTALLED_GAME", new string[4]
-			{
-				"DisplayName:" + infoResultPayload.AccountInfo.TitleInfo.DisplayName,
-				"NUM_WINS:" + PlayerPrefs.GetInt("NUM_WINS"),
-				"PLAYFAB_LOGIN_ID:" + PlayerPrefs.GetString("PLAYFAB_LOGIN_ID"),
-				"PLAYFAB_RESULT_ID:" + PlayerPrefs.GetString("PLAYFAB_RESULT_ID")
-			}, false);*/
+            {
+                "DisplayName:" + infoResultPayload.AccountInfo.TitleInfo.DisplayName,
+                "NUM_WINS:" + PlayerPrefs.GetInt("NUM_WINS"),
+                "PLAYFAB_LOGIN_ID:" + PlayerPrefs.GetString("PLAYFAB_LOGIN_ID"),
+                "PLAYFAB_RESULT_ID:" + PlayerPrefs.GetString("PLAYFAB_RESULT_ID")
+            }, false);*/
         }
         foreach (KeyValuePair<string, string> titleDatum in infoResultPayload.TitleData)
         {
@@ -425,9 +430,9 @@ public class PlayFabManager : MonoBehaviour
         }
     }
 
-    private void GetTime()
+    /*private void GetTime()
     {
-        if (!PlayFabClientAPI.IsClientLoggedIn())
+        /*if (!PlayFabClientAPI.IsClientLoggedIn())
         {
             Debug.Log("ERROR calling GetTime(): PlayFabClientAPI.IsClientLoggedIn() = false");
             return;
@@ -440,43 +445,43 @@ public class PlayFabManager : MonoBehaviour
         {
             Debug.Log("Error calling GetTime:");
             Debug.Log(error.ErrorMessage);
-        });
-    }
+        });#1#
+    }*/
 
-    private void GetTimeResultHandler(GetTimeResult result)
+    /*private void GetTimeResultHandler(GetTimeResult result)
     {
         Debug.Log("GetTimeResultHandler result.Time = " + result.Time);
         timeFromServer = result.Time;
         secondsSinceGettingTimeFromServer = 0f;
-    }
+    }*/
 
     public DateTime GetCurrentTime()
     {
         return timeFromServer.AddSeconds(secondsSinceGettingTimeFromServer);
     }
 
-    public void UpdateDisplayName(string name)
+    /*public void UpdateDisplayName(string name)
     {
-        if (!PlayFabClientAPI.IsClientLoggedIn())
+        /*if (!PlayFabClientAPI.IsClientLoggedIn())
         {
             Debug.Log("ERROR calling UpdateDisplayName(): PlayFabClientAPI.IsClientLoggedIn() = false");
             return;
-        }
+        }#1#
         string cleanName = BWFManager.ReplaceAll(name, ManagerMask.BadWord, "english", "german", "spanish", "french", "italian", "portuguese", "russian", "chinese", "turkish");
         UpdateUserTitleDisplayNameRequest updateUserTitleDisplayNameRequest = new UpdateUserTitleDisplayNameRequest();
         updateUserTitleDisplayNameRequest.DisplayName = cleanName;
         UpdateUserTitleDisplayNameRequest request = updateUserTitleDisplayNameRequest;
-        PlayFabClientAPI.UpdateUserTitleDisplayName(request, delegate
+        /*PlayFabClientAPI.UpdateUserTitleDisplayName(request, delegate
         {
             Debug.Log("Successfully updated display name to " + cleanName);
         }, delegate (PlayFabError error)
         {
             Debug.Log("Got updating display name to: " + cleanName);
             Debug.Log(error.ErrorMessage);
-        });
-    }
+        });#1#
+    }*/
 
-    private string GetPlayFabIdForLogin()
+    /*private string GetPlayFabIdForLogin()
     {
         string text = PlayerPrefs.GetString("PLAYFAB_LOGIN_ID");
         if (text == null || text == string.Empty)
@@ -494,18 +499,18 @@ public class PlayFabManager : MonoBehaviour
             text = @string;
         }
         return text;
-    }
+    }*/
 
     public void FixedUpdate()
     {
         secondsSinceGettingTimeFromServer += Time.deltaTime;
     }
 
-    public void OnApplicationPause(bool pause)
+    /*public void OnApplicationPause(bool pause)
     {
         if (!pause)
         {
             GetTime();
         }
-    }
+    }*/
 }

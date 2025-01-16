@@ -235,19 +235,19 @@ public class CoachRewardBox : MonoBehaviour
 		{
 			rateAppPrompt.SetActive(true);
 			PlayerPrefsHelper.SetInt("SHOWED_RATE_APP_5", 1);
-			PlayFabManager.Instance().SetUserDataForKey("SHOWED_RATE_APP_5", 1);
+			//PlayFabManager.Instance().SetUserDataForKey("SHOWED_RATE_APP_5", 1);
 		}
 		else if (PlayerPrefs.GetInt("SHOWED_RATE_APP_6") == 0 && numWins >= 75)
 		{
 			rateAppPrompt.SetActive(true);
 			PlayerPrefsHelper.SetInt("SHOWED_RATE_APP_6", 1);
-			PlayFabManager.Instance().SetUserDataForKey("SHOWED_RATE_APP_6", 1);
+			//PlayFabManager.Instance().SetUserDataForKey("SHOWED_RATE_APP_6", 1);
 		}
 		else if (PlayerPrefs.GetInt("SHOWED_RATE_APP_7") == 0 && numWins >= 500)
 		{
 			rateAppPrompt.SetActive(true);
 			PlayerPrefsHelper.SetInt("SHOWED_RATE_APP_7", 1);
-			PlayFabManager.Instance().SetUserDataForKey("SHOWED_RATE_APP_7", 1);
+			//PlayFabManager.Instance().SetUserDataForKey("SHOWED_RATE_APP_7", 1);
 		}
 	}
 }

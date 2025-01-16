@@ -422,7 +422,7 @@ public class GameController : MonoBehaviour
 		startMsg.SetActive(false);
 		//FlurryAnalytics.Instance().LogEvent("start_tut");
 		PlayerPrefsHelper.SetInt("STARTED_TUTORIAL", 1);
-		PlayFabManager.Instance().SetUserDataForKey("STARTED_TUTORIAL", 1);
+		//PlayFabManager.Instance().SetUserDataForKey("STARTED_TUTORIAL", 1);
 		SetPlayerStats();
 		playerController.Reset();
 		ballTail.trailRenderer.enabled = false;
@@ -528,7 +528,7 @@ public class GameController : MonoBehaviour
 			"fps: " + Fps.GetFpsAverageForAnalytics()
 		}, false);*/
 		PlayerPrefsHelper.SetInt("STARTED_SCRIM", 1);
-		PlayFabManager.Instance().SetUserDataForKey("STARTED_SCRIM", 1);
+		//PlayFabManager.Instance().SetUserDataForKey("STARTED_SCRIM", 1);
 		Stats.NewGame();
 		enemyPlayerController.gameObject.SetActive(true);
 		scoreBoard.SetActive(true);
@@ -539,7 +539,7 @@ public class GameController : MonoBehaviour
 			enemyPlayerController.NewGame();
 		}
 		StartCoroutine(NewPlay(false));
-		PlayFabManager.Instance().SetUserDataForKey("BUILD_NUMBER_AT_FIRST_LAUNCH", PlayerPrefs.GetInt("BUILD_NUMBER_AT_FIRST_LAUNCH"));
+		//PlayFabManager.Instance().SetUserDataForKey("BUILD_NUMBER_AT_FIRST_LAUNCH", PlayerPrefs.GetInt("BUILD_NUMBER_AT_FIRST_LAUNCH"));
 	}
 
 	public virtual IEnumerator NewGame()
@@ -720,7 +720,7 @@ public class GameController : MonoBehaviour
 				ShowHint(true);
 				hintMessageTopOfScreen.Threes();
 				PlayerPrefsHelper.SetInt("SHOWED_THREES", 1);
-				PlayFabManager.Instance().SetUserDataForKey("SHOWED_THREES", 1);
+				//PlayFabManager.Instance().SetUserDataForKey("SHOWED_THREES", 1);
 			}
 			else if (score.player1Score >= 4 && ballToP2 && PlayerPrefs.GetInt("SHOWED_STEAL") < 2)
 			{
@@ -734,7 +734,7 @@ public class GameController : MonoBehaviour
 					hintMessage.Stealing2();
 				}
 				PlayerPrefsHelper.SetInt("SHOWED_STEAL", PlayerPrefs.GetInt("SHOWED_STEAL") + 1);
-				PlayFabManager.Instance().SetUserDataForKey("SHOWED_STEAL", PlayerPrefs.GetInt("SHOWED_STEAL") + 1);
+				//PlayFabManager.Instance().SetUserDataForKey("SHOWED_STEAL", PlayerPrefs.GetInt("SHOWED_STEAL") + 1);
 			}
 			else if (scoreTotal >= 2 && ballToP1 && !inScrimmage && PlayerPrefs.GetInt("SHOWED_PUMPFAKE") == 0)
 			{
@@ -965,7 +965,7 @@ public class GameController : MonoBehaviour
 				"fps: " + Fps.GetFpsAverageForAnalytics()
 			}, false);*/
 			PlayerPrefsHelper.SetInt("COMPLETED_SCRIM", 1);
-			PlayFabManager.Instance().SetUserDataForKey("COMPLETED_SCRIM", 1);
+			//PlayFabManager.Instance().SetUserDataForKey("COMPLETED_SCRIM", 1);
 		}
 		if (!forfeit && !sessionVars.goToPractice && !isLiveEvent)
 		{
@@ -1120,7 +1120,7 @@ public class GameController : MonoBehaviour
 				PlayerPrefsHelper.SetInt("LEAGUE_NUM", val);
 			}
 			string text = "EVENT_SCORE_" + PlayerPrefs.GetInt("LEAGUE_NUM");
-			PlayFabManager.Instance().UpdateStat(text, score.player1Score);
+			/*PlayFabManager.Instance().UpdateStat(text, score.player1Score);*/
 		}
 		if (!twoPlayerMode && !inScrimmage && !inTutorial)
 		{

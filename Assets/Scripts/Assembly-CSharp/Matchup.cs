@@ -110,7 +110,7 @@ public class Matchup : MonoBehaviour
 				AdMediation.ReqInt();
 			}
 		}*/
-		PlayFabManager.Instance().SetUserDataForKey("GAMES_SINCE_WATCHING_AD", num);
+		//PlayFabManager.Instance().SetUserDataForKey("GAMES_SINCE_WATCHING_AD", num);
 		/*AdMediation.ShowTjpMatchupScreen();*/
 	}
 
