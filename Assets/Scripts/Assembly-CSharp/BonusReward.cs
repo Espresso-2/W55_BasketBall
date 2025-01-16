@@ -14,7 +14,7 @@ public class BonusReward : MonoBehaviour
 
 	public GameObject starParticles;
 
-	public NativeAdHolder nativeAdHolder;
+	/*public NativeAdHolder nativeAdHolder;*/
 
 	public GameObject closeAdButton;
 
@@ -45,7 +45,7 @@ public class BonusReward : MonoBehaviour
 	{
 		bool flag = false;
 		closeAdButton.SetActive(false);
-		if (AdMediation.nativeAdSmallIsLoaded || flag)
+		/*if (AdMediation.nativeAdSmallIsLoaded || flag)
 		{
 			Debug.Log("BonusReward.ShowAd(): Call NativeAd");
 			StartCoroutine(ShowContinueButton());
@@ -55,8 +55,9 @@ public class BonusReward : MonoBehaviour
 		{
 			Debug.Log("BonusReward.ShowAd(): AdMediation.nativeAdSmallIsLoaded == false");
 			UnityEngine.Object.Destroy(nativeAdHolder.gameObject);
-			ShowReward();
-		}
+		
+		}*/
+		ShowReward();
 	}
 
 	public void ShowReward()

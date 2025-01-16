@@ -21,7 +21,7 @@ public class HalfTime : MonoBehaviour
 
 	public GameController gameController;
 
-	public NativeAdHolder nativeAdHolder;
+	/*public NativeAdHolder nativeAdHolder;*/
 
 	private GameSounds gameSounds;
 
@@ -45,7 +45,7 @@ public class HalfTime : MonoBehaviour
 			break;
 		}
 		bool flag = false;
-		if (@int == 0 || (PlayerPrefs.GetInt("NUM_PURCHASES") > 0 && PlayerPrefs.GetInt("IS_FRAUDULENT_USER") != 1) || (!AdMediation.nativeAdIsLoaded && !AdMediation.adMobCenterBannerIsLoaded && !flag))
+		if (@int == 0 || (PlayerPrefs.GetInt("NUM_PURCHASES") > 0 && PlayerPrefs.GetInt("IS_FRAUDULENT_USER") != 1) )
 		{
 			Debug.Log("Don't show user ad, go right to halftime players");
 			StartCoroutine(ShowPlayers());
@@ -70,7 +70,7 @@ public class HalfTime : MonoBehaviour
 		{
 			Time.timeScale = 1f;
 		}
-		if (AdMediation.nativeAdIsLoaded)
+		/*if (AdMediation.nativeAdIsLoaded)
 		{
 			Debug.Log("HalfTime.ShowAd(): Call NativeAd");
 			nativeAdHolder.ShowAd();
@@ -78,14 +78,15 @@ public class HalfTime : MonoBehaviour
 		else
 		{
 			UnityEngine.Object.Destroy(nativeAdHolder.gameObject);
-			yield return new WaitForSeconds(0.85f);
-			/*AdMediation.ShowCenterBanner();*/
+			
+			/*AdMediation.ShowCenterBanner();#1#
 			//TODO:ShoAd
-		}
-		LogAd();
+		}*/
+		yield return new WaitForSeconds(0.85f);
+		/*LogAd();*/
 	}
 
-	private void LogAd()
+	/*private void LogAd()
 	{
 		Debug.Log("HalfTime.LogAd()");
 		PlayerPrefsHelper.SetInt("NUM_HALFTIME_ADS", PlayerPrefs.GetInt("NUM_HALFTIME_ADS") + 1, true);
@@ -93,8 +94,8 @@ public class HalfTime : MonoBehaviour
 		{
 			"type:halftime",
 			"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
-		}, false);*/
-	}
+		}, false);#1#
+	}*/
 
 	private IEnumerator ShowContinueButton()
 	{

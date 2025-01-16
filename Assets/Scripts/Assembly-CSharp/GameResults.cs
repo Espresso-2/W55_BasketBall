@@ -3,6 +3,7 @@ using System.Collections;
 using I2.Loc;
 using UnityEngine;
 using UnityEngine.UI;
+using W_Log;
 
 [Serializable]
 public class GameResults : MonoBehaviour
@@ -13,7 +14,7 @@ public class GameResults : MonoBehaviour
 
 	public GameObject continueButton;
 
-	public RemoveAdsMsgBox removeAdsMsgBox;
+	/*public RemoveAdsMsgBox removeAdsMsgBox;*/
 
 	public GameObject claimButtonsHolder;
 
@@ -615,6 +616,7 @@ public class GameResults : MonoBehaviour
 
 	public virtual void AdMessageContinueOnClick()
 	{
+		Debug.Log("==现金翻倍按钮按下事件==".FL1_HotPink());
 		gameSounds.Play_select();
 		EarnedXP(totalXpNum);
 		Currency.AddCash(totalCashNum, "doubleRewVid");

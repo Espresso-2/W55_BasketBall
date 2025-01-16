@@ -1,3 +1,4 @@
+/*
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,13 +39,13 @@ public class RemoveAdsMsgBox : MonoBehaviour
 	{
 		/*try
 		{
-			*//*iapItemForOldPrice = Unibiller.GetPurchasableItemById("com.doubletapsoftware.basketballbattle.goldpack1");
-			iapItem = Unibiller.GetPurchasableItemById("com.doubletapsoftware.basketballbattle.removeads")*//*;
+			#1#/*iapItemForOldPrice = Unibiller.GetPurchasableItemById("com.doubletapsoftware.basketballbattle.goldpack1");
+			iapItem = Unibiller.GetPurchasableItemById("com.doubletapsoftware.basketballbattle.removeads")#1#/*;
 		}
 		catch (Exception ex)
 		{
 			Debug.Log("Error loading remove ads IAP: " + ex.ToString());
-		}*/
+		}#1#
 		if (iapItem != null && iapItemForOldPrice != null)
 		{
 			oldPriceText.text = iapItemForOldPrice.localizedPriceString;
@@ -62,7 +63,7 @@ public class RemoveAdsMsgBox : MonoBehaviour
 	{
 		gameSounds.Play_ball_dribble();
 		ShowLoadingBox();
-		/*Unibiller.initiatePurchase(iapItem, string.Empty);*/
+		/*Unibiller.initiatePurchase(iapItem, string.Empty);#1#
 	}
 
 	public virtual void RemovedAds()
@@ -110,3 +111,4 @@ public class RemoveAdsMsgBox : MonoBehaviour
 		}
 	}
 }
+*/

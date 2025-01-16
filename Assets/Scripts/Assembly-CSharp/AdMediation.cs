@@ -27,11 +27,11 @@ public class AdMediation : MonoBehaviour
 
     /*private static UnifiedNativeAd nativeAd;*/
 
-    public static bool nativeAdIsLoaded;
+    /*public static bool nativeAdIsLoaded;*/
 
     /*private static UnifiedNativeAd nativeAdSmall;*/
 
-    public static bool nativeAdSmallIsLoaded;
+    /*public static bool nativeAdSmallIsLoaded;*/
 
     /*private static InterstitialAd adMobInt;
 	*/
