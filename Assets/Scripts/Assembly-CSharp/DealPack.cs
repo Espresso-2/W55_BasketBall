@@ -72,8 +72,8 @@ public class DealPack : MonoBehaviour
 		else
 		{
 			iapNum = 6 + this.num;
-			//iapItem = Unibiller.AllPurchasableItems[iapNum];
-			iapPrice.text = iapItem.localizedPriceString;
+			// iapItem = Unibiller.AllPurchasableItems[iapNum];
+			iapPrice.text = "免费" /*iapItem.localizedPriceString*/;
 		}
 		title.SetTerm(titles[num], null);
 		goldPrice.text = goldPrices[num].ToString("n0");
@@ -101,9 +101,9 @@ public class DealPack : MonoBehaviour
 				"num:" + num,
 				"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty
 			}, false);*/
-			/*PlayerPrefsHelper.SetInt("TAPJOY_BONUS", 0);
-			PlayerPrefsHelper.SetInt("IS_TAPJOY_PURCHASE_REQUEST", 0);*/
-			//Unibiller.initiatePurchase(iapItem, string.Empty);
+			PlayerPrefsHelper.SetInt("TAPJOY_BONUS", 0);
+			PlayerPrefsHelper.SetInt("IS_TAPJOY_PURCHASE_REQUEST", 0);
+			Unibiller.initiatePurchase(iapItem, string.Empty);
 		}
 	}
 

@@ -62,259 +62,198 @@ public class Tournaments : MonoBehaviour
         numChampionships = 0;
         numTrophies = 0;
         tournaments = new List<Tournament>();
-        AddTournament(false, "MINNESOTA", -1, 800, 0, tournamentTypeEnum.ThreeRound, "ALLEY-OOPERS", "TEAM MAMBA.", "3BALLERZ", "POSTERIZERS!",
-            "BBALL_KINGS", "THE VIPERS", "DUNKMASTERZ", ArenaChooser.GetMinnesotaArena());
-        AddTournament(false, "WISCONSIN", 0, 900, 0, tournamentTypeEnum.ThreeRound, "SPIN SPYDERS", "LOS JAMERS", "BUZZER BEATERS", "THESNIPERS",
-            "PURE SWISH", "FIREBALLS", "GR8-SHOOTERZ", 10);
-        AddTournament(false, "MICHIGAN", 1, 1100, 0, tournamentTypeEnum.ThreeRound, "TEAM BEARS", "#BBALL.", "BIGDUNK2020", "REDROACHES",
-            "SWISH BROS^^", "CA KNIGHTS", "DUNKERS.UNITED", 33);
-        AddTournament(false, "ILLINOIS", 1, 1200, 0, tournamentTypeEnum.ThreeRound, "POSTERIZERS", "BANK SHOT!", "PYTHONS.", "TECH FOWLERS",
-            "DA DUNKAZ", "HOGS 2018", "SNIPERKINGS", 68);
-        AddTournament(true, "CHARLOTTE", 0, 1600, 0, tournamentTypeEnum.ThreeRound, "U GON LOOSE", "THE EUROS", "COYOTES", "LADY LUCK...",
-            "ROYAL*RAIDERS", "TEAM X-OVER", "SPINNERS", 12);
-        AddTournament(true, "INDIANA", 4, 1700, 0, tournamentTypeEnum.ThreeRound, "BBOARD.SMASHER", "ALL^STARS!", "BLUECRABS", "CROCODILES",
-            "DA+DINGOS", "THE KODIAKS**", "TEAM+WOLVES", 26);
-        AddTournament(false, "BOSTON", 3, 1900, 0, tournamentTypeEnum.ThreeRound, "HAH CRICKETS", "$PLASHIN", "SPLASH BROS", "FISHERS", "WOMBATS",
-            "NET SHARKS", "PITBULLS", 65);
-        AddTournament(false, "CINCINNATI", 5, 1200, 0, tournamentTypeEnum.ThreeRound, "ANKLEBREAKERS", "HOWLERS", "SHARKBAIT", "PIRANHAZ",
-            "REVERSE^^***", "LOS BOOMERS", "THE BACKSPIN", 32);
-        AddTournament(false, "PITTSBURGH", 6, 1100, 0, tournamentTypeEnum.ThreeRound, "HOOP BREAKERS", "PARROTS", "BALLNBLASTERS", "THE CHILLS",
-            "BIGDOGS", "EZ BUCKETZ", "SOULS", 66);
-        AddTournament(false, "NYC", 6, 2000, 0, tournamentTypeEnum.ThreeRound, "GREATS.", "JELLYFISH", "COURT STORMERS", "PIRATES.",
-            "BACKBOARD SMASH", "BASKET BOSSES", "KINGFISHERS", 46);
-        AddTournament(true, "WEST VIRGINIA", 9, 1500, 0, tournamentTypeEnum.ThreeRound, "THREE & D", "SAILS", "SNAPPERS", "HEROES", "BOAS",
-            "CRUSHERS", "SHADOW95", 14);
-        AddTournament(false, "PHILADELPHIA", 9, 1200, 0, tournamentTypeEnum.ThreeRound, "TEAM PROCESS", "BLOCKERS", "BIG BALLERS", "LA SHADOWERS",
-            "SLIDERS", "SUPPLIERS", "DETAILERS", 64);
-        AddTournament(true, "BALTIMORE", 11, 1900, 0, tournamentTypeEnum.ThreeRound, "GORILLAS", "TEAM TRIPLE-DOUBLE", "LYNXES", "RETRIEVERS",
-            "BLOCKERS", "THE 36ERS", "SIDEWINDERS", 62);
-        AddTournament(false, "KENTUCKY", 4, 800, 0, tournamentTypeEnum.ThreeRound, "PIGEONS", "SNAILS", "PEPPERS99", "HALL OF FAME", "ORCAS",
-            "GNOMES", "GREMLINS", 39);
-        AddTournament(true, "VIRGINIA", 10, 900, 0, tournamentTypeEnum.ThreeRound, "HARES", "COBRAS.", "BEETLES", "33ERS", "DINGOS", "OCTOPI",
-            "SUPERSPEED", 28);
-        AddTournament(false, "ATLANTIC COAST", 8, 1200, 0, tournamentTypeEnum.ThreeRound, "FALCONS", "BLUECRABS", "BALLERS", "SWIFTS", "PITBULLS",
-            "59ERS", "TAILS", 2);
-        AddTournament(true, "TENNESSEE", 12, 1200, 0, tournamentTypeEnum.ThreeRound, "99ERS", "ROACHES42", "REDS", "PREDATORS", "COOKIE JAR",
-            "HEROES", "RATTLERS", 7);
-        AddTournament(false, "NORTH CAROLINA", 16, 1200, 0, tournamentTypeEnum.ThreeRound, "B.A.T.S.", "REAL_ONES", "DRAGONS", "OWLS", "SQUIDS",
-            "TOUCANS98", "ANTELOPES.", 29);
-        AddTournament(true, "ATLANTA", 17, 1500, 0, tournamentTypeEnum.ThreeRound, "ROMANS", "BOOMERS", "HEROS_4", "BLUECRABS", "ROACHES", "HYDRAS",
-            "CHAMPS", 1);
-        AddTournament(false, "CHARLESTON", 17, 1100, 0, tournamentTypeEnum.ThreeRound, "PIPERS", "GREATS", "FINCHES", "WOMBATS", "CHAMELEONS",
-            "RUMBLERS", "43ERS", 3);
-        AddTournament(false, "JACKSONVILLE", 16, 1200, 0, tournamentTypeEnum.ThreeRound, "LORIKEETS", "SOULS", "GREAT GECKOS", "PIRATES", "PHEASANTS",
-            "DARTS", "SHARKS", 8);
-        AddTournament(true, "NEW ORLEANS", 16, 1400, 0, tournamentTypeEnum.ThreeRound, "THE VIPERS^", "PARROTS", "BLASTERS", "DIVERS 3000", "BIGDOGS",
-            "TWEETERS", "TARANTULAS", 16);
-        AddTournament(false, "MIAMI", 10, 1500, 0, tournamentTypeEnum.ThreeRound, "SPIDERS", "PEPPERS", "REPTILEZ", "TEAM OWLS", "LIONS", "DODGERS",
-            "STORMERS", 67);
-        AddTournament(true, "ALABAMA", 22, 800, 0, tournamentTypeEnum.ThreeRound, "TERRIERS", "AKITAS", "COYOTES", "COBRAS", "RAIDERS^", "DINOBIRDS",
-            "COOL CRICKETS", 63);
-        AddTournament(false, "MISSISSIPPI", 20, 900, 0, tournamentTypeEnum.ThreeRound, "DESSERTERS", "DISPLACERS", "TRAINERS", "HUSSELERS",
-            "ELEMENTS", "BOUNCERS", "EAGLES", 20);
-        AddTournament(false, "TALLAHASSEE", 20, 800, 0, tournamentTypeEnum.ThreeRound, "DINGOS", "RUMBLERS", "CHEETAHS", "SNIPERS", "NEUTRONS",
-            "WOLVES", "RATTLERS", 54);
-        AddTournament(true, "ARKANSAS", 21, 800, 0, tournamentTypeEnum.ThreeRound, "BATS", "JELLYFISH", "DRAGONS^^", "NET OWLS", "SQUIDS", "TOUCANS",
-            "ANTELOPES", 5);
-        AddTournament(false, "KANSAS CITY", 26, 1200, 0, tournamentTypeEnum.ThreeRound, "HERRINGS", "SAILS", "SNAPPERS", "HEROES", "BOAS", "CRUSHERS",
-            "GATORS", 31);
-        AddTournament(false, "HOUSTON", 26, 1600, 0, tournamentTypeEnum.ThreeRound, "SPIDERS", "HOT PEPPERS", "REPTILES", "OWLS", "LIONS", "DODGERS!",
-            "NET STORMERS", 36);
-        AddTournament(true, "DALLAS", 27, 1200, 0, tournamentTypeEnum.ThreeRound, "GORILLAS", "SETTERS", "LYNXES", "RETRIEVERS", "BLOCKERS", "36ERS",
-            "SIDEWINDERS", 45);
-        AddTournament(false, "SAN ANTONIO", 27, 1700, 0, tournamentTypeEnum.ThreeRound, "TERRIERZ!!", "AKITAS", "COYOTES", "GATORS%", "RAIDERS",
-            "DINOBIRDS", "HUNTERS", 47);
-        AddTournament(true, "OKLAHOMA CITY", 28, 1600, 0, tournamentTypeEnum.ThreeRound, "GIRAFFS", "KANGAROOS", "BLUECRABS", "CROCODILES", "DINGOS",
-            "KODIAKS", "WOLVES", 49);
-        AddTournament(false, "MISSOURI", 28, 1200, 0, tournamentTypeEnum.ThreeRound, "PIGEONS", "SNAILS", "PEPPERS", "ROMANS", "ORCAS", "GNOMES!!",
-            "GREMLINS", 6);
-        AddTournament(true, "NEBRASKA", 29, 1400, 0, tournamentTypeEnum.ThreeRound, "RUMBLERS", "RAIDERS", "ZEBRAS", "TIGERS", "FIREBALLZ", "VIPERS",
-            "DOLPHINS", 11);
-        AddTournament(false, "IOWA", 29, 900, 0, tournamentTypeEnum.ThreeRound, "DRAGONS", "SAILS", "SNAPPERS", "HEROES", "BOAS99", "COBRAS",
-            "GATORS", 15);
-        AddTournament(false, "LOS ANGELES", 21, 1700, 0, tournamentTypeEnum.ThreeRound, "BIGDOGS", "PARROTS", "BLASTERS", "NO DICE", "BREAKERS",
-            "TWEETERS", "SOULS", 34);
-        AddTournament(true, "LUBBOCK", 34, 750, 0, tournamentTypeEnum.ThreeRound, "GENERATORS", "HEALERS", "RISKERS", "TIGERS", "GIANTS", "BRAVERS",
-            "CHAMPIONS", 35);
-        AddTournament(false, "CHICAGO", 25, 1400, 0, tournamentTypeEnum.ThreeRound, "DA SPIDERS", "PEPPERS", "REPTILES", "OWLS", "LIONS", "DODGERS",
-            "STORMERS", 37);
-        AddTournament(true, "NORTH DAKOTA", 37, 700, 0, tournamentTypeEnum.ThreeRound, "FOLLOWERS", "PATRIOTS99", "TRUSTERS", "WESTERNERS",
-            "DREAMERS", "VIPERS", "DOLPHINS", 52);
-        AddTournament(false, "CLEVELAND", 30, 1400, 0, tournamentTypeEnum.ThreeRound, "GIRAFFS", "WOLVES", "BLUECRABS", "CROCODILES", "DINGOS",
-            "KODIAKS", "KANGAROOS.", 42);
-        AddTournament(false, "OAKLAND", 32, 1500, 0, tournamentTypeEnum.ThreeRound, "PANTHERS", "MYSTERIES", "ZEBRAS", "TIGERS", "FIREBALLS",
-            "AMAZING BALLER", "DOLPHINS", 38);
-        AddTournament(true, "NORTH CAL", 36, 450, 0, tournamentTypeEnum.ThreeRound, "LORIKEETS", "SOULS", "GECKOS", "PIRATES", "PHEASANTS99",
-            "DARTSX", "SHARKS", 17);
-        AddTournament(false, "PORTLAND", 37, 1100, 0, tournamentTypeEnum.ThreeRound, "BOOMERS.", "HOWLERS", "GOLDFISH", "LOOMERS", "SHEEPDOGS",
-            "PEACOCKS", "PIRANHAS", 29);
-        AddTournament(true, "BOISE", 38, 1400, 0, tournamentTypeEnum.ThreeRound, "LOCKERS88", "RAPTORS", "DRAGONS", "TARANTULAS", "HOUNDS",
-            "FLAMINGOS", "ORCAS", 40);
-        AddTournament(true, "MONTANA", 39, 650, 0, tournamentTypeEnum.ThreeRound, "BATS", "JELLYFISH", "DRAGONS", "OWLS", "SQUIDS", "TOUCANS88",
-            "ANTELOPES", 30);
-        AddTournament(false, "SALT LAKE CITY", 32, 1100, 0, tournamentTypeEnum.ThreeRound, "RUMBLERSX", "TEAM WOW", "ZEBRAS", "TIGERS", "MUSICIANS",
-            "VIPERS", "DOLPHINS", 53);
-        AddTournament(true, "KANSAS", 36, 1600, 0, tournamentTypeEnum.ThreeRound, "RACOONS", "CREEPS77", "CROWS", "SQUIDS", "REPTILES", "ELEPHANTS",
-            "FROGS", 19);
-        AddTournament(false, "PHOENIX", 38, 1400, 0, tournamentTypeEnum.ThreeRound, "MR DIAMONDS", "MINERS", "UPGRADERS", "WATCHERS", "SHEPHARDS 7",
-            "DUNKERS34", "LIONS", 43);
-        AddTournament(true, "DENVER", 37, 1200, 0, tournamentTypeEnum.ThreeRound, "PAPPAS", "MAMMAS 34", "TALKERS", "PLANNERS", "BLAMERS",
-            "DRAFT-TANKERS", "FIGHTERS", 40);
-        AddTournament(false, "LAS VEGAS", 39, 1200, 0, tournamentTypeEnum.ThreeRound, "BOXERS 2", "REALERS", "TREATERS", "PAYERS", "CROSSERS",
-            "MAPPERS", "SKIIERS", 4);
-        AddTournament(false, "SEATTLE", 30, 1500, 0, tournamentTypeEnum.ThreeRound, "JETS", "LEAFS", "OILERS", "CUBS", "HIPSTERS", "LAUNCHERS",
-            "LIZARDS", 55);
-        AddTournament(true, "OREGON", 41, 1200, 0, tournamentTypeEnum.ThreeRound, "PENGUINS", "FALCONS", "OUTLAWS", "LUMBERJACKS", "SHAMROCKS",
-            "BLACKWOLVES", "SHARPSHOOTERS", 44);
-        AddTournament(true, "RENO", 42, 1400, 0, tournamentTypeEnum.ThreeRound, "BLACKHAWKS", "SABRES", "THE RAVENS", "SENATORS", "SHOOTINGSTARS",
-            "NINJAS", "TARGETERS", 6);
-        AddTournament(false, "NEVADA", 43, 1250, 0, tournamentTypeEnum.ThreeRound, "RATTLERS", "RANGERS", "THE BRAVES", "BILLS", "PEASHOOTERS 34",
-            "CHAOS", "GRENADES", 19);
-        AddTournament(false, "SACRAMENTO", 44, 1400, 0, tournamentTypeEnum.ThreeRound, "WINGS 99", "MONSTERS", "SWARMERS", "WILDCATS", "TEXANS",
-            "SPARTONS", "BEAVERS", 41);
-        AddTournament(true, "DEATH VALLEY", 35, 2400, 0, tournamentTypeEnum.ThreeRound, "THE SNAKES", "VALLEYCATS", "SPIDERS", "DIAMONDBACKS",
-            "BISON", "WARRIORS", "COUGARS", 9);
-        AddTournament(false, "SAN DIEGO", 36, 1400, 0, tournamentTypeEnum.ThreeRound, "FLAMES", "ROYALS", "LOGNUTS", "TEXANS", "SQUIRRELS",
-            "BORDERERS", "OCEANBATS", 8);
-        AddTournament(true, "CHANNEL ISLANDS", 47, 800, 0, tournamentTypeEnum.ThreeRound, "SWIMMERS", "CHANNELERS", "DUCKS", "DIPPERS", "FISHERS",
-            "WHALES", "SURFERS", 3);
-        AddTournament(false, "CATALINA ISLAND", 48, 900, 0, tournamentTypeEnum.ThreeRound, "ISLANDERS", "SWIMMERS2000", "SHOREBIRDS", "DA RAYS",
-            "REEFS", "ASTROS", "RIPTIDE", 22);
-        AddTournament(true, "SAN NICOLAS ISLAND", 49, 1000, 0, tournamentTypeEnum.ThreeRound, "DODGERS", "BREWERS", "SHARKS", "BUCS", "MARINERS",
-            "CRABBERS", "DEEPSEAERS", 23);
-        AddTournament(false, "TUSCAN", 50, 1100, 0, tournamentTypeEnum.ThreeRound, "PIRATES", "TIGERS", "JAGUARS!", "GREEDYGOATS", "TEAMREBELS",
-            "CAMELS", "BANDITS", 24);
-        AddTournament(true, "ALBUQUERQUE", 51, 1200, 0, tournamentTypeEnum.ThreeRound, "MARLINS", "DOLPHINS", "TITANS", "BISCUITS", "HOOPIN HENS",
-            "BEARCATS", "HORNETS", 18);
-        AddTournament(false, "ARIZONA", 52, 1300, 0, tournamentTypeEnum.ThreeRound, "LIGHTNING", "PRESIDENTS", "PIONEERS", "RANGERS", "DASHERS!!!",
-            "FROGS", "RAVENS", 48);
-        AddTournament(false, "NEW MEXICO", 53, 1400, 0, tournamentTypeEnum.ThreeRound, "CHIHUAHUAS", "REBELS", "STEALTHERS", "BLAZERS", "SNAPPERS",
-            "PIRATES", "DODGERS", 1);
-        AddTournament(true, "GRAND CANYON", 38, 1300, 0, tournamentTypeEnum.ThreeRound, "AVALANCH", "BIG ROCKS", "DEEPERS", "ROCKERS", "RIVERSNAKES",
-            "SALON", "WILDERS", 50);
-        AddTournament(true, "FISH LAKE", 55, 1200, 0, tournamentTypeEnum.ThreeRound, "BAYHAWKS", "SALMONBELLIES", "SEADOGS!!!", "SEACATS",
-            "TROUT2020", "LAKECATS", "LAKEBEARS", 2);
-        AddTournament(false, "BATTLE MOUNTAIN", 32, 1100, 0, tournamentTypeEnum.ThreeRound, "ROUGHNECKS", "ATTACKERS", "RUSHERS", "BATTLERS",
-            "FIGHERS", "WINNERS", "TUFFGUYS", 5);
-        AddTournament(false, "SALTON SEA", 56, 1000, 0, tournamentTypeEnum.ThreeRound, "SEACATS", "SEAFISH", "SEAWOLVES", "SEATROUT", "SEASNAKES",
-            "SEABEARS", "SEAROCKS", 11);
-        AddTournament(true, "EL PASO", 57, 900, 0, tournamentTypeEnum.ThreeRound, "EL DIABLOS", "EL SNIPERS", "EL GOATS", "PADRES", "BANDITS",
-            "TEXANS", "SNAKES", 13);
-        AddTournament(true, "SILVER CITY", 55, 800, 0, tournamentTypeEnum.ThreeRound, "SILVERCLUBS", "JAGUARS", "SILVERBACKS", "SILVERSWARMERS",
-            "SILVERSHOOTERS", "SILVERBOAS", "SILVERDOGS", 18);
-        AddTournament(true, "FORT TITANS", 58, 800, 0, tournamentTypeEnum.ThreeRound, "TITANS", "BAYHAWKS", "GRENADES", "CHIHUAHUAS", "PIRATES",
-            "STEALTHERS", "REBELS", 21);
-        AddTournament(false, "BATTLE CREEK", 50, 900, 0, tournamentTypeEnum.ThreeRound, "BATTLEDOGS", "BATTLECATS", "BATTLEPIGS", "BATTLEBATS",
-            "BATTLECARS", "TANKS", "BATTLEKIDS", 63);
-        AddTournament(true, "TRAVERSE CITY", 60, 1000, 0, tournamentTypeEnum.ThreeRound, "BLAZERS", "SABRES", "RANGERS", "LAUNCHERS", "HENS",
-            "SPARTONS", "OWLS", 51);
-        AddTournament(false, "BUFFALO", 62, 1100, 0, tournamentTypeEnum.ThreeRound, "OUTLAWS", "CANADIANS", "THE FALCONS", "CHIHUAHUAS", "PITBULLS",
-            "HEROES", "BUFFALOS", 62);
-        AddTournament(true, "SYRACUSE", 63, 1200, 0, tournamentTypeEnum.ThreeRound, "DRAGONS", "FLAMES", "PRESIDENTS", "ROCKERS", "RUNNERS", "HENS",
-            "RANGERS", 69);
-        AddTournament(true, "MAINE", 64, 1400, 0, tournamentTypeEnum.ThreeRound, "LOONS", "SABRES", "RUSHERS", "CROWS", "ELK", "BADCATS", "MAINSHOWS",
-            50);
-        AddTournament(false, "VERMONT", 60, 1500, 0, tournamentTypeEnum.ThreeRound, "NINJAS", "COWBOYS", "LAUNCHERS", "BALLERS", "SPARTONS",
-            "DA BILLS", "SKIIERS", 72);
-        AddTournament(true, "BERMUDA", 65, 1400, 0, tournamentTypeEnum.ThreeRound, "SWIMMERS", "TOURISTS", "JETHAWKS", "BOATERS", "OCEANFROGS",
-            "RUSHERS", "SEASNIPERS", 67);
-        AddTournament(false, "ORLANDO", 66, 1300, 0, tournamentTypeEnum.ThreeRound, "SWARMERS", "LARGE BILLS", "BALLERS1985", "BADDOGS", "BISCUITS",
-            "LAUNCHERS", "RANGERS", 28);
-        AddTournament(true, "DAYTONA BEACH", 60, 1400, 0, tournamentTypeEnum.ThreeRound, "PARTYGOERS", "RACERS", "SUNBATHERS", "BEACHPIGS",
-            "BEACHTIGERS", "SUNRAYS", "SWIMMERS", 34);
-        AddTournament(true, "TAMPA", 68, 1400, 0, tournamentTypeEnum.ThreeRound, "CHIHUAHUAS", "SPARTONS", "COBRAS", "CROWS", "WINDMILLERS", "HENS",
-            "CRABBERS", 35);
-        AddTournament(false, "FREEPORT", 69, 1100, 0, tournamentTypeEnum.ThreeRound, "RUSHERS", "JAGUARS", "OUTLAWS", "BISCUITS", "BALLERS",
-            "JETTERS", "ROCKERS", 36);
-        AddTournament(true, "SANDY POINT", 70, 1400, 0, tournamentTypeEnum.ThreeRound, "SANDFROGS", "CRABBERS", "POINTERS", "SANDCARS", "SANDSNAKES",
-            "SANDRATS", "FALCONS", 37);
-        AddTournament(false, "CONECUH FOREST", 71, 1200, 0, tournamentTypeEnum.ThreeRound, "RAYS", "HENS", "GATORS", "COWBOYS", "SPARTONS", "PYTHONS",
-            "LAUNCHERS", 74);
-        AddTournament(true, "DE SOTA FOREST", 72, 1250, 0, tournamentTypeEnum.ThreeRound, "ROCKERS", "RACERS", "RANGERS", "BILLS", "NINJAS",
-            "BISCUITS", "SWARMERS", 75);
-        AddTournament(false, "YELLOW STONE", 73, 1400, 0, tournamentTypeEnum.ThreeRound, "EXPLORERS", "HIKERS", "GEYSERS", "FAITHFULLS", "CAMPERS",
-            "WOLVES", "GRIZZLIES", 76);
-        AddTournament(true, "GLACIAR NAT PARK", 50, 3100, 0, tournamentTypeEnum.ThreeRound, "CAMPERS", "TRAVELERS", "TOURISTS", "GLACIERS",
-            "ICEBURGHS", "TRAILERS", "CLIMBERS", 77);
-        AddTournament(false, "ARCHES NAT PARK", 75, 1100, 0, tournamentTypeEnum.ThreeRound, "BLACKBEARS", "WOLVES", "WILDBOARS", "EXPLORERS",
-            "TOURISTS", "BIRDWATCHERS", "HIKERS", 1);
-        AddTournament(false, "KINGSVILLE", 76, 1400, 0, tournamentTypeEnum.ThreeRound, "SABRES", "OUTLAWS", "RUSHERS", "COBRAS", "HORSEMEN",
-            "KNIGHTS", "KINGS", 2);
-        AddTournament(true, "LAREDO", 77, 1400, 0, tournamentTypeEnum.ThreeRound, "BILLS", "COWBOYS", "RAYS", "OWLS1999", "GATORS", "BATTERS",
-            "HILLCATS", 3);
-        AddTournament(false, "LAKE CHARLES", 78, 1400, 0, tournamentTypeEnum.ThreeRound, "NINJAS", "RANGERS", "WATERSNAKES", "JAGUARS", "BALLERS",
-            "WATERNETS", "LAKERS", 4);
-        AddTournament(true, "SHREVEPORT", 79, 1400, 0, tournamentTypeEnum.ThreeRound, "BISCUITS", "SUPERSNAKES", "SPARTONS", "PORTERS", "RACERS",
-            "ELKERS", "FALCONS", 5);
-        AddTournament(false, "PINEBLUFF", 80, 1200, 0, tournamentTypeEnum.ThreeRound, "OUTLAWS", "PINNERS", "ROCKERS", "HENS", "PYTHONS", "BLUFFERS",
-            "LAUNCHERS", 6);
-        AddTournament(true, "DEVILS LAKE", 81, 1200, 0, tournamentTypeEnum.ThreeRound, "DARKLAKERS", "SWARMERS", "DEMONS", "LAKEDOGS", "DEFILERS",
-            "DARKBIRDS", "LAKESKULLS", 7);
-        AddTournament(false, "LAKE SAKAKAWEA", 82, 1400, 0, tournamentTypeEnum.ThreeRound, "BALLERS", "THE GATORS", "HEROES", "WOLVES", "NINJAS",
-            "TEAM SAKAS", "BILLS", 8);
-        AddTournament(true, "FORT PECK", 83, 1100, 0, tournamentTypeEnum.ThreeRound, "SUPERGIANTS", "OUTLAWS", "RANGERS", "LAUNCHERS", "PYTHONS",
-            "FORTERS", "RAYS", 9);
-        AddTournament(false, "MILES CITY", 84, 1400, 0, tournamentTypeEnum.ThreeRound, "RACERS", "HILLCATS", "NINJAS", "FASTCARS", "RUSHERS",
-            "SMARTJETS", "SABRES", 10);
-        AddTournament(false, "THUNDER BASIN", 85, 1400, 0, tournamentTypeEnum.ThreeRound, "COBRAS", "DRAGGERS", "OUTLAWS", "DRAGONS", "HENS",
-            "PITBULLS", "FALCONS", 11);
-        AddTournament(true, "RAPID CITY", 86, 1200, 0, tournamentTypeEnum.ThreeRound, "COWBOYS", "EXPLORERS", "CROWS", "HILLCATS", "BALLERS",
-            "PYTHONS", "RAPIDS", 12);
-        AddTournament(false, "BIG HORN", 87, 1400, 0, tournamentTypeEnum.ThreeRound, "PATS", "SHEEP", "ROCKERS", "HORNS", "OUTLAWS", "WEAVERS",
-            "RACERS", 13);
-        AddTournament(true, "GRAND FORKS", 88, 1400, 0, tournamentTypeEnum.ThreeRound, "RAIDERS", "MOHAWKS", "SMASHERS", "FORKERS", "BLUECLAWS",
-            "CROSSERS", "HEROES", 15);
-        AddTournament(false, "LINCOLN", 89, 1100, 0, tournamentTypeEnum.ThreeRound, "SEAHAWKS", "RANGERS", "CHIHUAHUAS", "DRAGONS", "HOOP CROWS",
-            "DOLLARS", "GATORS", 16);
-        AddTournament(true, "VALENTINE", 90, 1100, 0, tournamentTypeEnum.ThreeRound, "EAGLES", "LAUNCHERS", "HENS", "COWS", "NINJAS", "SMARTERS",
-            "VALENTINES", 17);
-        AddTournament(false, "ALLIANCE", 91, 900, 0, tournamentTypeEnum.ThreeRound, "RUSHERS", "GIANTS", "PREDATORS", "STARS", "RACERS", "BILLS",
-            "OUTLAWS", 18);
-        AddTournament(true, "MCCOOK", 92, 1200, 0, tournamentTypeEnum.ThreeRound, "ROCKERS", "BRONCOS", "BLUECLAWS", "SPARTONS", "COOKS", "BALLERS",
-            "COOKERS", 19);
-        AddTournament(true, "WICHITA FALLS", 93, 1400, 0, tournamentTypeEnum.ThreeRound, "FALLERS", "VIKINGS", "RANGERS", "HURRICANES", "THRASHERS",
-            "CROWS", "DRAGONS", 20);
-        AddTournament(false, "ROCKY MOUNTAINS", 94, 1000, 0, tournamentTypeEnum.ThreeRound, "THRASHERS", "STEELERS", "OUTLAWS", "RANGERS",
-            "MOUNTANIERS", "OWLS", "FALCONS", 21);
-        AddTournament(true, "ATLANTIS", 55, 900, 0, tournamentTypeEnum.ThreeRound, "MERMAIDS", "STARFISH", "SEAWOLVES", "TREASURES", "OCEANKINGS",
-            "ANCIENTS", "SEAQUEENS", 22);
-        AddTournament(false, "CEDAR KEY", 96, 1400, 0, tournamentTypeEnum.ThreeRound, "KNIGHTS", "PACKERS", "PANTHERS", "HENS", "EXPLORERS",
-            "DRAGONS", "CEDARWOLVES", 23);
-        AddTournament(true, "DEL RIO", 97, 1100, 0, tournamentTypeEnum.ThreeRound, "HILLCATS", "SHIMPERS", "CARDINALS", "BILLS", "DRAGONS", "CUBS",
-            "DEL RIOS", 24);
-        AddTournament(false, "WALLA WALLA", 98, 1100, 0, tournamentTypeEnum.ThreeRound, "WALLAS", "BEARS", "BLUECLAWS", "RACERS", "LAUNCHERS",
-            "SUPERSNAKES", "CROWS", 25);
-        AddTournament(true, "WEST WENDOVER", 99, 1400, 0, tournamentTypeEnum.ThreeRound, "KNIGHTHAWKS", "SPARTONS", "RAMS", "LOOKOUTS", "CUBS",
-            "WESTERS", "THRASHERS", 26);
-        AddTournament(false, "WICHITA", 100, 1400, 0, tournamentTypeEnum.ThreeRound, "BILLS", "OUTLAWS", "RANGERS", "SAINTS", "NOTHIN BUT NET",
-            "PYTHONS", "DRAGONS", 40);
-        AddTournament(true, "GARDEN CITY", 101, 900, 0, tournamentTypeEnum.ThreeRound, "LEAFERS", "BIGTREES", "SABRES", "GUARDERS", "CHARGERS",
-            "PLANTERS", "GARDENERS", 28);
-        AddTournament(true, "TEXHOMA", 90, 1200, 0, tournamentTypeEnum.ThreeRound, "DRILLERS", "MISSIONS", "JETHAWKS", "HILLCATS", "CUBS", "LIONS",
-            "THE FREEKS", 29);
-        AddTournament(false, "AUGUSTA", 103, 1200, 0, tournamentTypeEnum.ThreeRound, "CHARGERS", "THRASHERS", "CHIPPERS", "DRIVERS", "RUSHERS",
-            "PUTTERS", "GOLFERS", 30);
-        AddTournament(true, "ST LOUIS", 104, 900, 0, tournamentTypeEnum.ThreeRound, "BALL HAWKS", "ARCHES", "FALCONS", "EXPLORERS", "PANTHERS",
-            "DRAGONS", "SAINTS", 31);
-        AddTournament(false, "DURANGO", 115, 1100, 0, tournamentTypeEnum.ThreeRound, "BILLS", "HENS", "DURANGOS", "CUBS", "SPARTONS", "ZEBRAS",
-            "HEROES", 32);
-        AddTournament(false, "BIG SPRING", 116, 1200, 0, tournamentTypeEnum.ThreeRound, "SPRINGERS", "JETHAWKS", "LAUNCHERS", "RANGERS", "DRAGONS",
-            "SHOOTERS", "PROCESSORS", 33);
-        AddTournament(true, "ELY", 117, 1400, 0, tournamentTypeEnum.ThreeRound, "SMOKERS", "RAYS", "CHARGERS", "RIVERSNAKES", "RACERS", "PYTHONS",
-            "THRASHERS", 34);
-        AddTournament(false, "BAKER CITY", 118, 800, 0, tournamentTypeEnum.ThreeRound, "BILLS", "RANGERS", "BLUECLAWS", "EXPLORERS", "ZEBRAS",
-            "PANTHERS", "BAKERS", 35);
-        AddTournament(true, "HART MOUNTAIN", 100, 1200, 0, tournamentTypeEnum.ThreeRound, "BLUECLAWS", "SPARTONS", "MOUNTAINDOGS", "CUBS", "PANTHERS",
-            "EXPLORERS", "CHARGERS", 36);
-        AddTournament(false, "AMERICAN FALLS", 120, 800, 0, tournamentTypeEnum.ThreeRound, "THRASHERS", "OUTLAWS", "AMERICANS", "RIM RAIDERS",
-            "JETHAWKS", "RIVERSNAKES", "FALLERS", 37);
-        AddTournament(true, "ROCK SPRINGS", 121, 900, 0, tournamentTypeEnum.ThreeRound, "ROCKDOGS", "ROCKBIRDS", "HENS", "ROCKCATS", "ROCKRANGERS",
-            "BLACKROCKS", "WHITEROCKS", 38);
-        AddTournament(false, "SPRINGER", 122, 1400, 0, tournamentTypeEnum.ThreeRound, "RAIDERS", "RIVERSNAKES", "CUBS", "SPARTONS", "RANGERS",
-            "CHARGERS", "LAUNCHERS", 39);
+        AddTournament(false, "明尼苏达州", -1, 800, 0, tournamentTypeEnum.ThreeRound, "小巷歌剧", "曼巴团队", "三巴勒兹", "色调转换器",
+            "球王", "毒蛇队", "扣篮大师", ArenaChooser.GetMinnesotaArena());
+        AddTournament(false, "威斯康星州", 0, 900, 0, tournamentTypeEnum.ThreeRound, "旋转蜘蛛", "扣篮者", "压哨高手", "狙击手",
+            "纯投篮", "火球队", "伟大射手", 10);
+        AddTournament(false, "密歇根州", 1, 1100, 0, tournamentTypeEnum.ThreeRound, "熊队", "篮球", "大扣篮2020", "红蟑螂",
+            "投篮兄弟", "加州骑士", "扣篮联合", 33);
+        AddTournament(false, "伊利诺伊州", 1, 1200, 0, tournamentTypeEnum.ThreeRound, "扣篮海报", "擦板得分", "蟒蛇队", "技术犯规者",
+            "扣篮队", "野猪2018", "狙击王", 68);
+        AddTournament(true, "夏洛特", 0, 1600, 0, tournamentTypeEnum.ThreeRound, "你会输", "欧洲队", "郊狼队", "幸运女士",
+            "皇家袭击者", "交叉突破队", "旋转者", 12);
+        AddTournament(true, "印第安纳州", 4, 1700, 0, tournamentTypeEnum.ThreeRound, "篮球粉碎者", "全明星", "蓝蟹队", "鳄鱼队",
+            "野狗队", "科迪亚克熊队", "狼队", 26);
+        AddTournament(false, "波士顿", 3, 1900, 0, tournamentTypeEnum.ThreeRound, "蟋蟀队", "泼水队", "投篮兄弟", "渔夫队",
+            "袋熊队", "篮网鲨鱼", "斗牛犬队", 65);
+        AddTournament(false, "辛辛那提", 5, 1200, 0, tournamentTypeEnum.ThreeRound, "突破脚踝者", "嚎叫者", "鲨鱼饵", "食人鱼队",
+            "反转者", "轰炸者", "回旋队", 32);
+        AddTournament(false, "匹兹堡", 6, 1100, 0, tournamentTypeEnum.ThreeRound, "篮筐破坏者", "鹦鹉队", "投篮爆破者", "寒意队",
+            "大狗队", "轻松得分", "灵魂队", 66);
+        AddTournament(false, "纽约市", 6, 2000, 0, tournamentTypeEnum.ThreeRound, "伟大者", "水母队", "场地风暴者", "海盗队",
+            "篮板粉碎者", "篮球领袖", "翠鸟队", 46);
+        AddTournament(true, "西弗吉尼亚州", 9, 1500, 0, tournamentTypeEnum.ThreeRound, "三分与防守", "风帆队", "捕手队", "英雄队",
+            "蟒蛇队", "破坏者", "影子95队", 14);
+        AddTournament(false, "费城", 9, 1200, 0, tournamentTypeEnum.ThreeRound, "团队计划", "阻挡者", "大球员", "影子队",
+            "滑行者", "供应者", "细节大师", 64);
+        AddTournament(true, "巴尔的摩", 11, 1900, 0, tournamentTypeEnum.ThreeRound, "大猩猩队", "三双团队", "猞猁队", "寻回者",
+            "阻挡者", "36号队", "响尾蛇", 62);
+        AddTournament(false, "肯塔基州", 4, 800, 0, tournamentTypeEnum.ThreeRound, "鸽子队", "蜗牛队", "辣椒99", "名人堂", "虎鲸队",
+            "侏儒队", "小精灵队", 39);
+        AddTournament(true, "弗吉尼亚州", 10, 900, 0, tournamentTypeEnum.ThreeRound, "野兔队", "眼镜蛇队", "甲虫队", "33号队",
+            "野狗队", "章鱼队", "极速队", 28);
+        AddTournament(false, "大西洋沿岸", 8, 1200, 0, tournamentTypeEnum.ThreeRound, "猎鹰队", "蓝蟹队", "篮球员", "疾风队", "斗牛犬队",
+            "59号队", "尾巴队", 2);
+        AddTournament(true, "田纳西州", 12, 1200, 0, tournamentTypeEnum.ThreeRound, "99号队", "蟑螂42", "红队", "掠食者", "饼干罐",
+            "英雄队", "响尾蛇队", 7);
+        AddTournament(false, "北卡罗来纳州", 16, 1200, 0, tournamentTypeEnum.ThreeRound, "蝙蝠队", "真正的家伙", "龙队", "猫头鹰队", "乌贼队",
+            "巨嘴鸟98", "羚羊队", 29);
+        AddTournament(true, "亚特兰大", 17, 1500, 0, tournamentTypeEnum.ThreeRound, "罗马队", "轰炸者", "英雄4队", "蓝蟹队", "蟑螂队",
+            "九头蛇队", "冠军队", 1);
+        AddTournament(false, "查尔斯顿", 17, 1100, 0, tournamentTypeEnum.ThreeRound, "笛手队", "伟人队", "雀队", "袋熊队", "变色龙队",
+            "咆哮者", "43号队", 3);
+        AddTournament(false, "杰克逊维尔", 16, 1200, 0, tournamentTypeEnum.ThreeRound, "彩虹吸蜜鹦鹉", "灵魂队", "伟大壁虎", "海盗队", "雉鸡队",
+            "飞镖队", "鲨鱼队", 8);
+        AddTournament(true, "新奥尔良", 16, 1400, 0, tournamentTypeEnum.ThreeRound, "毒蛇队", "鹦鹉队", "爆破者", "潜水员3000", "大狗队",
+            "推特者", "狼蛛队", 16);
+        AddTournament(false, "迈阿密", 10, 1500, 0, tournamentTypeEnum.ThreeRound, "蜘蛛队", "辣椒队", "爬行动物队", "猫头鹰队", "狮子队",
+            "躲避者", "风暴者", 67);
+        AddTournament(true, "阿拉巴马州", 22, 800, 0, tournamentTypeEnum.ThreeRound, "猎犬队", "秋田犬队", "郊狼队", "眼镜蛇队", "袭击者",
+            "恐龙鸟队", "酷蟋蟀", 63);
+        AddTournament(false, "密西西比", 20, 900, 0, tournamentTypeEnum.ThreeRound, "逃兵队", "移位者", "训练师", "忙碌者",
+            "元素队", "弹跳者", "老鹰队", 20);
+        AddTournament(false, "塔拉哈西", 20, 800, 0, tournamentTypeEnum.ThreeRound, "野狗队", "咆哮者", "猎豹队", "狙击手", "中子队",
+            "狼队", "响尾蛇队", 54);
+        AddTournament(true, "阿肯色州", 21, 800, 0, tournamentTypeEnum.ThreeRound, "蝙蝠队", "水母队", "龙队", "网猫头鹰", "乌贼队",
+            "巨嘴鸟队", "羚羊队", 5);
+        AddTournament(false, "堪萨斯城", 26, 1200, 0, tournamentTypeEnum.ThreeRound, "鲱鱼队", "帆船队", "捕手队", "英雄队", "蟒蛇队",
+            "破碎者", "短吻鳄队", 31);
+        AddTournament(false, "休斯顿", 26, 1600, 0, tournamentTypeEnum.ThreeRound, "蜘蛛队", "辣椒队", "爬行动物队", "猫头鹰队", "狮子队",
+            "躲避者", "风暴者", 36);
+        AddTournament(true, "达拉斯", 27, 1200, 0, tournamentTypeEnum.ThreeRound, "大猩猩队", "二传手", "猞猁队", "寻回者", "阻挡者",
+            "36号队", "响尾蛇队", 45);
+        AddTournament(false, "圣安东尼奥", 27, 1700, 0, tournamentTypeEnum.ThreeRound, "猎犬队", "秋田犬队", "郊狼队", "短吻鳄%", "袭击者",
+            "恐龙鸟队", "猎人队", 47);
+        AddTournament(true, "俄克拉荷马城", 28, 1600, 0, tournamentTypeEnum.ThreeRound, "长颈鹿队", "袋鼠队", "蓝蟹队", "鳄鱼队", "野狗队",
+            "科迪亚克熊", "狼队", 49);
+        AddTournament(false, "密苏里", 28, 1200, 0, tournamentTypeEnum.ThreeRound, "鸽子队", "蜗牛队", "辣椒队", "罗马队", "虎鲸队",
+            "侏儒队", "小精灵队", 6);
+        AddTournament(true, "内布拉斯加", 29, 1400, 0, tournamentTypeEnum.ThreeRound, "咆哮者", "袭击者", "斑马队", "老虎队", "火球队",
+            "毒蛇队", "海豚队", 11);
+        AddTournament(false, "爱荷华州", 29, 900, 0, tournamentTypeEnum.ThreeRound, "龙队", "帆船队", "捕手队", "英雄队", "蟒蛇99",
+            "眼镜蛇队", "短吻鳄队", 15);
+        AddTournament(false, "洛杉矶", 21, 1700, 0, tournamentTypeEnum.ThreeRound, "大狗队", "鹦鹉队", "爆破者", "别想赢", "破坏者",
+            "推特者", "灵魂队", 34);
+        AddTournament(true, "拉伯克", 34, 750, 0, tournamentTypeEnum.ThreeRound, "发电机队", "治疗者", "冒险者", "老虎队", "巨人队",
+            "勇敢者", "冠军队", 35);
+        AddTournament(false, "芝加哥", 25, 1400, 0, tournamentTypeEnum.ThreeRound, "蜘蛛队", "辣椒队", "爬行动物队", "猫头鹰队", "狮子队",
+            "躲避者", "风暴者", 37);
+        AddTournament(true, "北达科他州", 37, 700, 0, tournamentTypeEnum.ThreeRound, "追随者", "爱国者99", "信任者", "西部人", "梦想者",
+            "毒蛇队", "海豚队", 52);
+        AddTournament(false, "克利夫兰", 30, 1400, 0, tournamentTypeEnum.ThreeRound, "长颈鹿队", "狼队", "蓝蟹队", "鳄鱼队", "野狗队",
+            "科迪亚克熊", "袋鼠队", 42);
+        AddTournament(false, "奥克兰", 32, 1500, 0, tournamentTypeEnum.ThreeRound, "黑豹队", "谜团队", "斑马队", "老虎队", "火球队",
+            "神奇篮球手", "海豚队", 38);
+        AddTournament(true, "北加州", 36, 450, 0, tournamentTypeEnum.ThreeRound, "彩虹吸蜜鹦鹉", "灵魂队", "壁虎队", "海盗队", "雉鸡99",
+            "飞镖X", "鲨鱼队", 17);
+        AddTournament(false, "波特兰", 37, 1100, 0, tournamentTypeEnum.ThreeRound, "轰炸者", "嚎叫者", "金鱼", "织布工", "牧羊犬",
+            "孔雀", "食人鱼", 29);
+        AddTournament(true, "博伊西", 38, 1400, 0, tournamentTypeEnum.ThreeRound, "储物柜88", "猛禽", "龙", "狼蛛", "猎犬",
+            "火烈鸟", "虎鲸", 40);
+        AddTournament(true, "蒙大拿", 39, 650, 0, tournamentTypeEnum.ThreeRound, "蝙蝠", "水母", "龙", "猫头鹰", "鱿鱼", "巨嘴鸟88",
+            "羚羊", 30);
+        AddTournament(false, "盐湖城", 32, 1100, 0, tournamentTypeEnum.ThreeRound, "咆哮者X", "哇队", "斑马", "老虎", "音乐家",
+            "毒蛇", "海豚", 53);
+        AddTournament(true, "堪萨斯", 36, 1600, 0, tournamentTypeEnum.ThreeRound, "浣熊", "爬行者77", "乌鸦", "鱿鱼", "爬行动物", "大象",
+            "青蛙", 19);
+        AddTournament(false, "菲尼克斯", 38, 1400, 0, tournamentTypeEnum.ThreeRound, "钻石先生", "矿工", "升级者", "观察者", "牧羊人7",
+            "扣篮者34", "狮子", 43);
+        AddTournament(true, "丹佛", 37, 1200, 0, tournamentTypeEnum.ThreeRound, "爸爸队", "妈妈队34", "讲话者", "策划者", "指责者",
+            "选秀坦克", "战斗者", 40);
+        AddTournament(false, "拉斯维加斯", 39, 1200, 0, tournamentTypeEnum.ThreeRound, "拳击手2", "真实者", "治疗者", "付款者", "穿越者",
+            "绘图者", "滑雪者", 4);
+        AddTournament(false, "西雅图", 30, 1500, 0, tournamentTypeEnum.ThreeRound, "喷气机", "叶子", "石油工人", "幼崽", "时髦者", "发射者",
+            "蜥蜴", 55);
+        AddTournament(true, "俄勒冈", 41, 1200, 0, tournamentTypeEnum.ThreeRound, "企鹅", "猎鹰", "亡命之徒", "伐木工", "三叶草",
+            "黑狼", "神枪手", 44);
+        AddTournament(true, "里诺", 42, 1400, 0, tournamentTypeEnum.ThreeRound, "黑鹰", "军刀", "渡鸦队", "参议员", "流星队",
+            "忍者", "靶手", 6);
+        AddTournament(false, "内华达", 43, 1250, 0, tournamentTypeEnum.ThreeRound, "响尾蛇", "游侠", "勇士队", "比尔队", "豌豆射手34",
+            "混乱者", "手榴弹队", 19);
+        AddTournament(false, "萨克拉门托", 44, 1400, 0, tournamentTypeEnum.ThreeRound, "翅膀99", "怪物", "蜂拥者", "野猫", "德州人",
+            "斯巴顿", "海狸", 41);
+        AddTournament(true, "死亡谷", 35, 2400, 0, tournamentTypeEnum.ThreeRound, "蛇队", "山猫队", "蜘蛛", "响尾蛇", "野牛",
+            "勇士", "美洲狮", 9);
+        AddTournament(false, "圣迭戈", 36, 1400, 0, tournamentTypeEnum.ThreeRound, "火焰", "皇家队", "长螺母", "德州人", "松鼠",
+            "边界者", "海蝙蝠", 8);
+        AddTournament(true, "海峡群岛", 47, 800, 0, tournamentTypeEnum.ThreeRound, "游泳者", "海峡者", "鸭子", "潜水者", "捕鱼者",
+            "鲸鱼", "冲浪者", 3);
+        AddTournament(false, "卡塔利娜岛", 48, 900, 0, tournamentTypeEnum.ThreeRound, "岛民", "游泳者2000", "滨鸟", "光线队",
+            "珊瑚礁", "太空人", "激流", 22);
+        AddTournament(true, "圣尼古拉斯岛", 49, 1000, 0, tournamentTypeEnum.ThreeRound, "道奇队", "酿酒师", "鲨鱼", "海盗", "水手",
+            "捕蟹者", "深海者", 23);
+        AddTournament(false, "图森", 50, 1100, 0, tournamentTypeEnum.ThreeRound, "海盗", "老虎", "美洲虎！", "贪婪山羊", "反叛者队",
+            "骆驼", "强盗", 24);
+        AddTournament(true, "阿尔伯克基", 51, 1200, 0, tournamentTypeEnum.ThreeRound, "马林鱼", "海豚", "泰坦", "饼干", "跳跃母鸡",
+            "熊猫队", "大黄蜂", 18);
+        AddTournament(false, "亚利桑那", 52, 1300, 0, tournamentTypeEnum.ThreeRound, "闪电", "总统队", "开拓者", "游侠", "冲锋队！",
+            "青蛙", "渡鸦", 48);
+        AddTournament(false, "新墨西哥", 53, 1400, 0, tournamentTypeEnum.ThreeRound, "奇瓦瓦犬", "叛军", "潜行者", "火焰者", "捕手", "海盗", "道奇队", 1);
+        AddTournament(true, "大峡谷", 38, 1300, 0, tournamentTypeEnum.ThreeRound, "雪崩队", "巨石队", "深潜者", "摇滚者", "河蛇", "沙龙队", "狂野者", 50);
+        AddTournament(true, "鱼湖", 55, 1200, 0, tournamentTypeEnum.ThreeRound, "湾鹰队", "鲑鱼腹队", "海狗", "海猫", "鳟鱼2020", "湖猫", "湖熊", 2);
+        AddTournament(false, "战山", 32, 1100, 0, tournamentTypeEnum.ThreeRound, "粗脖子", "攻击者", "冲锋者", "战士", "斗士", "胜者", "硬汉", 5);
+        AddTournament(false, "盐沼地", 56, 1000, 0, tournamentTypeEnum.ThreeRound, "海猫", "海鱼", "海狼", "海鳟鱼", "海蛇", "海熊", "海岩", 11);
+        AddTournament(true, "埃尔帕索", 57, 900, 0, tournamentTypeEnum.ThreeRound, "恶魔", "狙击手", "山羊", "教父队", "强盗", "德州人", "蛇", 13);
+        AddTournament(true, "银城", 55, 800, 0, tournamentTypeEnum.ThreeRound, "银俱乐部", "美洲虎", "银背猩猩", "银蜂群", "银射手", "银蟒蛇", "银狗", 18);
+        AddTournament(true, "泰坦堡", 58, 800, 0, tournamentTypeEnum.ThreeRound, "泰坦队", "湾鹰队", "手榴弹", "奇瓦瓦犬", "海盗", "潜行者", "叛军", 21);
+        AddTournament(false, "战溪", 50, 900, 0, tournamentTypeEnum.ThreeRound, "战狗", "战猫", "战猪", "战蝙蝠", "战车", "坦克", "战童", 63);
+        AddTournament(true, "特拉弗斯市", 60, 1000, 0, tournamentTypeEnum.ThreeRound, "火焰者", "军刀", "游侠", "发射者", "母鸡", "斯巴顿队", "猫头鹰", 51);
+        AddTournament(false, "布法罗", 62, 1100, 0, tournamentTypeEnum.ThreeRound, "亡命之徒", "加拿大人", "猎鹰", "奇瓦瓦犬", "斗牛犬", "英雄", "水牛", 62);
+        AddTournament(true, "锡拉丘兹", 63, 1200, 0, tournamentTypeEnum.ThreeRound, "巨龙", "火焰队", "总统队", "摇滚者", "跑者", "母鸡", "游侠", 69);
+        AddTournament(true, "缅因州", 64, 1400, 0, tournamentTypeEnum.ThreeRound, "潜鸟", "军刀", "冲锋者", "乌鸦", "麋鹿", "坏猫", "缅因秀", 50);
+        AddTournament(false, "佛蒙特州", 60, 1500, 0, tournamentTypeEnum.ThreeRound, "忍者", "牛仔", "发射者", "投球手", "斯巴顿队", "比尔队", "滑雪者", 72);
+        AddTournament(true, "百慕大", 65, 1400, 0, tournamentTypeEnum.ThreeRound, "游泳者", "游客", "喷气鹰", "划船者", "海洋蛙", "冲锋者", "海狙击手", 67);
+        AddTournament(false, "奥兰多", 66, 1300, 0, tournamentTypeEnum.ThreeRound, "蜂群", "大钞票", "投球手1985", "坏狗", "饼干队", "发射者", "游侠", 28);
+        AddTournament(true, "代托纳海滩", 60, 1400, 0, tournamentTypeEnum.ThreeRound, "派对狂", "赛车手", "晒太阳者", "沙滩猪", "沙滩虎", "阳光射线", "游泳者", 34);
+        AddTournament(true, "坦帕", 68, 1400, 0, tournamentTypeEnum.ThreeRound, "奇瓦瓦犬", "斯巴顿队", "眼镜蛇", "乌鸦", "风车手", "母鸡", "捕蟹人", 35);
+        AddTournament(false, "弗里波特", 69, 1100, 0, tournamentTypeEnum.ThreeRound, "冲锋者", "美洲虎", "亡命之徒", "饼干队", "投球手", "喷气者", "摇滚者", 36);
+        AddTournament(true, "沙角", 70, 1400, 0, tournamentTypeEnum.ThreeRound, "沙蛙", "捕蟹人", "指向者", "沙地车", "沙蛇", "沙鼠", "猎鹰", 37);
+        AddTournament(false, "科尼库森林", 71, 1200, 0, tournamentTypeEnum.ThreeRound, "鳐鱼", "母鸡", "短吻鳄", "牛仔", "斯巴顿队", "蟒蛇", "发射者", 74);
+        AddTournament(true, "德索塔森林", 72, 1250, 0, tournamentTypeEnum.ThreeRound, "摇滚者", "赛车手", "游侠", "比尔队", "忍者", "饼干队", "蜂群", 75);
+        AddTournament(false, "黄石", 73, 1400, 0, tournamentTypeEnum.ThreeRound, "探险家", "徒步者", "喷泉", "忠实者", "露营者", "狼", "灰熊", 76);
+        AddTournament(true, "冰川国家公园", 50, 3100, 0, tournamentTypeEnum.ThreeRound, "露营者", "旅行者", "游客", "冰川", "冰山", "拖车", "登山者", 77);
+        AddTournament(false, "拱门国家公园", 75, 1100, 0, tournamentTypeEnum.ThreeRound, "黑熊", "狼", "野猪", "探险家", "游客", "观鸟者", "徒步者", 1);
+        AddTournament(false, "金斯维尔", 76, 1400, 0, tournamentTypeEnum.ThreeRound, "军刀", "亡命之徒", "冲锋者", "眼镜蛇", "骑士", "国王队", "国王", 2);
+        AddTournament(true, "拉雷多", 77, 1400, 0, tournamentTypeEnum.ThreeRound, "比尔队", "牛仔", "鳐鱼", "猫头鹰1999", "短吻鳄", "击球手", "山猫", 3);
+        AddTournament(false, "查尔斯湖", 78, 1400, 0, tournamentTypeEnum.ThreeRound, "忍者", "游侠", "水蛇", "美洲虎", "投球手", "水网", "湖人", 4);
+        AddTournament(true, "什里夫波特", 79, 1400, 0, tournamentTypeEnum.ThreeRound, "饼干队", "超级蛇", "斯巴顿队", "搬运工", "赛车手", "麋鹿", "猎鹰", 5);
+        AddTournament(false, "松崖", 80, 1200, 0, tournamentTypeEnum.ThreeRound, "亡命之徒", "松鼠", "摇滚者", "母鸡", "蟒蛇", "崖顶", "发射者", 6);
+        AddTournament(true, "魔鬼湖", 81, 1200, 0, tournamentTypeEnum.ThreeRound, "黑湖人", "蜂群", "恶魔", "湖狗", "亵渎者", "黑鸟", "湖头骨", 7);
+        AddTournament(false, "萨卡卡威亚湖", 82, 1400, 0, tournamentTypeEnum.ThreeRound, "投球手", "短吻鳄队", "英雄", "狼", "忍者", "萨卡队", "比尔队", 8);
+        AddTournament(true, "派克堡", 83, 1500, 0, tournamentTypeEnum.ThreeRound, "山猫", "狼", "国王", "比尔队", "鳐鱼", "冰熊", "游侠", 9);
+        AddTournament(false, "卡森谷", 84, 1250, 0, tournamentTypeEnum.ThreeRound, "眼镜蛇", "骑士", "水蛇", "猎鹰", "比尔队", "母鸡", "骑士", 10);
+        AddTournament(false, "迈尔斯城", 84, 1400, 0, tournamentTypeEnum.ThreeRound, "赛车手", "山猫", "忍者", "快车", "冲锋者", "智捷队", "军刀队", 10);
+        AddTournament(false, "雷霆盆地", 85, 1400, 0, tournamentTypeEnum.ThreeRound, "眼镜蛇", "破坏者", "亡命徒", "飞龙", "母鸡", "斗牛犬", "猎鹰", 11);
+        AddTournament(true, "拉皮德城", 86, 1200, 0, tournamentTypeEnum.ThreeRound, "牛仔", "探险者", "乌鸦", "山猫", "球员", "蟒蛇", "急流", 12);
+        AddTournament(false, "大角山", 87, 1400, 0, tournamentTypeEnum.ThreeRound, "爱国者", "绵羊", "摇滚乐队", "角队", "亡命徒", "编织者", "赛车手", 13);
+        AddTournament(true, "大叉", 88, 1400, 0, tournamentTypeEnum.ThreeRound, "突袭者", "莫霍克人", "粉碎者", "叉叉队", "蓝爪队", "穿越者", "英雄", 15);
+        AddTournament(false, "林肯", 89, 1100, 0, tournamentTypeEnum.ThreeRound, "海鹰", "游侠", "吉娃娃", "飞龙", "乌鸦队", "美元队", "短吻鳄", 16);
+        AddTournament(true, "情人城", 90, 1100, 0, tournamentTypeEnum.ThreeRound, "老鹰", "发射者", "母鸡", "奶牛", "忍者", "智者", "情人队", 17);
+        AddTournament(false, "联盟城", 91, 900, 0, tournamentTypeEnum.ThreeRound, "冲锋者", "巨人", "捕食者", "星星队", "赛车手", "比尔队", "亡命徒", 18);
+        AddTournament(true, "麦库克", 92, 1200, 0, tournamentTypeEnum.ThreeRound, "摇滚乐队", "野马", "蓝爪队", "斯巴达人", "厨师", "球员", "厨具队", 19);
+        AddTournament(true, "威奇托瀑布", 93, 1400, 0, tournamentTypeEnum.ThreeRound, "瀑布者", "维京人", "游侠", "飓风队", "粉碎者", "乌鸦", "飞龙", 20);
+        AddTournament(false, "落基山脉", 94, 1000, 0, tournamentTypeEnum.ThreeRound, "粉碎者", "钢铁队", "亡命徒", "游侠", "山地队", "猫头鹰", "猎鹰", 21);
+        AddTournament(true, "亚特兰蒂斯", 55, 900, 0, tournamentTypeEnum.ThreeRound, "美人鱼", "海星队", "海狼", "宝藏队", "海洋之王", "古老者", "海后队", 22);
+        AddTournament(false, "锡达礁", 96, 1400, 0, tournamentTypeEnum.ThreeRound, "骑士", "包装工", "美洲豹", "母鸡", "探险者", "飞龙", "锡达狼", 23);
+        AddTournament(true, "德尔里奥", 97, 1100, 0, tournamentTypeEnum.ThreeRound, "山猫", "捕虾者", "红雀", "比尔队", "飞龙", "幼狮", "德尔里奥队", 24);
+        AddTournament(false, "瓦拉瓦拉", 98, 1100, 0, tournamentTypeEnum.ThreeRound, "瓦拉队", "熊队", "蓝爪队", "赛车手", "发射者", "超级蛇", "乌鸦", 25);
+        AddTournament(true, "西温多弗", 99, 1400, 0, tournamentTypeEnum.ThreeRound, "夜鹰", "斯巴达人", "公羊", "哨兵", "幼狮", "西部队", "粉碎者", 26);
+        AddTournament(false, "威奇托", 100, 1400, 0, tournamentTypeEnum.ThreeRound, "比尔队", "亡命徒", "游侠", "圣徒", "无所不能队", "蟒蛇", "飞龙", 40);
+        AddTournament(true, "花园城", 101, 900, 0, tournamentTypeEnum.ThreeRound, "落叶者", "大树队", "军刀队", "守护者", "充电者", "种植者", "园丁", 28);
+        AddTournament(true, "德克斯霍马", 90, 1200, 0, tournamentTypeEnum.ThreeRound, "钻井者", "传教士", "喷气鹰", "山猫", "幼狮", "狮队", "怪咖队", 29);
+        AddTournament(false, "奥古斯塔", 103, 1200, 0, tournamentTypeEnum.ThreeRound, "充电者", "粉碎者", "削片者", "驾驶者", "冲锋者", "推杆队", "高尔夫队", 30);
+        AddTournament(true, "圣路易斯", 104, 900, 0, tournamentTypeEnum.ThreeRound, "抢断鹰", "拱门队", "猎鹰", "探险者", "美洲豹", "飞龙", "圣徒", 31);
+        AddTournament(false, "杜兰戈", 115, 1100, 0, tournamentTypeEnum.ThreeRound, "比尔队", "母鸡", "杜兰戈队", "幼狮", "斯巴达人", "斑马队", "英雄", 32);
+        AddTournament(false, "大春城", 116, 1200, 0, tournamentTypeEnum.ThreeRound, "春队", "喷气鹰", "发射者", "游侠", "飞龙", "射手队", "处理者", 33);
+        AddTournament(true, "埃利", 117, 1400, 0, tournamentTypeEnum.ThreeRound, "吸烟者", "光线队", "充电者", "河蛇队", "赛车手", "蟒蛇", "粉碎者", 34);
+        AddTournament(false, "贝克城", 118, 800, 0, tournamentTypeEnum.ThreeRound, "比尔队", "游侠", "蓝爪队", "探险者", "斑马队", "美洲豹", "贝克队", 35);
+        AddTournament(true, "哈特山", 100, 1200, 0, tournamentTypeEnum.ThreeRound, "蓝爪队", "斯巴达人", "山地狗", "幼狮", "美洲豹", "探险者", "充电者", 36);
+        AddTournament(false, "美国瀑布", 120, 800, 0, tournamentTypeEnum.ThreeRound, "粉碎者", "亡命徒", "美国人", "边缘袭击者", "喷气鹰", "河蛇队", "瀑布者", 37);
+        AddTournament(true, "摇滚泉", 121, 900, 0, tournamentTypeEnum.ThreeRound, "摇滚狗", "摇滚鸟", "母鸡", "摇滚猫", "摇滚游侠", "黑岩队", "白岩队", 38);
+        AddTournament(false, "斯普林格", 122, 1400, 0, tournamentTypeEnum.ThreeRound, "突袭者", "河蛇队", "幼狮", "斯巴达人", "游侠", "充电者", "发射者", 39);
         bool flag = Players.GetActiveStarterNum(true) > -1;
         AddTournament(PlayerPrefs.GetInt("LB_VERSION") % 2 == 0 && flag, ArenaChooser.GetLiveEventName(), 1, 0, 0, tournamentTypeEnum.LiveEvent,
-            "THE SWISHERS", "ON FIRE!", "THE SUPERSTARZ", "ELEVATORS^", "DA DUNKERZ", "TEAM ELITE", "DINO THRASHERZ",
+            "投篮高手", "火力全开!", "超级明星", "电梯队", "扣篮王", "精英队", "恐龙猛兽",
             ArenaChooser.GetLiveEventArena());
     }
 

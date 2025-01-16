@@ -141,14 +141,6 @@ public class PlayerDetails : MonoBehaviour
         defaultScale = playerVisual.gameObject.transform.localScale.x;
     }
 
-    public virtual void Start()
-    {
-    }
-
-    public virtual void Update()
-    {
-    }
-
     public virtual void OnEnable()
     {
         if (upgradeScreen)
