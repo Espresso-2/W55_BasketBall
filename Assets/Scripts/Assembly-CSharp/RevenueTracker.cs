@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 
 public class RevenueTracker : MonoBehaviour
@@ -43,3 +44,4 @@ public class RevenueTracker : MonoBehaviour
 		PlayerPrefsHelper.SetInt(key, val, true);
 	}
 }
+*/

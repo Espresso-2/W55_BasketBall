@@ -14,12 +14,12 @@ public class UnibillBball : MonoBehaviour
             base.gameObject.SetActive(false);
             return;
         }
-       /* Unibiller.onBillerReady += onBillerReady;
-        Unibiller.onTransactionsRestored += onTransactionsRestored;
-        Unibiller.onPurchaseFailed += onFailed;
-        //Unibiller.onPurchaseCompleteEvent += onPurchased;
-        Unibiller.onPurchaseDeferred += onDeferred;
-        Unibiller.Initialise();*/
+         Unibiller.onBillerReady += onBillerReady;
+         Unibiller.onTransactionsRestored += onTransactionsRestored;
+         /*Unibiller.onPurchaseFailed += onFailed;
+         Unibiller.onPurchaseCompleteEvent += onPurchased;*/
+         Unibiller.onPurchaseDeferred += onDeferred;
+         Unibiller.Initialise();
     }
 
     private void onBillerReady(UnibillState state)
@@ -35,8 +35,7 @@ public class UnibillBball : MonoBehaviour
             GameObject.Find("RestoreButton").SendMessage("Restored");
         }
     }
-/*
-    private void onPurchased(PurchaseEvent e)
+    /*private void onPurchased(PurchaseEvent e)
     {
         string id = e.PurchasedItem.Id;
         Debug.Log("e.PurchasedItem.Id: " + id);
@@ -234,60 +233,60 @@ public class UnibillBball : MonoBehaviour
         return text;
     }
 
-   /* private void logPurchaseInTapjoy(PurchaseEvent e)
-    {
-        string receipt = e.Receipt;
-        IDictionary dictionary = (IDictionary)Json.Deserialize(receipt);
-        Debug.Log("receipt: " + receipt);
-        Debug.Log("dict: " + dictionary);
-        string text = string.Empty;
-        string text2 = string.Empty;
-        try
-        {
-            if (dictionary != null && dictionary["json"] != null)
-            {
-                text += dictionary["json"].ToString();
-            }
-            if (dictionary != null && dictionary["signature"] != null)
-            {
-                text2 = dictionary["signature"].ToString();
-            }
-        }
-        catch
-        {
-        }
-        Debug.Log("receiptForTracking: " + text);
-        Debug.Log("signature: " + text2);
-        string text3 = e.PurchasedItem.name;
-        string localizedPriceString = e.PurchasedItem.localizedPriceString;
-        string text4 = "inapp";
-        string description = e.PurchasedItem.description;
-        int num = Convert.ToInt32(e.PurchasedItem.priceInLocalCurrency * 1000000m);
-        string isoCurrencySymbol = e.PurchasedItem.isoCurrencySymbol;
-        string id = e.PurchasedItem.Id;
-        string text5 = "{\"title\":\"" + text3 + "\",\"price\":\"" + localizedPriceString + "\",\"type\":\"" + text4 + "\",\"description\":\"" +
-                       description + "\",\"price_amount_micros\":" + num + ",\"price_currency_code\":\"" + isoCurrencySymbol + "\",\"productId\":\"" +
-                       id + "\"}";
-        string text6 = text;
-        string dataSignature = text2;
-        string campaignId = null;
-        Debug.Log("skuDetails: " + text5);
-        Debug.Log("purchaseData: " + text6);
-        Debug.Log("dataSignature: " + text2);
-        Tapjoy.TrackPurchaseInGooglePlayStore(text5, text6, dataSignature, campaignId);
-    }
-*/
-   /* private void onCancelled(PurchasableItem item)
-    {
-        Debug.Log("Purchase cancelled: " + item.Id);
-        updateLoadingBox("PURCHASE CANCELLED", "Contact SUPPORT@DOUBLETAPSOFTWARE.COM for help.");
-        *//*FlurryAnalytics.Instance().LogEvent("IAP_CANCELLED", new string[1] { "item.Id:" + item.Id }, false);*//*
-        if (PlayerPrefs.GetInt("IS_TAPJOY_PURCHASE_REQUEST") == 1)
-        {
-            AdMediation.MarkLastTjPurchaseRequestAsCancelled();
-        }
-        AdMediation.ShowTjpIapCancelled();
-    }*/
+    /* private void logPurchaseInTapjoy(PurchaseEvent e)
+     {
+         string receipt = e.Receipt;
+         IDictionary dictionary = (IDictionary)Json.Deserialize(receipt);
+         Debug.Log("receipt: " + receipt);
+         Debug.Log("dict: " + dictionary);
+         string text = string.Empty;
+         string text2 = string.Empty;
+         try
+         {
+             if (dictionary != null && dictionary["json"] != null)
+             {
+                 text += dictionary["json"].ToString();
+             }
+             if (dictionary != null && dictionary["signature"] != null)
+             {
+                 text2 = dictionary["signature"].ToString();
+             }
+         }
+         catch
+         {
+         }
+         Debug.Log("receiptForTracking: " + text);
+         Debug.Log("signature: " + text2);
+         string text3 = e.PurchasedItem.name;
+         string localizedPriceString = e.PurchasedItem.localizedPriceString;
+         string text4 = "inapp";
+         string description = e.PurchasedItem.description;
+         int num = Convert.ToInt32(e.PurchasedItem.priceInLocalCurrency * 1000000m);
+         string isoCurrencySymbol = e.PurchasedItem.isoCurrencySymbol;
+         string id = e.PurchasedItem.Id;
+         string text5 = "{\"title\":\"" + text3 + "\",\"price\":\"" + localizedPriceString + "\",\"type\":\"" + text4 + "\",\"description\":\"" +
+                        description + "\",\"price_amount_micros\":" + num + ",\"price_currency_code\":\"" + isoCurrencySymbol + "\",\"productId\":\"" +
+                        id + "\"}";
+         string text6 = text;
+         string dataSignature = text2;
+         string campaignId = null;
+         Debug.Log("skuDetails: " + text5);
+         Debug.Log("purchaseData: " + text6);
+         Debug.Log("dataSignature: " + text2);
+         Tapjoy.TrackPurchaseInGooglePlayStore(text5, text6, dataSignature, campaignId);
+     }
+ */
+    /* private void onCancelled(PurchasableItem item)
+     {
+         Debug.Log("Purchase cancelled: " + item.Id);
+         updateLoadingBox("PURCHASE CANCELLED", "Contact SUPPORT@DOUBLETAPSOFTWARE.COM for help.");
+         */ /*FlurryAnalytics.Instance().LogEvent("IAP_CANCELLED", new string[1] { "item.Id:" + item.Id }, false);*/ /*
+         if (PlayerPrefs.GetInt("IS_TAPJOY_PURCHASE_REQUEST") == 1)
+         {
+             AdMediation.MarkLastTjPurchaseRequestAsCancelled();
+         }
+         AdMediation.ShowTjpIapCancelled();
+     }*/
 
     private void onDeferred(PurchasableItem item)
     {
@@ -301,12 +300,12 @@ public class UnibillBball : MonoBehaviour
         Debug.Log("onFailed e.Reason: " + e.Reason);
         Debug.Log("onFailed e: " + e);
         updateLoadingBox("PURCHASE FAILED", "CONTACT SUPPORT@DOUBLETAPSOFTWARE.COM ERROR: " + e.Message + " " + e.Reason);
-        *//*FlurryAnalytics.Instance().LogEvent("IAP_FAILED", new string[3]
+        */ /*FlurryAnalytics.Instance().LogEvent("IAP_FAILED", new string[3]
         {
             "item.Id:" + e.PurchasedItem.Id,
             "e.Message:" + e.Message,
             "e.Reason:" + e.Reason
-        }, false);*//*
+        }, false);*/ /*
     }*/
 
     private void destroyLoadingBox()

@@ -112,7 +112,10 @@ public class TopNavBar : MonoBehaviour
 		UpdateCurrencyDisplay();
 		/*AdMediation.HideTopBanner();*/
 	}
-
+	
+	/// <summary>
+	/// 更新当前展示
+	/// </summary>
 	public virtual void UpdateCurrencyDisplay()
 	{
 		UpdateXpDisplay();

@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class ConversionTracker : MonoBehaviour
 {
@@ -53,9 +53,9 @@ public class ConversionTracker : MonoBehaviour
                 "spentAmount:" + spentAmount,
                 "goldReceived:" + num
             }, false);
-        }*/
+        }#1#
         iapGoldAmount = 0;
         offerwallGoldAmount = 0;
         rewVidGoldAmount = 0;
     }
-}
+}*/

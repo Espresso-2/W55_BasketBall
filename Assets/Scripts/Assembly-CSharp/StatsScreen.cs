@@ -84,8 +84,8 @@ public class StatsScreen : MonoBehaviour
 		}
 		wins.text = string.Empty + Stats.GetNumWins();
 		losses.text = string.Empty + Stats.GetNumLosses();
-		curStreak.text = Stats.GetWinStreak().ToString("n0") + ((Stats.GetWinStreak() != 1) ? " WINS" : " WIN");
-		bestStreak.text = Stats.GetBestWinStreak().ToString("n0") + ((Stats.GetBestWinStreak() != 1) ? " WINS" : " WIN");
+		curStreak.text = Stats.GetWinStreak().ToString("n0") + ((Stats.GetWinStreak() != 1) ? " 胜利" : " 赢");
+		bestStreak.text = Stats.GetBestWinStreak().ToString("n0") + ((Stats.GetBestWinStreak() != 1) ? " 胜利" : " 赢");
 		avgPts.text = GetAverage(Stats.GetNumPoints(), num).ToString("n1");
 		totPts.text = Stats.GetNumPoints() + string.Empty;
 		avgReb.text = GetAverage(Stats.GetNumRebounds(), num).ToString("n1");
