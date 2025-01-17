@@ -99,11 +99,11 @@ public class PlayButton : MonoBehaviour
 			gameSounds.Play_select();
 			return;
 		}
-		GameObject gameObject = GameObject.Find("AdMediation");
+		/*GameObject gameObject = GameObject.Find("AdMediation");
 		if (gameObject != null)
 		{
 			gameObject.GetComponent<AdMediation>().MakeAudioOn();
-		}
+		}*/
 		sessionVars.twoPlayerMode = false;
 		sessionVars.goToPractice = false;
 		if (!tournamentView.gameObject.activeInHierarchy)

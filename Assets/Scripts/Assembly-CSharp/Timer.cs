@@ -19,7 +19,7 @@ public class Timer : MonoBehaviour
 
     public virtual void Start()
     {
-        timeText = GetComponent(typeof(Text)) as Text;
+        timeText = GetComponentInChildren<Text>();
         gameSounds = GameSounds.GetInstance();
     }
 

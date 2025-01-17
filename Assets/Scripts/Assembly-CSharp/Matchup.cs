@@ -92,7 +92,7 @@ public class Matchup : MonoBehaviour
 			PlayFabManager.Instance().LoginAsGuest(true);
 		}*/
 		Player.playerNamesMayHaveChanged = false;
-		AdMediation.IsVidAvail();
+		// AdMediation.IsVidAvail();
 		int num = PlayerPrefs.GetInt("GAMES_SINCE_WATCHING_AD") + 1;
 		PlayerPrefsHelper.SetInt("GAMES_SINCE_WATCHING_AD", num, true);
 		/*if (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("IS_FRAUDULENT_USER") == 1)

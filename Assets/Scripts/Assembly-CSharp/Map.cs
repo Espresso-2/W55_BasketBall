@@ -17,7 +17,7 @@ public class Map : MonoBehaviour
 
 	public GameObject hintArrow;
 
-	public GameObject coachRewardBox;
+	/*public GameObject coachRewardBox;*/
 
 	private SessionVars sessionVars;
 
@@ -41,9 +41,9 @@ public class Map : MonoBehaviour
 		bool signedStarter = Players.GetActiveStarterNum(false) != -1;
 		coachMsgBox.gameObject.SetActive(!signedStarter);
 		coachMsgBox.NewTeam();
-		if (sessionVars.justCompletedMatch || sessionVars.numMapViewsThisSession == 1)
+		/*if (sessionVars.justCompletedMatch || sessionVars.numMapViewsThisSession == 1)
 		{
-			coachRewardBox.SetActive(true);
+			/*coachRewardBox.SetActive(true);#1#
 			if (sessionVars.wonLastGame)
 			{
 				int numWins = Stats.GetNumWins();
@@ -58,7 +58,7 @@ public class Map : MonoBehaviour
 				else if (numWins >= 3)
 				{
 					AdMediation.ShowTjpTourScreenAfterWin();
-				}*/
+				}#1#
 			}
 			else
 			{
@@ -70,13 +70,13 @@ public class Map : MonoBehaviour
 				else
 				{
 					AdMediation.ShowTjpTourScreenAfterLoss();
-				}*/
+				}#1#
 			}
 		}
 		else
 		{
-			/*AdMediation.ShowTjpTourScreen();*/
-		}
+			/*AdMediation.ShowTjpTourScreen();#1#
+		}*/
 		Tournament t = tournaments.GetTournament(Tournaments.GetCurrentTournamentNum());
 		bool showTournament = t.currentRound > 1 || t.LostLastAttempt() || TournamentView.showLeaderboardPanel;
 		if (t.num == 0 && signedStarter)

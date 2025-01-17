@@ -164,49 +164,28 @@ public class DealBag : MonoBehaviour
     public virtual void Buy(bool useDiscount)
     {
         Debug.Log($"使用的Num : {this.num}".FH5_Yellow());
-        discounted = useDiscount;
+        discounted = false;
         bool flag = false;
         GameSounds.GetInstance().Play_one_dribble();
         int num = 0;
         if (this.num == 0 && GetNumStandardBags() > 0 && !discounted)
         {
             Debug.Log("是否进入？".FL1_HotPink());
-            /*FlurryAnalytics.Instance().LogEvent("OPENED_FREE_STANDARD_BAG", new string[4]
-            {
-                "sessions:" + Stats.GetNumSessions() + string.Empty,
-                "num:" + this.num,
-                "num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
-                "num_wins:" + Stats.GetNumWins() + string.Empty
-            }, false);*/
-            //AdMediation.TrackEventInTj("OPENED_FREE_STANDARD_BAG", Stats.GetNumSessions());
+           
             flag = true;
             UseStandardBag();
             SetItem(0);
         }
         else if (this.num == 1 && GetNumPremiumBags() > 0 && !discounted)
         {
-            /*FlurryAnalytics.Instance().LogEvent("OPENED_PREMIUM_BAG", new string[4]
-            {
-                "sessions:" + Stats.GetNumSessions() + string.Empty,
-                "num:" + this.num,
-                "num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
-                "num_wins:" + Stats.GetNumWins() + string.Empty
-            }, false);*/
-            //AdMediation.TrackEventInTj("OPENED_PREMIUM_BAG", Stats.GetNumSessions());
+          
             flag = true;
             UsePremiumBag();
             SetItem(1);
         }
         else if (this.num == 2)
         {
-            /*FlurryAnalytics.Instance().LogEvent("OPENED_DAILY_BAG", new string[4]
-            {
-                "sessions:" + Stats.GetNumSessions() + string.Empty,
-                "num:" + this.num,
-                "num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty,
-                "num_wins:" + Stats.GetNumWins() + string.Empty
-            }, false);*/
-            //AdMediation.TrackEventInTj("OPENED_DAILY_BAG", Stats.GetNumSessions());
+        
             flag = true;
             UseDailyBag();
             SetItem(2);
@@ -219,13 +198,12 @@ public class DealBag : MonoBehaviour
             {
                 flag = true;
                
-                //AdMediation.TrackEventInTj("PURCHASED_BAG", Stats.GetNumSessions());
-                /*RevenueTracker.PurchasedBag();*/
+             
             }
             else
             {
                 getGoldButton.ShowGetGoldBox();
-                //AdMediation.ShowTjpInsufficientCurrency();
+             
             }
         }
         else
@@ -235,9 +213,7 @@ public class DealBag : MonoBehaviour
             if (Currency.SpendCash(num))
             {
                 flag = true;
-              
-                //AdMediation.TrackEventInTj("PURCHASED_STANDARD_BAG", Stats.GetNumSessions());
-                /*RevenueTracker.PurchasedBag();*/
+                
             }
             else
             {

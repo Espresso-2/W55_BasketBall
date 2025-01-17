@@ -61,7 +61,7 @@ public class GetGoldBox : MonoBehaviour
     public virtual void CheckForEarnedCurrency()
     {
         //AdMediation.CheckForEarnedCurrency();
-        int[] intArray = PlayerPrefsX.GetIntArray(AdMediation.GOLD_OFFER_PREF);
+        int[] intArray = PlayerPrefsX.GetIntArray("GOLD_OFFERWALL_REWARDS");
         int num = 0;
         string text = string.Empty;
         for (int i = 0; i < intArray.Length; i++)
@@ -80,7 +80,7 @@ public class GetGoldBox : MonoBehaviour
         if (num > 0)
         {
             RewardGold(num, text, "offerwall");
-            PlayerPrefsX.SetIntArray(AdMediation.GOLD_OFFER_PREF, new int[0]);
+            PlayerPrefsX.SetIntArray("GOLD_OFFERWALL_REWARDS", new int[0]);
         }
     }
 

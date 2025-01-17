@@ -11,15 +11,15 @@ public class EarnButton : MonoBehaviour
     public virtual void OnEnable()
     {
         bool active = false;
-        if (AdMediation.IsTjpOfferWallAvail())
+        /*if (AdMediation.IsTjpOfferWallAvail())
         {
             active = true;
-        }
+        }*/
         base.gameObject.SetActive(active);
     }
 
     public virtual void DisplayOffers()
     {
-        AdMediation.ShowTjpOfferWall();
+       // AdMediation.ShowTjpOfferWall();
     }
 }

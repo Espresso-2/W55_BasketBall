@@ -21248,7 +21248,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208}
-  m_LocalRotation: {x: -0.000000015166684, y: 0.000000003727065, z: 0.8242323, w: 0.5662519}
+  m_LocalRotation: {x: -0.000000015166679, y: 0.000000003727069, z: 0.82423204, w: 0.5662523}
   m_LocalPosition: {x: -1.1100008, y: -0.089998566, z: 0}
   m_LocalScale: {x: 2.390047, y: 2.3900468, z: 2.3900466}
   m_ConstrainProportionsScale: 0
@@ -21721,7 +21721,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247}
-  m_LocalRotation: {x: -7.6485307e-10, y: -0.00000003506709, z: -0.99905545, w: -0.043455154}
+  m_LocalRotation: {x: -7.648494e-10, y: -0.000000035067092, z: -0.9990554, w: -0.04345509}
   m_LocalPosition: {x: 0.00000003646756, y: 1.0000002, z: 0}
   m_LocalScale: {x: 1.2236483, y: 1.2236485, z: 1.2236481}
   m_ConstrainProportionsScale: 0
@@ -29017,7 +29017,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881}
-  m_LocalRotation: {x: 0.000000056453114, y: 0.000000027944713, z: 0.6905258, w: 0.7233078}
+  m_LocalRotation: {x: 0.000000056453093, y: 0.000000027944752, z: 0.6905261, w: 0.72330755}
   m_LocalPosition: {x: 0.0000008479155, y: 1.0000002, z: 0}
   m_LocalScale: {x: 0.9832609, y: 0.9832603, z: 0.9832603}
   m_ConstrainProportionsScale: 0
@@ -75215,7 +75215,7 @@ SpriteRenderer:
   m_SortingLayerID: 1847812185
   m_SortingLayer: 7
   m_SortingOrder: -8
-  m_Sprite: {fileID: 21300000, guid: c09aadcc1bcc6d34d9f0bf2157bb633c, type: 2}
+  m_Sprite: {fileID: -443714350, guid: a96c216b57a83dc4ebf5eb16c3fbc660, type: 3}
   m_Color: {r: 0.5882353, g: 1, b: 0.18823531, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -75223,7 +75223,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &2574
@@ -96651,7 +96651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a671f45431db9c9fc9b9222e7c004f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMuted: 0
 --- !u!114 &3555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99289,7 +99288,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 33554231
 --- !u!114 &3652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99312,7 +99311,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &3653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103570,35 +103569,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73b09cf33c175fcc03e99be3f51d0467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSmall: 0
-  autoLoadAd: 0
-  testImage: {fileID: 3558}
-  coachHeadingText: {fileID: 3485}
-  headlineText: {fileID: 3598}
-  bodyText: {fileID: 3918}
-  advertiserText: {fileID: 3858}
-  callToActionText: {fileID: 3344}
-  callToActionButton: {fileID: 1024}
-  adChoicesLogo: {fileID: 3425}
-  icon: {fileID: 3698}
-  priceText: {fileID: 3725}
-  storeText: {fileID: 3264}
-  imageTextures:
-  - {fileID: 3365}
-  - {fileID: 3380}
-  - {fileID: 3883}
-  - {fileID: 3894}
-  imageTexturesGameObjects:
-  - {fileID: 169}
-  - {fileID: 196}
-  - {fileID: 993}
-  - {fileID: 1003}
-  stars:
-  - {fileID: 3620}
-  - {fileID: 3274}
-  - {fileID: 3933}
-  - {fileID: 3774}
-  - {fileID: 3420}
 --- !u!114 &3808
 MonoBehaviour:
   m_ObjectHideFlags: 0

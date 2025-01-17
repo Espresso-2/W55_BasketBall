@@ -280,7 +280,7 @@ public class TopNavBar : MonoBehaviour
 		string stat = "EVENT_SCORE_" + PlayerPrefs.GetInt("LEAGUE_NUM");
 		if (PlayerPrefs.GetInt("SHOW_USER_SEASON_RESULTS") == 1)
 		{
-			Debug.Log("CheckLeaderboardReset(): SHOW THE USER THEIR SEASON RESULTS");
+			// Debug.Log("CheckLeaderboardReset(): SHOW THE USER THEIR SEASON RESULTS");
 			if (!seasonCompletePanel.activeInHierarchy)
 			{
 				seasonCompletePanel.SetActive(true);
@@ -289,24 +289,24 @@ public class TopNavBar : MonoBehaviour
 		}
 		else if (PlayFabLeaderboard.DidWeReachNextResetTimeSinceLogin())
 		{
-			Debug.Log("CheckLeaderboardReset(): DidWeReachNextResetTimeSinceLogin = true!!!!!!");
+			//Debug.Log("CheckLeaderboardReset(): DidWeReachNextResetTimeSinceLogin = true!!!!!!");
 			PlayFabLeaderboard.GetCurrentUserLeaderBoardRank(stat, false, null);
 			yield return new WaitForSeconds(10f);
 			if (!seasonCompletePanel.activeInHierarchy && !showedSeasonCompletePanel)
 			{
-				Debug.Log("CheckLeaderboardReset(): Try again to get new leaderboard (1)");
+				// Debug.Log("CheckLeaderboardReset(): Try again to get new leaderboard (1)");
 				PlayFabLeaderboard.GetCurrentUserLeaderBoardRank(stat, false, null);
 			}
 			yield return new WaitForSeconds(10f);
 			if (!seasonCompletePanel.activeInHierarchy && !showedSeasonCompletePanel)
 			{
-				Debug.Log("CheckLeaderboardReset(): Try again to get new leaderboard (2)");
+				// Debug.Log("CheckLeaderboardReset(): Try again to get new leaderboard (2)");
 				PlayFabLeaderboard.GetCurrentUserLeaderBoardRank(stat, false, null);
 			}
 			yield return new WaitForSeconds(10f);
 			if (!seasonCompletePanel.activeInHierarchy && !showedSeasonCompletePanel)
 			{
-				Debug.Log("CheckLeaderboardReset(): Try again to get new leaderboard (3)");
+				// Debug.Log("CheckLeaderboardReset(): Try again to get new leaderboard (3)");
 				PlayFabLeaderboard.GetCurrentUserLeaderBoardRank(stat, false, null);
 			}
 		}

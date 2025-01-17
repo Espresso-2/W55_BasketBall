@@ -79,7 +79,7 @@ public class WatchVideoButton : MonoBehaviour
 		if (numGoldVids >= 1)
 		{
 			timer.gameObject.SetActive(false);
-			button.gameObject.SetActive(AdMediation.IsVidAvail());
+			button.gameObject.SetActive(true);
 			button.interactable = true;
 		}
 		else
@@ -104,7 +104,7 @@ public class WatchVideoButton : MonoBehaviour
 				"type:FREEGOLD",
 				"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 			}, false);*/
-			AdMediation.PlayVid(AdMediation.AdNetworks.HEYZAP);
+			//AdMediation.PlayVid(AdMediation.AdNetworks.HEYZAP);
 		}
 	}
 
@@ -115,7 +115,7 @@ public class WatchVideoButton : MonoBehaviour
 		{
 			return;
 		}
-		if (AdMediation.IsVidAvail() || numGoldVids == 0)
+		if ( numGoldVids == 0)
 		{
 			button.gameObject.SetActive(true);
 			if (numGoldVids == 0 && !timer.gameObject.activeInHierarchy)

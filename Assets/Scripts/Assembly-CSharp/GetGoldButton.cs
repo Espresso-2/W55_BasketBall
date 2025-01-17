@@ -22,22 +22,22 @@ public class GetGoldButton : MonoBehaviour
 
 	public virtual void CheckForEarnedCurrency()
 	{
-		int[] intArray = PlayerPrefsX.GetIntArray(AdMediation.GOLD_OFFER_PREF);
+		int[] intArray = PlayerPrefsX.GetIntArray("GOLD_OFFERWALL_REWARDS");
 		if (intArray.Length > 0 && intArray[0] > 0 && !getGoldBox.gameObject.activeInHierarchy)
 		{
 			getGoldBox.gameObject.SetActive(true);
 		}
 	}
 
-	public virtual void OnApplicationPause(bool pause)
+	/*public virtual void OnApplicationPause(bool pause)
 	{
 		/*if (!pause && !getGoldBox.gameObject.activeInHierarchy)
 		{
 			AdMediation.ShowTjpAppResume();
-		}*/
+		}#1#
 	}
 
 	public virtual void Update()
 	{
-	}
+	}*/
 }

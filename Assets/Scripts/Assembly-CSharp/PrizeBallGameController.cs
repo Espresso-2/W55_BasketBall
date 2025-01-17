@@ -24,9 +24,9 @@ public class PrizeBallGameController : MonoBehaviour
 
 	public Button continueButton;
 
-	public Button buyMoreButton15;
+	/*public Button buyMoreButton15;
 
-	public Button buyMoreButton5;
+	public Button buyMoreButton5;*/
 
 	public GameObject scoreBox;
 
@@ -81,7 +81,7 @@ public class PrizeBallGameController : MonoBehaviour
 	{
 		score = 0;
 		ballNum = 0;
-		headingText.text = "PRIZE BALL";
+		headingText.text = "奖励球";
 		StartCoroutine(SetGameResultsActive(false));
 		UpdateScore(0, 0);
 		UpdateBestText();
@@ -97,8 +97,8 @@ public class PrizeBallGameController : MonoBehaviour
 	private void NextBall()
 	{
 		continueButton.gameObject.SetActive(false);
-		buyMoreButton15.gameObject.SetActive(false);
-		buyMoreButton5.gameObject.SetActive(false);
+		/*buyMoreButton15.gameObject.SetActive(false);
+		buyMoreButton5.gameObject.SetActive(false);*/
 		ballNum++;
 		prizeBall.Reset();
 		gameSounds.Play_whoose_low();
@@ -231,14 +231,14 @@ public class PrizeBallGameController : MonoBehaviour
 		dropBallButton.gameObject.SetActive(false);
 		yield return new WaitForSeconds(0.75f);
 		continueButton.gameObject.SetActive(true);
-		if (PlayerPrefs.GetInt("PRIZE_BALL_AMOUNT") == 15)
-		{
-			buyMoreButton15.gameObject.SetActive(true);
-		}
-		else
-		{
-			buyMoreButton5.gameObject.SetActive(true);
-		}
+		// if (PlayerPrefs.GetInt("PRIZE_BALL_AMOUNT") == 15)
+		// {
+		// 	buyMoreButton15.gameObject.SetActive(true);
+		// }
+		// else
+		// {
+		// 	buyMoreButton5.gameObject.SetActive(true);
+		// }
 	}
 
 	private IEnumerator SetDropButtonActive(bool active)

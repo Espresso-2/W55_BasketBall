@@ -2,6 +2,7 @@ using System;
 using I2.Loc;
 using UnityEngine;
 using UnityEngine.UI;
+using W_Log.w_Script;
 
 [Serializable]
 public class DealPack : MonoBehaviour
@@ -72,8 +73,8 @@ public class DealPack : MonoBehaviour
 		else
 		{
 			iapNum = 6 + this.num;
-			// iapItem = Unibiller.AllPurchasableItems[iapNum];
-			iapPrice.text = "免费" /*iapItem.localizedPriceString*/;
+			 /*iapItem = Unibiller.AllPurchasableItems[iapNum];*/
+			iapPrice.text = "获取" /*iapItem.localizedPriceString*/;
 		}
 		title.SetTerm(titles[num], null);
 		goldPrice.text = goldPrices[num].ToString("n0");
@@ -90,20 +91,16 @@ public class DealPack : MonoBehaviour
 
 	public virtual void Buy()
 	{
+		//TODO:激励点
 		if (!dealExpired)
 		{
 			gameSounds.Play_catch_ball();
 			gameSounds.Play_ascend_chime_bright();
-			ShowLoadingBox();
-			/*FlurryAnalytics.Instance().LogEvent("CLICKED_BUY_DEAL", new string[3]
-			{
-				"sessions:" + Stats.GetNumSessions() + string.Empty,
-				"num:" + num,
-				"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty
-			}, false);*/
+		
 			PlayerPrefsHelper.SetInt("TAPJOY_BONUS", 0);
 			PlayerPrefsHelper.SetInt("IS_TAPJOY_PURCHASE_REQUEST", 0);
-			Unibiller.initiatePurchase(iapItem, string.Empty);
+			w_RewardAdapter.Instance.onPurchased(13);
+			
 		}
 	}
 

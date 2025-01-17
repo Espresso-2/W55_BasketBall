@@ -16,8 +16,7 @@ public class CurrencyExchangeBox : MonoBehaviour
 	public UpgradeScreen upgradeScreen;
 
 	public PlayerDetails playersScreenPlayerDetails;
-
-	public BonusOfferMsgBox bonusOfferMsgBox;
+	
 
 	private GameSounds gameSounds;
 
@@ -49,19 +48,5 @@ public class CurrencyExchangeBox : MonoBehaviour
 		{
 			dealBag.ExchangeGoldForCashAndBuy();
 		}
-	}
-
-	public virtual void CloseCurrencyExchangeBox()
-	{
-		gameSounds.Play_select();
-		if (UnityEngine.Random.Range(0, 100) > 66 && (PlayerPrefs.GetInt("NUM_PURCHASES") == 0 || PlayerPrefs.GetInt("DEVMODE") == 1))
-		{
-			bonusOfferMsgBox.gameObject.SetActive(true);
-		}
-		base.gameObject.SetActive(false);
-	}
-
-	public virtual void Update()
-	{
 	}
 }

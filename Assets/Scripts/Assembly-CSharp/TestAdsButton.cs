@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 
 public class TestAdsButton : MonoBehaviour
@@ -28,10 +29,11 @@ public class TestAdsButton : MonoBehaviour
 	public void ReqVid()
 	{
 		AdMediation.ReqVid();
-	}*/
+	}#1#
 
 	public void PlayVid()
 	{
 		AdMediation.PlayVid();
 	}
 }
+*/

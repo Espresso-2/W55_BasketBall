@@ -36,6 +36,6 @@ public class CollectingVidRewButton : MonoBehaviour
 
 	private void ForceCompleteVid()
 	{
-		AdMediation.CompletedVid();
+		//AdMediation.CompletedVid();
 	}
 }

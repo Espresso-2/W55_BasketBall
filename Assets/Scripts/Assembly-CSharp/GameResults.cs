@@ -104,7 +104,7 @@ public class GameResults : MonoBehaviour
 
 	public GameObject cashDoubledMessageBox;
 
-	public DoubleRewardsBox doubleRewardsBox;
+	/*public DoubleRewardsBox doubleRewardsBox;*/
 
 	public GameObject xpDoubledBox;
 
@@ -155,8 +155,8 @@ public class GameResults : MonoBehaviour
 			music = (Music)gameObject.GetComponent(typeof(Music));
 		}
 		sessionVars.justCompletedMatch = true;
-		doubleRewardsBox.gameObject.SetActive(false);
-		doubleRewardsBox.claimButton.SetActive(true);
+		/*doubleRewardsBox.gameObject.SetActive(false);
+		doubleRewardsBox.claimButton.SetActive(true);*/
 		xpDoubledBox.SetActive(false);
 		cashDoubledBox.SetActive(false);
 		Tournament tournament = tournaments.GetTournament(Tournaments.GetCurrentTournamentNum());
@@ -280,15 +280,15 @@ public class GameResults : MonoBehaviour
 			{
 				winMarginRow.SetActive(false);
 			}
-			if (((won && !isChampionship) || isLiveEvent) && AdMediation.IsVidAvail())
+			/*if (((won && !isChampionship) || isLiveEvent) /*&& AdMediation.IsVidAvail()#1#)
 			{
 				doubleRewardsBox.gameObject.SetActive(true);
 				/*FlurryAnalytics.Instance().LogEvent("SHOW_2X_REW_VID_BTN", new string[2]
 				{
 					"type:vungle",
 					"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
-				}, false);*/
-			}
+				}, false);#1#
+			}*/
 		}
 		else if (sessionVars.goToPractice)
 		{
@@ -603,8 +603,8 @@ public class GameResults : MonoBehaviour
 			"type:DOUBLEREWARDS",
 			"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
 		}, false);*/
-		doubleRewardsBox.gameObject.SetActive(false);
-		AdMediation.PlayVid();
+		//doubleRewardsBox.gameObject.SetActive(false);
+		//AdMediation.PlayVid();
 	}
 
 	public virtual void AdComplete()
@@ -621,7 +621,7 @@ public class GameResults : MonoBehaviour
 		EarnedXP(totalXpNum);
 		Currency.AddCash(totalCashNum);
 		cashDoubledMessageBox.SetActive(false);
-		doubleRewardsBox.claimButton.SetActive(true);
+		//doubleRewardsBox.claimButton.SetActive(true);
 		xpDoubledNum.text = (totalXpNum * 2).ToString("n0");
 		xpDoubledBox.SetActive(true);
 		cashDoubledNum.text = (totalCashNum * 2).ToString("n0");
