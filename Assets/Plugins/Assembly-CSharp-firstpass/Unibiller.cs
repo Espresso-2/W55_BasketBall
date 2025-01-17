@@ -102,38 +102,38 @@ public class Unibiller
 
     public static event Action<bool> onTransactionsRestored;
 
-    public static void Initialise( /*List<ProductDefinition> runtimeProducts = null*/)
-    {
-        // if (biller == null)
-        // {
-        //     RemoteConfigManager remoteConfigManager = new RemoteConfigManager(new UnityResourceLoader(), new UnityPlayerPrefsStorage(),
-        //         new UnityLogger(), Application.platform, runtimeProducts);
-        //     UnibillConfiguration config = remoteConfigManager.Config;
-        //     GameObject gameObject = new GameObject();
-        //     gameObject.name = "Unibill";
-        //     UnityEngine.Object.DontDestroyOnLoad(gameObject);
-        //     UnibillUnityUtil util = gameObject.AddComponent<UnibillUnityUtil>();
-        //     BillerFactory billerFactory = new BillerFactory(new UnityResourceLoader(), new UnityLogger(), new UnityPlayerPrefsStorage(),
-        //         new RawBillingPlatformProvider(config, gameObject), config, util, new UnityAnalytics());
-        //     * //*
-        //         biller = billerFactory.instantiate();
-        //     _internal_hook_events(biller, billerFactory);
-        // }
-        // else
-        // {
-        //     foreach (ProductDefinition runtimeProduct in runtimeProducts)
-        //     {
-        //         if (biller.InventoryDatabase.getItemById(runtimeProduct.PlatformSpecificId) == null)
-        //         {
-        //             PurchasableItem purchasableItem = biller.InventoryDatabase.AddItem();
-        //             biller.remapper.AddDirectMapping(runtimeProduct.PlatformSpecificId);
-        //             purchasableItem.Id = runtimeProduct.PlatformSpecificId;
-        //             purchasableItem.PurchaseType = runtimeProduct.Type;
-        //         }
-        //     }
-        // }
-        // biller.Initialise();
-    }
+    // public static void Initialise( List<ProductDefinition> runtimeProducts = null)
+    // {
+    //     if (biller == null)
+    //     {
+    //         RemoteConfigManager remoteConfigManager = new RemoteConfigManager(new UnityResourceLoader(), new UnityPlayerPrefsStorage(),
+    //             new UnityLogger(), Application.platform, runtimeProducts);
+    //         UnibillConfiguration config = remoteConfigManager.Config;
+    //         GameObject gameObject = new GameObject();
+    //         gameObject.name = "Unibill";
+    //         UnityEngine.Object.DontDestroyOnLoad(gameObject);
+    //         UnibillUnityUtil util = gameObject.AddComponent<UnibillUnityUtil>();
+    //         BillerFactory billerFactory = new BillerFactory(new UnityResourceLoader(), new UnityLogger(), new UnityPlayerPrefsStorage(),
+    //             new RawBillingPlatformProvider(config, gameObject), config, util, new UnityAnalytics());
+    //         * //*
+    //             biller = billerFactory.instantiate();
+    //         _internal_hook_events(biller, billerFactory);
+    //     }
+    //     else
+    //     {
+    //         foreach (ProductDefinition runtimeProduct in runtimeProducts)
+    //         {
+    //             if (biller.InventoryDatabase.getItemById(runtimeProduct.PlatformSpecificId) == null)
+    //             {
+    //                 PurchasableItem purchasableItem = biller.InventoryDatabase.AddItem();
+    //                 biller.remapper.AddDirectMapping(runtimeProduct.PlatformSpecificId);
+    //                 purchasableItem.Id = runtimeProduct.PlatformSpecificId;
+    //                 purchasableItem.PurchaseType = runtimeProduct.Type;
+    //             }
+    //         }
+    //     }
+    //     biller.Initialise();
+    // }
 
     public static PurchasableItem GetPurchasableItemById(string unibillPurchasableId)
     {

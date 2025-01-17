@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using W_Log.w_Script;
 
 [Serializable]
 public class BuyGoldButton : MonoBehaviour
@@ -81,35 +82,28 @@ public class BuyGoldButton : MonoBehaviour
 	public virtual void Buy()
 	{
 		gameSounds.Play_ball_dribble();
-		/*FlurryAnalytics.Instance().LogEvent("CLICKED_BUY_GOLD", new string[3]
-		{
-			"sessions:" + Stats.GetNumSessions() + string.Empty,
-			"num:" + num,
-			"num_iap:" + PlayerPrefs.GetInt("NUM_PURCHASES") + string.Empty
-		}, false);*/
+		w_RewardAdapter.Instance.ADDGold(80);
 		PlayerPrefsHelper.SetInt("TAPJOY_BONUS", 0);
 		PlayerPrefsHelper.SetInt("IS_TAPJOY_PURCHASE_REQUEST", 0);
-		ShowLoadingBox();
-		//Unibiller.initiatePurchase(iapItem, string.Empty);
 	}
 
-	public virtual void Update()
-	{
-	}
-
-	private void ShowLoadingBox()
-	{
-		if (loadingBoxParent == null)
-		{
-			GameObject gameObject = GameObject.Find("Canvas");
-			if (gameObject != null)
-			{
-				loadingBoxParent = gameObject.transform;
-			}
-		}
-		if (loadingBoxParent != null)
-		{
-			loadingBox = UnityEngine.Object.Instantiate(loadingBoxPrefab, loadingBoxParent).GetComponent<LoadingBox>();
-		}
-	}
+	// public virtual void Update()
+	// {
+	// }
+	//
+	// private void ShowLoadingBox()
+	// {
+	// 	if (loadingBoxParent == null)
+	// 	{
+	// 		GameObject gameObject = GameObject.Find("Canvas");
+	// 		if (gameObject != null)
+	// 		{
+	// 			loadingBoxParent = gameObject.transform;
+	// 		}
+	// 	}
+	// 	if (loadingBoxParent != null)
+	// 	{
+	// 		loadingBox = UnityEngine.Object.Instantiate(loadingBoxPrefab, loadingBoxParent).GetComponent<LoadingBox>();
+	// 	}
+	// }
 }

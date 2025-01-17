@@ -19,7 +19,7 @@ public class UnibillBball : MonoBehaviour
          /*Unibiller.onPurchaseFailed += onFailed;
          Unibiller.onPurchaseCompleteEvent += onPurchased;*/
          Unibiller.onPurchaseDeferred += onDeferred;
-         Unibiller.Initialise();
+         // Unibiller.Initialise();
     }
 
     private void onBillerReady(UnibillState state)

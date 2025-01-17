@@ -46,11 +46,11 @@ public class BattlePrizeReward : MonoBehaviour
 		switch (t)
 		{
 		case PrizeSlot.SlotType.CashPrize:
-			Currency.AddCash(amt, "prizeBall");
+			Currency.AddCash(amt);
 			break;
 		case PrizeSlot.SlotType.GoldPrize:
 			TournamentView.showGoldAnim = true;
-			Currency.AddGold(amt, "prizeBall");
+			Currency.AddGold(amt);
 			break;
 		case PrizeSlot.SlotType.BagPrize:
 			DealBag.AddStandardBags(amt, "prizeBall");

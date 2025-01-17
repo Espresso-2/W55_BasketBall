@@ -97,11 +97,11 @@ public class BagCard : MonoBehaviour
 			StartCoroutine(openBag.CardFlipped());
 			if (goldAmount > 0)
 			{
-				Currency.AddGold(goldAmount, "bag");
+				Currency.AddGold(goldAmount);
 			}
 			else if (cashAmount > 0)
 			{
-				Currency.AddCash(cashAmount, "bag");
+				Currency.AddCash(cashAmount);
 			}
 			StartCoroutine(PlayAwardEffects());
 		}

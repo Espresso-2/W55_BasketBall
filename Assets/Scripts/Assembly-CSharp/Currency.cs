@@ -20,11 +20,11 @@ public class Currency : MonoBehaviour
 		return PlayerPrefs.GetInt("CASH");
 	}
 
-	public static int AddCash(int amount, string method)
+	public static int AddCash(int amount)
 	{
 		int num = GetCurrentCash() + amount;
 		PlayerPrefsHelper.SetInt("CASH", num, true);
-		RevenueTracker.AddedCash(amount, method);
+		/*RevenueTracker.AddedCash(amount, method);*/
 		return num;
 	}
 
@@ -44,12 +44,12 @@ public class Currency : MonoBehaviour
 		return PlayerPrefs.GetInt("GOLD");
 	}
 
-	public static int AddGold(int amount, string method)
+	public static int AddGold(int amount)
 	{
 		int num = GetCurrentGold() + amount;
 		PlayerPrefsHelper.SetInt("GOLD", num, true);
-		ConversionTracker.AddedGold(amount, method);
-		RevenueTracker.AddedGold(amount, method);
+		/*ConversionTracker.AddedGold(amount, method);
+		RevenueTracker.AddedGold(amount, method);*/
 		return num;
 	}
 
@@ -59,7 +59,7 @@ public class Currency : MonoBehaviour
 		if (currentGold >= amount)
 		{
 			PlayerPrefsHelper.SetInt("GOLD", currentGold - amount, true);
-			ConversionTracker.SpentGold(amount, itemType);
+			/*ConversionTracker.SpentGold(amount, itemType);*/
 			if (currentGold >= 20000)
 			{
 				LogFraudulentUser("SpendGold");
@@ -78,7 +78,8 @@ public class Currency : MonoBehaviour
 	{
 		int num = GetNumPrizeBalls() + amount;
 		PlayerPrefsHelper.SetInt("PRIZE_BALLS", num, true);
-		RevenueTracker.AddedPrizeBalls(amount, method);
+		/*RevenueTracker.AddedPrizeBalls(amount, method);*/
+		
 		return num;
 	}
 
@@ -165,8 +166,8 @@ public class Currency : MonoBehaviour
 	public static void SetStartingAmounts()
 	{
 		AddXp(225);
-		AddCash(500, "startingAmount");
-		AddGold(6, "startingAmount");
+		AddCash(500);
+		AddGold(6);
 	}
 
 	public static void LogFraudulentUser(string detectedBy)

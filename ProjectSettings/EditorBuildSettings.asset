@@ -2,8 +2,8 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1045 &1
 EditorBuildSettings:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
+  serializedVersion: 2
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/LoadApp.unity
@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameResults.unity
     guid: b51148ad4cbc8f740bb918d7dbf7bdf2
-  - enabled: 1
-    path: Assets/Scenes/Dev.unity
-    guid: a97834d4ff7eaef4da34048394edec42
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: d45c99b942eda2e47ac2c38be5522a76

@@ -441,7 +441,7 @@ public class UpgradeScreen : MonoBehaviour
 		if (Currency.SpendGold(cashGoldPrice, "gold_for_upgrade_cash"))
 		{
 			currencyExchangeBox.gameObject.SetActive(false);
-			Currency.AddCash(num, "gold_for_upgrade");
+			Currency.AddCash(num);
 			BuyTimeredUpgrade();
 		}
 		else

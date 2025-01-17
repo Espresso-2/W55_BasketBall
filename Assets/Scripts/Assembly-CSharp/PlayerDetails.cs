@@ -463,7 +463,7 @@ public class PlayerDetails : MonoBehaviour
         if (Currency.SpendGold(cashGoldPrice, "gold_for_buyplayer_cash"))
         {
             currencyExchangeBox.gameObject.SetActive(false);
-            Currency.AddCash(num2, "gold_for_player");
+            Currency.AddCash(num2);
             BuyPlayer();
         }
         else
@@ -494,11 +494,11 @@ public class PlayerDetails : MonoBehaviour
         int goldSellReward = player.goldSellReward;
         if (goldSellReward > 0)
         {
-            Currency.AddGold(goldSellReward, "sellPlayer");
+            Currency.AddGold(goldSellReward);
         }
         else
         {
-            Currency.AddCash(goldSellReward * -1, "sellPlayer");
+            Currency.AddCash(goldSellReward * -1);
         }
         player.Sell();
         if (topNavBar != null)

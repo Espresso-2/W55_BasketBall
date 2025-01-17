@@ -151,6 +151,7 @@ public class TabChanger : MonoBehaviour
 
 	public virtual void SetToScreen(screenEnum num)
 	{
+		//7
 		currentScreenNum = num;
 		Time.timeScale = 1f;
 		for (int i = 0; i < tabs.Length; i++)

@@ -338,7 +338,7 @@ public class GameResults : MonoBehaviour
 			TournamentView.showCashAnim = true;
 		}
 		EarnedXP(totalXpNum);
-		Currency.AddCash(totalCashNum, "gameResults");
+		Currency.AddCash(totalCashNum);
 		if (Stats.numShots > 0)
 		{
 			string text = "3PT:" + Stats.num3PtMakes + "/" + Stats.num3PtShots + "       " + Stats.numMakes + "/" + Stats.numShots + string.Empty;
@@ -619,7 +619,7 @@ public class GameResults : MonoBehaviour
 		Debug.Log("==现金翻倍按钮按下事件==".FL1_HotPink());
 		gameSounds.Play_select();
 		EarnedXP(totalXpNum);
-		Currency.AddCash(totalCashNum, "doubleRewVid");
+		Currency.AddCash(totalCashNum);
 		cashDoubledMessageBox.SetActive(false);
 		doubleRewardsBox.claimButton.SetActive(true);
 		xpDoubledNum.text = (totalXpNum * 2).ToString("n0");
@@ -672,8 +672,8 @@ public class GameResults : MonoBehaviour
 		if (xpLevelForXp2 > xpLevelForXp && !leveledUp)
 		{
 			leveledUp = true;
-			Currency.AddGold(Currency.GetCurrentXpLevelGoldReward(), "levelUp");
-			Currency.AddCash(Currency.GetCurrentXpLevelCashReward(), "levelUp");
+			Currency.AddGold(Currency.GetCurrentXpLevelGoldReward());
+			Currency.AddCash(Currency.GetCurrentXpLevelCashReward());
 			Currency.AddPrizeBalls(Currency.GetCurrentXpLevelPrizeBallsReward(), "levelUp");
 		}
 		Currency.AddXp(amount);

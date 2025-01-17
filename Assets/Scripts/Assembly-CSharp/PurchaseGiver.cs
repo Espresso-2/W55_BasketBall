@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class PurchaseGiver : MonoBehaviour
@@ -32,7 +33,7 @@ public class PurchaseGiver : MonoBehaviour
 	public virtual void AddGoldPackage(int pkgNum)
 	{
 		int goldAmountForPackage = GetGoldAmountForPackage(pkgNum);
-		Currency.AddGold(goldAmountForPackage, "iap");
+		Currency.AddGold(goldAmountForPackage);
 		LogPurchase("GOLD_PACK", goldAmountForPackage, pkgNum, goldPackUsd[pkgNum]);
 		if (Currency.GetCurrentGold() >= 10000)
 		{
@@ -50,8 +51,8 @@ public class PurchaseGiver : MonoBehaviour
 	public virtual void AddGoldAndCashPackage(int pkgNum)
 	{
 		int goldAmountForPackage = GetGoldAmountForPackage(pkgNum);
-		Currency.AddGold(goldAmountForPackage, "iap");
-		Currency.AddCash(cashPackAmounts[pkgNum], "iap");
+		Currency.AddGold(goldAmountForPackage);
+		Currency.AddCash(cashPackAmounts[pkgNum]);
 		LogPurchase("GOLDANDCASH_PACK", goldAmountForPackage, pkgNum, 2);
 	}
 
@@ -93,7 +94,7 @@ public class PurchaseGiver : MonoBehaviour
 		if (PlayerPrefs.GetInt("IAP_ADS_REMOVED") != 1)
 		{
 			PlayerPrefsHelper.SetInt("IAP_ADS_REMOVED", 1, true);
-			Currency.AddGold(100, "iap");
+			Currency.AddGold(100);
 			LogPurchase("REMOVE_ADS", -1, -1, 2);
 		}
 	}
@@ -104,51 +105,7 @@ public class PurchaseGiver : MonoBehaviour
 		@int++;
 		PlayerPrefsHelper.SetInt("NUM_PURCHASES", @int, true);
 		string currentScreen = GetCurrentScreen();
-		if (amt >= 3000)
-		{
-			/*FlurryAnalytics.Instance().LogEvent("IAP_" + eventName + "_LARGEST", new string[5]
-			{
-				"amount:" + amt + string.Empty,
-				"num_iaps:" + @int + string.Empty,
-				"current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
-				"sessions:" + Stats.GetNumSessions() + string.Empty,
-				"screen: " + currentScreen
-			}, false);*/
-		}
-		else
-		{
-			if (@int == 1)
-			{
-				/*FlurryAnalytics.Instance().LogEvent("FIRST_IAP", new string[6]
-				{
-					"eventName:" + eventName + string.Empty,
-					"amount:" + amt + string.Empty,
-					"current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
-					"sessions:" + Stats.GetNumSessions() + string.Empty,
-					"screen: " + currentScreen,
-					"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
-				}, false);
-				FlurryAnalytics.Instance().LogEvent("FIRST_IAP_" + eventName, new string[5]
-				{
-					"amount:" + amt + string.Empty,
-					"current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
-					"sessions:" + Stats.GetNumSessions() + string.Empty,
-					"screen: " + currentScreen,
-					"num_wins_milestone:" + Stats.GetNumWinsMilestone() + string.Empty
-				}, false);*/
-				/*AdMediation.TrackEventInTj("FIRST_IAP_" + eventName, "IAP", pkgNum.ToString(), currentScreen, "pkgNum", pkgNum, "num_wins", Stats.GetNumWins(), "current_tour", Tournaments.GetCurrentTournamentNum());*/
-			}
-			/*FlurryAnalytics.Instance().LogEvent("IAP_" + eventName, new string[6]
-			{
-				"num:" + pkgNum + string.Empty,
-				"amount:" + amt + string.Empty,
-				"num_iaps:" + @int + string.Empty,
-				"current_tour:" + Tournaments.GetCurrentTournamentNum() + string.Empty,
-				"sessions:" + Stats.GetNumSessions() + string.Empty,
-				"screen: " + currentScreen
-			}, false);*/
-			/*AdMediation.TrackEventInTj("IAP_" + eventName, "IAP", pkgNum.ToString(), currentScreen, "pkgNum", pkgNum, "num_wins", Stats.GetNumWins(), "current_tour", Tournaments.GetCurrentTournamentNum());*/
-		}
+	
 		RecordSpendingInfoInUsd(usd);
 	}
 
@@ -170,10 +127,10 @@ public class PurchaseGiver : MonoBehaviour
 
 	private string GetCurrentScreen()
 	{
-		string text = Application.loadedLevelName;
+		string text = SceneManager.GetActiveScene().name;
 		if (text == "MainUI")
 		{
-			text = ((TabChanger.currentScreenNum < screenEnum.Stats) ? (text + "_TAB" + TabChanger.currentTabNum) : (text + "_SCREEN" + TabChanger.currentScreenNum));
+			text = ((TabChanger.currentScreenNum < screenEnum.Settings) ? (text + "_TAB" + TabChanger.currentTabNum) : (text + "_SCREEN" + TabChanger.currentScreenNum));
 		}
 		return text;
 	}

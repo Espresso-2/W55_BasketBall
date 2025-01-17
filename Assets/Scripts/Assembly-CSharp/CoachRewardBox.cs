@@ -224,7 +224,7 @@ public class CoachRewardBox : MonoBehaviour
 		}
 		if (rewardNum == 5 || rewardNum == 6)
 		{
-			Currency.AddGold(rewardAmounts[rewardNum], "rewVid");
+			Currency.AddGold(rewardAmounts[rewardNum]);
 		}
 	}
 

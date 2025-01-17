@@ -35,7 +35,7 @@ public class BonusReward : MonoBehaviour
 	public virtual void GiveCashReward()
 	{
 		int amount = GetCashAmount();
-		Currency.AddCash(amount, "bonusReward");
+		Currency.AddCash(amount);
 		cashAmount.text = amount.ToString("n0");
 		rewardIsBag = false;
 		ShowAd();
