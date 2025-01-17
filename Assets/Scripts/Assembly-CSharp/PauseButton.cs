@@ -27,7 +27,7 @@ public class PauseButton : MonoBehaviour
 		gameSounds = GameSounds.GetInstance();
 	}
 
-	public virtual void OnApplicationPause(bool pause)
+	/*public virtual void OnApplicationPause(bool pause)
 	{
 		if (pause)
 		{
@@ -40,7 +40,7 @@ public class PauseButton : MonoBehaviour
 		{
 			Time.timeScale = 0f;
 		}
-	}
+	}*/
 
 	public virtual void OnClick()
 	{

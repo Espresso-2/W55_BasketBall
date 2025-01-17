@@ -8,6 +8,7 @@ public class RateButton : MonoBehaviour
 
 	public virtual void OnClick()
 	{
+		return;
 		/*FlurryAnalytics.Instance().LogEvent("RATE_APP_CLICKED", new string[4]
 		{
 			"num_wins:" + Stats.GetNumWins() + string.Empty,
@@ -24,6 +25,11 @@ public class RateButton : MonoBehaviour
 		}
 		Application.OpenURL(text);
 	}
+
+	// public void OnApplicationPause(bool pauseStatus)
+	// {
+	// 	throw new NotImplementedException();
+	// }
 
 	public static bool IsAmazon()
 	{
