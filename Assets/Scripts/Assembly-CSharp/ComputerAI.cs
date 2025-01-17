@@ -8,7 +8,7 @@ public class ComputerAI : MonoBehaviour
 {
 	public PlayerController pc;
 
-	public Text inputDebug;
+	/*public Text inputDebug;*/
 
 	public GameComputer gameComputer;
 
@@ -209,7 +209,7 @@ public class ComputerAI : MonoBehaviour
 			}
 			jumpButtonLast = jumpButton;
 		}
-		DisplayInputDebug();
+		// DisplayInputDebug();
 	}
 
 	public virtual IEnumerator OnTipOff(bool ballToP1, bool ballToP2, bool extraHighBall, bool hardForUserToGet)
@@ -1190,51 +1190,51 @@ public class ComputerAI : MonoBehaviour
 		return result;
 	}
 
-	private void DisplayInputDebug()
-	{
-		string text = string.Empty;
-		if (xMovement == -1)
-		{
-			text += "< ";
-		}
-		else if (xMovement == 0)
-		{
-			text += "  ";
-		}
-		else if (xMovement == 1)
-		{
-			text += "  >";
-		}
-		text = ((!jumpButton) ? (text + "  ") : (text + " ^"));
-		if (canWin)
-		{
-			text += "CW";
-		}
-		if (shouldWin)
-		{
-			text += "SW";
-		}
-		if (defeatJoeOffense)
-		{
-			text += " DJO";
-		}
-		if (defeatJoeDefense)
-		{
-			text += " DJDef";
-		}
-		if (computerNoWayPhysicallyPossibleToWin)
-		{
-			text += "NP";
-		}
-		text += "\n";
-		text = text + "DM:" + pc.GetDefendedMultiplier().ToString("F2");
-		text += "\n";
-		text = text + "SA:" + pc.shooter.GetPlayerShootingArch().ToString("F0");
-		text += "\n";
-		text = text + "O:" + gameComputer.GetOffenseLevel();
-		text = text + "  D:" + gameComputer.GetDefenseLevel();
-		text = text + "\nFreq" + xMovementChangeUpdateTimerResetValue;
-		text = text + " Stuck" + maxSecondsStuckDribblingIntoDefender;
-		inputDebug.text = text;
-	}
+	// private void DisplayInputDebug()
+	// {
+	// 	string text = string.Empty;
+	// 	if (xMovement == -1)
+	// 	{
+	// 		text += "< ";
+	// 	}
+	// 	else if (xMovement == 0)
+	// 	{
+	// 		text += "  ";
+	// 	}
+	// 	else if (xMovement == 1)
+	// 	{
+	// 		text += "  >";
+	// 	}
+	// 	text = ((!jumpButton) ? (text + "  ") : (text + " ^"));
+	// 	if (canWin)
+	// 	{
+	// 		text += "CW";
+	// 	}
+	// 	if (shouldWin)
+	// 	{
+	// 		text += "SW";
+	// 	}
+	// 	if (defeatJoeOffense)
+	// 	{
+	// 		text += " DJO";
+	// 	}
+	// 	if (defeatJoeDefense)
+	// 	{
+	// 		text += " DJDef";
+	// 	}
+	// 	if (computerNoWayPhysicallyPossibleToWin)
+	// 	{
+	// 		text += "NP";
+	// 	}
+	// 	text += "\n";
+	// 	text = text + "DM:" + pc.GetDefendedMultiplier().ToString("F2");
+	// 	text += "\n";
+	// 	text = text + "SA:" + pc.shooter.GetPlayerShootingArch().ToString("F0");
+	// 	text += "\n";
+	// 	text = text + "O:" + gameComputer.GetOffenseLevel();
+	// 	text = text + "  D:" + gameComputer.GetDefenseLevel();
+	// 	text = text + "\nFreq" + xMovementChangeUpdateTimerResetValue;
+	// 	text = text + " Stuck" + maxSecondsStuckDribblingIntoDefender;
+	// 	inputDebug.text = text;
+	// }
 }
