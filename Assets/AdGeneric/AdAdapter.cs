@@ -6,24 +6,24 @@ public static class AdAdapter
 #if UNITY_EDITOR
     public static void Init(string posIdStr)
     {
-        Debug.Log("初始化激励");
+       // Debug.Log("初始化激励");
     }
     public static void ShowBannerAd(string posIdStr)
     {
-        Debug.Log("调用banner");
+       // Debug.Log("调用banner");
     }
 
     public static void ShowCustomAd(string posIdStr , string leftPosIdStr , string showDate , int orientation)
     {
-        Debug.Log("调用原生");
+       // Debug.Log("调用原生");
     }
     public static void ShowNative(string posIdStr , int orientation )
     {
-        Debug.Log("调用自渲染Native");
+      //  Debug.Log("调用自渲染Native");
     }
     public static void ShowNativeIcon(string posIdStr , int orientation )
     {
-        Debug.Log("调用自渲染Icon");
+       // Debug.Log("调用自渲染Icon");
     }
 
     /// <summary>

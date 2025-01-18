@@ -18,7 +18,7 @@ namespace QGMiniGame
     public class QGGameTools
     {
 
-        public static void OpenIssueGihub() 
+        public static void OpenIssueGihub()
         {
             string githubUrl = "https://github.com/vivominigame/issues/issues";
 
@@ -26,21 +26,21 @@ namespace QGMiniGame
 
         }
 
-        public static void OpenVivoGame() 
+        public static void OpenVivoGame()
         {
             string vivoGameUrl = "http://minigame.vivo.com.cn/documents/#/lesson/base/start";
 
             Application.OpenURL(vivoGameUrl);
         }
 
-        public static void OpenUnityGame() 
+        public static void OpenUnityGame()
         {
-            string vivoGameUrl = "https://minigame.vivo.com.cn/documents/#/lesson/engine/unity/engine-unity-home";
+            string vivoGameUrl = "https://h5-inside.vivo.com.cn/vmix/vivo-unity-doc/index.html";
 
             Application.OpenURL(vivoGameUrl);
         }
 
-        public static void OpenQuestionGithub() 
+        public static void OpenQuestionGithub()
         {
             string questionUrl = "https://github.com/vivominigame/issues/issues/246";
 
@@ -48,14 +48,15 @@ namespace QGMiniGame
         }
 
 
-        public static void PerformanceTool() {
+        public static void PerformanceTool()
+        {
 
             string performanceToolUrl = "https://vassets.vvstc.com/vassets/og2pg/o/debugger.unitypackage";
 
             Application.OpenURL(performanceToolUrl);
         }
 
-        public static void AssetBundleBuild() 
+        public static void AssetBundleBuild()
         {
             string dst = Application.streamingAssetsPath + "/AssetBundles";
             if (!Directory.Exists(dst))
@@ -66,8 +67,8 @@ namespace QGMiniGame
         }
 
 
-    // 检查更新
-    public static void CheckUpdate()
+        // 检查更新
+        public static void CheckUpdate()
         {
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("https://vg-palace.vivo.com.cn/api-v0/config/get?configId=17");
             httpWebRequest.ContentType = "application/json";
@@ -79,7 +80,8 @@ namespace QGMiniGame
             httpWebResponse.Close();
             streamReader.Close();
             var updateResonse = JsonUtility.FromJson<UpdateResonse>(responseContent);
-            if (updateResonse == null) {
+            if (updateResonse == null)
+            {
                 QGLog.LogWarning("更新接口Json数据异常,请尝试重新打开");
                 return;
             }
@@ -102,11 +104,12 @@ namespace QGMiniGame
         }
 
         // 设置打包成 webgl的参数 
-        public static void SetPlayer(bool useWebgl2,bool useCodeSize)
+        public static void SetPlayer(bool useWebgl2, bool useCodeSize)
         {
 #if UNITY_2021
             PlayerSettings.colorSpace = ColorSpace.Gamma;
-            if (useCodeSize) {
+            if (useCodeSize)
+            {
                 EditorUserBuildSettings.il2CppCodeGeneration = Il2CppCodeGeneration.OptimizeSize;
             }
 #endif
@@ -114,7 +117,7 @@ namespace QGMiniGame
             PlayerSettings.allowUnsafeCode = true;
             PlayerSettings.WebGL.threadsSupport = false;
             PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.WebGL, false);
-            GraphicsDeviceType[] targets = { useWebgl2 ? GraphicsDeviceType.OpenGLES3 : GraphicsDeviceType.OpenGLES2 };        
+            GraphicsDeviceType[] targets = { useWebgl2 ? GraphicsDeviceType.OpenGLES3 : GraphicsDeviceType.OpenGLES2 };
             PlayerSettings.SetGraphicsAPIs(BuildTarget.WebGL, targets);
             PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
             PlayerSettings.WebGL.template = "APPLICATION:Minimal";
@@ -154,23 +157,16 @@ namespace QGMiniGame
         }
 
         //构建配置文件
-        public static void CreateEnvConfig(string loadingSrc, string addressableSrc, string webglSrc, ArrayList assetsList,bool useSubPkgLoading)
+        public static void CreateEnvConfig(QGGameConfig qgConfig)
         {
-            string preloadUrl = "";
-            foreach (string i in assetsList)
-            {
-                preloadUrl += i;
-                if (assetsList.IndexOf(i) != assetsList.Count - 1) {
-                    preloadUrl += ";";
-                }
-            }
             QGLog.Log("[BuildConfig] Start: Please Waitting");
             EnvConfig config = new EnvConfig();
-            config.wasmUrl = loadingSrc;
-            config.streamingAssetsUrl = addressableSrc;
-            config.preloadUrl = preloadUrl;
-            config.subUnityPkg = useSubPkgLoading;
-            System.IO.File.WriteAllText(webglSrc + "/build/env.conf", JsonUtility.ToJson(config));
+            config.wasmUrl = qgConfig.GetSubWasmUrl();
+            config.streamingAssetsUrl = qgConfig.envConfig.streamingAssetsUrl;
+            config.preloadUrl = qgConfig.GetPreloadUrl();
+            config.subUnityPkg = qgConfig.useSubPkgLoading;
+            config.deviceOrientation = qgConfig.envConfig.deviceOrientation;
+            File.WriteAllText(qgConfig.GetWebGlPath() + "/build/env.conf", JsonUtility.ToJson(config));
             QGLog.Log("[BuildConfig] end");
         }
 
@@ -184,20 +180,20 @@ namespace QGMiniGame
         }
 
         //构建小游戏
-        public static void ConvetWebGl(string buildSrc, string webglSrc, bool useSelfLoading,bool useSubPkgLoading)
+        //QGGameTools.ConvetWebGl(qgConfig.buildSrc, webGlPath, qgConfig.useSelfLoading, qgConfig.useSubPkgLoading);
+        public static void ConvetWebGl(QGGameConfig qgConfig)
         {
             QGLog.Log("[BuildMiniGame] Start: Please Waitting");
 
             // 清空文件 
-            string webglVivoPath = Path.Combine(buildSrc, "webgl_vivo");
-            DelectDir(webglVivoPath);
+            DelectDir(qgConfig.GetVivoWebGlPath());
 
             // 获取生成的framework原始代码
 
 #if UNITY_2020_1_OR_NEWER
-            string frameworkContent = File.ReadAllText(Path.Combine(webglSrc, "Build", "webgl.framework.js"), Encoding.UTF8);
+            string frameworkContent = File.ReadAllText(Path.Combine(qgConfig.GetWebGlPath(), "Build", "webgl.framework.js"), Encoding.UTF8);
 #else
-            string frameworkContent = File.ReadAllText(Path.Combine(webglSrc, "Build", "webgl.wasm.framework.unityweb"), Encoding.UTF8);
+            string frameworkContent = File.ReadAllText(Path.Combine(qgConfig.GetWebGlPath(), "Build", "webgl.wasm.framework.unityweb"), Encoding.UTF8);
 #endif
 
             // 替换规则
@@ -208,10 +204,31 @@ namespace QGMiniGame
                 frameworkContent = Regex.Replace(frameworkContent, rule.oldStr, rule.newStr);
             }
 
-
             // 拷贝文件
-            CopyDirectory(Path.Combine(Application.dataPath, "VIVO-GAME-SDK", "Default"), webglVivoPath, true);
-            CopyDirectory(Path.Combine(webglSrc, "Build"), Path.Combine(webglVivoPath, "buildUnity"), true);
+            CopyDirectory(Path.Combine(Application.dataPath, "VIVO-GAME-SDK", "Default"), qgConfig.GetVivoWebGlPath(), true);
+            CopyDirectory(Path.Combine(qgConfig.GetWebGlPath(), "Build"), Path.Combine(qgConfig.GetVivoWebGlPath(), "buildUnity"), true);
+
+            // 将选择的背景图片拷贝到包体内部,即拷贝到webgl_vivo/src/image
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.bgImageSrc) && qgConfig.envConfig.bgImageSrc.StartsWith("Assets/"))
+            {
+                string bgImageSrcAbsPath = qgConfig.GetAbsBgImagePath();
+                // 判断文件大小是否过大,大于500kb则提醒cp
+                FileInfo fileInfo = new FileInfo(bgImageSrcAbsPath);
+                long fileSizeInKB = fileInfo.Length / 1024; // 文件大小转换成KB
+                if (fileSizeInKB > 500)
+                {
+                    EditorUtility.DisplayDialog("启动背景图过大", "文件大小超过500KB,建议优化图片大小", "OK");
+                }
+                string fileName = Path.GetFileName(bgImageSrcAbsPath);
+                string destinationFilePath = Path.Combine(qgConfig.GetVivoWebGlPath(), "src", "image", fileName);
+                File.Copy(bgImageSrcAbsPath, destinationFilePath, true);
+
+                string envConfFilePath = Path.Combine(qgConfig.GetVivoWebGlPath(), "buildUnity", "env.conf");
+                String envConfStr = File.ReadAllText(envConfFilePath, Encoding.UTF8);
+                EnvConfJSONObj confJSONObj = EnvConfJSONObj.CreateFromJSON(envConfStr);
+                confJSONObj.bgImageSrc = "/image/" + fileName;
+                File.WriteAllText(envConfFilePath, confJSONObj.SaveToString(), new UTF8Encoding(false));
+            }
 
             string adapterPath = "";
 #if TUANJIE_2022_3_OR_NEWER
@@ -219,32 +236,38 @@ namespace QGMiniGame
 #else
             adapterPath = Path.Combine(Application.dataPath, "VIVO-GAME-SDK/Adapter/default", "unityAdapter.js");
 #endif
-            string adapterTargetPath = Path.Combine(webglVivoPath, "engine", "unityAdapter.js");
-            if (File.Exists(adapterTargetPath)) {
+            string adapterTargetPath = Path.Combine(qgConfig.GetVivoWebGlPath(), "engine", "unityAdapter.js");
+            if (File.Exists(adapterTargetPath))
+            {
                 File.Delete(adapterTargetPath);
             }
             File.Copy(adapterPath, adapterTargetPath);
 
             // 生成替换后的framework
             string frameworkFileName = "webgl.wasm.framework.unityweb";
-            File.WriteAllText(Path.Combine(webglVivoPath, "buildUnity", frameworkFileName), frameworkContent, new UTF8Encoding(false));
+            File.WriteAllText(Path.Combine(qgConfig.GetVivoWebGlPath(), "buildUnity", frameworkFileName), frameworkContent, new UTF8Encoding(false));
 
             // 生成配置文件
 #if UNITY_2020_1_OR_NEWER
             WebGlConfig config = new WebGlConfig();
-            File.WriteAllText(Path.Combine(webglVivoPath, "buildUnity", "webgl.json"), JsonUtility.ToJson(config));
+            File.WriteAllText(Path.Combine(qgConfig.GetVivoWebGlPath(), "buildUnity", "webgl.json"), JsonUtility.ToJson(config));
 #endif
 
-            // 自定义loading
-            if (useSelfLoading) {
-                HandleGzip(webglVivoPath);
+            // 自定义loading分包
+            if (qgConfig.useSelfLoading)
+            {
+                HandleGzip(qgConfig.GetVivoWebGlPath());
             }
 
-            if (useSubPkgLoading){
-                HandleSubPkgLoading(webglVivoPath);
+            if (qgConfig.useSubPkgLoading)
+            {
+                HandleSubPkgLoading(qgConfig.GetVivoWebGlPath());
             }
 
-            ShowInExplorer(buildSrc);
+            UpdateManifest(qgConfig);
+
+            ShowInExplorer(qgConfig.buildSrc);
+            QGLog.Log("[BuildMiniGame] end");
         }
 
 
@@ -261,7 +284,7 @@ namespace QGMiniGame
                 return;
             }
 
-            string subPkgPath = Path.Combine(webglVivoPath, "src","unitySubPkg");
+            string subPkgPath = Path.Combine(webglVivoPath, "src", "unitySubPkg");
 
             if (!Directory.Exists(subPkgPath))
             {
@@ -269,7 +292,8 @@ namespace QGMiniGame
             }
 
             string subPkgRootPath = Path.Combine(subPkgPath, "game.js");
-            if (!File.Exists(subPkgRootPath)) {
+            if (!File.Exists(subPkgRootPath))
+            {
                 File.Create(subPkgRootPath).Dispose();
             }
 
@@ -277,7 +301,7 @@ namespace QGMiniGame
             File.Copy(codePath, Path.Combine(subPkgPath, "webgl.wasm.code.unityweb"));
 
             File.Delete(dataPath);
-            File.Delete(codePath);    
+            File.Delete(codePath);
 
             //更改清单文件中的配置
             String manifestStr = File.ReadAllText(Path.Combine(webglVivoPath, "src", "manifest.json"), Encoding.UTF8);
@@ -287,12 +311,100 @@ namespace QGMiniGame
             File.WriteAllText(Path.Combine(webglVivoPath, "src", "manifest.json"), manifestStr, new UTF8Encoding(false));
         }
 
+        private static void UpdateManifest(QGGameConfig qgConfig)
+        {
+            string webglVivoPath = qgConfig.GetVivoWebGlPath();
+            //更改清单文件中的配置
+            String manifestStr = File.ReadAllText(Path.Combine(webglVivoPath, "src", "manifest.json"), Encoding.UTF8);
+            ManifesJSONObj jsonObject = ManifesJSONObj.CreateFromJSON(manifestStr);
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.icon))
+            {
+                jsonObject.icon = qgConfig.envConfig.icon;
+            }
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.package))
+            {
+                jsonObject.package = qgConfig.envConfig.package;
+            }
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.name))
+            {
+                jsonObject.name = qgConfig.envConfig.name;
+            }
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.versionName))
+            {
+                jsonObject.versionName = qgConfig.envConfig.versionName;
+            }
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.versionCode))
+            {
+                jsonObject.versionCode = qgConfig.envConfig.versionCode;
+            }
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.minPlatformVersion))
+            {
+                jsonObject.minPlatformVersion = qgConfig.envConfig.minPlatformVersion;
+            }
+            if (!string.IsNullOrEmpty(qgConfig.envConfig.deviceOrientation))
+            {
+                jsonObject.deviceOrientation = qgConfig.envConfig.deviceOrientation;
+            }
+            manifestStr = jsonObject.SaveToString();
+            File.WriteAllText(Path.Combine(webglVivoPath, "src", "manifest.json"), manifestStr, new UTF8Encoding(false));
+        }
 
-        private static void HandleGzip(string webglVivoPath) {
+
+        public static void CheckConfigByManifestChanged(QGGameConfig qgConfig)
+        {
+            if (string.IsNullOrEmpty(qgConfig.buildSrc))
+            {
+                // 导出路径为空时不做处理
+                return;
+            }
+            string webglVivoPath = qgConfig.GetVivoWebGlPath();
+            String manifestPath = Path.Combine(webglVivoPath, "src", "manifest.json");
+            if (!File.Exists(manifestPath))
+            {
+                return;
+            }
+            //更改清单文件中的配置
+            String manifestStr = File.ReadAllText(manifestPath, Encoding.UTF8);
+            ManifesJSONObj jsonObject = ManifesJSONObj.CreateFromJSON(manifestStr);
+            if (!string.IsNullOrEmpty(jsonObject.package))
+            {
+                qgConfig.envConfig.package = jsonObject.package;
+            }
+
+            if (!string.IsNullOrEmpty(jsonObject.name))
+            {
+                qgConfig.envConfig.name = jsonObject.name;
+            }
+
+            if (!string.IsNullOrEmpty(jsonObject.versionName))
+            {
+                qgConfig.envConfig.versionName = jsonObject.versionName;
+            }
+
+            if (!string.IsNullOrEmpty(jsonObject.versionCode))
+            {
+                qgConfig.envConfig.versionCode = jsonObject.versionCode;
+            }
+
+            if (!string.IsNullOrEmpty(jsonObject.minPlatformVersion))
+            {
+                qgConfig.envConfig.minPlatformVersion = jsonObject.minPlatformVersion;
+            }
+
+            if (!string.IsNullOrEmpty(jsonObject.deviceOrientation))
+            {
+                qgConfig.envConfig.deviceOrientation = jsonObject.deviceOrientation;
+            }
+        }
+
+
+        private static void HandleGzip(string webglVivoPath)
+        {
 
             string dataPath = Path.Combine(webglVivoPath, "buildUnity", "webgl.data.unityweb");
             string codePath = Path.Combine(webglVivoPath, "buildUnity", "webgl.wasm.code.unityweb");
-            if (!File.Exists(dataPath) || !File.Exists(codePath)) {
+            if (!File.Exists(dataPath) || !File.Exists(codePath))
+            {
                 QGLog.LogError("[BuildMiniGame] Gzip error: file not exist");
                 return;
             }
@@ -300,7 +412,8 @@ namespace QGMiniGame
             string gzipTempPath = Path.Combine(webglVivoPath, "tempGzip");
             string gzipPath = Path.Combine(webglVivoPath, "gzip");
 
-            if (!Directory.Exists(gzipTempPath)) {
+            if (!Directory.Exists(gzipTempPath))
+            {
                 Directory.CreateDirectory(gzipTempPath);
             }
             if (!Directory.Exists(gzipPath))
@@ -310,7 +423,7 @@ namespace QGMiniGame
 
             FileInfo dataInfo = new FileInfo(dataPath);
             FileInfo codeInfo = new FileInfo(codePath);
-            
+
 
             ZipFile zipFile = ZipFile.Create(Path.Combine(gzipPath, "wasm.zip"));
             zipFile.BeginUpdate();
@@ -335,12 +448,11 @@ namespace QGMiniGame
             Directory.Delete(gzipTempPath);
         }
 
-
         private static bool CopyDirectory(string SourcePath, string DestinationPath, bool overwriteexisting)
         {
             bool ret = false;
             var separator = Path.DirectorySeparatorChar;
-            var ignoreFiles = new List<string>() { "webgl.loader.js", "webgl.wasm.framework.unityweb" , "webgl.framework.js" , "UnityLoader.js" };
+            var ignoreFiles = new List<string>() { "webgl.loader.js", "webgl.wasm.framework.unityweb", "webgl.framework.js", "UnityLoader.js" };
 
             RenameFile[] renameFiles = {
                 new RenameFile()
@@ -354,7 +466,7 @@ namespace QGMiniGame
                     newName = "webgl.wasm.code.unityweb"
                 }
             };
-            var ignoreDirs = new List<string>() {};
+            var ignoreDirs = new List<string>() { };
             try
             {
 
@@ -397,7 +509,8 @@ namespace QGMiniGame
                         string targetFileName = flinfo.Name;
                         foreach (RenameFile renameFile in renameFiles)
                         {
-                            if (renameFile.oldName.Equals(flinfo.Name)) {
+                            if (renameFile.oldName.Equals(flinfo.Name))
+                            {
                                 targetFileName = renameFile.newName;
                                 break;
                             }
@@ -474,48 +587,37 @@ namespace QGMiniGame
             return config;
         }
 
-        //配置文件设置
-        public static void setEditorConfig(string buildSrc, string wasmUrl, string streamingAssetsUrl, string assetsUrl1, string assetsUrl2, string assetsUrl3, string assetsUrl4, string assetsUrl5,bool useSelfLoading,bool useAddressable,bool usePreAsset,bool useWebgl2,bool useCodeSize)
+        //配置文件保存到本地
+        public static void SaveEditorConfigLocal(QGGameConfig qgConfig)
         {
             var config = GetEditorConfig();
-            if (buildSrc != String.Empty)
+            if (qgConfig.buildSrc != String.Empty)
             {
-                config.buildSrc = buildSrc;
+                config.buildSrc = qgConfig.buildSrc;
             }
-            if (assetsUrl1 != String.Empty)
+            if (qgConfig.envConfig.bgImageSrc != String.Empty)
             {
-                config.assetsUrl1 = assetsUrl1;
+                config.envConfig.bgImageSrc = qgConfig.envConfig.bgImageSrc;
             }
-            if (assetsUrl2 != String.Empty)
+            if (qgConfig.envConfig.preloadUrl != String.Empty)
             {
-                config.assetsUrl2 = assetsUrl2;
+                config.envConfig.preloadUrl = qgConfig.envConfig.preloadUrl;
             }
-            if (assetsUrl3 != String.Empty)
+            if (qgConfig.envConfig.wasmUrl != String.Empty)
             {
-                config.assetsUrl3 = assetsUrl3;
+                config.envConfig.wasmUrl = qgConfig.envConfig.wasmUrl;
             }
-            if (assetsUrl4 != String.Empty)
+            if (qgConfig.envConfig.streamingAssetsUrl != String.Empty)
             {
-                config.assetsUrl4 = assetsUrl4;
+                config.envConfig.streamingAssetsUrl = qgConfig.envConfig.streamingAssetsUrl;
             }
-            if (assetsUrl5 != String.Empty)
-            {
-                config.assetsUrl5 = assetsUrl5;
-            }
-            if (wasmUrl != String.Empty)
-            {
-                config.envConfig.wasmUrl = wasmUrl;
-            }
-            if (streamingAssetsUrl != String.Empty)
-            {
-                config.envConfig.streamingAssetsUrl = streamingAssetsUrl;
-            }
-            config.useAddressable = useAddressable;
-            config.usePreAsset = usePreAsset;
-            config.useSelfLoading = useSelfLoading;
-            config.useWebgl2 = useWebgl2;
-            config.useCodeSize = useCodeSize;
-            EditorUtility.SetDirty(config);
+            config.useAddressable = qgConfig.useAddressable;
+            config.usePreAsset = qgConfig.usePreAsset;
+            config.useSelfLoading = qgConfig.useSelfLoading;
+            config.useWebgl2 = qgConfig.useWebgl2;
+            config.useCodeSize = qgConfig.useCodeSize;
+            config.usTargetBgType = qgConfig.usTargetBgType;
+            EditorUtility.SetDirty(qgConfig);
             AssetDatabase.SaveAssets();
         }
 

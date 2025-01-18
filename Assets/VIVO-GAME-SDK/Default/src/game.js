@@ -8,8 +8,14 @@ const md5Utils = require('./md5.js');
 //创建CustomizeLoading组件
 var loading;
 if (qg.createCustomizeLoading) {
+  var bgImageSrc = UnityLoader.EnvConfig.getConfig("bgImageSrc")
+  var background = 'https://wwwstatic.vivo.com.cn/vivoportal/files/resource//funtouch/1612511921756/images/originos-night-img1-lg.jpg';
+  if (bgImageSrc !== undefined && bgImageSrc !== null && bgImageSrc !== '') {
+    console.log('background update', bgImageSrc);
+    background = bgImageSrc;
+  }
   loading = qg.createCustomizeLoading({
-    background: 'https://wwwstatic.vivo.com.cn/vivoportal/files/resource//funtouch/1612511921756/images/originos-night-img1-lg.jpg',
+    background: background,
     text: '请耐心等待加载中...',
     textColor: '#ffffff',
     loadingColorTop: '#ffffff',

@@ -491,10 +491,10 @@ public class GameResults : MonoBehaviour
 		claimButtonsHolder.SetActive(false);
 		StartCoroutine(AnimateTextNum(totalXp, totalXpNum, 7, false));
 		StartCoroutine(AnimateTextNum(totalCash, totalCashNum, 40, true));
-		if (gameEligibleForAchievements)
-		{
-			AchievementsManager.Instance.CompletedGame(won, roundThatWeJustPlayed);
-		}
+		// if (gameEligibleForAchievements)
+		// {
+		// 	AchievementsManager.Instance.CompletedGame(won, roundThatWeJustPlayed);
+		// }
 	}
 
 	public virtual void ClaimOnClick()

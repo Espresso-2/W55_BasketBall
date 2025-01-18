@@ -49,7 +49,7 @@ public class ArenaChooser : MonoBehaviour
 
 	public static string GetLiveEventName()
 	{
-		string result = "LIVE EVENT!";
+		string result = "现场活动!";
 		string @string = PlayerPrefs.GetString("LIVE_EVENT_NAME");
 		if (@string != null && @string.Length > 0)
 		{
@@ -60,7 +60,7 @@ public class ArenaChooser : MonoBehaviour
 
 	public static string GetSignText()
 	{
-		string result = "BASKETBALL BATTLE";
+		string result = "篮球比赛";
 		string @string = PlayerPrefs.GetString("SIGN_TEXT");
 		if (@string != null && @string.Length > 0)
 		{

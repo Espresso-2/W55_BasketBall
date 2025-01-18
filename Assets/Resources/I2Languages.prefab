@@ -8018,8 +8018,7 @@ MonoBehaviour:
     Flags: 0
   CaseInsensitiveTerms: 0
   Assets:
-  - {fileID: 12800000, guid: 865e551dd01bd6d4b9517c87669abe2a, type: 3}
-  - {fileID: 12800000, guid: 5b57be8ab6cc4fb41a2d37ae4cfb6640, type: 3}
+  - {fileID: 12800000, guid: 160b40a414f90064aa3dbd14afe9fec8, type: 3}
   NeverDestroy: 1
   UserAgreesToHaveItOnTheScene: 0
   UserAgreesToHaveItInsideThePluginsFolder: 0

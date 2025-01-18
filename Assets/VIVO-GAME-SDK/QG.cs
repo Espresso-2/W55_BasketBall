@@ -6,7 +6,7 @@ namespace QGMiniGame
 {
     public class QG
     {
-        public static int SDK_VERSION = 13;
+        public static int SDK_VERSION = 14;
 
         #region Login  登录
         // http://minigame.vivo.com.cn/documents/#/api/service/newaccount?id=login

@@ -354,7 +354,7 @@ public class PlayerController : MonoBehaviour
 		{
 			if (grounded && (timeWithoutBall >= 0.75f || ballJustStolen) && timeSinceLastSpring >= 0.75f)
 			{
-				Debug.Log("Start jump block windup: " + Time.time);
+//				Debug.Log("Start jump block windup: " + Time.time);
 				springing = true;
 				springWhenPlayerLands = false;
 				timeSinceLastSpring = 0f;

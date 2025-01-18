@@ -217,15 +217,15 @@ namespace QGMiniGame
        },new ReplaceRule()
        {
          oldStr="var kWebRequestOK=0",
-         newStr="var body=new Uint8Array(body),wrProgress={total:body.length,loaded:body.length,chunk:body};HandleProgress(response,wrProgress);var kWebRequestOK=0;"
+         newStr="var body=new Uint8Array(body);wrProgress={total:body.length,loaded:body.length,chunk:body};HandleProgress(response,wrProgress);var kWebRequestOK=0;"
        },new ReplaceRule()
        {
          oldStr=@"var fetchImpl=Module.fetchWithProgress;[\s\S]*?kWebErrorUnknown\)}}\)",
-         newStr="requestOptions.timeout&&requestOptions.timeout>=0&&(abortController.timeout=requestOptions.timeout);Object.keys(requestOptions.init.headers).map(r=>{abortController.setRequestHeader(r,requestOptions.init.headers[r])}),abortController.responseType=\"arraybuffer\",abortController.onload=function(){abortController.status<400?HandleSuccess(abortController,abortController.response):(HandleError(abortController.statusText,abortController.status),window.UnityLoader.fprintError(\" xml request error msg = \"+abortController.statusText+\" code = \"+abortController.status))},abortController.onerror=function(){HandleError(abortController.statusText?abortController.statusText:\"\",abortController.status)},postData?abortController.send(postData):abortController.send();"
+         newStr="wr.responses[requestId] = abortController;requestOptions.timeout&&requestOptions.timeout>=0&&(abortController.timeout=requestOptions.timeout);Object.keys(requestOptions.init.headers).map(r=>{abortController.setRequestHeader(r,requestOptions.init.headers[r])}),abortController.responseType=\"arraybuffer\",abortController.onload=function(){abortController.status<400?HandleSuccess(abortController,abortController.response):(HandleError(abortController.statusText,abortController.status),window.UnityLoader.fprintError(\" xml request error msg = \"+abortController.statusText+\" code = \"+abortController.status))},abortController.onerror=function(){HandleError(abortController.statusText?abortController.statusText:\"\",abortController.status)},postData?abortController.send(postData):abortController.send();"
        },new ReplaceRule()
        {
          oldStr=@"function HandleProgress[\s\S]*?e.loaded,e.total,0,0]\)}}",
-         newStr="function HandleProgress(e,i){if(i.chunk){var n=getTempBuffer(i.chunk.length);HEAPU8.set(i.chunk,n),dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,n,i.chunk.length])}else dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,0,0])}"
+         newStr="function HandleProgress(e,i){if(!onprogress) {return;};if(i.chunk){var n=getTempBuffer(i.chunk.length);HEAPU8.set(i.chunk,n),dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,n,i.chunk.length])}else dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,0,0])}"
        },new ReplaceRule()
        {
          oldStr=@"function jsWebRequestGetResponseHeaderString[\s\S]*?return headers",
@@ -272,15 +272,15 @@ namespace QGMiniGame
        },new ReplaceRule()
        {
          oldStr="var kWebRequestOK=0",
-         newStr="var body=new Uint8Array(body),wrProgress={total:body.length,loaded:body.length,chunk:body};HandleProgress(response,wrProgress);var kWebRequestOK=0;"
+         newStr="var body=new Uint8Array(body);wrProgress={total:body.length,loaded:body.length,chunk:body};HandleProgress(response,wrProgress);var kWebRequestOK=0;"
        },new ReplaceRule()
        {
          oldStr=@"var fetchImpl=Module.fetchWithProgress;[\s\S]*?kWebErrorUnknown\)}}\)",
-         newStr="requestOptions.timeout&&requestOptions.timeout>=0&&(abortController.timeout=requestOptions.timeout);Object.keys(requestOptions.init.headers).map(r=>{abortController.setRequestHeader(r,requestOptions.init.headers[r])}),abortController.responseType=\"arraybuffer\",abortController.onload=function(){abortController.status<400?HandleSuccess(abortController,abortController.response):(HandleError(abortController.statusText,abortController.status),window.UnityLoader.fprintError(\" xml request error msg = \"+abortController.statusText+\" code = \"+abortController.status))},abortController.onerror=function(){HandleError(abortController.statusText?abortController.statusText:\"\",abortController.status)},postData?abortController.send(postData):abortController.send();"
+         newStr="wr.responses[requestId] = abortController;requestOptions.timeout&&requestOptions.timeout>=0&&(abortController.timeout=requestOptions.timeout);Object.keys(requestOptions.init.headers).map(r=>{abortController.setRequestHeader(r,requestOptions.init.headers[r])}),abortController.responseType=\"arraybuffer\",abortController.onload=function(){abortController.status<400?HandleSuccess(abortController,abortController.response):(HandleError(abortController.statusText,abortController.status),window.UnityLoader.fprintError(\" xml request error msg = \"+abortController.statusText+\" code = \"+abortController.status))},abortController.onerror=function(){HandleError(abortController.statusText?abortController.statusText:\"\",abortController.status)},postData?abortController.send(postData):abortController.send();"
        },new ReplaceRule()
        {
          oldStr=@"function HandleProgress[\s\S]*?e.loaded,e.total,0,0]\)}}",
-         newStr="function HandleProgress(e,i){if(i.chunk){var n=getTempBuffer(i.chunk.length);HEAPU8.set(i.chunk,n),dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,n,i.chunk.length])}else dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,0,0])}"
+         newStr="function HandleProgress(e,i){if(!onprogress) {return;}if(i.chunk){var n=getTempBuffer(i.chunk.length);HEAPU8.set(i.chunk,n),dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,n,i.chunk.length])}else dynCall(\"viiiiii\",onprogress,[arg,e.status,i.loaded,i.total,0,0])}"
        },new ReplaceRule()
        {
          oldStr=@"function jsWebRequestGetResponseHeaderString[\s\S]*?return headers",

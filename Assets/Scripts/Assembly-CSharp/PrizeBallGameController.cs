@@ -118,7 +118,7 @@ public class PrizeBallGameController : MonoBehaviour
 		Currency.UsePrizeBall();
 		prizeBall.Drop();
 		StartCoroutine(SetDropButtonActive(false));
-		AchievementsManager.Instance.DroppedPrizeBall();
+		// AchievementsManager.Instance.DroppedPrizeBall();
 	}
 
 	public void GameOver()

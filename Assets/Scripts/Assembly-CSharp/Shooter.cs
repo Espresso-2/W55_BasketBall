@@ -147,7 +147,7 @@ public class Shooter : MonoBehaviour
 			{
 				num = hoop.transform.position.x - shooterObject.transform.position.x;
 			}
-			Debug.Log("LAYUP distanceX=" + num + " this.playerController.rig2D.velocity.x=" + playerController.rig2D.velocity.x);
+			//Debug.Log("LAYUP distanceX=" + num + " this.playerController.rig2D.velocity.x=" + playerController.rig2D.velocity.x);
 			if (num > 0.95f)
 			{
 				flag = true;

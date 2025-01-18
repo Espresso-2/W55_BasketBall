@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using W_Log;
 
 [Serializable]
 public class Currency : MonoBehaviour
@@ -127,7 +128,7 @@ public class Currency : MonoBehaviour
 	public static float GetCurrentXpLevelProgress()
 	{
 		int currentXp = GetCurrentXp();
-		Debug.Log("xp: " + currentXp);
+		Debug.Log("当前经验: " + currentXp.FH7_RoyalBlue());
 		return (float)(currentXp % 500) / 500f;
 	}
 

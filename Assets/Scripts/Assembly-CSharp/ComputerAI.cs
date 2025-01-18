@@ -235,7 +235,7 @@ public class ComputerAI : MonoBehaviour
 			springDelay2 = (extraHighBall ? ((!hardForUserToGet) ? ((UnityEngine.Random.Range(0, 100) < 50) ? 0.7f : 0.6f) : ((UnityEngine.Random.Range(0, 100) < 50) ? 0.27f : 0.14f)) : ((!hardForUserToGet) ? 0.3f : ((UnityEngine.Random.Range(0, 100) < 50) ? 0.12f : 0.08f)));
 			timeToWaitBeforeCanMove = springDelay2 + 0.25f;
 		}
-		Debug.Log("======= ComputerAI.OnTipOff() springDelay: " + springDelay2 + " (IS extraHighBall = " + extraHighBall + ")");
+//		Debug.Log("======= ComputerAI.OnTipOff() springDelay: " + springDelay2 + " (IS extraHighBall = " + extraHighBall + ")");
 		if (!ballToP1)
 		{
 			if (springDelay2 > 0f)
@@ -765,8 +765,8 @@ public class ComputerAI : MonoBehaviour
 				num -= 0.15f;
 			}
 		}
-		Debug.Log("shootBadShot: " + flag2);
-		Debug.Log("===========NEW SHOT LENGTH: " + num + " VELOCITY.Y: " + pc.rig2D.velocity.y);
+		//Debug.Log("shootBadShot: " + flag2);
+		//Debug.Log("===========NEW SHOT LENGTH: " + num + " VELOCITY.Y: " + pc.rig2D.velocity.y);
 		return num;
 	}
 
@@ -781,18 +781,18 @@ public class ComputerAI : MonoBehaviour
 		else if (UnityEngine.Random.Range(1, 100) < defenseLevel || defeatJoeDefense)
 		{
 			num = ((UnityEngine.Random.Range(0, 100) < 50) ? 0.1f : 0.15f);
-			Debug.Log("ComputerAI: GREAT BLOCK ATTEMPT delay=" + num);
+			//Debug.Log("ComputerAI: GREAT BLOCK ATTEMPT delay=" + num);
 		}
 		else
 		{
 			num = ((UnityEngine.Random.Range(0, 100) < 50) ? 0.55f : 0.35f);
-			Debug.Log("ComputerAI: POOR BLOCK ATTEMPT delay=" + num);
+			//Debug.Log("ComputerAI: POOR BLOCK ATTEMPT delay=" + num);
 		}
 		if (UnityEngine.Random.Range(0, 100) >= 90 && (!defeatJoeDefense || UnityEngine.Random.Range(0, 100) >= 75))
 		{
 			num = ((UnityEngine.Random.Range(0, 100) < 50) ? 0.05f : 0.01f);
 		}
-		Debug.Log("ComputerAI GetSpringDelay(): delay=" + num);
+		//Debug.Log("ComputerAI GetSpringDelay(): delay=" + num);
 		return num;
 	}
 

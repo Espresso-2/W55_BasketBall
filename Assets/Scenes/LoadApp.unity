@@ -4035,7 +4035,7 @@ MonoBehaviour:
   IgnoreNumbersInRTL: 1
   CorrectAlignmentForRTL: 1
   TranslatedObjects:
-  - {fileID: 12800000, guid: aaf2dc5f183284b448edfe539e065fba, type: 3}
+  - {fileID: 12800000, guid: 160b40a414f90064aa3dbd14afe9fec8, type: 3}
   LocalizeCallBack:
     Target: {fileID: 0}
     MethodName: 

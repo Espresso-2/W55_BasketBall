@@ -25,12 +25,20 @@ namespace QGMiniGame
     public class UpdateConfig
     {
         public string pluginUrl = "";
-        public int version ;
+        public int version;
     }
 
     [Serializable]
     public class EnvConfig
     {
+        public string icon;
+        public string package;
+        public string name;
+        public string versionName;
+        public string versionCode;
+        public string minPlatformVersion;
+        public string deviceOrientation;
+        public string bgImageSrc;
         public string wasmUrl;
         public string streamingAssetsUrl;
         public string preloadUrl;
@@ -63,7 +71,7 @@ namespace QGMiniGame
     }
 
     [Serializable]
-    public class RenameFile 
+    public class RenameFile
     {
         public string oldName;
         public string newName;
@@ -75,17 +83,65 @@ namespace QGMiniGame
         public EnvConfig envConfig;
         public string buildSrc = "";
         public string cliSrc = "";
-        public string assetsUrl1 = "";
-        public string assetsUrl2 = "";
-        public string assetsUrl3 = "";
-        public string assetsUrl4 = "";
-        public string assetsUrl5 = "";
         public bool useSelfLoading;
         public bool useSubPkgLoading;
         public bool useAddressable;
         public bool usePreAsset;
         public bool useWebgl2;
         public bool useCodeSize;
+        public int usTargetBgType;
+
+        public static string webglDir = "webgl";       //构建的webgl文件夹
+        public static string vivoWebglDir = "webgl_vivo";
+
+        internal string GetSubWasmUrl()
+        {
+            return useSelfLoading ? envConfig.wasmUrl : "";
+        }
+
+        internal string GetWebGlPath()
+        {
+            return Path.Combine(buildSrc, webglDir);
+        }
+
+        internal string GetVivoWebGlPath()
+        {
+            return Path.Combine(buildSrc, vivoWebglDir);
+        }
+
+        internal string GetPreloadUrl()
+        {
+            string preloadUrl = "";
+            if (usePreAsset)
+            {
+                string[] result = envConfig.preloadUrl.Split(';');
+                for (int i = 0; i < Math.Min(5, result.Length); i++)
+                {
+                    preloadUrl += result[i] + ";";
+                }
+            }
+            return preloadUrl;
+        }
+
+        internal string GetAbsBgImagePath()
+        {
+            string bgImageSrc = envConfig.bgImageSrc.Replace("Assets/", "");
+            return Path.Combine(Application.dataPath, bgImageSrc);
+        }
+
+    }
+
+    enum SubWasmPkgType
+    {
+        NONE = 0,
+        CDN = 1,
+        VIVO = 2
+    }
+
+    enum Orientation
+    {
+        Portrait = 0,
+        Landscape = 1
     }
 }
 

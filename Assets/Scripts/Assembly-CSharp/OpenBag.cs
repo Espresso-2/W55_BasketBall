@@ -146,7 +146,7 @@ public class OpenBag : MonoBehaviour
         anim.SetTrigger("OpenBag");
         gameSounds.Play_ascend_chime_bright();
         gameSounds.Play_coin_glow_2();
-        AchievementsManager.Instance.OpenedBag();
+        // AchievementsManager.Instance.OpenedBag();
     }
 
     public virtual void BuyOneMoreOnClick()

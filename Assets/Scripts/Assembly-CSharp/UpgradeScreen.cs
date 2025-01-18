@@ -479,7 +479,7 @@ public class UpgradeScreen : MonoBehaviour
 		{
 			buyPanel.SetActive(false);
 			signNewPlayerButton.SetActive(true);
-			AchievementsManager.Instance.FullyUpgradedPlayer();
+			// AchievementsManager.Instance.FullyUpgradedPlayer();
 		}
 	}
 
