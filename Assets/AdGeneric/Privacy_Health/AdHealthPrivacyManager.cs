@@ -97,10 +97,10 @@ public class AdHealthPrivacyManager : MonoBehaviour
     private IEnumerator ShowHealthUI()
     {
         healthObj.SetActive(true);
-        bool completed = false;
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex+1).completed += op => completed = op.isDone;
+        // bool completed = false;
+        // SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex+1).completed += op => completed = op.isDone;
         yield return new WaitForSeconds(3);
-        while (!completed) yield return null;
+        // while (!completed) yield return null;
         healthObj.SetActive(false);
         AdTotalManager.Instance.AdStart();
         AdTotalManager.Instance.CreateShortcutBlack();

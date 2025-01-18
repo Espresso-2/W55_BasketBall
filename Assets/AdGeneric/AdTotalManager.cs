@@ -112,6 +112,11 @@ public class AdTotalManager : BaseOperation
         print(nameof(CreateShortcutBlack));
         CurrentOperation.CreateShortcutBlack();
     }
+    
+    public override void SimpleShortcutBlack()
+    {
+        AdAdapter.CreateShortcutButton();
+    }
 
     public void ShowBox() => Show(Addition.宝箱);
     public void ShowEye() => Show(Addition.护眼);

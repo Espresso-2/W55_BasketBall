@@ -1,0 +1,26 @@
+{
+    "package": "com.hshdgz.njby.nearme.gamecenter",
+    "name": "会说话的公仔",
+    "versionName": "1.0",
+    "versionCode": "10",
+    "minPlatformVersion": "1061",
+    "icon": "/icon.png",
+    "features": [
+        {
+            "name": "system.prompt"
+        },
+        {
+            "name": "system.router"
+        },
+        {
+            "name": "system.shortcut"
+        }
+    ],
+    "permissions": [
+        {
+            "origin": "*"
+        }
+    ],
+    "type": "game",
+    "orientation": "landscape"
+}

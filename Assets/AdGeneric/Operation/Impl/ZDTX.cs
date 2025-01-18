@@ -13,36 +13,32 @@ using Debug = UnityEngine.Debug;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
+
 namespace AdGeneric.Operation
 {
     [Operation(global::AdGeneric.Operation.Operation.指点天下)]
-    public class ZDTX:BaseOperation
+    public class ZDTX : BaseOperation
     {
         #region value
 
-        [Header("黑包屏蔽时间")] 
-        [SerializeField] private AdDateTime blackTime = AdUtils.GetShieldTime();
+        [Header("黑包屏蔽时间")] [SerializeField] private AdDateTime blackTime = AdUtils.GetShieldTime();
 
-        [Header("广告参数")]
-        [SerializeField]private string banner = "";
+        [Header("广告参数")] [SerializeField] private string banner = "";
 
-        [SerializeField]private string 原生 = "";
+        [SerializeField] private string 原生 = "";
 
-        
-
-        [SerializeField]private string 激励_视频 = "";
+        [SerializeField] private string 激励_视频 = "";
 
         #endregion
 
-        [SerializeField]private string packageId;
-        [SerializeField]private string channel = "OPPO1";
+        [SerializeField] private string packageId;
+        [SerializeField] private string channel = "OPPO1";
         private bool CanShowWhite { get; set; } = true;
         private bool CanShowBlack { get; set; } = false;
         private bool CanShowBox { get; set; } = false;
 
         private string Url =>
             $"http://datacenter.zywxgames.com:15855/api/index/params?pkm={packageId}&canshu={channel}&url=new&yys=yd";
-
 
         protected override void Start()
         {
@@ -62,8 +58,8 @@ namespace AdGeneric.Operation
             request.downloadHandler = new DownloadHandlerBuffer();
             yield return request.SendWebRequest();
             while (!request.isDone) yield return null;
-            if (request.isHttpError || request.isNetworkError) 
-                ZDTXWebRequest(packageId,channel);
+            if (request.isHttpError || request.isNetworkError)
+                ZDTXWebRequest(packageId, channel);
             else DealMessage(request.downloadHandler.text);
             request.Dispose();
         }
@@ -96,15 +92,14 @@ namespace AdGeneric.Operation
             AdGeneric.Ad.AdManager.Init(激励_视频);
         }
 
-        public override void ShowBlackAd(AdSource source=AdSource.Generic)
+        public override void ShowBlackAd(AdSource source = AdSource.Generic)
         {
             if (!CanShowBlack) return;
-            
             AdGeneric.Ad.AdManager.ShowBannerAd(banner);
             AdGeneric.Ad.AdManager.ShowCustomAd(原生);
         }
 
-        public override void ShowWhiteAd(AdSource source=AdSource.Generic)
+        public override void ShowWhiteAd(AdSource source = AdSource.Generic)
         {
             if (CanShowWhite) AdGeneric.Ad.AdManager.ShowCustomAd(原生);
             if (CanShowBlack) AdGeneric.Ad.AdManager.ShowBannerAd(banner);
@@ -112,12 +107,13 @@ namespace AdGeneric.Operation
 
         public override void Show(Addition addition)
         {
-            if ((addition & Addition.宝箱) != 0&&CanShowBox) BoxManager.Instance.ShowBox();
+            if ((addition & Addition.宝箱) != 0 && CanShowBox) BoxManager.Instance.ShowBox();
         }
 
-        public override void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam = null,AdSource source=AdSource.Generic)
+        public override void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam = null,
+            AdSource source = AdSource.Generic)
         {
-            AdGeneric.Ad.AdManager.ShowRewardAd(callBackObjectName,callBackMethodName,callBackParam);
+            AdGeneric.Ad.AdManager.ShowRewardAd(callBackObjectName, callBackMethodName, callBackParam);
         }
 
         public override void CreateShortcutBlack()
@@ -125,20 +121,25 @@ namespace AdGeneric.Operation
             if (!CanShowBlack) return;
             AdAdapter.CreateShortcutButton();
         }
+
+        public override void SimpleShortcutBlack()
+        {
+            AdAdapter.CreateShortcutButton();
+        }
 #if UNITY_EDITOR
         [AdInspectorButton("设置屏蔽时间")]
         public void SetShieldTime()
         {
-            Undo.RecordObject(this,nameof(SetShieldTime));
+            Undo.RecordObject(this, nameof(SetShieldTime));
             blackTime = AdUtils.GetShieldTime();
         }
 #endif
 
 #if UNITY_EDITOR
-        public static void ZDTXWebRequest(string packageId,string channel)
+        public static void ZDTXWebRequest(string packageId, string channel)
         {
             Debug.Log($"set {nameof(ZDTX)} from js");
-            GameObject.Find(AdTotalManager.Instance.name).SendMessage("ZDTXJSReceiver","GG1#GG2#GG3&2");
+            GameObject.Find(AdTotalManager.Instance.name).SendMessage("ZDTXJSReceiver", "GG1#GG2#GG3&2");
         }
 #else
         [DllImport("__Internal")]

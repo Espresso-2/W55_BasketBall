@@ -144,6 +144,10 @@
 
 		window.bannerAd = qg.createBannerAd({
 			adUnitId: bannerAdUnitId,
+			style: {
+					top: 0,
+					left: (qg.getSystemInfoSync().screenWidth - 1080) * 0.5
+					}
 		});
 
 		window.bannerAd.onError(function (err) {

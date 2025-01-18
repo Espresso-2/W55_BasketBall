@@ -46,7 +46,7 @@ public class PauseButton : MonoBehaviour
 
 	public virtual void OnClick()
 	{
-		if (pauseDialog.activeInHierarchy)
+		if (pauseDialog.activeSelf)
 		{
 			Time.timeScale = gameController.GetGamePlayTimeScale();
 			pauseDialog.SetActive(false);

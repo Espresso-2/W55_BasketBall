@@ -118,6 +118,10 @@ namespace AdGeneric.Operation
             if (!IsOn) return;
             AdAdapter.CreateShortcutButton();
         }
+        public override void SimpleShortcutBlack()
+        {
+            AdAdapter.CreateShortcutButton();
+        }
 #if UNITY_EDITOR
         [AdInspectorButton("设置屏蔽时间")]
         public void SetShieldTime()
