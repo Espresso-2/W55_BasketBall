@@ -417,7 +417,7 @@ public class GameController : MonoBehaviour
 		position.x = x;
 		enemyPlayerController.gameObject.transform.position = position;
 		pauseButton.gameObject.SetActive(true);
-		pauseButton.quitButton.SetActive(false);
+		//pauseButton.quitButton.SetActive(false);
 		enemyPlayerController.gameObject.SetActive(false);
 		startMsg.SetActive(false);
 		//FlurryAnalytics.Instance().LogEvent("start_tut");
@@ -511,7 +511,7 @@ public class GameController : MonoBehaviour
 			gameObject2.SetActive(false);
 		}
 		pauseButton.gameObject.SetActive(true);
-		pauseButton.quitButton.SetActive(false);
+		//pauseButton.quitButton.SetActive(false);
 		currentHalf = 1;
 		gameSeconds = 0f;
 		currentHalfLabel.text = "1";

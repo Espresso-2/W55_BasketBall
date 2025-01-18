@@ -73,7 +73,7 @@ namespace I2.Loc
 
         public bool CaseInsensitiveTerms;
 
-        [Button("点击获取源数据")]
+        /*[Button("点击获取源数据")]
         public void SetDataInAssets()
         {
             string path = Application.dataPath;
@@ -118,7 +118,7 @@ namespace I2.Loc
                 mTerms[i].Languages_Touch[^1] = datas[i].Sim;
             }
             AssetDatabase.Refresh();
-        }
+        }*/
 
         [NonSerialized] public Dictionary<string, TermData> mDictionary = new Dictionary<string, TermData>(StringComparer.Ordinal);
 

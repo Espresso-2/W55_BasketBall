@@ -262,7 +262,7 @@ public class PrizeBallGameController : MonoBehaviour
 		gameSounds.SendMessage("Play_coin_glow_2");
 		gameSounds.SendMessage("Play_crowd_long_cheer_01");
 		gameSounds.SendMessage("Play_trumpet_chime_2");
-		Handheld.Vibrate();
+		/*Handheld.Vibrate();*/
 		yield return new WaitForSeconds(0.25f);
 		largePrizeEffect.SetActive(true);
 		yield return new WaitForSeconds(1f);

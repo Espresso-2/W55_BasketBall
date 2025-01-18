@@ -12,9 +12,11 @@ public class PauseButton : MonoBehaviour
 
 	public GameObject halfTimeBox;
 
+	/*
 	public GameObject quitButton;
 
 	public GameObject confirmForfeitButton;
+	*/
 
 	public GameControls gameControls;
 
@@ -63,7 +65,7 @@ public class PauseButton : MonoBehaviour
 	{
 		Time.timeScale = 0f;
 		pauseDialog.SetActive(true);
-		confirmForfeitButton.SetActive(false);
+		//confirmForfeitButton.SetActive(false);
 		startMsg.SetActive(false);
 		gameControls.gameObject.SetActive(false);
 		gameNoise.PauseBgSqueaks();

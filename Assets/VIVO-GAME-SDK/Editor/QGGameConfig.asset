@@ -17,7 +17,7 @@ MonoBehaviour:
     streamingAssetsUrl: 
     preloadUrl: 
     subUnityPkg: 0
-  buildSrc: 
+  buildSrc: G:/m_WH/RPK/XiaMen/vivo/HaoChaiRenLanQiuBiSai_vivo_Rpk_XiaMen/1.0.0-1
   cliSrc: 
   assetsUrl1: 
   assetsUrl2: 
@@ -28,3 +28,5 @@ MonoBehaviour:
   useSubPkgLoading: 0
   useAddressable: 0
   usePreAsset: 0
+  useWebgl2: 0
+  useCodeSize: 0

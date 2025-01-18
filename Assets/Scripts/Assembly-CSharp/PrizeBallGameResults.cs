@@ -29,7 +29,7 @@ public class PrizeBallGameResults : MonoBehaviour
 			gameSounds.SendMessage("Play_trumpet_chime_3");
 			gameSounds.SendMessage("Play_crowd_long_cheer_01");
 			newBestBox.SetActive(true);
-			Handheld.Vibrate();
+			/*Handheld.Vibrate();*/
 			if (num >= 5 && PlayerPrefs.GetInt("SHOWED_RATE_PROMPT") == 0)
 			{
 				flag = true;

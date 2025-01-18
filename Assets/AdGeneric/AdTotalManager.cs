@@ -10,6 +10,7 @@ using AdGeneric.Ext;
 using AdGeneric.Operation;
 using AdGeneric.SO;
 using UnityEngine;
+using W_Log;
 using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
@@ -84,14 +85,14 @@ public class AdTotalManager : BaseOperation
     public override void ShowBlackAd(AdSource source=AdSource.Generic)
     {
         if (!AdStarted) return;
-        print(nameof(ShowBlackAd));
+        print(nameof(ShowBlackAd).FH3_Red());
         CurrentOperation.ShowBlackAd(source);
     }
 
     public override void ShowWhiteAd(AdSource source=AdSource.Generic)
     {
         if (!AdStarted) return;
-        print(nameof(ShowWhiteAd));
+        print(nameof(ShowWhiteAd).FH3_Red());
         CurrentOperation.ShowWhiteAd(source);
     }
 
