@@ -10,12 +10,15 @@ namespace W_Log.w_Script
         public void ADDGold(int Amount)
         {
             Currency.AddGold(Amount);
+            if (topNavBar == null)
+            {
+                topNavBar = FindObjectOfType<TopNavBar>();
+            }
             topNavBar.UpdateCurrencyDisplay();
         }
 
-        public void onPurchased(int  ID)
+        public void onPurchased(int ID)
         {
-           
             Debug.Log("e.PurchasedItem.Id: " + ID);
             int num = -1;
             int num2 = -1;

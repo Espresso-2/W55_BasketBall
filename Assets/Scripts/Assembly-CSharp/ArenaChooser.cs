@@ -56,6 +56,7 @@ public class ArenaChooser : MonoBehaviour
 			result = @string;
 		}
 		return result;
+		
 	}
 
 	public static string GetSignText()
