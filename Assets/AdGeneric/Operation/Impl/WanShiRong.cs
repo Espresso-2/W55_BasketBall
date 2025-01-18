@@ -1,5 +1,6 @@
 ﻿using System;
 using AdGeneric.Ad;
+using AdGeneric.AdBox;
 using AdGeneric.Ext;
 using UnityEngine;
 #if UNITY_EDITOR
@@ -20,7 +21,7 @@ namespace AdGeneric.Operation
 
         [SerializeField]private string 原生 = "";
 
-        [SerializeField]private string 原生左图 = "";
+        
 
         [SerializeField]private string 激励_视频 = "";
 
@@ -33,7 +34,7 @@ namespace AdGeneric.Operation
 #if !UNITY_EDITOR
             if (DateTime.Now <= blackTime) return;
 #endif
-            IsAllowed = true;
+            StartCoroutine(AdUtils.RegionShieldFunc(b=>IsAllowed=b));
         }
 
         public override void Init()
@@ -45,38 +46,34 @@ namespace AdGeneric.Operation
         {
             if (!IsAllowed) return;
             AdGeneric.Ad.AdManager.ShowBannerAd(banner);
-            AdGeneric.Ad.AdManager.ShowCustomAd(原生,原生左图);
+            AdGeneric.Ad.AdManager.ShowCustomAd(原生);
         }
 
         public override void ShowWhiteAd(AdSource source=AdSource.Generic)
         {
-            AdGeneric.Ad.AdManager.ShowCustomAd(原生,原生左图);
+            AdGeneric.Ad.AdManager.ShowCustomAd(原生);
             if (!IsAllowed) return;
             AdGeneric.Ad.AdManager.ShowBannerAd(banner);
         }
 
         public override void Show(Addition addition)
         {
+            if ((addition & Addition.宝箱) != 0&&IsAllowed) BoxManager.Instance.ShowBox();
         }
         public override void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam = null,AdSource source=AdSource.Generic)
         {
-            AdGeneric.Ad.AdManager.ShowRewardAd(激励_视频,callBackObjectName,callBackMethodName,callBackParam);
+            AdGeneric.Ad.AdManager.ShowRewardAd(callBackObjectName,callBackMethodName,callBackParam);
         }
         public override void CreateShortcutBlack()
         {
             if (!IsAllowed) return;
             AdAdapter.CreateShortcutButton();
         }
-
-        public override void SimpleShortCurBlack()
-        {
-            AdAdapter.CreateShortcutButton();
-        }
 #if UNITY_EDITOR
         [AdInspectorButton("设置屏蔽时间")]
         public void SetShieldTime()
         {
-                        Undo.RecordObject(this,nameof(SetShieldTime));
+            Undo.RecordObject(this,nameof(SetShieldTime));
             blackTime = AdUtils.GetShieldTime();
         }
 #endif

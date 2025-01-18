@@ -61,14 +61,14 @@ namespace AdGeneric.Ad
         {
             if (string.IsNullOrWhiteSpace(banner)) return;
             banner=banner.Replace(" ","");
-            AdAdapter.ShowBannerAd(banner);
+            AdAdapter.ShowBannerAd(banner,AdTotalManager.Instance.ShowDataTime);
         }
 
-        public static void ShowCustomAd(string custom,string leftCustom="")
+        public static void ShowCustomAd(string custom)
         {
             if (string.IsNullOrWhiteSpace(custom)) return;
             custom=custom.Replace(" ","");
-            AdAdapter.ShowCustomAd(custom,leftCustom,AdTotalManager.Instance.ShowDataTime,AdTotalManager.Instance.Orientation);
+            AdAdapter.ShowCustomAd(custom,AdTotalManager.Instance.ShowDataTime,AdTotalManager.Instance.Orientation);
         }
 
         public static void ShowNative(string native)
@@ -85,11 +85,9 @@ namespace AdGeneric.Ad
             AdAdapter.ShowNativeIcon(nativeIcon,AdTotalManager.Instance.Orientation);
         }
 
-        public static void ShowRewardAd(string reward,string callBackObjectName, string callBackMethodName, string callBackParam = null)
+        public static void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam = null)
         {
-            if (string.IsNullOrWhiteSpace(reward)) return;
-            reward=reward.Replace(" ","");
-            AdAdapter.ShowRewardAd(callBackObjectName, callBackMethodName, callBackParam,reward);
+            AdAdapter.ShowRewardAd(callBackObjectName, callBackMethodName, callBackParam);
         }
     }
 }

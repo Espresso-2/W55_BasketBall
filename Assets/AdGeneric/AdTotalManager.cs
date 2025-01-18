@@ -10,21 +10,17 @@ using AdGeneric.Ext;
 using AdGeneric.Operation;
 using AdGeneric.SO;
 using UnityEngine;
-using W_Log;
 using Object = UnityEngine.Object;
-
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-
 public class AdTotalManager : BaseOperation
 {
     public static AdTotalManager Instance { get; private set; }
     [Header("不用开编辑器也能修改")]
     [Header("从AdGeneric/Operation/Impl下选择运营脚本")]
-    [Header("记得换标题")]
     [Header("白包屏蔽时间")] 
-    [SerializeField] private AdDateTime adTime=AdUtils.GetShieldTime();
+    [SerializeField] private AdDateTime adTime=AdUtils.GetShieldTimeWhite();
     [SerializeField] private Orientation 屏幕方向=global::AdGeneric.Operation.Orientation.横屏 ;
 
     public string ShowDataTime => $"{adTime:yyyy-MM-dd HH:mm:ss}";
@@ -57,7 +53,6 @@ public class AdTotalManager : BaseOperation
 
     private void SetCurrentOperation()
     {
-        
         CurrentOperation= 
             gameObject
                 .GetComponents<BaseOperation>()
@@ -85,14 +80,14 @@ public class AdTotalManager : BaseOperation
     public override void ShowBlackAd(AdSource source=AdSource.Generic)
     {
         if (!AdStarted) return;
-        print(nameof(ShowBlackAd).FH3_Red());
+        print(nameof(ShowBlackAd));
         CurrentOperation.ShowBlackAd(source);
     }
 
     public override void ShowWhiteAd(AdSource source=AdSource.Generic)
     {
         if (!AdStarted) return;
-        print(nameof(ShowWhiteAd).FH3_Red());
+        print(nameof(ShowWhiteAd));
         CurrentOperation.ShowWhiteAd(source);
     }
 
@@ -118,11 +113,6 @@ public class AdTotalManager : BaseOperation
         CurrentOperation.CreateShortcutBlack();
     }
 
-    public override void SimpleShortCurBlack()
-    {
-       CurrentOperation.SimpleShortCurBlack();
-    }
-
     public void ShowBox() => Show(Addition.宝箱);
     public void ShowEye() => Show(Addition.护眼);
     public bool AdStarted { get;private set; }
@@ -135,7 +125,7 @@ public class AdTotalManager : BaseOperation
     public void SetShieldTime()
     {
         Undo.RecordObject(this,nameof(SetShieldTime));
-        adTime = AdUtils.GetShieldTime();
+        adTime = AdUtils.GetShieldTimeWhite();
     }
 #endif
     #region smart

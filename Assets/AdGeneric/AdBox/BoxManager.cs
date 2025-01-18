@@ -19,8 +19,8 @@ namespace AdGeneric.AdBox
         private void Start()
         {
             boxPanel.SetActive(false);
-            /*if((AdTotalManager.Instance.Addition & Addition.宝箱)!=0)
-                InvokeRepeating(nameof(RepeatBox), firstTime, repeatTime);*/
+            if((AdTotalManager.Instance.Addition & Addition.宝箱)!=0)
+                InvokeRepeating(nameof(RepeatBox), firstTime, repeatTime);
         }
 
         private void RepeatBox()

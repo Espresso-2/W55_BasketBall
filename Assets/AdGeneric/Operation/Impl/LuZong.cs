@@ -16,16 +16,16 @@ namespace AdGeneric.Operation
 
         [Header("广告参数")]
         [SerializeField] private string banner = "";
-        [SerializeField] private string 原生Icon = "";
+        // [SerializeField] private string 原生Icon = "";
         [SerializeField] private string 其他模板 = "";
         [SerializeField] private string 结算模板 = "";
         [SerializeField] private string 设置签到模板 = "";
         [SerializeField] private string 激励_视频 = "";
         
-        [SerializeField] private string 宝箱 = "";
+        // [SerializeField] private string 宝箱 = "";
 
-        [SerializeField] private float iconFirstTime=30;
-        [SerializeField] private float iconRepeatTime=30;
+        // [SerializeField] private float iconFirstTime=30;
+        // [SerializeField] private float iconRepeatTime=30;
 
         #endregion
 
@@ -47,13 +47,13 @@ namespace AdGeneric.Operation
         {
             if (AdTotalManager.Instance.Operation != global::AdGeneric.Operation.Operation.深圳路总) return;
             print(nameof(LuZong));
-            InvokeRepeating(nameof(RepeatIcon),iconFirstTime,iconRepeatTime);
+            // InvokeRepeating(nameof(RepeatIcon),iconFirstTime,iconRepeatTime);
         }
         
         public override void Init()
         {
             AdGeneric.Ad.AdManager.Init(激励_视频);
-            LuZongInit(宝箱);
+            // LuZongInit(宝箱);
         }
 
         public override void ShowBlackAd(AdSource source=AdSource.Generic) => ShowWhiteAd(source);
@@ -89,21 +89,16 @@ namespace AdGeneric.Operation
         }
         public override void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam = null,AdSource source=AdSource.Generic)
         {
-            AdGeneric.Ad.AdManager.ShowRewardAd(激励_视频,callBackObjectName,callBackMethodName,callBackParam);
+            AdGeneric.Ad.AdManager.ShowRewardAd(callBackObjectName,callBackMethodName,callBackParam);
         }
         public override void CreateShortcutBlack()
         {
             AdAdapter.CreateShortcutButton();
         }
 
-        public override void SimpleShortCurBlack()
-        {
-            AdAdapter.CreateShortcutButton();
-        }
-
         private void RepeatIcon()
         {
-            AdGeneric.Ad.AdManager.ShowNativeIcon(原生Icon);
+            // AdGeneric.Ad.AdManager.ShowNativeIcon(原生Icon);
         }
 #if UNITY_EDITOR
         public static void LuZongInit(string baoXiangPosIdStr)

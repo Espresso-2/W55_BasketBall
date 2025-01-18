@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 using AdGeneric.Ad;
 using AdGeneric.AdBox;
 using AdGeneric.AdEye;
 using AdGeneric.Ext;
 using UnityEngine;
 using UnityEngine.Networking;
+using Debug = UnityEngine.Debug;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -24,7 +27,7 @@ namespace AdGeneric.Operation
 
         [SerializeField]private string 原生 = "";
 
-        [SerializeField]private string 原生左图 = "";
+        
 
         [SerializeField]private string 激励_视频 = "";
 
@@ -49,30 +52,37 @@ namespace AdGeneric.Operation
 
         IEnumerator GetSwitchText()
         {
+            int timeout = 3;
             WWWForm form = new WWWForm();
             form.AddField(ProductId, id); //产品Id
             form.AddField(ChannelId, channel); //渠道
             form.AddField(BelongingProvince, ""); //手机卡地址，没用
+            var sw=Stopwatch.StartNew();
             UnityWebRequest request = UnityWebRequest.Post(PostUrl, form);
+            request.timeout = timeout;
             yield return request.SendWebRequest();
-            if (request.isHttpError || request.isNetworkError)
+            while (!request.isDone) yield return null;
+
+            if (request.isHttpError || request.isNetworkError||sw.ElapsedMilliseconds>=timeout*1000) 
+                WanBanWebRequest(id,channel);
+            else DealMessage(request.downloadHandler.text);
+            request.Dispose();
+        }
+
+        private void WanBanJSReceiver(string text) => DealMessage(text);
+
+        private void DealMessage(string text)
+        {
+            SwitchJsonData jsdata = JsonUtility.FromJson<SwitchJsonData>(text);
+            switch (jsdata.ifopen)
             {
-                $"Error {request.error}".Log();
-            }
-            else
-            {
-                var json = request.downloadHandler.text;
-                SwitchJsonData jsdata = JsonUtility.FromJson<SwitchJsonData>(json);
-                switch (jsdata.ifopen)
-                {
-                    case "1":
-                        IsOn = true;
-                        break;
-                    case "2":
-                        IsOn = false;
-                        break;
-                    default: break;
-                }
+                case "1":
+                    IsOn = true;
+                    break;
+                case "2":
+                    IsOn = false;
+                    break;
+                default: break;
             }
         }
 
@@ -85,12 +95,12 @@ namespace AdGeneric.Operation
         {
             if (!IsOn) return;
             AdGeneric.Ad.AdManager.ShowBannerAd(banner);
-            AdGeneric.Ad.AdManager.ShowCustomAd(原生,原生左图);
+            AdGeneric.Ad.AdManager.ShowCustomAd(原生);
         }
 
         public override void ShowWhiteAd(AdSource source=AdSource.Generic)
         {
-            AdGeneric.Ad.AdManager.ShowCustomAd(原生,原生左图);
+            AdGeneric.Ad.AdManager.ShowCustomAd(原生);
             if (!IsOn) return;
             AdGeneric.Ad.AdManager.ShowBannerAd(banner);
         }
@@ -101,25 +111,30 @@ namespace AdGeneric.Operation
         }
         public override void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam = null,AdSource source=AdSource.Generic)
         {
-            AdGeneric.Ad.AdManager.ShowRewardAd(激励_视频,callBackObjectName,callBackMethodName,callBackParam);
+            AdGeneric.Ad.AdManager.ShowRewardAd(callBackObjectName,callBackMethodName,callBackParam);
         }
         public override void CreateShortcutBlack()
         {
             if (!IsOn) return;
             AdAdapter.CreateShortcutButton();
         }
-
-        public override void SimpleShortCurBlack()
-        {
-            AdAdapter.CreateShortcutButton();
-        }
 #if UNITY_EDITOR
         [AdInspectorButton("设置屏蔽时间")]
         public void SetShieldTime()
         {
-                        Undo.RecordObject(this,nameof(SetShieldTime));
+            Undo.RecordObject(this,nameof(SetShieldTime));
             blackTime = AdUtils.GetShieldTime();
         }
+#endif
+#if UNITY_EDITOR
+        public static void WanBanWebRequest(string productId,string channel)
+        {
+            Debug.Log($"set {nameof(WanBan)} from js");
+            GameObject.Find(AdTotalManager.Instance.name).SendMessage("WanBanJSReceiver",@"{""ifopen"":1}");
+        }
+#else
+        [DllImport("__Internal")]
+        public static extern void WanBanWebRequest(string packageId, string channel);
 #endif
     }
     [System.Serializable]

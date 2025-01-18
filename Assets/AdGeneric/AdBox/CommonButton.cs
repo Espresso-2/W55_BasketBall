@@ -32,7 +32,7 @@ namespace AdGeneric.AdBox
 
         private void Awake()
         {
-            m_CanvasGroup = gameObject.TryGetComponent<CanvasGroup>(out var @group)?@group:gameObject.AddComponent<CanvasGroup>();
+            m_CanvasGroup = gameObject.TryGetComponent<CanvasGroup>(out var comp)?comp:gameObject.AddComponent<CanvasGroup>();
             isDown = false;
         }
 

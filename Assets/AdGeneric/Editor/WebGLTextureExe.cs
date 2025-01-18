@@ -18,10 +18,10 @@ namespace AdGeneric.Editor
 
         private static readonly Color FilesColor = new Color(0, 1, 072f, 0.5f);
 
-        private readonly List<string> filePaths = new List<string>();
-        [SerializeField]private bool isToBigger = true; //向着更大缩放
-        [SerializeField]private bool compressAble=false;
-        [SerializeField]private int compressionQuality=50;
+        private readonly List<string> imagePaths = new List<string>();
+        private bool isToBigger = true; //向着更大缩放
+        private bool compressAble=false;
+        private int compressionQuality=50;
 
 
         [MenuItem("AdGeneric/WebGL图片处理", priority = 101)]
@@ -30,8 +30,6 @@ namespace AdGeneric.Editor
             Debug.Log("打开窗口");
             GetWindowWithRect<WebGLTextureExe>(new Rect(Screen.width / 2, Screen.height / 2, 500, 500)).titleContent = new GUIContent("图片处理");
         }
-
-        private void Awake() => filePaths.Clear();
 
 
         private void OnGUI()
@@ -45,7 +43,7 @@ namespace AdGeneric.Editor
             GUILayout.Space(10);
 
             GUI.color = FilesColor;
-            GUILayout.Label($"选择了 {filePaths.Count} 个文件");
+            GUILayout.Label($"选择了 {imagePaths.Count} 个文件");
             UnityEngine.Event currentEvent = UnityEngine.Event.current;
             //拖拽范围内
             if (drawRect.Contains(currentEvent.mousePosition))
@@ -57,7 +55,7 @@ namespace AdGeneric.Editor
                         break;
                     case EventType.DragPerform:
                         var paths = GetTotalFiles(DragAndDrop.paths);
-                        foreach (var t in paths.Where(e=>!filePaths.Contains(e))) filePaths.Add(t);
+                        foreach (var t in paths.Where(e=>!imagePaths.Contains(e))) imagePaths.Add(t);
 
                         break;
                 }
@@ -87,7 +85,7 @@ namespace AdGeneric.Editor
             GUILayout.Space(20);
             GUILayout.BeginHorizontal();
             GUI.color = Color.white;
-            if (GUILayout.Button("清除", GUILayout.Width(256), GUILayout.Height(40))) filePaths.Clear();
+            if (GUILayout.Button("清除", GUILayout.Width(256), GUILayout.Height(40))) imagePaths.Clear();
             if (GUILayout.Button("开始处理图像", GUILayout.Width(256), GUILayout.Height(40))) ExeFile();
             GUILayout.EndHorizontal();
         }
@@ -96,11 +94,11 @@ namespace AdGeneric.Editor
         private void ExeFile()
         {
             int sc = 0, fc = 0, imgc = 0;
-            for (int i = 0; i < filePaths.Count; i++)
+            for (int i = 0; i < imagePaths.Count; i++)
             {
-                EditorUtility.DisplayProgressBar("开始处理", $"{i + 1}/{filePaths.Count}", (float)i / filePaths.Count);
+                EditorUtility.DisplayProgressBar("开始处理", $"{i + 1}/{imagePaths.Count}", (float)i / imagePaths.Count);
 
-                string path = filePaths[i];
+                string path = imagePaths[i];
                 if (AssetDatabase.LoadMainAssetAtPath(path) is Texture2D)
                 {
                     imgc++;
@@ -118,13 +116,13 @@ namespace AdGeneric.Editor
             }
 
             Debug.Log(
-                $"总共 :{filePaths.Count}\n" +
+                $"总共 :{imagePaths.Count}\n" +
                 $"图像 :{imgc}\n" +
                 $"成功 :{sc}\n" +
                 $"失败 :{fc}\n" );
             EditorUtility.ClearProgressBar();
             AssetDatabase.Refresh();
-            filePaths.Clear();
+            imagePaths.Clear();
 
         }
 
@@ -208,7 +206,7 @@ namespace AdGeneric.Editor
             //分辨率区间的预备
             var start = new List<int> { 0, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384 };
             var end = new List<int> { 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 100000 };
-            var zones = Enumerable.Zip(start,end, (item1, item2) => (startIdx: item1, endIdx: item2)).ToList();
+            var zones = start.Zip(end, (item1, item2) => (startIdx: item1, endIdx: item2)).ToList();
 
             //取分辨率高宽的最大值
             var size = Math.Max(texture.width, texture.height);  //取【宽】【高】中的最大值

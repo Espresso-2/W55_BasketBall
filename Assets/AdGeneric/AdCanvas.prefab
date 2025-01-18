@@ -456,7 +456,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 4
-    m_MaxSize: 64
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -738,7 +738,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 299.0378, y: 88.6037}
+  m_SizeDelta: {x: 341.3736, y: 101.1477}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &4314873154542509157
 CanvasRenderer:
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 4
-    m_MaxSize: 64
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1919,7 +1919,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 32767
+  m_SortingOrder: 1000
   m_TargetDisplay: 0
 --- !u!114 &5126190714044594735
 MonoBehaviour:
@@ -1974,9 +1974,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adTime:
-    year: 2025
-    month: 1
-    day: 10
+    year: 2024
+    month: 12
+    day: 27
     hour: 19
     minute: 0
     second: 0
@@ -2092,7 +2092,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 299.0378, y: 88.6037}
+  m_SizeDelta: {x: 341.3736, y: 101.1477}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &1923415131376205866
 CanvasRenderer:

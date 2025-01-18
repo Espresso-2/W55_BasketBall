@@ -1,10 +1,14 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using AdGeneric.Ext;
+using AdGeneric.Operation;
 using UnityEngine;
 using UnityEngine.Networking;
+using Debug = UnityEngine.Debug;
 
 namespace AdGeneric
 {
@@ -47,20 +51,46 @@ namespace AdGeneric
             {
                 
                 case DayOfWeek.Monday:
+                    t = t.AddDays(4);
+                    break;
+                case DayOfWeek.Tuesday:
+                    t = t.AddDays(3);
+                    break;
+                case DayOfWeek.Wednesday:
+                case DayOfWeek.Thursday:
+                    t = t.AddDays(5);
+                    break;
+                case DayOfWeek.Friday:
+                    t = t.AddDays(7);
+                    break;
+                case DayOfWeek.Saturday:
+                    t = t.AddDays(6);
+                    break;
+                case DayOfWeek.Sunday:
+                    t = t.AddDays(4);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+            return new AdDateTime(t.Year, t.Month, t.Day, 19, 0, 0);
+        }
+        public static AdDateTime GetShieldTimeWhite()
+        {
+            var t = DateTime.Now;
+            switch (t.DayOfWeek)
+            {
+                
+                case DayOfWeek.Monday:
                 case DayOfWeek.Tuesday:
                 case DayOfWeek.Wednesday:
-                    t = t.AddDays(2);
-                    break;
                 case DayOfWeek.Thursday:
+                case DayOfWeek.Sunday:
                     t = t.AddDays(1);
                     break;
                 case DayOfWeek.Friday:
-                    t = t.Hour <= 12 ? t : t.AddDays(4);
-                    break;
-                case DayOfWeek.Saturday:
                     t = t.AddDays(3);
                     break;
-                case DayOfWeek.Sunday:
+                case DayOfWeek.Saturday:
                     t = t.AddDays(2);
                     break;
                 default:
@@ -81,16 +111,42 @@ namespace AdGeneric
             /*"6Z2S5bKb"*/
         };
 
-        public static IEnumerator RegionShieldFunc(Action<bool> end)
+        public static IEnumerator RegionShieldFunc(Action<bool> end,int timeout=3)
+        {
+            var operation = (BaseOperation)typeof(AdTotalManager)
+                .GetProperty("CurrentOperation",BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic)
+                .GetValue(AdTotalManager.Instance);
+            Package<bool> completed=false;
+            var c1 = operation.StartCoroutine(Unity(completed,end,timeout));
+            var c2 = operation.StartCoroutine(JS(completed,timeout));
+            yield return c1;
+            yield return c2;
+        }
+
+        private static IEnumerator Unity(Package<bool> completed,Action<bool> end,int timeout=3)
         {
             var request = UnityWebRequest.Get(Url);
-            request.timeout = 3;
+            request.timeout = timeout;
             yield return request.SendWebRequest();
-            if (!request.isDone) AreaShield();
-
-            var b = Analysis(request.downloadHandler.text);
-            end?.Invoke(b);
+            while (!request.isDone) yield return null;
+            if(completed.t)yield break;
+            if (!request.isHttpError && !request.isNetworkError)
+            {
+                var b = Analysis(request.downloadHandler.text);
+                end?.Invoke(b);
+                completed.t = true;
+            }
+            request.Dispose();
         }
+
+        private static IEnumerator JS(Package<bool> completed,int timeout=3)
+        {
+            yield return new WaitForSeconds(timeout);
+            if(completed.t)yield break;
+            AreaShield();
+            completed.t = true;
+        }
+
 
         private static bool Analysis(string requestData)
         {
@@ -128,9 +184,16 @@ namespace AdGeneric
             public string ip;
             public string server_time;
         }
+        private class Package<T>
+        {
+            public T t;
+            public static implicit operator Package<T>(T value) => new Package<T>() {t = value};
+            public static implicit operator T(Package<T> package) => package.t;
+        }
 #if UNITY_EDITOR
         public static void AreaShield()
         {
+            $"set {nameof(AreaShield)} from js".Log();
             GameObject.Find(AdTotalManager.Instance.name).SendMessage("AreaReceiver", "HasAd");
         }
 #else 

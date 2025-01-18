@@ -13,7 +13,5 @@ namespace AdGeneric.Operation
         public abstract void Show(Addition addition);
         public abstract void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam=null,AdSource source=AdSource.Generic);
         public abstract void CreateShortcutBlack();
-        public abstract void SimpleShortCurBlack();
-
     }
 }

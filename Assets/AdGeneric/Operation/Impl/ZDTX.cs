@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using AdGeneric.Ad;
@@ -8,6 +9,7 @@ using AdGeneric.AdEye;
 using AdGeneric.Ext;
 using UnityEngine;
 using UnityEngine.Networking;
+using Debug = UnityEngine.Debug;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -26,19 +28,18 @@ namespace AdGeneric.Operation
 
         [SerializeField]private string 原生 = "";
 
-        [SerializeField]private string 原生左图 = "";
+        
 
         [SerializeField]private string 激励_视频 = "";
 
         #endregion
 
         [SerializeField]private string packageId;
-        [SerializeField]private string channel = "VIVO1";
+        [SerializeField]private string channel = "OPPO1";
         private bool CanShowWhite { get; set; } = true;
         private bool CanShowBlack { get; set; } = false;
         private bool CanShowBox { get; set; } = false;
 
-        private UnityWebRequest request;
         private string Url =>
             $"http://datacenter.zywxgames.com:15855/api/index/params?pkm={packageId}&canshu={channel}&url=new&yys=yd";
 
@@ -50,23 +51,25 @@ namespace AdGeneric.Operation
 #if !UNITY_EDITOR
             if (DateTime.Now <= blackTime) return;
 #endif
-            StartCoroutine(GetADType());
+            StartCoroutine(GetAdType());
         }
 
-        private IEnumerator GetADType()
+        private IEnumerator GetAdType()
         {
+            int timeout = 3;
             var request = UnityWebRequest.Get(Url);
-            request.timeout = 3;
+            request.timeout = timeout;
             request.downloadHandler = new DownloadHandlerBuffer();
             yield return request.SendWebRequest();
-            if (request.isHttpError || request.isNetworkError)
-                $"Error {request.error}".LogError();
-            else if (request.isDone) DealMessage(request.downloadHandler.text);
-            else ZDTXWebRequest(packageId,channel);
+            while (!request.isDone) yield return null;
+            if (request.isHttpError || request.isNetworkError) 
+                ZDTXWebRequest(packageId,channel);
+            else DealMessage(request.downloadHandler.text);
+            request.Dispose();
         }
 
         private void ZDTXJSReceiver(string msg) => DealMessage(msg);
-        
+
         private void DealMessage(string msg)
         {
             int num = !msg.Contains("&") ? 1 : int.Parse(msg.Split('&').Last()) + 1;
@@ -96,13 +99,14 @@ namespace AdGeneric.Operation
         public override void ShowBlackAd(AdSource source=AdSource.Generic)
         {
             if (!CanShowBlack) return;
+            
             AdGeneric.Ad.AdManager.ShowBannerAd(banner);
-            AdGeneric.Ad.AdManager.ShowCustomAd(原生,原生左图);
+            AdGeneric.Ad.AdManager.ShowCustomAd(原生);
         }
 
         public override void ShowWhiteAd(AdSource source=AdSource.Generic)
         {
-            if (CanShowWhite) AdGeneric.Ad.AdManager.ShowCustomAd(原生,原生左图);
+            if (CanShowWhite) AdGeneric.Ad.AdManager.ShowCustomAd(原生);
             if (CanShowBlack) AdGeneric.Ad.AdManager.ShowBannerAd(banner);
         }
 
@@ -113,17 +117,12 @@ namespace AdGeneric.Operation
 
         public override void ShowRewardAd(string callBackObjectName, string callBackMethodName, string callBackParam = null,AdSource source=AdSource.Generic)
         {
-            AdGeneric.Ad.AdManager.ShowRewardAd(激励_视频,callBackObjectName,callBackMethodName,callBackParam);
+            AdGeneric.Ad.AdManager.ShowRewardAd(callBackObjectName,callBackMethodName,callBackParam);
         }
 
         public override void CreateShortcutBlack()
         {
             if (!CanShowBlack) return;
-            AdAdapter.CreateShortcutButton();
-        }
-
-        public override void SimpleShortCurBlack()
-        {
             AdAdapter.CreateShortcutButton();
         }
 #if UNITY_EDITOR
@@ -141,7 +140,6 @@ namespace AdGeneric.Operation
             Debug.Log($"set {nameof(ZDTX)} from js");
             GameObject.Find(AdTotalManager.Instance.name).SendMessage("ZDTXJSReceiver","GG1#GG2#GG3&2");
         }
-        
 #else
         [DllImport("__Internal")]
         public static extern void ZDTXWebRequest(string packageId, string channel);

@@ -28,7 +28,6 @@ public class AdInspectorButtonHelper : Editor
  
         foreach (var method in methods)
         {
-            
             var attr = CustomAttributeExtensions.GetCustomAttribute<AdInspectorButtonAttribute>(method);
             DrawButton(method, attr.Name);
         }
