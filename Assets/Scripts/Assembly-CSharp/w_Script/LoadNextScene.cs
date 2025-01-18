@@ -11,7 +11,6 @@ public class LoadNextScene : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(() =>
         {
-            AdTotalManager.Instance.ShowBox();
             var Index = SceneManager.GetActiveScene().buildIndex + 1;
             SceneManager.LoadSceneAsync(Index);
         });

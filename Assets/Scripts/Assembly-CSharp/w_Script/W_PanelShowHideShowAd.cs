@@ -1,23 +1,18 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using PublicComponentCenter;
 using UnityEngine;
 
 public class W_PanelShowHideShowAd : MonoBehaviour
 {
     private void OnEnable()
     {
-        if (AdTotalManager.Instance != null)
-        {
-            AdTotalManager.Instance.ShowWhiteAd();
-        }
+        GameEntry.Ad.ShowInterstitialAd();
     }
 
     private void OnDisable()
     {
-        if (AdTotalManager.Instance != null)
-        {
-            AdTotalManager.Instance.ShowBlackAd();
-        }
+        GameEntry.Ad.ShowInterstitialAd();
     }
 }

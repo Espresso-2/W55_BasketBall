@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using I2.Loc;
+using PublicComponentCenter;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -59,7 +60,7 @@ public class Tutorial : MonoBehaviour
 		leftThumb.SendMessage("SlideIn");
 		yield return new WaitForSeconds(0.5f);
 		messageBox.SetActive(true);
-		AdTotalManager.Instance.ShowWhiteAd();
+		GameEntry.Ad.ShowInterstitialAd();
 		StartCoroutine(SetMessage("USE LEFT THUMB TO MOVE"));
 		//FlurryAnalytics.Instance().LogEvent("SHOWED_FIRST_TUT_MSG");
 	}
@@ -86,7 +87,7 @@ public class Tutorial : MonoBehaviour
 			StartCoroutine(SetMessage(string.Empty));
 			yield return new WaitForSeconds(1f);
 			messageBox.SetActive(true);
-			AdTotalManager.Instance.ShowWhiteAd();
+			GameEntry.Ad.ShowInterstitialAd();
 			StartCoroutine(SetMessage("HOLD DOWN RIGHT THUMB TO JUMP"));
 			rightThumb.SetActive(true);
 			rightThumb.SendMessage("SlideIn");
@@ -111,7 +112,7 @@ public class Tutorial : MonoBehaviour
 				StartCoroutine(SetMessage(string.Empty));
 				yield return new WaitForSeconds(1f);
 				messageBox.SetActive(true);
-				AdTotalManager.Instance.ShowWhiteAd();
+				GameEntry.Ad.ShowInterstitialAd();
 				StartCoroutine(SetMessage("THE BAR ABOVE YOUR HEAD IS YOUR ENERGY"));
 				yield return new WaitForSeconds(4f);
 				leftThumb.SetActive(false);
@@ -133,7 +134,7 @@ public class Tutorial : MonoBehaviour
 			gotBall = true;
 			yield return new WaitForSeconds(0.5f);
 			messageBox.SetActive(true);
-			AdTotalManager.Instance.ShowWhiteAd();
+			GameEntry.Ad.ShowInterstitialAd();
 			StartCoroutine(SetMessage("HOLD DOWN RIGHT THUMB TO SHOOT"));
 			rightThumb.SetActive(true);
 			rightThumb.SendMessage("SlideIn");
@@ -157,7 +158,7 @@ public class Tutorial : MonoBehaviour
 		if (numShots == 2)
 		{
 			messageBox.SetActive(true);
-			AdTotalManager.Instance.ShowWhiteAd();
+			GameEntry.Ad.ShowInterstitialAd();
 			StartCoroutine(SetMessage("TIP: RELEASE AFTER PEAK OF JUMP"));
 		}
 	}
@@ -186,7 +187,7 @@ public class Tutorial : MonoBehaviour
 		{
 			yield return new WaitForSeconds(0.25f);
 			messageBox.SetActive(true);
-			AdTotalManager.Instance.ShowWhiteAd();
+			GameEntry.Ad.ShowInterstitialAd();
 			StartCoroutine(SetMessage("TIP: GO UNDER HOOP TO SHOOT A LAYUP"));
 		}
 		else if (isLayup && numMadeShots == 5)
@@ -194,7 +195,7 @@ public class Tutorial : MonoBehaviour
 			StartCoroutine(SetMessage(string.Empty));
 			yield return new WaitForSeconds(1f);
 			messageBox.SetActive(true);
-			AdTotalManager.Instance.ShowWhiteAd();
+			GameEntry.Ad.ShowInterstitialAd();
 			StartCoroutine(SetMessage("YOU NEED FULL ENERGY TO DUNK"));
 			yield return new WaitForSeconds(6f);
 			StartCoroutine(SetMessage(string.Empty));
@@ -211,7 +212,7 @@ public class Tutorial : MonoBehaviour
 		}, false);*/
 		yield return new WaitForSeconds(0.25f);
 		tutorialComplete.SetActive(true);
-		AdTotalManager.Instance.ShowWhiteAd();
+		GameEntry.Ad.ShowInterstitialAd();
 	}
 
 	private IEnumerator SetMessage(string newTerm)
@@ -221,7 +222,7 @@ public class Tutorial : MonoBehaviour
 			LeanTween.scale(messageBox, new Vector3(0.25f, 0.25f), 0.16f).setEase(LeanTweenType.easeInQuad);
 			yield return new WaitForSeconds(0.14f);
 			messageBox.SetActive(false);
-			AdTotalManager.Instance.ShowBlackAd();
+			GameEntry.Ad.ShowInterstitialAd();
 		}
 		else if (newTerm != prevTerm)
 		{

@@ -1,5 +1,6 @@
 using System;
 using I2.Loc;
+using PublicComponentCenter;
 using UnityEngine;
 using UnityEngine.UI;
 using W_Log.w_Script;
@@ -91,7 +92,9 @@ public class DealPack : MonoBehaviour
 
     public virtual void Buy()
     {
-        AdTotalManager.Instance.ShowRewardAd(gameObject.name, nameof(AdRewardBuy));
+        GameEntry.Ad.NativeMsgReceiver.AddEvent("DealPack", s => AdRewardBuy());
+        GameEntry.Ad.ShowRewardedVideoAd("DealPack");
+        /*AdTotalManager.Instance.ShowRewardAd(gameObject.name, nameof(AdRewardBuy));*/
     }
 
     private void AdRewardBuy()
@@ -104,6 +107,7 @@ public class DealPack : MonoBehaviour
             PlayerPrefsHelper.SetInt("IS_TAPJOY_PURCHASE_REQUEST", 0);
             w_RewardAdapter.Instance.onPurchased(13);
         }
+        GameEntry.Ad.NativeMsgReceiver.RemoveEvent("DealPack");
     }
 
     public virtual void RecievedDeal(int dealNum)

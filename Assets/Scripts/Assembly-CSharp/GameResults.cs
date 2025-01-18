@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using I2.Loc;
+using PublicComponentCenter;
 using UnityEngine;
 using UnityEngine.UI;
 using W_Log;
@@ -489,7 +490,7 @@ public class GameResults : MonoBehaviour
 			yield return new WaitForSeconds(0.5f);
 		}
 		msgBox.SetActive(true);
-		AdTotalManager.Instance.ShowBox();
+		
 		claimButtonsHolder.SetActive(false);
 		StartCoroutine(AnimateTextNum(totalXp, totalXpNum, 7, false));
 		StartCoroutine(AnimateTextNum(totalCash, totalCashNum, 40, true));

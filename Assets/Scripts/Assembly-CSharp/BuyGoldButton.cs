@@ -1,4 +1,5 @@
 using System;
+using PublicComponentCenter;
 using UnityEngine;
 using UnityEngine.UI;
 using W_Log.w_Script;
@@ -75,7 +76,9 @@ public class BuyGoldButton : MonoBehaviour
 
     public virtual void Buy()
     {
-        AdTotalManager.Instance.ShowRewardAd(gameObject.name, nameof(RewardBug));
+        /*AdTotalManager.Instance.ShowRewardAd(gameObject.name, nameof(RewardBug));*/
+        GameEntry.Ad.NativeMsgReceiver.AddEvent("BugGold", (s) => RewardBug());
+        GameEntry.Ad.ShowRewardedVideoAd("BugGold");
     }
 
     private void RewardBug()
@@ -84,6 +87,7 @@ public class BuyGoldButton : MonoBehaviour
         PlayerPrefsHelper.SetInt("TAPJOY_BONUS", 0);
         PlayerPrefsHelper.SetInt("IS_TAPJOY_PURCHASE_REQUEST", 0);
         w_RewardAdapter.Instance.ADDGold(200);
+        GameEntry.Ad.NativeMsgReceiver.RemoveEvent("BugGold");
     }
 
     // public virtual void Update()
